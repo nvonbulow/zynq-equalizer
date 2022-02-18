@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2017 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:axi_iic:2.0
--- IP Revision: 14
+-- IP Revision: 12
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY axi_iic_v2_0_14;
-USE axi_iic_v2_0_14.axi_iic;
+LIBRARY axi_iic_v2_0_12;
+USE axi_iic_v2_0_12.axi_iic;
 
 ENTITY design_1_axi_iic_0_0 IS
   PORT (

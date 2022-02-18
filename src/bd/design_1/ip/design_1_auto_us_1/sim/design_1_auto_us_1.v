@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2017 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:axi_dwidth_converter:2.1
-// IP Revision: 11
+// IP Revision: 9
 
 `timescale 1ns/1ps
 
@@ -177,7 +177,7 @@ input wire m_axi_bvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI BREADY" *)
 output wire m_axi_bready;
 
-  axi_dwidth_converter_v2_1_11_top #(
+  axi_dwidth_converter_v2_1_9_top #(
     .C_FAMILY("zynq"),
     .C_AXI_PROTOCOL(0),
     .C_S_AXI_ID_WIDTH(1),

@@ -105,12 +105,12 @@ typedef struct {
 	int linkSpeed;
 	int mac;
 	XStatus fMacStatus;
-} sDemo_t;
+} sHwState_t;
 
 /************************** Function Prototypes ******************************/
 
 
 // This variable holds the demo related settings
-volatile sDemo_t Demo;
+volatile sHwState_t Demo;
 
 #endif /* MAIN_H_ */

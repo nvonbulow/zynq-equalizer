@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
--- Date        : Mon Feb 27 13:15:52 2017
--- Host        : WK117 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               C:/Users/aholzer/Desktop/Zybo-DMA/src/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_stub.vhdl
+-- Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+-- Date        : Sat Feb 12 13:04:29 2022
+-- Host        : nick-desktop running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_auto_pc_1 -prefix design_1_auto_pc_1_
+--               design_1_auto_pc_1_stub.vhdl
 -- Design      : design_1_auto_pc_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1
@@ -12,7 +12,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity design_1_auto_pc_1 is
+entity \design_1_auto_pc_1\ is
   Port ( 
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -75,14 +75,14 @@ entity design_1_auto_pc_1 is
     m_axi_rready : out STD_LOGIC
   );
 
-end design_1_auto_pc_1;
+end \design_1_auto_pc_1\;
 
-architecture stub of design_1_auto_pc_1 is
+architecture stub of \design_1_auto_pc_1\ is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
 attribute black_box_pad_pin of stub : architecture is "aclk,aresetn,s_axi_awid[11:0],s_axi_awaddr[31:0],s_axi_awlen[3:0],s_axi_awsize[2:0],s_axi_awburst[1:0],s_axi_awlock[1:0],s_axi_awcache[3:0],s_axi_awprot[2:0],s_axi_awqos[3:0],s_axi_awvalid,s_axi_awready,s_axi_wid[11:0],s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wlast,s_axi_wvalid,s_axi_wready,s_axi_bid[11:0],s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_arid[11:0],s_axi_araddr[31:0],s_axi_arlen[3:0],s_axi_arsize[2:0],s_axi_arburst[1:0],s_axi_arlock[1:0],s_axi_arcache[3:0],s_axi_arprot[2:0],s_axi_arqos[3:0],s_axi_arvalid,s_axi_arready,s_axi_rid[11:0],s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rlast,s_axi_rvalid,s_axi_rready,m_axi_awaddr[31:0],m_axi_awprot[2:0],m_axi_awvalid,m_axi_awready,m_axi_wdata[31:0],m_axi_wstrb[3:0],m_axi_wvalid,m_axi_wready,m_axi_bresp[1:0],m_axi_bvalid,m_axi_bready,m_axi_araddr[31:0],m_axi_arprot[2:0],m_axi_arvalid,m_axi_arready,m_axi_rdata[31:0],m_axi_rresp[1:0],m_axi_rvalid,m_axi_rready";
 attribute X_CORE_INFO : string;
-attribute X_CORE_INFO of stub : architecture is "axi_protocol_converter_v2_1_11_axi_protocol_converter,Vivado 2016.4";
+attribute X_CORE_INFO of stub : architecture is "axi_protocol_converter_v2_1_9_axi_protocol_converter,Vivado 2016.2";
 begin
 end;

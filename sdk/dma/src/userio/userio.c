@@ -57,7 +57,7 @@
 
 #define USERIO_DEVICE_ID 	0
 
-extern volatile sDemo_t Demo;
+extern volatile sHwState_t Demo;
 
 void fnUpdateLedsFromSwitches(XGpio *psGpio);
 

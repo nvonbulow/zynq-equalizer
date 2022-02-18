@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
--- Date        : Mon Feb 27 13:16:14 2017
--- Host        : WK117 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Users/aholzer/Desktop/Zybo-DMA/src/bd/design_1/ip/design_1_d_axi_i2s_audio_0_0/design_1_d_axi_i2s_audio_0_0_sim_netlist.vhdl
+-- Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+-- Date        : Sat Feb 12 13:05:18 2022
+-- Host        : nick-desktop running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_d_axi_i2s_audio_0_0 -prefix design_1_d_axi_i2s_audio_0_0_
+--               design_1_d_axi_i2s_audio_0_0_sim_netlist.vhdl
 -- Design      : design_1_d_axi_i2s_audio_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -14,7 +14,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_Sync_ff is
+entity \design_1_d_axi_i2s_audio_0_0_Sync_ff\ is
   port (
     OE_L_int_reg : out STD_LOGIC;
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\ : out STD_LOGIC;
@@ -26,18 +26,16 @@ entity design_1_d_axi_i2s_audio_0_0_Sync_ff is
     LRCLK : in STD_LOGIC;
     \I2S_CLOCK_CONTROL_REG_reg[16]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_Sync_ff : entity is "Sync_ff";
-end design_1_d_axi_i2s_audio_0_0_Sync_ff;
+end \design_1_d_axi_i2s_audio_0_0_Sync_ff\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_Sync_ff is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_Sync_ff\ is
   signal \^oe_l_int_reg\ : STD_LOGIC;
   signal sreg : STD_LOGIC_VECTOR ( 1 downto 0 );
   attribute async_reg : string;
   attribute async_reg of sreg : signal is "true";
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of Inst_I2sRxFifo_i_28 : label is "soft_lutpair36";
-  attribute SOFT_HLUTNM of WE_L_int_i_2 : label is "soft_lutpair36";
+  attribute SOFT_HLUTNM of Inst_I2sRxFifo_i_28 : label is "soft_lutpair39";
+  attribute SOFT_HLUTNM of WE_L_int_i_2 : label is "soft_lutpair39";
   attribute ASYNC_REG_boolean : boolean;
   attribute ASYNC_REG_boolean of \sreg_reg[0]\ : label is std.standard.true;
   attribute KEEP : string;
@@ -97,7 +95,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_Sync_ff_0 is
+entity \design_1_d_axi_i2s_audio_0_0_Sync_ff_0\ is
   port (
     \Data_In_int_reg[8]\ : out STD_LOGIC;
     \BCLK_Fall1__0\ : out STD_LOGIC;
@@ -106,10 +104,10 @@ entity design_1_d_axi_i2s_audio_0_0_Sync_ff_0 is
     \I2S_TRANSFER_CONTROL_REG_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_Sync_ff_0 : entity is "Sync_ff";
-end design_1_d_axi_i2s_audio_0_0_Sync_ff_0;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_Sync_ff_0\ : entity is "Sync_ff";
+end \design_1_d_axi_i2s_audio_0_0_Sync_ff_0\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_Sync_ff_0 is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_Sync_ff_0\ is
   signal \^data_in_int_reg[8]\ : STD_LOGIC;
   signal sreg : STD_LOGIC_VECTOR ( 1 downto 0 );
   attribute async_reg : string;
@@ -160,17 +158,17 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_Sync_ff_1 is
+entity \design_1_d_axi_i2s_audio_0_0_Sync_ff_1\ is
   port (
     \I2S_STATUS_REG_reg[17]\ : out STD_LOGIC_VECTOR ( 0 to 0 );
     AXI_L_aclk : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_Sync_ff_1 : entity is "Sync_ff";
-end design_1_d_axi_i2s_audio_0_0_Sync_ff_1;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_Sync_ff_1\ : entity is "Sync_ff";
+end \design_1_d_axi_i2s_audio_0_0_Sync_ff_1\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_Sync_ff_1 is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_Sync_ff_1\ is
   signal sreg : STD_LOGIC_VECTOR ( 1 downto 0 );
   attribute async_reg : string;
   attribute async_reg of sreg : signal is "true";
@@ -210,17 +208,17 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_Sync_ff_2 is
+entity \design_1_d_axi_i2s_audio_0_0_Sync_ff_2\ is
   port (
     \Data_In_int_reg[8]\ : out STD_LOGIC;
     CLK_12_288 : in STD_LOGIC;
     \I2S_TRANSFER_CONTROL_REG_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_Sync_ff_2 : entity is "Sync_ff";
-end design_1_d_axi_i2s_audio_0_0_Sync_ff_2;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_Sync_ff_2\ : entity is "Sync_ff";
+end \design_1_d_axi_i2s_audio_0_0_Sync_ff_2\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_Sync_ff_2 is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_Sync_ff_2\ is
   signal sreg : STD_LOGIC_VECTOR ( 1 downto 0 );
   attribute async_reg : string;
   attribute async_reg of sreg : signal is "true";
@@ -260,17 +258,17 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_Sync_ff_3 is
+entity \design_1_d_axi_i2s_audio_0_0_Sync_ff_3\ is
   port (
     \I2S_STATUS_REG_reg[0]\ : out STD_LOGIC_VECTOR ( 0 to 0 );
     AXI_L_aclk : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_Sync_ff_3 : entity is "Sync_ff";
-end design_1_d_axi_i2s_audio_0_0_Sync_ff_3;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_Sync_ff_3\ : entity is "Sync_ff";
+end \design_1_d_axi_i2s_audio_0_0_Sync_ff_3\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_Sync_ff_3 is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_Sync_ff_3\ is
   signal sreg : STD_LOGIC_VECTOR ( 1 downto 0 );
   attribute async_reg : string;
   attribute async_reg of sreg : signal is "true";
@@ -310,7 +308,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_i2s_ctl is
+entity \design_1_d_axi_i2s_audio_0_0_i2s_ctl\ is
   port (
     LRCLK : out STD_LOGIC;
     CO : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -319,7 +317,7 @@ entity design_1_d_axi_i2s_audio_0_0_i2s_ctl is
     LRCLK_O : out STD_LOGIC;
     SDATA_O : out STD_LOGIC;
     rd_en : out STD_LOGIC;
-    ram_full_fb_i_reg : out STD_LOGIC;
+    \gic0.gc0.count_reg[11]\ : out STD_LOGIC;
     CLK_12_288 : in STD_LOGIC;
     BCLK_I : in STD_LOGIC;
     SDATA_I : in STD_LOGIC;
@@ -335,26 +333,26 @@ entity design_1_d_axi_i2s_audio_0_0_i2s_ctl is
     \BCLK_Fall1__0\ : in STD_LOGIC;
     SR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_i2s_ctl : entity is "i2s_ctl";
-end design_1_d_axi_i2s_audio_0_0_i2s_ctl;
+end \design_1_d_axi_i2s_audio_0_0_i2s_ctl\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_i2s_ctl is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_i2s_ctl\ is
   signal BCLK_Fall : STD_LOGIC;
   signal BCLK_Rise : STD_LOGIC;
   signal BCLK_int : STD_LOGIC;
   signal BCLK_int_i_1_n_0 : STD_LOGIC;
   signal \^co\ : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal \Cnt_Bclk0_inferred__0/i__carry__0_n_0\ : STD_LOGIC;
-  signal \Cnt_Bclk0_inferred__0/i__carry__0_n_1\ : STD_LOGIC;
-  signal \Cnt_Bclk0_inferred__0/i__carry__0_n_2\ : STD_LOGIC;
-  signal \Cnt_Bclk0_inferred__0/i__carry__0_n_3\ : STD_LOGIC;
-  signal \Cnt_Bclk0_inferred__0/i__carry__1_n_2\ : STD_LOGIC;
-  signal \Cnt_Bclk0_inferred__0/i__carry__1_n_3\ : STD_LOGIC;
-  signal \Cnt_Bclk0_inferred__0/i__carry_n_0\ : STD_LOGIC;
-  signal \Cnt_Bclk0_inferred__0/i__carry_n_1\ : STD_LOGIC;
-  signal \Cnt_Bclk0_inferred__0/i__carry_n_2\ : STD_LOGIC;
-  signal \Cnt_Bclk0_inferred__0/i__carry_n_3\ : STD_LOGIC;
+  signal \Cnt_Bclk0_inferred__0_carry__0_n_0\ : STD_LOGIC;
+  signal \Cnt_Bclk0_inferred__0_carry__0_n_1\ : STD_LOGIC;
+  signal \Cnt_Bclk0_inferred__0_carry__0_n_2\ : STD_LOGIC;
+  signal \Cnt_Bclk0_inferred__0_carry__0_n_3\ : STD_LOGIC;
+  signal \Cnt_Bclk0_inferred__0_carry__1_n_2\ : STD_LOGIC;
+  signal \Cnt_Bclk0_inferred__0_carry__1_n_3\ : STD_LOGIC;
+  signal \Cnt_Bclk0_inferred__0_carry_i_3_n_0\ : STD_LOGIC;
+  signal \Cnt_Bclk0_inferred__0_carry_i_4_n_0\ : STD_LOGIC;
+  signal \Cnt_Bclk0_inferred__0_carry_n_0\ : STD_LOGIC;
+  signal \Cnt_Bclk0_inferred__0_carry_n_1\ : STD_LOGIC;
+  signal \Cnt_Bclk0_inferred__0_carry_n_2\ : STD_LOGIC;
+  signal \Cnt_Bclk0_inferred__0_carry_n_3\ : STD_LOGIC;
   signal Cnt_Bclk1 : STD_LOGIC_VECTOR ( 3 downto 1 );
   signal Cnt_Bclk1_carry_i_1_n_0 : STD_LOGIC;
   signal Cnt_Bclk1_carry_i_2_n_0 : STD_LOGIC;
@@ -378,7 +376,7 @@ architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_i2s_ctl is
   signal D_L_O_int_1 : STD_LOGIC;
   signal D_R_O_int : STD_LOGIC_VECTOR ( 23 downto 0 );
   signal D_R_O_int_0 : STD_LOGIC;
-  signal Data_In_int : STD_LOGIC_VECTOR ( 31 downto 8 );
+  signal Data_In_int : STD_LOGIC_VECTOR ( 31 to 31 );
   signal \Data_In_int[31]_i_1_n_0\ : STD_LOGIC;
   signal \Data_In_int_reg[6]_srl7___d_axi_i2s_audio_v2_0_AXI_L_inst_Inst_I2sCtl_Inst_I2sRxTx_Data_In_int_reg_r_5_n_0\ : STD_LOGIC;
   signal \Data_In_int_reg[7]_d_axi_i2s_audio_v2_0_AXI_L_inst_Inst_I2sCtl_Inst_I2sRxTx_Data_In_int_reg_r_6_n_0\ : STD_LOGIC;
@@ -459,54 +457,44 @@ architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_i2s_ctl is
   signal WE_L_int_i_3_n_0 : STD_LOGIC;
   signal WE_R_int : STD_LOGIC;
   signal WE_R_int_i_1_n_0 : STD_LOGIC;
-  signal \i__carry__0_i_1__0_n_0\ : STD_LOGIC;
-  signal \i__carry__0_i_2__0_n_0\ : STD_LOGIC;
-  signal \i__carry__0_i_3__0_n_0\ : STD_LOGIC;
-  signal \i__carry__0_i_4__0_n_0\ : STD_LOGIC;
-  signal \i__carry__1_i_1__0_n_0\ : STD_LOGIC;
-  signal \i__carry__1_i_2__0_n_0\ : STD_LOGIC;
-  signal \i__carry__1_i_3__0_n_0\ : STD_LOGIC;
-  signal \i__carry_i_1__0_n_0\ : STD_LOGIC;
-  signal \i__carry_i_2__0_n_0\ : STD_LOGIC;
-  signal \i__carry_i_3_n_0\ : STD_LOGIC;
-  signal \i__carry_i_4_n_0\ : STD_LOGIC;
   signal p_0_in : STD_LOGIC_VECTOR ( 4 downto 0 );
   signal p_0_in_2 : STD_LOGIC;
-  signal \NLW_Cnt_Bclk0_inferred__0/i__carry_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal \NLW_Cnt_Bclk0_inferred__0/i__carry__0_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal \NLW_Cnt_Bclk0_inferred__0/i__carry__1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
-  signal \NLW_Cnt_Bclk0_inferred__0/i__carry__1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal p_1_in : STD_LOGIC_VECTOR ( 31 downto 9 );
+  signal \NLW_Cnt_Bclk0_inferred__0_carry_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal \NLW_Cnt_Bclk0_inferred__0_carry__0_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal \NLW_Cnt_Bclk0_inferred__0_carry__1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
+  signal \NLW_Cnt_Bclk0_inferred__0_carry__1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_Cnt_Bclk1_carry_CO_UNCONNECTED : STD_LOGIC_VECTOR ( 2 to 2 );
   signal NLW_Cnt_Bclk1_carry_O_UNCONNECTED : STD_LOGIC_VECTOR ( 3 to 3 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of BCLK_O_INST_0 : label is "soft_lutpair31";
-  attribute SOFT_HLUTNM of \Cnt_Bclk[1]_i_1\ : label is "soft_lutpair33";
-  attribute SOFT_HLUTNM of \Cnt_Bclk[2]_i_1\ : label is "soft_lutpair33";
-  attribute SOFT_HLUTNM of \Cnt_Bclk[3]_i_1\ : label is "soft_lutpair25";
-  attribute SOFT_HLUTNM of \Cnt_Bclk[4]_i_2\ : label is "soft_lutpair25";
-  attribute SOFT_HLUTNM of \Cnt_Lrclk[0]_i_1\ : label is "soft_lutpair35";
-  attribute SOFT_HLUTNM of \Cnt_Lrclk[1]_i_1\ : label is "soft_lutpair35";
-  attribute SOFT_HLUTNM of \Cnt_Lrclk[2]_i_1\ : label is "soft_lutpair30";
-  attribute SOFT_HLUTNM of \Cnt_Lrclk[3]_i_1\ : label is "soft_lutpair30";
-  attribute SOFT_HLUTNM of \Cnt_Lrclk[4]_i_2\ : label is "soft_lutpair26";
-  attribute SOFT_HLUTNM of \DIV_RATE[1]_i_1\ : label is "soft_lutpair34";
-  attribute SOFT_HLUTNM of \DIV_RATE[2]_i_1\ : label is "soft_lutpair28";
-  attribute SOFT_HLUTNM of \DIV_RATE[3]_i_1\ : label is "soft_lutpair28";
-  attribute SOFT_HLUTNM of \DIV_RATE[4]_i_1\ : label is "soft_lutpair34";
+  attribute SOFT_HLUTNM of BCLK_O_INST_0 : label is "soft_lutpair34";
+  attribute SOFT_HLUTNM of \Cnt_Bclk[1]_i_1\ : label is "soft_lutpair36";
+  attribute SOFT_HLUTNM of \Cnt_Bclk[2]_i_1\ : label is "soft_lutpair36";
+  attribute SOFT_HLUTNM of \Cnt_Bclk[3]_i_1\ : label is "soft_lutpair28";
+  attribute SOFT_HLUTNM of \Cnt_Bclk[4]_i_2\ : label is "soft_lutpair28";
+  attribute SOFT_HLUTNM of \Cnt_Lrclk[0]_i_1\ : label is "soft_lutpair38";
+  attribute SOFT_HLUTNM of \Cnt_Lrclk[1]_i_1\ : label is "soft_lutpair38";
+  attribute SOFT_HLUTNM of \Cnt_Lrclk[2]_i_1\ : label is "soft_lutpair33";
+  attribute SOFT_HLUTNM of \Cnt_Lrclk[3]_i_1\ : label is "soft_lutpair33";
+  attribute SOFT_HLUTNM of \Cnt_Lrclk[4]_i_2\ : label is "soft_lutpair29";
+  attribute SOFT_HLUTNM of \DIV_RATE[1]_i_1\ : label is "soft_lutpair37";
+  attribute SOFT_HLUTNM of \DIV_RATE[2]_i_1\ : label is "soft_lutpair31";
+  attribute SOFT_HLUTNM of \DIV_RATE[3]_i_1\ : label is "soft_lutpair31";
+  attribute SOFT_HLUTNM of \DIV_RATE[4]_i_1\ : label is "soft_lutpair37";
   attribute srl_bus_name : string;
   attribute srl_bus_name of \Data_In_int_reg[6]_srl7___d_axi_i2s_audio_v2_0_AXI_L_inst_Inst_I2sCtl_Inst_I2sRxTx_Data_In_int_reg_r_5\ : label is "U0/\d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sRxTx/Data_In_int_reg ";
   attribute srl_name : string;
   attribute srl_name of \Data_In_int_reg[6]_srl7___d_axi_i2s_audio_v2_0_AXI_L_inst_Inst_I2sCtl_Inst_I2sRxTx_Data_In_int_reg_r_5\ : label is "U0/\d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sRxTx/Data_In_int_reg[6]_srl7___d_axi_i2s_audio_v2_0_AXI_L_inst_Inst_I2sCtl_Inst_I2sRxTx_Data_In_int_reg_r_5 ";
-  attribute SOFT_HLUTNM of \Data_Out_int[31]_i_2\ : label is "soft_lutpair29";
-  attribute SOFT_HLUTNM of \Data_Out_int[31]_i_3\ : label is "soft_lutpair26";
-  attribute SOFT_HLUTNM of \Data_Out_int[7]_i_1\ : label is "soft_lutpair29";
-  attribute SOFT_HLUTNM of Inst_I2sTxFifo_i_26 : label is "soft_lutpair32";
-  attribute SOFT_HLUTNM of LRCLK_O_INST_0 : label is "soft_lutpair31";
-  attribute SOFT_HLUTNM of LRCLK_i_2 : label is "soft_lutpair27";
+  attribute SOFT_HLUTNM of \Data_Out_int[31]_i_2\ : label is "soft_lutpair32";
+  attribute SOFT_HLUTNM of \Data_Out_int[31]_i_3\ : label is "soft_lutpair29";
+  attribute SOFT_HLUTNM of \Data_Out_int[7]_i_1\ : label is "soft_lutpair32";
+  attribute SOFT_HLUTNM of Inst_I2sTxFifo_i_26 : label is "soft_lutpair35";
+  attribute SOFT_HLUTNM of LRCLK_O_INST_0 : label is "soft_lutpair34";
+  attribute SOFT_HLUTNM of LRCLK_i_2 : label is "soft_lutpair30";
   attribute srl_name of Q2F_reg_srl2 : label is "U0/\d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sRxTx/Q2F_reg_srl2 ";
   attribute srl_name of Q2R_reg_srl2 : label is "U0/\d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sRxTx/Q2R_reg_srl2 ";
-  attribute SOFT_HLUTNM of SDATA_O_INST_0 : label is "soft_lutpair32";
-  attribute SOFT_HLUTNM of WE_L_int_i_3 : label is "soft_lutpair27";
+  attribute SOFT_HLUTNM of SDATA_O_INST_0 : label is "soft_lutpair35";
+  attribute SOFT_HLUTNM of WE_L_int_i_3 : label is "soft_lutpair30";
 begin
   CO(0) <= \^co\(0);
   LRCLK <= \^lrclk\;
@@ -538,50 +526,74 @@ BCLK_int_reg: unisim.vcomponents.FDRE
       Q => BCLK_int,
       R => '0'
     );
-\Cnt_Bclk0_inferred__0/i__carry\: unisim.vcomponents.CARRY4
+\Cnt_Bclk0_inferred__0_carry\: unisim.vcomponents.CARRY4
      port map (
       CI => '0',
-      CO(3) => \Cnt_Bclk0_inferred__0/i__carry_n_0\,
-      CO(2) => \Cnt_Bclk0_inferred__0/i__carry_n_1\,
-      CO(1) => \Cnt_Bclk0_inferred__0/i__carry_n_2\,
-      CO(0) => \Cnt_Bclk0_inferred__0/i__carry_n_3\,
+      CO(3) => \Cnt_Bclk0_inferred__0_carry_n_0\,
+      CO(2) => \Cnt_Bclk0_inferred__0_carry_n_1\,
+      CO(1) => \Cnt_Bclk0_inferred__0_carry_n_2\,
+      CO(0) => \Cnt_Bclk0_inferred__0_carry_n_3\,
       CYINIT => '1',
       DI(3 downto 0) => B"0000",
-      O(3 downto 0) => \NLW_Cnt_Bclk0_inferred__0/i__carry_O_UNCONNECTED\(3 downto 0),
-      S(3) => \i__carry_i_1__0_n_0\,
-      S(2) => \i__carry_i_2__0_n_0\,
-      S(1) => \i__carry_i_3_n_0\,
-      S(0) => \i__carry_i_4_n_0\
+      O(3 downto 0) => \NLW_Cnt_Bclk0_inferred__0_carry_O_UNCONNECTED\(3 downto 0),
+      S(3) => Cnt_Bclk1_carry_n_0,
+      S(2) => Cnt_Bclk1_carry_n_0,
+      S(1) => \Cnt_Bclk0_inferred__0_carry_i_3_n_0\,
+      S(0) => \Cnt_Bclk0_inferred__0_carry_i_4_n_0\
     );
-\Cnt_Bclk0_inferred__0/i__carry__0\: unisim.vcomponents.CARRY4
+\Cnt_Bclk0_inferred__0_carry__0\: unisim.vcomponents.CARRY4
      port map (
-      CI => \Cnt_Bclk0_inferred__0/i__carry_n_0\,
-      CO(3) => \Cnt_Bclk0_inferred__0/i__carry__0_n_0\,
-      CO(2) => \Cnt_Bclk0_inferred__0/i__carry__0_n_1\,
-      CO(1) => \Cnt_Bclk0_inferred__0/i__carry__0_n_2\,
-      CO(0) => \Cnt_Bclk0_inferred__0/i__carry__0_n_3\,
+      CI => \Cnt_Bclk0_inferred__0_carry_n_0\,
+      CO(3) => \Cnt_Bclk0_inferred__0_carry__0_n_0\,
+      CO(2) => \Cnt_Bclk0_inferred__0_carry__0_n_1\,
+      CO(1) => \Cnt_Bclk0_inferred__0_carry__0_n_2\,
+      CO(0) => \Cnt_Bclk0_inferred__0_carry__0_n_3\,
       CYINIT => '0',
       DI(3 downto 0) => B"0000",
-      O(3 downto 0) => \NLW_Cnt_Bclk0_inferred__0/i__carry__0_O_UNCONNECTED\(3 downto 0),
-      S(3) => \i__carry__0_i_1__0_n_0\,
-      S(2) => \i__carry__0_i_2__0_n_0\,
-      S(1) => \i__carry__0_i_3__0_n_0\,
-      S(0) => \i__carry__0_i_4__0_n_0\
+      O(3 downto 0) => \NLW_Cnt_Bclk0_inferred__0_carry__0_O_UNCONNECTED\(3 downto 0),
+      S(3) => Cnt_Bclk1_carry_n_0,
+      S(2) => Cnt_Bclk1_carry_n_0,
+      S(1) => Cnt_Bclk1_carry_n_0,
+      S(0) => Cnt_Bclk1_carry_n_0
     );
-\Cnt_Bclk0_inferred__0/i__carry__1\: unisim.vcomponents.CARRY4
+\Cnt_Bclk0_inferred__0_carry__1\: unisim.vcomponents.CARRY4
      port map (
-      CI => \Cnt_Bclk0_inferred__0/i__carry__0_n_0\,
-      CO(3) => \NLW_Cnt_Bclk0_inferred__0/i__carry__1_CO_UNCONNECTED\(3),
+      CI => \Cnt_Bclk0_inferred__0_carry__0_n_0\,
+      CO(3) => \NLW_Cnt_Bclk0_inferred__0_carry__1_CO_UNCONNECTED\(3),
       CO(2) => \^co\(0),
-      CO(1) => \Cnt_Bclk0_inferred__0/i__carry__1_n_2\,
-      CO(0) => \Cnt_Bclk0_inferred__0/i__carry__1_n_3\,
+      CO(1) => \Cnt_Bclk0_inferred__0_carry__1_n_2\,
+      CO(0) => \Cnt_Bclk0_inferred__0_carry__1_n_3\,
       CYINIT => '0',
       DI(3 downto 0) => B"0000",
-      O(3 downto 0) => \NLW_Cnt_Bclk0_inferred__0/i__carry__1_O_UNCONNECTED\(3 downto 0),
+      O(3 downto 0) => \NLW_Cnt_Bclk0_inferred__0_carry__1_O_UNCONNECTED\(3 downto 0),
       S(3) => '0',
-      S(2) => \i__carry__1_i_1__0_n_0\,
-      S(1) => \i__carry__1_i_2__0_n_0\,
-      S(0) => \i__carry__1_i_3__0_n_0\
+      S(2) => Cnt_Bclk1_carry_n_0,
+      S(1) => Cnt_Bclk1_carry_n_0,
+      S(0) => Cnt_Bclk1_carry_n_0
+    );
+\Cnt_Bclk0_inferred__0_carry_i_3\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"4004"
+    )
+        port map (
+      I0 => \Cnt_Bclk_reg__0\(4),
+      I1 => Cnt_Bclk1_carry_n_0,
+      I2 => Cnt_Bclk1(3),
+      I3 => \Cnt_Bclk_reg__0\(3),
+      O => \Cnt_Bclk0_inferred__0_carry_i_3_n_0\
+    );
+\Cnt_Bclk0_inferred__0_carry_i_4\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0990000000000990"
+    )
+        port map (
+      I0 => \Cnt_Bclk_reg__0\(1),
+      I1 => Cnt_Bclk1(1),
+      I2 => \Cnt_Bclk_reg__0\(0),
+      I3 => DIV_RATE(1),
+      I4 => \Cnt_Bclk_reg__0\(2),
+      I5 => Cnt_Bclk1(2),
+      O => \Cnt_Bclk0_inferred__0_carry_i_4_n_0\
     );
 Cnt_Bclk1_carry: unisim.vcomponents.CARRY4
      port map (
@@ -919,7 +931,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(8),
+      D => p_1_in(9),
       Q => D_L_O_int(0),
       R => Q_O
     );
@@ -927,7 +939,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(18),
+      D => p_1_in(19),
       Q => D_L_O_int(10),
       R => Q_O
     );
@@ -935,7 +947,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(19),
+      D => p_1_in(20),
       Q => D_L_O_int(11),
       R => Q_O
     );
@@ -943,7 +955,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(20),
+      D => p_1_in(21),
       Q => D_L_O_int(12),
       R => Q_O
     );
@@ -951,7 +963,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(21),
+      D => p_1_in(22),
       Q => D_L_O_int(13),
       R => Q_O
     );
@@ -959,7 +971,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(22),
+      D => p_1_in(23),
       Q => D_L_O_int(14),
       R => Q_O
     );
@@ -967,7 +979,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(23),
+      D => p_1_in(24),
       Q => D_L_O_int(15),
       R => Q_O
     );
@@ -975,7 +987,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(24),
+      D => p_1_in(25),
       Q => D_L_O_int(16),
       R => Q_O
     );
@@ -983,7 +995,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(25),
+      D => p_1_in(26),
       Q => D_L_O_int(17),
       R => Q_O
     );
@@ -991,7 +1003,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(26),
+      D => p_1_in(27),
       Q => D_L_O_int(18),
       R => Q_O
     );
@@ -999,7 +1011,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(27),
+      D => p_1_in(28),
       Q => D_L_O_int(19),
       R => Q_O
     );
@@ -1007,7 +1019,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(9),
+      D => p_1_in(10),
       Q => D_L_O_int(1),
       R => Q_O
     );
@@ -1015,7 +1027,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(28),
+      D => p_1_in(29),
       Q => D_L_O_int(20),
       R => Q_O
     );
@@ -1023,7 +1035,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(29),
+      D => p_1_in(30),
       Q => D_L_O_int(21),
       R => Q_O
     );
@@ -1031,7 +1043,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(30),
+      D => p_1_in(31),
       Q => D_L_O_int(22),
       R => Q_O
     );
@@ -1047,7 +1059,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(10),
+      D => p_1_in(11),
       Q => D_L_O_int(2),
       R => Q_O
     );
@@ -1055,7 +1067,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(11),
+      D => p_1_in(12),
       Q => D_L_O_int(3),
       R => Q_O
     );
@@ -1063,7 +1075,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(12),
+      D => p_1_in(13),
       Q => D_L_O_int(4),
       R => Q_O
     );
@@ -1071,7 +1083,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(13),
+      D => p_1_in(14),
       Q => D_L_O_int(5),
       R => Q_O
     );
@@ -1079,7 +1091,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(14),
+      D => p_1_in(15),
       Q => D_L_O_int(6),
       R => Q_O
     );
@@ -1087,7 +1099,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(15),
+      D => p_1_in(16),
       Q => D_L_O_int(7),
       R => Q_O
     );
@@ -1095,7 +1107,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(16),
+      D => p_1_in(17),
       Q => D_L_O_int(8),
       R => Q_O
     );
@@ -1103,7 +1115,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_L_O_int_1,
-      D => Data_In_int(17),
+      D => p_1_in(18),
       Q => D_L_O_int(9),
       R => Q_O
     );
@@ -1123,7 +1135,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(8),
+      D => p_1_in(9),
       Q => D_R_O_int(0),
       R => Q_O
     );
@@ -1131,7 +1143,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(18),
+      D => p_1_in(19),
       Q => D_R_O_int(10),
       R => Q_O
     );
@@ -1139,7 +1151,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(19),
+      D => p_1_in(20),
       Q => D_R_O_int(11),
       R => Q_O
     );
@@ -1147,7 +1159,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(20),
+      D => p_1_in(21),
       Q => D_R_O_int(12),
       R => Q_O
     );
@@ -1155,7 +1167,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(21),
+      D => p_1_in(22),
       Q => D_R_O_int(13),
       R => Q_O
     );
@@ -1163,7 +1175,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(22),
+      D => p_1_in(23),
       Q => D_R_O_int(14),
       R => Q_O
     );
@@ -1171,7 +1183,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(23),
+      D => p_1_in(24),
       Q => D_R_O_int(15),
       R => Q_O
     );
@@ -1179,7 +1191,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(24),
+      D => p_1_in(25),
       Q => D_R_O_int(16),
       R => Q_O
     );
@@ -1187,7 +1199,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(25),
+      D => p_1_in(26),
       Q => D_R_O_int(17),
       R => Q_O
     );
@@ -1195,7 +1207,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(26),
+      D => p_1_in(27),
       Q => D_R_O_int(18),
       R => Q_O
     );
@@ -1203,7 +1215,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(27),
+      D => p_1_in(28),
       Q => D_R_O_int(19),
       R => Q_O
     );
@@ -1211,7 +1223,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(9),
+      D => p_1_in(10),
       Q => D_R_O_int(1),
       R => Q_O
     );
@@ -1219,7 +1231,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(28),
+      D => p_1_in(29),
       Q => D_R_O_int(20),
       R => Q_O
     );
@@ -1227,7 +1239,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(29),
+      D => p_1_in(30),
       Q => D_R_O_int(21),
       R => Q_O
     );
@@ -1235,7 +1247,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(30),
+      D => p_1_in(31),
       Q => D_R_O_int(22),
       R => Q_O
     );
@@ -1251,7 +1263,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(10),
+      D => p_1_in(11),
       Q => D_R_O_int(2),
       R => Q_O
     );
@@ -1259,7 +1271,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(11),
+      D => p_1_in(12),
       Q => D_R_O_int(3),
       R => Q_O
     );
@@ -1267,7 +1279,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(12),
+      D => p_1_in(13),
       Q => D_R_O_int(4),
       R => Q_O
     );
@@ -1275,7 +1287,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(13),
+      D => p_1_in(14),
       Q => D_R_O_int(5),
       R => Q_O
     );
@@ -1283,7 +1295,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(14),
+      D => p_1_in(15),
       Q => D_R_O_int(6),
       R => Q_O
     );
@@ -1291,7 +1303,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(15),
+      D => p_1_in(16),
       Q => D_R_O_int(7),
       R => Q_O
     );
@@ -1299,7 +1311,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(16),
+      D => p_1_in(17),
       Q => D_R_O_int(8),
       R => Q_O
     );
@@ -1307,7 +1319,7 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => D_R_O_int_0,
-      D => Data_In_int(17),
+      D => p_1_in(18),
       Q => D_R_O_int(9),
       R => Q_O
     );
@@ -1338,175 +1350,175 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(9),
-      Q => Data_In_int(10),
+      D => p_1_in(10),
+      Q => p_1_in(11),
       R => \Data_In_int[31]_i_1_n_0\
     );
 \Data_In_int_reg[11]\: unisim.vcomponents.FDRE
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(10),
-      Q => Data_In_int(11),
+      D => p_1_in(11),
+      Q => p_1_in(12),
       R => \Data_In_int[31]_i_1_n_0\
     );
 \Data_In_int_reg[12]\: unisim.vcomponents.FDRE
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(11),
-      Q => Data_In_int(12),
+      D => p_1_in(12),
+      Q => p_1_in(13),
       R => \Data_In_int[31]_i_1_n_0\
     );
 \Data_In_int_reg[13]\: unisim.vcomponents.FDRE
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(12),
-      Q => Data_In_int(13),
+      D => p_1_in(13),
+      Q => p_1_in(14),
       R => \Data_In_int[31]_i_1_n_0\
     );
 \Data_In_int_reg[14]\: unisim.vcomponents.FDRE
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(13),
-      Q => Data_In_int(14),
+      D => p_1_in(14),
+      Q => p_1_in(15),
       R => \Data_In_int[31]_i_1_n_0\
     );
 \Data_In_int_reg[15]\: unisim.vcomponents.FDRE
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(14),
-      Q => Data_In_int(15),
+      D => p_1_in(15),
+      Q => p_1_in(16),
       R => \Data_In_int[31]_i_1_n_0\
     );
 \Data_In_int_reg[16]\: unisim.vcomponents.FDRE
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(15),
-      Q => Data_In_int(16),
+      D => p_1_in(16),
+      Q => p_1_in(17),
       R => \Data_In_int[31]_i_1_n_0\
     );
 \Data_In_int_reg[17]\: unisim.vcomponents.FDRE
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(16),
-      Q => Data_In_int(17),
+      D => p_1_in(17),
+      Q => p_1_in(18),
       R => \Data_In_int[31]_i_1_n_0\
     );
 \Data_In_int_reg[18]\: unisim.vcomponents.FDRE
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(17),
-      Q => Data_In_int(18),
+      D => p_1_in(18),
+      Q => p_1_in(19),
       R => \Data_In_int[31]_i_1_n_0\
     );
 \Data_In_int_reg[19]\: unisim.vcomponents.FDRE
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(18),
-      Q => Data_In_int(19),
+      D => p_1_in(19),
+      Q => p_1_in(20),
       R => \Data_In_int[31]_i_1_n_0\
     );
 \Data_In_int_reg[20]\: unisim.vcomponents.FDRE
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(19),
-      Q => Data_In_int(20),
+      D => p_1_in(20),
+      Q => p_1_in(21),
       R => \Data_In_int[31]_i_1_n_0\
     );
 \Data_In_int_reg[21]\: unisim.vcomponents.FDRE
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(20),
-      Q => Data_In_int(21),
+      D => p_1_in(21),
+      Q => p_1_in(22),
       R => \Data_In_int[31]_i_1_n_0\
     );
 \Data_In_int_reg[22]\: unisim.vcomponents.FDRE
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(21),
-      Q => Data_In_int(22),
+      D => p_1_in(22),
+      Q => p_1_in(23),
       R => \Data_In_int[31]_i_1_n_0\
     );
 \Data_In_int_reg[23]\: unisim.vcomponents.FDRE
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(22),
-      Q => Data_In_int(23),
+      D => p_1_in(23),
+      Q => p_1_in(24),
       R => \Data_In_int[31]_i_1_n_0\
     );
 \Data_In_int_reg[24]\: unisim.vcomponents.FDRE
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(23),
-      Q => Data_In_int(24),
+      D => p_1_in(24),
+      Q => p_1_in(25),
       R => \Data_In_int[31]_i_1_n_0\
     );
 \Data_In_int_reg[25]\: unisim.vcomponents.FDRE
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(24),
-      Q => Data_In_int(25),
+      D => p_1_in(25),
+      Q => p_1_in(26),
       R => \Data_In_int[31]_i_1_n_0\
     );
 \Data_In_int_reg[26]\: unisim.vcomponents.FDRE
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(25),
-      Q => Data_In_int(26),
+      D => p_1_in(26),
+      Q => p_1_in(27),
       R => \Data_In_int[31]_i_1_n_0\
     );
 \Data_In_int_reg[27]\: unisim.vcomponents.FDRE
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(26),
-      Q => Data_In_int(27),
+      D => p_1_in(27),
+      Q => p_1_in(28),
       R => \Data_In_int[31]_i_1_n_0\
     );
 \Data_In_int_reg[28]\: unisim.vcomponents.FDRE
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(27),
-      Q => Data_In_int(28),
+      D => p_1_in(28),
+      Q => p_1_in(29),
       R => \Data_In_int[31]_i_1_n_0\
     );
 \Data_In_int_reg[29]\: unisim.vcomponents.FDRE
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(28),
-      Q => Data_In_int(29),
+      D => p_1_in(29),
+      Q => p_1_in(30),
       R => \Data_In_int[31]_i_1_n_0\
     );
 \Data_In_int_reg[30]\: unisim.vcomponents.FDRE
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(29),
-      Q => Data_In_int(30),
+      D => p_1_in(30),
+      Q => p_1_in(31),
       R => \Data_In_int[31]_i_1_n_0\
     );
 \Data_In_int_reg[31]\: unisim.vcomponents.FDRE
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(30),
+      D => p_1_in(31),
       Q => Data_In_int(31),
       R => \Data_In_int[31]_i_1_n_0\
     );
@@ -1534,15 +1546,15 @@ Cnt_Bclk1_carry_i_3: unisim.vcomponents.LUT1
       C => CLK_12_288,
       CE => BCLK_Rise,
       D => Data_In_int_reg_gate_n_0,
-      Q => Data_In_int(8),
+      Q => p_1_in(9),
       R => \Data_In_int[31]_i_1_n_0\
     );
 \Data_In_int_reg[9]\: unisim.vcomponents.FDRE
      port map (
       C => CLK_12_288,
       CE => BCLK_Rise,
-      D => Data_In_int(8),
-      Q => Data_In_int(9),
+      D => p_1_in(9),
+      Q => p_1_in(10),
       R => \Data_In_int[31]_i_1_n_0\
     );
 Data_In_int_reg_gate: unisim.vcomponents.LUT2
@@ -2317,7 +2329,7 @@ Inst_I2sRxFifo_i_26: unisim.vcomponents.LUT3
       I0 => WE_R_int,
       I1 => Q_O_reg_1,
       I2 => WE_L_int,
-      O => ram_full_fb_i_reg
+      O => \gic0.gc0.count_reg[11]\
     );
 Inst_I2sRxFifo_i_3: unisim.vcomponents.LUT3
     generic map(
@@ -2588,108 +2600,12 @@ WE_R_int_reg: unisim.vcomponents.FDRE
       Q => WE_R_int,
       R => '0'
     );
-\i__carry__0_i_1__0\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => Cnt_Bclk1_carry_n_0,
-      O => \i__carry__0_i_1__0_n_0\
-    );
-\i__carry__0_i_2__0\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => Cnt_Bclk1_carry_n_0,
-      O => \i__carry__0_i_2__0_n_0\
-    );
-\i__carry__0_i_3__0\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => Cnt_Bclk1_carry_n_0,
-      O => \i__carry__0_i_3__0_n_0\
-    );
-\i__carry__0_i_4__0\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => Cnt_Bclk1_carry_n_0,
-      O => \i__carry__0_i_4__0_n_0\
-    );
-\i__carry__1_i_1__0\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => Cnt_Bclk1_carry_n_0,
-      O => \i__carry__1_i_1__0_n_0\
-    );
-\i__carry__1_i_2__0\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => Cnt_Bclk1_carry_n_0,
-      O => \i__carry__1_i_2__0_n_0\
-    );
-\i__carry__1_i_3__0\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => Cnt_Bclk1_carry_n_0,
-      O => \i__carry__1_i_3__0_n_0\
-    );
-\i__carry_i_1__0\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => Cnt_Bclk1_carry_n_0,
-      O => \i__carry_i_1__0_n_0\
-    );
-\i__carry_i_2__0\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => Cnt_Bclk1_carry_n_0,
-      O => \i__carry_i_2__0_n_0\
-    );
-\i__carry_i_3\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"4004"
-    )
-        port map (
-      I0 => \Cnt_Bclk_reg__0\(4),
-      I1 => Cnt_Bclk1_carry_n_0,
-      I2 => Cnt_Bclk1(3),
-      I3 => \Cnt_Bclk_reg__0\(3),
-      O => \i__carry_i_3_n_0\
-    );
-\i__carry_i_4\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0990000000000990"
-    )
-        port map (
-      I0 => \Cnt_Bclk_reg__0\(1),
-      I1 => Cnt_Bclk1(1),
-      I2 => \Cnt_Bclk_reg__0\(0),
-      I3 => DIV_RATE(1),
-      I4 => \Cnt_Bclk_reg__0\(2),
-      I5 => Cnt_Bclk1(2),
-      O => \i__carry_i_4_n_0\
-    );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_i2s_stream is
+entity \design_1_d_axi_i2s_audio_0_0_i2s_stream\ is
   port (
     \nr_of_wr_reg[0]_0\ : out STD_LOGIC_VECTOR ( 0 to 0 );
     CO : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -2711,16 +2627,13 @@ entity design_1_d_axi_i2s_audio_0_0_i2s_stream is
     S_AXIS_MM2S_ACLK : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_i2s_stream : entity is "i2s_stream";
-end design_1_d_axi_i2s_audio_0_0_i2s_stream;
+end \design_1_d_axi_i2s_audio_0_0_i2s_stream\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_i2s_stream is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_i2s_stream\ is
   signal \^co\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^m_axis_s2mm_tlast\ : STD_LOGIC;
   signal TX_FIFO_D_O : STD_LOGIC_VECTOR ( 23 downto 0 );
   signal \TX_FIFO_D_O[23]_i_1_n_0\ : STD_LOGIC;
-  signal TX_FIFO_D_O_regn_0_0 : STD_LOGIC;
   signal \gtOp_carry__0_i_1_n_0\ : STD_LOGIC;
   signal \gtOp_carry__0_i_2_n_0\ : STD_LOGIC;
   signal \gtOp_carry__0_i_3_n_0\ : STD_LOGIC;
@@ -2752,37 +2665,37 @@ architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_i2s_stream is
   signal gtOp_carry_n_1 : STD_LOGIC;
   signal gtOp_carry_n_2 : STD_LOGIC;
   signal gtOp_carry_n_3 : STD_LOGIC;
-  signal \gtOp_inferred__0/i__carry__0_n_0\ : STD_LOGIC;
-  signal \gtOp_inferred__0/i__carry__0_n_1\ : STD_LOGIC;
-  signal \gtOp_inferred__0/i__carry__0_n_2\ : STD_LOGIC;
-  signal \gtOp_inferred__0/i__carry__0_n_3\ : STD_LOGIC;
-  signal \gtOp_inferred__0/i__carry__1_n_2\ : STD_LOGIC;
-  signal \gtOp_inferred__0/i__carry__1_n_3\ : STD_LOGIC;
-  signal \gtOp_inferred__0/i__carry_n_0\ : STD_LOGIC;
-  signal \gtOp_inferred__0/i__carry_n_1\ : STD_LOGIC;
-  signal \gtOp_inferred__0/i__carry_n_2\ : STD_LOGIC;
-  signal \gtOp_inferred__0/i__carry_n_3\ : STD_LOGIC;
-  signal \i__carry__0_i_1_n_0\ : STD_LOGIC;
-  signal \i__carry__0_i_2_n_0\ : STD_LOGIC;
-  signal \i__carry__0_i_3_n_0\ : STD_LOGIC;
-  signal \i__carry__0_i_4_n_0\ : STD_LOGIC;
-  signal \i__carry__0_i_5_n_0\ : STD_LOGIC;
-  signal \i__carry__0_i_6_n_0\ : STD_LOGIC;
-  signal \i__carry__0_i_7_n_0\ : STD_LOGIC;
-  signal \i__carry__0_i_8_n_0\ : STD_LOGIC;
-  signal \i__carry__1_i_1_n_0\ : STD_LOGIC;
-  signal \i__carry__1_i_2_n_0\ : STD_LOGIC;
-  signal \i__carry__1_i_3_n_0\ : STD_LOGIC;
-  signal \i__carry__1_i_4_n_0\ : STD_LOGIC;
-  signal \i__carry__1_i_5_n_0\ : STD_LOGIC;
-  signal \i__carry_i_1_n_0\ : STD_LOGIC;
-  signal \i__carry_i_2_n_0\ : STD_LOGIC;
-  signal \i__carry_i_3__0_n_0\ : STD_LOGIC;
-  signal \i__carry_i_4__0_n_0\ : STD_LOGIC;
-  signal \i__carry_i_5_n_0\ : STD_LOGIC;
-  signal \i__carry_i_6_n_0\ : STD_LOGIC;
-  signal \i__carry_i_7_n_0\ : STD_LOGIC;
-  signal \i__carry_i_8_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry__0_i_1_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry__0_i_2_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry__0_i_3_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry__0_i_4_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry__0_i_5_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry__0_i_6_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry__0_i_7_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry__0_i_8_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry__0_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry__0_n_1\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry__0_n_2\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry__0_n_3\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry__1_i_1_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry__1_i_2_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry__1_i_3_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry__1_i_4_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry__1_i_5_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry__1_n_2\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry__1_n_3\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry_i_1_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry_i_2_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry_i_3_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry_i_4_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry_i_5_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry_i_6_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry_i_7_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry_i_8_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry_n_0\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry_n_1\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry_n_2\ : STD_LOGIC;
+  signal \gtOp_inferred__0_carry_n_3\ : STD_LOGIC;
   signal minusOp : STD_LOGIC_VECTOR ( 20 downto 1 );
   signal nr_of_rd : STD_LOGIC_VECTOR ( 20 downto 0 );
   signal \nr_of_rd[0]_i_1_n_0\ : STD_LOGIC;
@@ -2919,10 +2832,10 @@ architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_i2s_stream is
   signal \NLW_gtOp_carry__0_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_gtOp_carry__1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   signal \NLW_gtOp_carry__1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal \NLW_gtOp_inferred__0/i__carry_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal \NLW_gtOp_inferred__0/i__carry__0_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal \NLW_gtOp_inferred__0/i__carry__1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
-  signal \NLW_gtOp_inferred__0/i__carry__1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal \NLW_gtOp_inferred__0_carry_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal \NLW_gtOp_inferred__0_carry__0_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal \NLW_gtOp_inferred__0_carry__1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
+  signal \NLW_gtOp_inferred__0_carry__1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_nr_of_rd_reg[20]_i_3_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   signal \NLW_nr_of_wr_reg[20]_i_3_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
 begin
@@ -3195,204 +3108,268 @@ Inst_I2sTxFifo_i_9: unisim.vcomponents.LUT3
       O => \TX_FIFO_D_O[23]_i_1_n_0\
     );
 \TX_FIFO_D_O_reg[0]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(0),
       Q => TX_FIFO_D_O(0),
       R => '0'
     );
 \TX_FIFO_D_O_reg[10]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(10),
       Q => TX_FIFO_D_O(10),
       R => '0'
     );
 \TX_FIFO_D_O_reg[11]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(11),
       Q => TX_FIFO_D_O(11),
       R => '0'
     );
 \TX_FIFO_D_O_reg[12]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(12),
       Q => TX_FIFO_D_O(12),
       R => '0'
     );
 \TX_FIFO_D_O_reg[13]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(13),
       Q => TX_FIFO_D_O(13),
       R => '0'
     );
 \TX_FIFO_D_O_reg[14]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(14),
       Q => TX_FIFO_D_O(14),
       R => '0'
     );
 \TX_FIFO_D_O_reg[15]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(15),
       Q => TX_FIFO_D_O(15),
       R => '0'
     );
 \TX_FIFO_D_O_reg[16]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(16),
       Q => TX_FIFO_D_O(16),
       R => '0'
     );
 \TX_FIFO_D_O_reg[17]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(17),
       Q => TX_FIFO_D_O(17),
       R => '0'
     );
 \TX_FIFO_D_O_reg[18]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(18),
       Q => TX_FIFO_D_O(18),
       R => '0'
     );
 \TX_FIFO_D_O_reg[19]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(19),
       Q => TX_FIFO_D_O(19),
       R => '0'
     );
 \TX_FIFO_D_O_reg[1]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(1),
       Q => TX_FIFO_D_O(1),
       R => '0'
     );
 \TX_FIFO_D_O_reg[20]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(20),
       Q => TX_FIFO_D_O(20),
       R => '0'
     );
 \TX_FIFO_D_O_reg[21]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(21),
       Q => TX_FIFO_D_O(21),
       R => '0'
     );
 \TX_FIFO_D_O_reg[22]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(22),
       Q => TX_FIFO_D_O(22),
       R => '0'
     );
 \TX_FIFO_D_O_reg[23]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(23),
       Q => TX_FIFO_D_O(23),
       R => '0'
     );
 \TX_FIFO_D_O_reg[2]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(2),
       Q => TX_FIFO_D_O(2),
       R => '0'
     );
 \TX_FIFO_D_O_reg[3]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(3),
       Q => TX_FIFO_D_O(3),
       R => '0'
     );
 \TX_FIFO_D_O_reg[4]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(4),
       Q => TX_FIFO_D_O(4),
       R => '0'
     );
 \TX_FIFO_D_O_reg[5]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(5),
       Q => TX_FIFO_D_O(5),
       R => '0'
     );
 \TX_FIFO_D_O_reg[6]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(6),
       Q => TX_FIFO_D_O(6),
       R => '0'
     );
 \TX_FIFO_D_O_reg[7]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(7),
       Q => TX_FIFO_D_O(7),
       R => '0'
     );
 \TX_FIFO_D_O_reg[8]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(8),
       Q => TX_FIFO_D_O(8),
       R => '0'
     );
 \TX_FIFO_D_O_reg[9]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => \TX_FIFO_D_O[23]_i_1_n_0\,
       D => S_AXIS_MM2S_TDATA(9),
       Q => TX_FIFO_D_O(9),
       R => '0'
-    );
-TX_FIFO_D_O_regi_0: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => S_AXIS_MM2S_ACLK,
-      O => TX_FIFO_D_O_regn_0_0
     );
 gtOp_carry: unisim.vcomponents.CARRY4
      port map (
@@ -3636,247 +3613,247 @@ gtOp_carry_i_8: unisim.vcomponents.LUT2
       I1 => nr_of_wr(1),
       O => gtOp_carry_i_8_n_0
     );
-\gtOp_inferred__0/i__carry\: unisim.vcomponents.CARRY4
+\gtOp_inferred__0_carry\: unisim.vcomponents.CARRY4
      port map (
       CI => '0',
-      CO(3) => \gtOp_inferred__0/i__carry_n_0\,
-      CO(2) => \gtOp_inferred__0/i__carry_n_1\,
-      CO(1) => \gtOp_inferred__0/i__carry_n_2\,
-      CO(0) => \gtOp_inferred__0/i__carry_n_3\,
+      CO(3) => \gtOp_inferred__0_carry_n_0\,
+      CO(2) => \gtOp_inferred__0_carry_n_1\,
+      CO(1) => \gtOp_inferred__0_carry_n_2\,
+      CO(0) => \gtOp_inferred__0_carry_n_3\,
       CYINIT => '0',
-      DI(3) => \i__carry_i_1_n_0\,
-      DI(2) => \i__carry_i_2_n_0\,
-      DI(1) => \i__carry_i_3__0_n_0\,
-      DI(0) => \i__carry_i_4__0_n_0\,
-      O(3 downto 0) => \NLW_gtOp_inferred__0/i__carry_O_UNCONNECTED\(3 downto 0),
-      S(3) => \i__carry_i_5_n_0\,
-      S(2) => \i__carry_i_6_n_0\,
-      S(1) => \i__carry_i_7_n_0\,
-      S(0) => \i__carry_i_8_n_0\
+      DI(3) => \gtOp_inferred__0_carry_i_1_n_0\,
+      DI(2) => \gtOp_inferred__0_carry_i_2_n_0\,
+      DI(1) => \gtOp_inferred__0_carry_i_3_n_0\,
+      DI(0) => \gtOp_inferred__0_carry_i_4_n_0\,
+      O(3 downto 0) => \NLW_gtOp_inferred__0_carry_O_UNCONNECTED\(3 downto 0),
+      S(3) => \gtOp_inferred__0_carry_i_5_n_0\,
+      S(2) => \gtOp_inferred__0_carry_i_6_n_0\,
+      S(1) => \gtOp_inferred__0_carry_i_7_n_0\,
+      S(0) => \gtOp_inferred__0_carry_i_8_n_0\
     );
-\gtOp_inferred__0/i__carry__0\: unisim.vcomponents.CARRY4
+\gtOp_inferred__0_carry__0\: unisim.vcomponents.CARRY4
      port map (
-      CI => \gtOp_inferred__0/i__carry_n_0\,
-      CO(3) => \gtOp_inferred__0/i__carry__0_n_0\,
-      CO(2) => \gtOp_inferred__0/i__carry__0_n_1\,
-      CO(1) => \gtOp_inferred__0/i__carry__0_n_2\,
-      CO(0) => \gtOp_inferred__0/i__carry__0_n_3\,
+      CI => \gtOp_inferred__0_carry_n_0\,
+      CO(3) => \gtOp_inferred__0_carry__0_n_0\,
+      CO(2) => \gtOp_inferred__0_carry__0_n_1\,
+      CO(1) => \gtOp_inferred__0_carry__0_n_2\,
+      CO(0) => \gtOp_inferred__0_carry__0_n_3\,
       CYINIT => '0',
-      DI(3) => \i__carry__0_i_1_n_0\,
-      DI(2) => \i__carry__0_i_2_n_0\,
-      DI(1) => \i__carry__0_i_3_n_0\,
-      DI(0) => \i__carry__0_i_4_n_0\,
-      O(3 downto 0) => \NLW_gtOp_inferred__0/i__carry__0_O_UNCONNECTED\(3 downto 0),
-      S(3) => \i__carry__0_i_5_n_0\,
-      S(2) => \i__carry__0_i_6_n_0\,
-      S(1) => \i__carry__0_i_7_n_0\,
-      S(0) => \i__carry__0_i_8_n_0\
+      DI(3) => \gtOp_inferred__0_carry__0_i_1_n_0\,
+      DI(2) => \gtOp_inferred__0_carry__0_i_2_n_0\,
+      DI(1) => \gtOp_inferred__0_carry__0_i_3_n_0\,
+      DI(0) => \gtOp_inferred__0_carry__0_i_4_n_0\,
+      O(3 downto 0) => \NLW_gtOp_inferred__0_carry__0_O_UNCONNECTED\(3 downto 0),
+      S(3) => \gtOp_inferred__0_carry__0_i_5_n_0\,
+      S(2) => \gtOp_inferred__0_carry__0_i_6_n_0\,
+      S(1) => \gtOp_inferred__0_carry__0_i_7_n_0\,
+      S(0) => \gtOp_inferred__0_carry__0_i_8_n_0\
     );
-\gtOp_inferred__0/i__carry__1\: unisim.vcomponents.CARRY4
+\gtOp_inferred__0_carry__0_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"E"
+    )
+        port map (
+      I0 => nr_of_rd(14),
+      I1 => nr_of_rd(15),
+      O => \gtOp_inferred__0_carry__0_i_1_n_0\
+    );
+\gtOp_inferred__0_carry__0_i_2\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"E"
+    )
+        port map (
+      I0 => nr_of_rd(12),
+      I1 => nr_of_rd(13),
+      O => \gtOp_inferred__0_carry__0_i_2_n_0\
+    );
+\gtOp_inferred__0_carry__0_i_3\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"E"
+    )
+        port map (
+      I0 => nr_of_rd(10),
+      I1 => nr_of_rd(11),
+      O => \gtOp_inferred__0_carry__0_i_3_n_0\
+    );
+\gtOp_inferred__0_carry__0_i_4\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"E"
+    )
+        port map (
+      I0 => nr_of_rd(8),
+      I1 => nr_of_rd(9),
+      O => \gtOp_inferred__0_carry__0_i_4_n_0\
+    );
+\gtOp_inferred__0_carry__0_i_5\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => nr_of_rd(14),
+      I1 => nr_of_rd(15),
+      O => \gtOp_inferred__0_carry__0_i_5_n_0\
+    );
+\gtOp_inferred__0_carry__0_i_6\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => nr_of_rd(12),
+      I1 => nr_of_rd(13),
+      O => \gtOp_inferred__0_carry__0_i_6_n_0\
+    );
+\gtOp_inferred__0_carry__0_i_7\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => nr_of_rd(10),
+      I1 => nr_of_rd(11),
+      O => \gtOp_inferred__0_carry__0_i_7_n_0\
+    );
+\gtOp_inferred__0_carry__0_i_8\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => nr_of_rd(8),
+      I1 => nr_of_rd(9),
+      O => \gtOp_inferred__0_carry__0_i_8_n_0\
+    );
+\gtOp_inferred__0_carry__1\: unisim.vcomponents.CARRY4
      port map (
-      CI => \gtOp_inferred__0/i__carry__0_n_0\,
-      CO(3) => \NLW_gtOp_inferred__0/i__carry__1_CO_UNCONNECTED\(3),
+      CI => \gtOp_inferred__0_carry__0_n_0\,
+      CO(3) => \NLW_gtOp_inferred__0_carry__1_CO_UNCONNECTED\(3),
       CO(2) => \^co\(0),
-      CO(1) => \gtOp_inferred__0/i__carry__1_n_2\,
-      CO(0) => \gtOp_inferred__0/i__carry__1_n_3\,
+      CO(1) => \gtOp_inferred__0_carry__1_n_2\,
+      CO(0) => \gtOp_inferred__0_carry__1_n_3\,
       CYINIT => '0',
       DI(3) => '0',
       DI(2) => nr_of_rd(20),
-      DI(1) => \i__carry__1_i_1_n_0\,
-      DI(0) => \i__carry__1_i_2_n_0\,
-      O(3 downto 0) => \NLW_gtOp_inferred__0/i__carry__1_O_UNCONNECTED\(3 downto 0),
+      DI(1) => \gtOp_inferred__0_carry__1_i_1_n_0\,
+      DI(0) => \gtOp_inferred__0_carry__1_i_2_n_0\,
+      O(3 downto 0) => \NLW_gtOp_inferred__0_carry__1_O_UNCONNECTED\(3 downto 0),
       S(3) => '0',
-      S(2) => \i__carry__1_i_3_n_0\,
-      S(1) => \i__carry__1_i_4_n_0\,
-      S(0) => \i__carry__1_i_5_n_0\
+      S(2) => \gtOp_inferred__0_carry__1_i_3_n_0\,
+      S(1) => \gtOp_inferred__0_carry__1_i_4_n_0\,
+      S(0) => \gtOp_inferred__0_carry__1_i_5_n_0\
     );
-\i__carry__0_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"E"
-    )
-        port map (
-      I0 => nr_of_rd(14),
-      I1 => nr_of_rd(15),
-      O => \i__carry__0_i_1_n_0\
-    );
-\i__carry__0_i_2\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"E"
-    )
-        port map (
-      I0 => nr_of_rd(12),
-      I1 => nr_of_rd(13),
-      O => \i__carry__0_i_2_n_0\
-    );
-\i__carry__0_i_3\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"E"
-    )
-        port map (
-      I0 => nr_of_rd(10),
-      I1 => nr_of_rd(11),
-      O => \i__carry__0_i_3_n_0\
-    );
-\i__carry__0_i_4\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"E"
-    )
-        port map (
-      I0 => nr_of_rd(8),
-      I1 => nr_of_rd(9),
-      O => \i__carry__0_i_4_n_0\
-    );
-\i__carry__0_i_5\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => nr_of_rd(14),
-      I1 => nr_of_rd(15),
-      O => \i__carry__0_i_5_n_0\
-    );
-\i__carry__0_i_6\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => nr_of_rd(12),
-      I1 => nr_of_rd(13),
-      O => \i__carry__0_i_6_n_0\
-    );
-\i__carry__0_i_7\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => nr_of_rd(10),
-      I1 => nr_of_rd(11),
-      O => \i__carry__0_i_7_n_0\
-    );
-\i__carry__0_i_8\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"1"
-    )
-        port map (
-      I0 => nr_of_rd(8),
-      I1 => nr_of_rd(9),
-      O => \i__carry__0_i_8_n_0\
-    );
-\i__carry__1_i_1\: unisim.vcomponents.LUT2
+\gtOp_inferred__0_carry__1_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"E"
     )
         port map (
       I0 => nr_of_rd(18),
       I1 => nr_of_rd(19),
-      O => \i__carry__1_i_1_n_0\
+      O => \gtOp_inferred__0_carry__1_i_1_n_0\
     );
-\i__carry__1_i_2\: unisim.vcomponents.LUT2
+\gtOp_inferred__0_carry__1_i_2\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"E"
     )
         port map (
       I0 => nr_of_rd(16),
       I1 => nr_of_rd(17),
-      O => \i__carry__1_i_2_n_0\
+      O => \gtOp_inferred__0_carry__1_i_2_n_0\
     );
-\i__carry__1_i_3\: unisim.vcomponents.LUT1
+\gtOp_inferred__0_carry__1_i_3\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => nr_of_rd(20),
-      O => \i__carry__1_i_3_n_0\
+      O => \gtOp_inferred__0_carry__1_i_3_n_0\
     );
-\i__carry__1_i_4\: unisim.vcomponents.LUT2
+\gtOp_inferred__0_carry__1_i_4\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => nr_of_rd(18),
       I1 => nr_of_rd(19),
-      O => \i__carry__1_i_4_n_0\
+      O => \gtOp_inferred__0_carry__1_i_4_n_0\
     );
-\i__carry__1_i_5\: unisim.vcomponents.LUT2
+\gtOp_inferred__0_carry__1_i_5\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => nr_of_rd(16),
       I1 => nr_of_rd(17),
-      O => \i__carry__1_i_5_n_0\
+      O => \gtOp_inferred__0_carry__1_i_5_n_0\
     );
-\i__carry_i_1\: unisim.vcomponents.LUT2
+\gtOp_inferred__0_carry_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"E"
     )
         port map (
       I0 => nr_of_rd(6),
       I1 => nr_of_rd(7),
-      O => \i__carry_i_1_n_0\
+      O => \gtOp_inferred__0_carry_i_1_n_0\
     );
-\i__carry_i_2\: unisim.vcomponents.LUT2
+\gtOp_inferred__0_carry_i_2\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"E"
     )
         port map (
       I0 => nr_of_rd(4),
       I1 => nr_of_rd(5),
-      O => \i__carry_i_2_n_0\
+      O => \gtOp_inferred__0_carry_i_2_n_0\
     );
-\i__carry_i_3__0\: unisim.vcomponents.LUT2
+\gtOp_inferred__0_carry_i_3\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"E"
     )
         port map (
       I0 => nr_of_rd(2),
       I1 => nr_of_rd(3),
-      O => \i__carry_i_3__0_n_0\
+      O => \gtOp_inferred__0_carry_i_3_n_0\
     );
-\i__carry_i_4__0\: unisim.vcomponents.LUT2
+\gtOp_inferred__0_carry_i_4\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"E"
     )
         port map (
       I0 => nr_of_rd(0),
       I1 => nr_of_rd(1),
-      O => \i__carry_i_4__0_n_0\
+      O => \gtOp_inferred__0_carry_i_4_n_0\
     );
-\i__carry_i_5\: unisim.vcomponents.LUT2
+\gtOp_inferred__0_carry_i_5\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => nr_of_rd(6),
       I1 => nr_of_rd(7),
-      O => \i__carry_i_5_n_0\
+      O => \gtOp_inferred__0_carry_i_5_n_0\
     );
-\i__carry_i_6\: unisim.vcomponents.LUT2
+\gtOp_inferred__0_carry_i_6\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => nr_of_rd(4),
       I1 => nr_of_rd(5),
-      O => \i__carry_i_6_n_0\
+      O => \gtOp_inferred__0_carry_i_6_n_0\
     );
-\i__carry_i_7\: unisim.vcomponents.LUT2
+\gtOp_inferred__0_carry_i_7\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => nr_of_rd(2),
       I1 => nr_of_rd(3),
-      O => \i__carry_i_7_n_0\
+      O => \gtOp_inferred__0_carry_i_7_n_0\
     );
-\i__carry_i_8\: unisim.vcomponents.LUT2
+\gtOp_inferred__0_carry_i_8\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => nr_of_rd(0),
       I1 => nr_of_rd(1),
-      O => \i__carry_i_8_n_0\
+      O => \gtOp_inferred__0_carry_i_8_n_0\
     );
 \nr_of_rd[0]_i_1\: unisim.vcomponents.LUT4
     generic map(
@@ -4270,32 +4247,44 @@ gtOp_carry_i_8: unisim.vcomponents.LUT2
       O => \nr_of_rd[9]_i_1_n_0\
     );
 \nr_of_rd_reg[0]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => E(0),
       D => \nr_of_rd[0]_i_1_n_0\,
       Q => nr_of_rd(0),
       R => '0'
     );
 \nr_of_rd_reg[10]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => E(0),
       D => \nr_of_rd[10]_i_1_n_0\,
       Q => nr_of_rd(10),
       R => '0'
     );
 \nr_of_rd_reg[11]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => E(0),
       D => \nr_of_rd[11]_i_1_n_0\,
       Q => nr_of_rd(11),
       R => '0'
     );
 \nr_of_rd_reg[12]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => E(0),
       D => \nr_of_rd[12]_i_1_n_0\,
       Q => nr_of_rd(12),
@@ -4317,32 +4306,44 @@ gtOp_carry_i_8: unisim.vcomponents.LUT2
       S(0) => \nr_of_rd[12]_i_6_n_0\
     );
 \nr_of_rd_reg[13]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => E(0),
       D => \nr_of_rd[13]_i_1_n_0\,
       Q => nr_of_rd(13),
       R => '0'
     );
 \nr_of_rd_reg[14]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => E(0),
       D => \nr_of_rd[14]_i_1_n_0\,
       Q => nr_of_rd(14),
       R => '0'
     );
 \nr_of_rd_reg[15]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => E(0),
       D => \nr_of_rd[15]_i_1_n_0\,
       Q => nr_of_rd(15),
       R => '0'
     );
 \nr_of_rd_reg[16]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => E(0),
       D => \nr_of_rd[16]_i_1_n_0\,
       Q => nr_of_rd(16),
@@ -4364,40 +4365,55 @@ gtOp_carry_i_8: unisim.vcomponents.LUT2
       S(0) => \nr_of_rd[16]_i_6_n_0\
     );
 \nr_of_rd_reg[17]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => E(0),
       D => \nr_of_rd[17]_i_1_n_0\,
       Q => nr_of_rd(17),
       R => '0'
     );
 \nr_of_rd_reg[18]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => E(0),
       D => \nr_of_rd[18]_i_1_n_0\,
       Q => nr_of_rd(18),
       R => '0'
     );
 \nr_of_rd_reg[19]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => E(0),
       D => \nr_of_rd[19]_i_1_n_0\,
       Q => nr_of_rd(19),
       R => '0'
     );
 \nr_of_rd_reg[1]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => E(0),
       D => \nr_of_rd[1]_i_1_n_0\,
       Q => nr_of_rd(1),
       R => '0'
     );
 \nr_of_rd_reg[20]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => E(0),
       D => \nr_of_rd[20]_i_2_n_0\,
       Q => nr_of_rd(20),
@@ -4420,24 +4436,33 @@ gtOp_carry_i_8: unisim.vcomponents.LUT2
       S(0) => \nr_of_rd[20]_i_7_n_0\
     );
 \nr_of_rd_reg[2]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => E(0),
       D => \nr_of_rd[2]_i_1_n_0\,
       Q => nr_of_rd(2),
       R => '0'
     );
 \nr_of_rd_reg[3]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => E(0),
       D => \nr_of_rd[3]_i_1_n_0\,
       Q => nr_of_rd(3),
       R => '0'
     );
 \nr_of_rd_reg[4]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => E(0),
       D => \nr_of_rd[4]_i_1_n_0\,
       Q => nr_of_rd(4),
@@ -4459,32 +4484,44 @@ gtOp_carry_i_8: unisim.vcomponents.LUT2
       S(0) => \nr_of_rd[4]_i_6_n_0\
     );
 \nr_of_rd_reg[5]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => E(0),
       D => \nr_of_rd[5]_i_1_n_0\,
       Q => nr_of_rd(5),
       R => '0'
     );
 \nr_of_rd_reg[6]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => E(0),
       D => \nr_of_rd[6]_i_1_n_0\,
       Q => nr_of_rd(6),
       R => '0'
     );
 \nr_of_rd_reg[7]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => E(0),
       D => \nr_of_rd[7]_i_1_n_0\,
       Q => nr_of_rd(7),
       R => '0'
     );
 \nr_of_rd_reg[8]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => E(0),
       D => \nr_of_rd[8]_i_1_n_0\,
       Q => nr_of_rd(8),
@@ -4506,8 +4543,11 @@ gtOp_carry_i_8: unisim.vcomponents.LUT2
       S(0) => \nr_of_rd[8]_i_6_n_0\
     );
 \nr_of_rd_reg[9]\: unisim.vcomponents.FDRE
-     port map (
-      C => TX_FIFO_D_O_regn_0_0,
+    generic map(
+      IS_C_INVERTED => '1'
+    )
+        port map (
+      C => S_AXIS_MM2S_ACLK,
       CE => E(0),
       D => \nr_of_rd[9]_i_1_n_0\,
       Q => nr_of_rd(9),
@@ -5273,18 +5313,16 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_rst_sync is
+entity \design_1_d_axi_i2s_audio_0_0_rst_sync\ is
   port (
     Q_O : out STD_LOGIC;
     \I2S_FIFO_CONTROL_REG_reg[30]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     S_AXIS_MM2S_ARESETN : in STD_LOGIC;
     CLK_12_288 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_rst_sync : entity is "rst_sync";
-end design_1_d_axi_i2s_audio_0_0_rst_sync;
+end \design_1_d_axi_i2s_audio_0_0_rst_sync\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_rst_sync is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_rst_sync\ is
   signal FDRE_inst_1_i_1_n_0 : STD_LOGIC;
   signal d_int : STD_LOGIC;
   attribute box_type : string;
@@ -5395,18 +5433,16 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_xil_defaultlib_DCM is
+entity \design_1_d_axi_i2s_audio_0_0_xil_defaultlib_DCM\ is
   port (
     RESET : out STD_LOGIC;
     CLK_12_288 : out STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     CLK_100MHZ_I : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_xil_defaultlib_DCM : entity is "xil_defaultlib_DCM";
-end design_1_d_axi_i2s_audio_0_0_xil_defaultlib_DCM;
+end \design_1_d_axi_i2s_audio_0_0_xil_defaultlib_DCM\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_xil_defaultlib_DCM is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_xil_defaultlib_DCM\ is
   signal LOCKED : STD_LOGIC;
   signal \^reset\ : STD_LOGIC;
   signal clkfbout : STD_LOGIC;
@@ -5499,23 +5535,21 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper is
+entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 3 downto 0 );
     rd_clk : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gc0.count_d1_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \gic0.gc0.count_d2_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     din : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper : entity is "blk_mem_gen_prim_wrapper";
-end design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper;
+end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper\ is
   signal \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_n_0\ : STD_LOGIC;
   signal \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_n_1\ : STD_LOGIC;
   signal \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_n_10\ : STD_LOGIC;
@@ -5714,7 +5748,7 @@ begin
       ENBWREN => E(0),
       REGCEAREGCE => '0',
       REGCEB => '0',
-      RSTRAMARSTRAM => \out\(0),
+      RSTRAMARSTRAM => Q(0),
       RSTRAMB => '0',
       RSTREGARSTREG => '0',
       RSTREGB => '0',
@@ -5736,8 +5770,8 @@ entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized0\ i
     rd_clk : in STD_LOGIC;
     ram_full_fb_i_reg : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \gic0.gc0.count_d2_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     din : in STD_LOGIC_VECTOR ( 8 downto 0 )
   );
@@ -5941,7 +5975,7 @@ begin
     )
         port map (
       ADDRARDADDR(15) => '1',
-      ADDRARDADDR(14 downto 3) => Q(11 downto 0),
+      ADDRARDADDR(14 downto 3) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ADDRARDADDR(2 downto 0) => B"111",
       ADDRBWRADDR(15) => '1',
       ADDRBWRADDR(14 downto 3) => \gc0.count_d1_reg[11]\(11 downto 0),
@@ -5974,7 +6008,7 @@ begin
       REGCEAREGCE => '0',
       REGCEB => '0',
       RSTRAMARSTRAM => '0',
-      RSTRAMB => \out\(0),
+      RSTRAMB => Q(0),
       RSTREGARSTREG => '0',
       RSTREGB => '0',
       SBITERR => \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_SBITERR_UNCONNECTED\,
@@ -5989,23 +6023,23 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized0_28\ is
+entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized0_21\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 8 downto 0 );
     wr_clk : in STD_LOGIC;
     rd_clk : in STD_LOGIC;
     ram_full_fb_i_reg : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \gic0.gc0.count_d2_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     din : in STD_LOGIC_VECTOR ( 8 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized0_28\ : entity is "blk_mem_gen_prim_wrapper";
-end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized0_28\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized0_21\ : entity is "blk_mem_gen_prim_wrapper";
+end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized0_21\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized0_28\ is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized0_21\ is
   signal \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_CASCADEOUTA_UNCONNECTED\ : STD_LOGIC;
   signal \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_CASCADEOUTB_UNCONNECTED\ : STD_LOGIC;
   signal \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_DBITERR_UNCONNECTED\ : STD_LOGIC;
@@ -6201,7 +6235,7 @@ begin
     )
         port map (
       ADDRARDADDR(15) => '1',
-      ADDRARDADDR(14 downto 3) => Q(11 downto 0),
+      ADDRARDADDR(14 downto 3) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ADDRARDADDR(2 downto 0) => B"111",
       ADDRBWRADDR(15) => '1',
       ADDRBWRADDR(14 downto 3) => \gc0.count_d1_reg[11]\(11 downto 0),
@@ -6234,7 +6268,7 @@ begin
       REGCEAREGCE => '0',
       REGCEB => '0',
       RSTRAMARSTRAM => '0',
-      RSTRAMB => \out\(0),
+      RSTRAMB => Q(0),
       RSTREGARSTREG => '0',
       RSTREGB => '0',
       SBITERR => \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_SBITERR_UNCONNECTED\,
@@ -6256,8 +6290,8 @@ entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized1\ i
     rd_clk : in STD_LOGIC;
     ram_full_fb_i_reg : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \gic0.gc0.count_d2_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     din : in STD_LOGIC_VECTOR ( 8 downto 0 )
   );
@@ -6461,7 +6495,7 @@ begin
     )
         port map (
       ADDRARDADDR(15) => '1',
-      ADDRARDADDR(14 downto 3) => Q(11 downto 0),
+      ADDRARDADDR(14 downto 3) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ADDRARDADDR(2 downto 0) => B"111",
       ADDRBWRADDR(15) => '1',
       ADDRBWRADDR(14 downto 3) => \gc0.count_d1_reg[11]\(11 downto 0),
@@ -6494,7 +6528,7 @@ begin
       REGCEAREGCE => '0',
       REGCEB => '0',
       RSTRAMARSTRAM => '0',
-      RSTRAMB => \out\(0),
+      RSTRAMB => Q(0),
       RSTREGARSTREG => '0',
       RSTREGB => '0',
       SBITERR => \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_SBITERR_UNCONNECTED\,
@@ -6509,23 +6543,23 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized1_27\ is
+entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized1_20\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 8 downto 0 );
     wr_clk : in STD_LOGIC;
     rd_clk : in STD_LOGIC;
     ram_full_fb_i_reg : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \gic0.gc0.count_d2_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     din : in STD_LOGIC_VECTOR ( 8 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized1_27\ : entity is "blk_mem_gen_prim_wrapper";
-end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized1_27\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized1_20\ : entity is "blk_mem_gen_prim_wrapper";
+end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized1_20\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized1_27\ is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized1_20\ is
   signal \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_CASCADEOUTA_UNCONNECTED\ : STD_LOGIC;
   signal \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_CASCADEOUTB_UNCONNECTED\ : STD_LOGIC;
   signal \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_DBITERR_UNCONNECTED\ : STD_LOGIC;
@@ -6721,7 +6755,7 @@ begin
     )
         port map (
       ADDRARDADDR(15) => '1',
-      ADDRARDADDR(14 downto 3) => Q(11 downto 0),
+      ADDRARDADDR(14 downto 3) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ADDRARDADDR(2 downto 0) => B"111",
       ADDRBWRADDR(15) => '1',
       ADDRBWRADDR(14 downto 3) => \gc0.count_d1_reg[11]\(11 downto 0),
@@ -6754,7 +6788,7 @@ begin
       REGCEAREGCE => '0',
       REGCEB => '0',
       RSTRAMARSTRAM => '0',
-      RSTRAMB => \out\(0),
+      RSTRAMB => Q(0),
       RSTREGARSTREG => '0',
       RSTREGB => '0',
       SBITERR => \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_SBITERR_UNCONNECTED\,
@@ -6776,8 +6810,8 @@ entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized2\ i
     rd_clk : in STD_LOGIC;
     ram_full_fb_i_reg : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \gic0.gc0.count_d2_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     din : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
@@ -6984,7 +7018,7 @@ begin
     )
         port map (
       ADDRARDADDR(15) => '1',
-      ADDRARDADDR(14 downto 3) => Q(11 downto 0),
+      ADDRARDADDR(14 downto 3) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ADDRARDADDR(2 downto 0) => B"111",
       ADDRBWRADDR(15) => '1',
       ADDRBWRADDR(14 downto 3) => \gc0.count_d1_reg[11]\(11 downto 0),
@@ -7018,7 +7052,7 @@ begin
       REGCEAREGCE => '0',
       REGCEB => '0',
       RSTRAMARSTRAM => '0',
-      RSTRAMB => \out\(0),
+      RSTRAMB => Q(0),
       RSTREGARSTREG => '0',
       RSTREGB => '0',
       SBITERR => \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_SBITERR_UNCONNECTED\,
@@ -7033,23 +7067,23 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized2_26\ is
+entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized2_19\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 5 downto 0 );
     wr_clk : in STD_LOGIC;
     rd_clk : in STD_LOGIC;
     ram_full_fb_i_reg : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \gic0.gc0.count_d2_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     din : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized2_26\ : entity is "blk_mem_gen_prim_wrapper";
-end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized2_26\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized2_19\ : entity is "blk_mem_gen_prim_wrapper";
+end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized2_19\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized2_26\ is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized2_19\ is
   signal \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_n_77\ : STD_LOGIC;
   signal \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_n_78\ : STD_LOGIC;
   signal \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_n_92\ : STD_LOGIC;
@@ -7248,7 +7282,7 @@ begin
     )
         port map (
       ADDRARDADDR(15) => '1',
-      ADDRARDADDR(14 downto 3) => Q(11 downto 0),
+      ADDRARDADDR(14 downto 3) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ADDRARDADDR(2 downto 0) => B"111",
       ADDRBWRADDR(15) => '1',
       ADDRBWRADDR(14 downto 3) => \gc0.count_d1_reg[11]\(11 downto 0),
@@ -7282,7 +7316,7 @@ begin
       REGCEAREGCE => '0',
       REGCEB => '0',
       RSTRAMARSTRAM => '0',
-      RSTRAMB => \out\(0),
+      RSTRAMB => Q(0),
       RSTREGARSTREG => '0',
       RSTREGB => '0',
       SBITERR => \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_SBITERR_UNCONNECTED\,
@@ -7301,18 +7335,18 @@ entity \design_1_d_axi_i2s_audio_0_0_compare__parameterized0\ is
   port (
     comp0 : out STD_LOGIC;
     WR_PNTR_RD : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 )
+    \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_compare__parameterized0\ : entity is "compare";
 end \design_1_d_axi_i2s_audio_0_0_compare__parameterized0\;
 
 architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_compare__parameterized0\ is
-  signal carrynet_0 : STD_LOGIC;
-  signal carrynet_1 : STD_LOGIC;
-  signal carrynet_2 : STD_LOGIC;
-  signal carrynet_3 : STD_LOGIC;
-  signal carrynet_4 : STD_LOGIC;
+  signal CI : STD_LOGIC;
+  signal \gmux.gm[1].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[2].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[3].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[4].gms.ms_n_0\ : STD_LOGIC;
   signal v1_reg : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal \NLW_gmux.gm[0].gm1.m1_CARRY4_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_gmux.gm[4].gms.ms_CARRY4_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
@@ -7329,10 +7363,10 @@ begin
 \gmux.gm[0].gm1.m1_CARRY4\: unisim.vcomponents.CARRY4
      port map (
       CI => '0',
-      CO(3) => carrynet_3,
-      CO(2) => carrynet_2,
-      CO(1) => carrynet_1,
-      CO(0) => carrynet_0,
+      CO(3) => \gmux.gm[3].gms.ms_n_0\,
+      CO(2) => \gmux.gm[2].gms.ms_n_0\,
+      CO(1) => \gmux.gm[1].gms.ms_n_0\,
+      CO(0) => CI,
       CYINIT => '1',
       DI(3 downto 0) => B"0000",
       O(3 downto 0) => \NLW_gmux.gm[0].gm1.m1_CARRY4_O_UNCONNECTED\(3 downto 0),
@@ -7344,9 +7378,9 @@ begin
     )
         port map (
       I0 => WR_PNTR_RD(0),
-      I1 => Q(0),
+      I1 => \gc0.count_d1_reg[11]\(0),
       I2 => WR_PNTR_RD(1),
-      I3 => Q(1),
+      I3 => \gc0.count_d1_reg[11]\(1),
       O => v1_reg(0)
     );
 \gmux.gm[1].gms.ms_i_1\: unisim.vcomponents.LUT4
@@ -7355,9 +7389,9 @@ begin
     )
         port map (
       I0 => WR_PNTR_RD(2),
-      I1 => Q(2),
+      I1 => \gc0.count_d1_reg[11]\(2),
       I2 => WR_PNTR_RD(3),
-      I3 => Q(3),
+      I3 => \gc0.count_d1_reg[11]\(3),
       O => v1_reg(1)
     );
 \gmux.gm[2].gms.ms_i_1\: unisim.vcomponents.LUT4
@@ -7366,9 +7400,9 @@ begin
     )
         port map (
       I0 => WR_PNTR_RD(4),
-      I1 => Q(4),
+      I1 => \gc0.count_d1_reg[11]\(4),
       I2 => WR_PNTR_RD(5),
-      I3 => Q(5),
+      I3 => \gc0.count_d1_reg[11]\(5),
       O => v1_reg(2)
     );
 \gmux.gm[3].gms.ms_i_1\: unisim.vcomponents.LUT4
@@ -7377,17 +7411,17 @@ begin
     )
         port map (
       I0 => WR_PNTR_RD(6),
-      I1 => Q(6),
+      I1 => \gc0.count_d1_reg[11]\(6),
       I2 => WR_PNTR_RD(7),
-      I3 => Q(7),
+      I3 => \gc0.count_d1_reg[11]\(7),
       O => v1_reg(3)
     );
 \gmux.gm[4].gms.ms_CARRY4\: unisim.vcomponents.CARRY4
      port map (
-      CI => carrynet_3,
+      CI => \gmux.gm[3].gms.ms_n_0\,
       CO(3 downto 2) => \NLW_gmux.gm[4].gms.ms_CARRY4_CO_UNCONNECTED\(3 downto 2),
       CO(1) => comp0,
-      CO(0) => carrynet_4,
+      CO(0) => \gmux.gm[4].gms.ms_n_0\,
       CYINIT => '0',
       DI(3 downto 2) => \NLW_gmux.gm[4].gms.ms_CARRY4_DI_UNCONNECTED\(3 downto 2),
       DI(1 downto 0) => B"00",
@@ -7401,9 +7435,9 @@ begin
     )
         port map (
       I0 => WR_PNTR_RD(8),
-      I1 => Q(8),
+      I1 => \gc0.count_d1_reg[11]\(8),
       I2 => WR_PNTR_RD(9),
-      I3 => Q(9),
+      I3 => \gc0.count_d1_reg[11]\(9),
       O => v1_reg(4)
     );
 \gmux.gm[5].gms.ms_i_1\: unisim.vcomponents.LUT4
@@ -7412,9 +7446,9 @@ begin
     )
         port map (
       I0 => WR_PNTR_RD(10),
-      I1 => Q(10),
+      I1 => \gc0.count_d1_reg[11]\(10),
       I2 => WR_PNTR_RD(11),
-      I3 => Q(11),
+      I3 => \gc0.count_d1_reg[11]\(11),
       O => v1_reg(5)
     );
 end STRUCTURE;
@@ -7422,22 +7456,22 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_compare__parameterized0_35\ is
+entity \design_1_d_axi_i2s_audio_0_0_compare__parameterized0_28\ is
   port (
     comp0 : out STD_LOGIC;
-    \gnxpm_cdc.wr_pntr_bin_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 )
+    \wr_pntr_bin_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_compare__parameterized0_35\ : entity is "compare";
-end \design_1_d_axi_i2s_audio_0_0_compare__parameterized0_35\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_compare__parameterized0_28\ : entity is "compare";
+end \design_1_d_axi_i2s_audio_0_0_compare__parameterized0_28\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_compare__parameterized0_35\ is
-  signal carrynet_0 : STD_LOGIC;
-  signal carrynet_1 : STD_LOGIC;
-  signal carrynet_2 : STD_LOGIC;
-  signal carrynet_3 : STD_LOGIC;
-  signal carrynet_4 : STD_LOGIC;
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_compare__parameterized0_28\ is
+  signal CI : STD_LOGIC;
+  signal \gmux.gm[1].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[2].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[3].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[4].gms.ms_n_0\ : STD_LOGIC;
   signal v1_reg : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal \NLW_gmux.gm[0].gm1.m1_CARRY4_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_gmux.gm[4].gms.ms_CARRY4_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
@@ -7454,10 +7488,10 @@ begin
 \gmux.gm[0].gm1.m1_CARRY4\: unisim.vcomponents.CARRY4
      port map (
       CI => '0',
-      CO(3) => carrynet_3,
-      CO(2) => carrynet_2,
-      CO(1) => carrynet_1,
-      CO(0) => carrynet_0,
+      CO(3) => \gmux.gm[3].gms.ms_n_0\,
+      CO(2) => \gmux.gm[2].gms.ms_n_0\,
+      CO(1) => \gmux.gm[1].gms.ms_n_0\,
+      CO(0) => CI,
       CYINIT => '1',
       DI(3 downto 0) => B"0000",
       O(3 downto 0) => \NLW_gmux.gm[0].gm1.m1_CARRY4_O_UNCONNECTED\(3 downto 0),
@@ -7468,10 +7502,10 @@ begin
       INIT => X"9009"
     )
         port map (
-      I0 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(0),
-      I1 => Q(0),
-      I2 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(1),
-      I3 => Q(1),
+      I0 => \wr_pntr_bin_reg[11]\(0),
+      I1 => \gc0.count_d1_reg[11]\(0),
+      I2 => \wr_pntr_bin_reg[11]\(1),
+      I3 => \gc0.count_d1_reg[11]\(1),
       O => v1_reg(0)
     );
 \gmux.gm[1].gms.ms_i_1\: unisim.vcomponents.LUT4
@@ -7479,10 +7513,10 @@ begin
       INIT => X"9009"
     )
         port map (
-      I0 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(2),
-      I1 => Q(2),
-      I2 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(3),
-      I3 => Q(3),
+      I0 => \wr_pntr_bin_reg[11]\(2),
+      I1 => \gc0.count_d1_reg[11]\(2),
+      I2 => \wr_pntr_bin_reg[11]\(3),
+      I3 => \gc0.count_d1_reg[11]\(3),
       O => v1_reg(1)
     );
 \gmux.gm[2].gms.ms_i_1\: unisim.vcomponents.LUT4
@@ -7490,10 +7524,10 @@ begin
       INIT => X"9009"
     )
         port map (
-      I0 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(4),
-      I1 => Q(4),
-      I2 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(5),
-      I3 => Q(5),
+      I0 => \wr_pntr_bin_reg[11]\(4),
+      I1 => \gc0.count_d1_reg[11]\(4),
+      I2 => \wr_pntr_bin_reg[11]\(5),
+      I3 => \gc0.count_d1_reg[11]\(5),
       O => v1_reg(2)
     );
 \gmux.gm[3].gms.ms_i_1\: unisim.vcomponents.LUT4
@@ -7501,18 +7535,18 @@ begin
       INIT => X"9009"
     )
         port map (
-      I0 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(6),
-      I1 => Q(6),
-      I2 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(7),
-      I3 => Q(7),
+      I0 => \wr_pntr_bin_reg[11]\(6),
+      I1 => \gc0.count_d1_reg[11]\(6),
+      I2 => \wr_pntr_bin_reg[11]\(7),
+      I3 => \gc0.count_d1_reg[11]\(7),
       O => v1_reg(3)
     );
 \gmux.gm[4].gms.ms_CARRY4\: unisim.vcomponents.CARRY4
      port map (
-      CI => carrynet_3,
+      CI => \gmux.gm[3].gms.ms_n_0\,
       CO(3 downto 2) => \NLW_gmux.gm[4].gms.ms_CARRY4_CO_UNCONNECTED\(3 downto 2),
       CO(1) => comp0,
-      CO(0) => carrynet_4,
+      CO(0) => \gmux.gm[4].gms.ms_n_0\,
       CYINIT => '0',
       DI(3 downto 2) => \NLW_gmux.gm[4].gms.ms_CARRY4_DI_UNCONNECTED\(3 downto 2),
       DI(1 downto 0) => B"00",
@@ -7525,10 +7559,10 @@ begin
       INIT => X"9009"
     )
         port map (
-      I0 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(8),
-      I1 => Q(8),
-      I2 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(9),
-      I3 => Q(9),
+      I0 => \wr_pntr_bin_reg[11]\(8),
+      I1 => \gc0.count_d1_reg[11]\(8),
+      I2 => \wr_pntr_bin_reg[11]\(9),
+      I3 => \gc0.count_d1_reg[11]\(9),
       O => v1_reg(4)
     );
 \gmux.gm[5].gms.ms_i_1\: unisim.vcomponents.LUT4
@@ -7536,10 +7570,10 @@ begin
       INIT => X"9009"
     )
         port map (
-      I0 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(10),
-      I1 => Q(10),
-      I2 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(11),
-      I3 => Q(11),
+      I0 => \wr_pntr_bin_reg[11]\(10),
+      I1 => \gc0.count_d1_reg[11]\(10),
+      I2 => \wr_pntr_bin_reg[11]\(11),
+      I3 => \gc0.count_d1_reg[11]\(11),
       O => v1_reg(5)
     );
 end STRUCTURE;
@@ -7558,11 +7592,11 @@ entity \design_1_d_axi_i2s_audio_0_0_compare__parameterized1\ is
 end \design_1_d_axi_i2s_audio_0_0_compare__parameterized1\;
 
 architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_compare__parameterized1\ is
-  signal carrynet_0 : STD_LOGIC;
-  signal carrynet_1 : STD_LOGIC;
-  signal carrynet_2 : STD_LOGIC;
-  signal carrynet_3 : STD_LOGIC;
-  signal carrynet_4 : STD_LOGIC;
+  signal CI : STD_LOGIC;
+  signal \gmux.gm[1].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[2].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[3].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[4].gms.ms_n_0\ : STD_LOGIC;
   signal v1_reg : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal \NLW_gmux.gm[0].gm1.m1_CARRY4_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_gmux.gm[4].gms.ms_CARRY4_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
@@ -7579,10 +7613,10 @@ begin
 \gmux.gm[0].gm1.m1_CARRY4\: unisim.vcomponents.CARRY4
      port map (
       CI => '0',
-      CO(3) => carrynet_3,
-      CO(2) => carrynet_2,
-      CO(1) => carrynet_1,
-      CO(0) => carrynet_0,
+      CO(3) => \gmux.gm[3].gms.ms_n_0\,
+      CO(2) => \gmux.gm[2].gms.ms_n_0\,
+      CO(1) => \gmux.gm[1].gms.ms_n_0\,
+      CO(0) => CI,
       CYINIT => '1',
       DI(3 downto 0) => B"0000",
       O(3 downto 0) => \NLW_gmux.gm[0].gm1.m1_CARRY4_O_UNCONNECTED\(3 downto 0),
@@ -7634,10 +7668,10 @@ begin
     );
 \gmux.gm[4].gms.ms_CARRY4\: unisim.vcomponents.CARRY4
      port map (
-      CI => carrynet_3,
+      CI => \gmux.gm[3].gms.ms_n_0\,
       CO(3 downto 2) => \NLW_gmux.gm[4].gms.ms_CARRY4_CO_UNCONNECTED\(3 downto 2),
       CO(1) => comp1,
-      CO(0) => carrynet_4,
+      CO(0) => \gmux.gm[4].gms.ms_n_0\,
       CYINIT => '0',
       DI(3 downto 2) => \NLW_gmux.gm[4].gms.ms_CARRY4_DI_UNCONNECTED\(3 downto 2),
       DI(1 downto 0) => B"00",
@@ -7672,22 +7706,22 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_compare__parameterized1_36\ is
+entity \design_1_d_axi_i2s_audio_0_0_compare__parameterized1_29\ is
   port (
     comp1 : out STD_LOGIC;
-    \gnxpm_cdc.wr_pntr_bin_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    \wr_pntr_bin_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     D : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_compare__parameterized1_36\ : entity is "compare";
-end \design_1_d_axi_i2s_audio_0_0_compare__parameterized1_36\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_compare__parameterized1_29\ : entity is "compare";
+end \design_1_d_axi_i2s_audio_0_0_compare__parameterized1_29\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_compare__parameterized1_36\ is
-  signal carrynet_0 : STD_LOGIC;
-  signal carrynet_1 : STD_LOGIC;
-  signal carrynet_2 : STD_LOGIC;
-  signal carrynet_3 : STD_LOGIC;
-  signal carrynet_4 : STD_LOGIC;
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_compare__parameterized1_29\ is
+  signal CI : STD_LOGIC;
+  signal \gmux.gm[1].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[2].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[3].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[4].gms.ms_n_0\ : STD_LOGIC;
   signal v1_reg : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal \NLW_gmux.gm[0].gm1.m1_CARRY4_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_gmux.gm[4].gms.ms_CARRY4_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
@@ -7704,10 +7738,10 @@ begin
 \gmux.gm[0].gm1.m1_CARRY4\: unisim.vcomponents.CARRY4
      port map (
       CI => '0',
-      CO(3) => carrynet_3,
-      CO(2) => carrynet_2,
-      CO(1) => carrynet_1,
-      CO(0) => carrynet_0,
+      CO(3) => \gmux.gm[3].gms.ms_n_0\,
+      CO(2) => \gmux.gm[2].gms.ms_n_0\,
+      CO(1) => \gmux.gm[1].gms.ms_n_0\,
+      CO(0) => CI,
       CYINIT => '1',
       DI(3 downto 0) => B"0000",
       O(3 downto 0) => \NLW_gmux.gm[0].gm1.m1_CARRY4_O_UNCONNECTED\(3 downto 0),
@@ -7718,9 +7752,9 @@ begin
       INIT => X"9009"
     )
         port map (
-      I0 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(0),
+      I0 => \wr_pntr_bin_reg[11]\(0),
       I1 => D(0),
-      I2 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(1),
+      I2 => \wr_pntr_bin_reg[11]\(1),
       I3 => D(1),
       O => v1_reg(0)
     );
@@ -7729,9 +7763,9 @@ begin
       INIT => X"9009"
     )
         port map (
-      I0 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(2),
+      I0 => \wr_pntr_bin_reg[11]\(2),
       I1 => D(2),
-      I2 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(3),
+      I2 => \wr_pntr_bin_reg[11]\(3),
       I3 => D(3),
       O => v1_reg(1)
     );
@@ -7740,9 +7774,9 @@ begin
       INIT => X"9009"
     )
         port map (
-      I0 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(4),
+      I0 => \wr_pntr_bin_reg[11]\(4),
       I1 => D(4),
-      I2 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(5),
+      I2 => \wr_pntr_bin_reg[11]\(5),
       I3 => D(5),
       O => v1_reg(2)
     );
@@ -7751,18 +7785,18 @@ begin
       INIT => X"9009"
     )
         port map (
-      I0 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(6),
+      I0 => \wr_pntr_bin_reg[11]\(6),
       I1 => D(6),
-      I2 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(7),
+      I2 => \wr_pntr_bin_reg[11]\(7),
       I3 => D(7),
       O => v1_reg(3)
     );
 \gmux.gm[4].gms.ms_CARRY4\: unisim.vcomponents.CARRY4
      port map (
-      CI => carrynet_3,
+      CI => \gmux.gm[3].gms.ms_n_0\,
       CO(3 downto 2) => \NLW_gmux.gm[4].gms.ms_CARRY4_CO_UNCONNECTED\(3 downto 2),
       CO(1) => comp1,
-      CO(0) => carrynet_4,
+      CO(0) => \gmux.gm[4].gms.ms_n_0\,
       CYINIT => '0',
       DI(3 downto 2) => \NLW_gmux.gm[4].gms.ms_CARRY4_DI_UNCONNECTED\(3 downto 2),
       DI(1 downto 0) => B"00",
@@ -7775,9 +7809,9 @@ begin
       INIT => X"9009"
     )
         port map (
-      I0 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(8),
+      I0 => \wr_pntr_bin_reg[11]\(8),
       I1 => D(8),
-      I2 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(9),
+      I2 => \wr_pntr_bin_reg[11]\(9),
       I3 => D(9),
       O => v1_reg(4)
     );
@@ -7786,9 +7820,9 @@ begin
       INIT => X"9009"
     )
         port map (
-      I0 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(10),
+      I0 => \wr_pntr_bin_reg[11]\(10),
       I1 => D(10),
-      I2 => \gnxpm_cdc.wr_pntr_bin_reg[11]\(11),
+      I2 => \wr_pntr_bin_reg[11]\(11),
       I3 => D(11),
       O => v1_reg(5)
     );
@@ -7808,11 +7842,11 @@ entity \design_1_d_axi_i2s_audio_0_0_compare__parameterized2\ is
 end \design_1_d_axi_i2s_audio_0_0_compare__parameterized2\;
 
 architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_compare__parameterized2\ is
-  signal carrynet_0 : STD_LOGIC;
-  signal carrynet_1 : STD_LOGIC;
-  signal carrynet_2 : STD_LOGIC;
-  signal carrynet_3 : STD_LOGIC;
-  signal carrynet_4 : STD_LOGIC;
+  signal CI : STD_LOGIC;
+  signal \gmux.gm[1].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[2].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[3].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[4].gms.ms_n_0\ : STD_LOGIC;
   signal v1_reg : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal \NLW_gmux.gm[0].gm1.m1_CARRY4_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_gmux.gm[4].gms.ms_CARRY4_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
@@ -7829,10 +7863,10 @@ begin
 \gmux.gm[0].gm1.m1_CARRY4\: unisim.vcomponents.CARRY4
      port map (
       CI => '0',
-      CO(3) => carrynet_3,
-      CO(2) => carrynet_2,
-      CO(1) => carrynet_1,
-      CO(0) => carrynet_0,
+      CO(3) => \gmux.gm[3].gms.ms_n_0\,
+      CO(2) => \gmux.gm[2].gms.ms_n_0\,
+      CO(1) => \gmux.gm[1].gms.ms_n_0\,
+      CO(0) => CI,
       CYINIT => '1',
       DI(3 downto 0) => B"0000",
       O(3 downto 0) => \NLW_gmux.gm[0].gm1.m1_CARRY4_O_UNCONNECTED\(3 downto 0),
@@ -7884,10 +7918,10 @@ begin
     );
 \gmux.gm[4].gms.ms_CARRY4\: unisim.vcomponents.CARRY4
      port map (
-      CI => carrynet_3,
+      CI => \gmux.gm[3].gms.ms_n_0\,
       CO(3 downto 2) => \NLW_gmux.gm[4].gms.ms_CARRY4_CO_UNCONNECTED\(3 downto 2),
       CO(1) => comp1,
-      CO(0) => carrynet_4,
+      CO(0) => \gmux.gm[4].gms.ms_n_0\,
       CYINIT => '0',
       DI(3 downto 2) => \NLW_gmux.gm[4].gms.ms_CARRY4_DI_UNCONNECTED\(3 downto 2),
       DI(1 downto 0) => B"00",
@@ -7922,22 +7956,22 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_compare__parameterized2_31\ is
+entity \design_1_d_axi_i2s_audio_0_0_compare__parameterized2_24\ is
   port (
     comp1 : out STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    \gnxpm_cdc.rd_pntr_bin_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 )
+    \rd_pntr_bin_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_compare__parameterized2_31\ : entity is "compare";
-end \design_1_d_axi_i2s_audio_0_0_compare__parameterized2_31\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_compare__parameterized2_24\ : entity is "compare";
+end \design_1_d_axi_i2s_audio_0_0_compare__parameterized2_24\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_compare__parameterized2_31\ is
-  signal carrynet_0 : STD_LOGIC;
-  signal carrynet_1 : STD_LOGIC;
-  signal carrynet_2 : STD_LOGIC;
-  signal carrynet_3 : STD_LOGIC;
-  signal carrynet_4 : STD_LOGIC;
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_compare__parameterized2_24\ is
+  signal CI : STD_LOGIC;
+  signal \gmux.gm[1].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[2].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[3].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[4].gms.ms_n_0\ : STD_LOGIC;
   signal v1_reg : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal \NLW_gmux.gm[0].gm1.m1_CARRY4_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_gmux.gm[4].gms.ms_CARRY4_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
@@ -7954,10 +7988,10 @@ begin
 \gmux.gm[0].gm1.m1_CARRY4\: unisim.vcomponents.CARRY4
      port map (
       CI => '0',
-      CO(3) => carrynet_3,
-      CO(2) => carrynet_2,
-      CO(1) => carrynet_1,
-      CO(0) => carrynet_0,
+      CO(3) => \gmux.gm[3].gms.ms_n_0\,
+      CO(2) => \gmux.gm[2].gms.ms_n_0\,
+      CO(1) => \gmux.gm[1].gms.ms_n_0\,
+      CO(0) => CI,
       CYINIT => '1',
       DI(3 downto 0) => B"0000",
       O(3 downto 0) => \NLW_gmux.gm[0].gm1.m1_CARRY4_O_UNCONNECTED\(3 downto 0),
@@ -7969,9 +8003,9 @@ begin
     )
         port map (
       I0 => Q(0),
-      I1 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(0),
+      I1 => \rd_pntr_bin_reg[11]\(0),
       I2 => Q(1),
-      I3 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(1),
+      I3 => \rd_pntr_bin_reg[11]\(1),
       O => v1_reg(0)
     );
 \gmux.gm[1].gms.ms_i_1\: unisim.vcomponents.LUT4
@@ -7980,9 +8014,9 @@ begin
     )
         port map (
       I0 => Q(2),
-      I1 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(2),
+      I1 => \rd_pntr_bin_reg[11]\(2),
       I2 => Q(3),
-      I3 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(3),
+      I3 => \rd_pntr_bin_reg[11]\(3),
       O => v1_reg(1)
     );
 \gmux.gm[2].gms.ms_i_1\: unisim.vcomponents.LUT4
@@ -7991,9 +8025,9 @@ begin
     )
         port map (
       I0 => Q(4),
-      I1 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(4),
+      I1 => \rd_pntr_bin_reg[11]\(4),
       I2 => Q(5),
-      I3 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(5),
+      I3 => \rd_pntr_bin_reg[11]\(5),
       O => v1_reg(2)
     );
 \gmux.gm[3].gms.ms_i_1\: unisim.vcomponents.LUT4
@@ -8002,17 +8036,17 @@ begin
     )
         port map (
       I0 => Q(6),
-      I1 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(6),
+      I1 => \rd_pntr_bin_reg[11]\(6),
       I2 => Q(7),
-      I3 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(7),
+      I3 => \rd_pntr_bin_reg[11]\(7),
       O => v1_reg(3)
     );
 \gmux.gm[4].gms.ms_CARRY4\: unisim.vcomponents.CARRY4
      port map (
-      CI => carrynet_3,
+      CI => \gmux.gm[3].gms.ms_n_0\,
       CO(3 downto 2) => \NLW_gmux.gm[4].gms.ms_CARRY4_CO_UNCONNECTED\(3 downto 2),
       CO(1) => comp1,
-      CO(0) => carrynet_4,
+      CO(0) => \gmux.gm[4].gms.ms_n_0\,
       CYINIT => '0',
       DI(3 downto 2) => \NLW_gmux.gm[4].gms.ms_CARRY4_DI_UNCONNECTED\(3 downto 2),
       DI(1 downto 0) => B"00",
@@ -8026,9 +8060,9 @@ begin
     )
         port map (
       I0 => Q(8),
-      I1 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(8),
+      I1 => \rd_pntr_bin_reg[11]\(8),
       I2 => Q(9),
-      I3 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(9),
+      I3 => \rd_pntr_bin_reg[11]\(9),
       O => v1_reg(4)
     );
 \gmux.gm[5].gms.ms_i_1\: unisim.vcomponents.LUT4
@@ -8037,9 +8071,9 @@ begin
     )
         port map (
       I0 => Q(10),
-      I1 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(10),
+      I1 => \rd_pntr_bin_reg[11]\(10),
       I2 => Q(11),
-      I3 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(11),
+      I3 => \rd_pntr_bin_reg[11]\(11),
       O => v1_reg(5)
     );
 end STRUCTURE;
@@ -8058,11 +8092,11 @@ entity \design_1_d_axi_i2s_audio_0_0_compare__parameterized3\ is
 end \design_1_d_axi_i2s_audio_0_0_compare__parameterized3\;
 
 architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_compare__parameterized3\ is
-  signal carrynet_0 : STD_LOGIC;
-  signal carrynet_1 : STD_LOGIC;
-  signal carrynet_2 : STD_LOGIC;
-  signal carrynet_3 : STD_LOGIC;
-  signal carrynet_4 : STD_LOGIC;
+  signal CI : STD_LOGIC;
+  signal \gmux.gm[1].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[2].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[3].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[4].gms.ms_n_0\ : STD_LOGIC;
   signal v1_reg : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal \NLW_gmux.gm[0].gm1.m1_CARRY4_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_gmux.gm[4].gms.ms_CARRY4_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
@@ -8079,10 +8113,10 @@ begin
 \gmux.gm[0].gm1.m1_CARRY4\: unisim.vcomponents.CARRY4
      port map (
       CI => '0',
-      CO(3) => carrynet_3,
-      CO(2) => carrynet_2,
-      CO(1) => carrynet_1,
-      CO(0) => carrynet_0,
+      CO(3) => \gmux.gm[3].gms.ms_n_0\,
+      CO(2) => \gmux.gm[2].gms.ms_n_0\,
+      CO(1) => \gmux.gm[1].gms.ms_n_0\,
+      CO(0) => CI,
       CYINIT => '1',
       DI(3 downto 0) => B"0000",
       O(3 downto 0) => \NLW_gmux.gm[0].gm1.m1_CARRY4_O_UNCONNECTED\(3 downto 0),
@@ -8134,10 +8168,10 @@ begin
     );
 \gmux.gm[4].gms.ms_CARRY4\: unisim.vcomponents.CARRY4
      port map (
-      CI => carrynet_3,
+      CI => \gmux.gm[3].gms.ms_n_0\,
       CO(3 downto 2) => \NLW_gmux.gm[4].gms.ms_CARRY4_CO_UNCONNECTED\(3 downto 2),
       CO(1) => comp2,
-      CO(0) => carrynet_4,
+      CO(0) => \gmux.gm[4].gms.ms_n_0\,
       CYINIT => '0',
       DI(3 downto 2) => \NLW_gmux.gm[4].gms.ms_CARRY4_DI_UNCONNECTED\(3 downto 2),
       DI(1 downto 0) => B"00",
@@ -8172,22 +8206,22 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_compare__parameterized3_32\ is
+entity \design_1_d_axi_i2s_audio_0_0_compare__parameterized3_25\ is
   port (
     comp2 : out STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    \gnxpm_cdc.rd_pntr_bin_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 )
+    \rd_pntr_bin_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_compare__parameterized3_32\ : entity is "compare";
-end \design_1_d_axi_i2s_audio_0_0_compare__parameterized3_32\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_compare__parameterized3_25\ : entity is "compare";
+end \design_1_d_axi_i2s_audio_0_0_compare__parameterized3_25\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_compare__parameterized3_32\ is
-  signal carrynet_0 : STD_LOGIC;
-  signal carrynet_1 : STD_LOGIC;
-  signal carrynet_2 : STD_LOGIC;
-  signal carrynet_3 : STD_LOGIC;
-  signal carrynet_4 : STD_LOGIC;
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_compare__parameterized3_25\ is
+  signal CI : STD_LOGIC;
+  signal \gmux.gm[1].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[2].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[3].gms.ms_n_0\ : STD_LOGIC;
+  signal \gmux.gm[4].gms.ms_n_0\ : STD_LOGIC;
   signal v1_reg : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal \NLW_gmux.gm[0].gm1.m1_CARRY4_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_gmux.gm[4].gms.ms_CARRY4_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
@@ -8204,10 +8238,10 @@ begin
 \gmux.gm[0].gm1.m1_CARRY4\: unisim.vcomponents.CARRY4
      port map (
       CI => '0',
-      CO(3) => carrynet_3,
-      CO(2) => carrynet_2,
-      CO(1) => carrynet_1,
-      CO(0) => carrynet_0,
+      CO(3) => \gmux.gm[3].gms.ms_n_0\,
+      CO(2) => \gmux.gm[2].gms.ms_n_0\,
+      CO(1) => \gmux.gm[1].gms.ms_n_0\,
+      CO(0) => CI,
       CYINIT => '1',
       DI(3 downto 0) => B"0000",
       O(3 downto 0) => \NLW_gmux.gm[0].gm1.m1_CARRY4_O_UNCONNECTED\(3 downto 0),
@@ -8219,9 +8253,9 @@ begin
     )
         port map (
       I0 => D(0),
-      I1 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(0),
+      I1 => \rd_pntr_bin_reg[11]\(0),
       I2 => D(1),
-      I3 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(1),
+      I3 => \rd_pntr_bin_reg[11]\(1),
       O => v1_reg(0)
     );
 \gmux.gm[1].gms.ms_i_1\: unisim.vcomponents.LUT4
@@ -8230,9 +8264,9 @@ begin
     )
         port map (
       I0 => D(2),
-      I1 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(2),
+      I1 => \rd_pntr_bin_reg[11]\(2),
       I2 => D(3),
-      I3 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(3),
+      I3 => \rd_pntr_bin_reg[11]\(3),
       O => v1_reg(1)
     );
 \gmux.gm[2].gms.ms_i_1\: unisim.vcomponents.LUT4
@@ -8241,9 +8275,9 @@ begin
     )
         port map (
       I0 => D(4),
-      I1 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(4),
+      I1 => \rd_pntr_bin_reg[11]\(4),
       I2 => D(5),
-      I3 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(5),
+      I3 => \rd_pntr_bin_reg[11]\(5),
       O => v1_reg(2)
     );
 \gmux.gm[3].gms.ms_i_1\: unisim.vcomponents.LUT4
@@ -8252,17 +8286,17 @@ begin
     )
         port map (
       I0 => D(6),
-      I1 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(6),
+      I1 => \rd_pntr_bin_reg[11]\(6),
       I2 => D(7),
-      I3 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(7),
+      I3 => \rd_pntr_bin_reg[11]\(7),
       O => v1_reg(3)
     );
 \gmux.gm[4].gms.ms_CARRY4\: unisim.vcomponents.CARRY4
      port map (
-      CI => carrynet_3,
+      CI => \gmux.gm[3].gms.ms_n_0\,
       CO(3 downto 2) => \NLW_gmux.gm[4].gms.ms_CARRY4_CO_UNCONNECTED\(3 downto 2),
       CO(1) => comp2,
-      CO(0) => carrynet_4,
+      CO(0) => \gmux.gm[4].gms.ms_n_0\,
       CYINIT => '0',
       DI(3 downto 2) => \NLW_gmux.gm[4].gms.ms_CARRY4_DI_UNCONNECTED\(3 downto 2),
       DI(1 downto 0) => B"00",
@@ -8276,9 +8310,9 @@ begin
     )
         port map (
       I0 => D(8),
-      I1 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(8),
+      I1 => \rd_pntr_bin_reg[11]\(8),
       I2 => D(9),
-      I3 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(9),
+      I3 => \rd_pntr_bin_reg[11]\(9),
       O => v1_reg(4)
     );
 \gmux.gm[5].gms.ms_i_1\: unisim.vcomponents.LUT4
@@ -8287,9 +8321,9 @@ begin
     )
         port map (
       I0 => D(10),
-      I1 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(10),
+      I1 => \rd_pntr_bin_reg[11]\(10),
       I2 => D(11),
-      I3 => \gnxpm_cdc.rd_pntr_bin_reg[11]\(11),
+      I3 => \rd_pntr_bin_reg[11]\(11),
       O => v1_reg(5)
     );
 end STRUCTURE;
@@ -8297,28 +8331,26 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_rd_bin_cntr is
+entity \design_1_d_axi_i2s_audio_0_0_rd_bin_cntr\ is
   port (
     Q : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    \gnxpm_cdc.rd_pntr_gc_reg[2]\ : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    D : out STD_LOGIC_VECTOR ( 2 downto 0 );
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     rd_clk : in STD_LOGIC;
-    AR : in STD_LOGIC_VECTOR ( 0 to 0 )
+    \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_rd_bin_cntr : entity is "rd_bin_cntr";
-end design_1_d_axi_i2s_audio_0_0_rd_bin_cntr;
+end \design_1_d_axi_i2s_audio_0_0_rd_bin_cntr\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_rd_bin_cntr is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_rd_bin_cntr\ is
   signal \^device_7series.no_bmm_info.sdp.wide_prim18.ram\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \^q\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal plusOp : STD_LOGIC_VECTOR ( 3 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \gc0.count[2]_i_1\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \gc0.count[3]_i_1\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.rd_pntr_gc[1]_i_1\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.rd_pntr_gc[2]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \gc0.count[2]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \gc0.count[3]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \rd_pntr_gc[1]_i_1\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \rd_pntr_gc[2]_i_1\ : label is "soft_lutpair4";
 begin
   \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram\(3 downto 0) <= \^device_7series.no_bmm_info.sdp.wide_prim18.ram\(3 downto 0);
   Q(3 downto 0) <= \^q\(3 downto 0);
@@ -8367,7 +8399,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => AR(0),
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\(0),
       D => \^q\(0),
       Q => \^device_7series.no_bmm_info.sdp.wide_prim18.ram\(0)
     );
@@ -8378,7 +8410,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => AR(0),
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\(0),
       D => \^q\(1),
       Q => \^device_7series.no_bmm_info.sdp.wide_prim18.ram\(1)
     );
@@ -8389,7 +8421,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => AR(0),
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\(0),
       D => \^q\(2),
       Q => \^device_7series.no_bmm_info.sdp.wide_prim18.ram\(2)
     );
@@ -8400,7 +8432,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => AR(0),
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\(0),
       D => \^q\(3),
       Q => \^device_7series.no_bmm_info.sdp.wide_prim18.ram\(3)
     );
@@ -8412,7 +8444,7 @@ begin
       C => rd_clk,
       CE => E(0),
       D => plusOp(0),
-      PRE => AR(0),
+      PRE => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\(0),
       Q => \^q\(0)
     );
 \gc0.count_reg[1]\: unisim.vcomponents.FDCE
@@ -8422,7 +8454,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => AR(0),
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\(0),
       D => plusOp(1),
       Q => \^q\(1)
     );
@@ -8433,7 +8465,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => AR(0),
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\(0),
       D => plusOp(2),
       Q => \^q\(2)
     );
@@ -8444,36 +8476,36 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => AR(0),
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\(0),
       D => plusOp(3),
       Q => \^q\(3)
     );
-\gnxpm_cdc.rd_pntr_gc[0]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[0]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.wide_prim18.ram\(0),
       I1 => \^device_7series.no_bmm_info.sdp.wide_prim18.ram\(1),
-      O => \gnxpm_cdc.rd_pntr_gc_reg[2]\(0)
+      O => D(0)
     );
-\gnxpm_cdc.rd_pntr_gc[1]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[1]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.wide_prim18.ram\(1),
       I1 => \^device_7series.no_bmm_info.sdp.wide_prim18.ram\(2),
-      O => \gnxpm_cdc.rd_pntr_gc_reg[2]\(1)
+      O => D(1)
     );
-\gnxpm_cdc.rd_pntr_gc[2]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[2]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.wide_prim18.ram\(2),
       I1 => \^device_7series.no_bmm_info.sdp.wide_prim18.ram\(3),
-      O => \gnxpm_cdc.rd_pntr_gc_reg[2]\(2)
+      O => D(2)
     );
 end STRUCTURE;
 library IEEE;
@@ -8483,11 +8515,11 @@ use UNISIM.VCOMPONENTS.ALL;
 entity \design_1_d_axi_i2s_audio_0_0_rd_bin_cntr__parameterized0\ is
   port (
     D : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    Q : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    I32 : out STD_LOGIC_VECTOR ( 10 downto 0 );
+    \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\ : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    I15 : out STD_LOGIC_VECTOR ( 10 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     rd_clk : in STD_LOGIC;
-    \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_rd_bin_cntr__parameterized0\ : entity is "rd_bin_cntr";
@@ -8495,19 +8527,8 @@ end \design_1_d_axi_i2s_audio_0_0_rd_bin_cntr__parameterized0\;
 
 architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_rd_bin_cntr__parameterized0\ is
   signal \^d\ : STD_LOGIC_VECTOR ( 11 downto 0 );
-  signal \^q\ : STD_LOGIC_VECTOR ( 11 downto 0 );
-  signal \gc0.count[0]_i_2_n_0\ : STD_LOGIC;
-  signal \gc0.count[0]_i_3_n_0\ : STD_LOGIC;
-  signal \gc0.count[0]_i_4_n_0\ : STD_LOGIC;
+  signal \^device_7series.no_bmm_info.sdp.simple_prim36.ram\ : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal \gc0.count[0]_i_5_n_0\ : STD_LOGIC;
-  signal \gc0.count[4]_i_2_n_0\ : STD_LOGIC;
-  signal \gc0.count[4]_i_3_n_0\ : STD_LOGIC;
-  signal \gc0.count[4]_i_4_n_0\ : STD_LOGIC;
-  signal \gc0.count[4]_i_5_n_0\ : STD_LOGIC;
-  signal \gc0.count[8]_i_2_n_0\ : STD_LOGIC;
-  signal \gc0.count[8]_i_3_n_0\ : STD_LOGIC;
-  signal \gc0.count[8]_i_4_n_0\ : STD_LOGIC;
-  signal \gc0.count[8]_i_5_n_0\ : STD_LOGIC;
   signal \gc0.count_reg[0]_i_1_n_0\ : STD_LOGIC;
   signal \gc0.count_reg[0]_i_1_n_1\ : STD_LOGIC;
   signal \gc0.count_reg[0]_i_1_n_2\ : STD_LOGIC;
@@ -8533,43 +8554,19 @@ architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_rd_bin_cntr__parameteriz
   signal \gc0.count_reg[8]_i_1_n_7\ : STD_LOGIC;
   signal \NLW_gc0.count_reg[8]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \gnxpm_cdc.rd_pntr_gc[0]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.rd_pntr_gc[1]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.rd_pntr_gc[2]_i_1\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.rd_pntr_gc[3]_i_1\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.rd_pntr_gc[4]_i_1\ : label is "soft_lutpair17";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.rd_pntr_gc[5]_i_1\ : label is "soft_lutpair17";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.rd_pntr_gc[6]_i_1\ : label is "soft_lutpair18";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.rd_pntr_gc[7]_i_1\ : label is "soft_lutpair18";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.rd_pntr_gc[8]_i_1\ : label is "soft_lutpair19";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.rd_pntr_gc[9]_i_1\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \rd_pntr_gc[0]_i_1\ : label is "soft_lutpair18";
+  attribute SOFT_HLUTNM of \rd_pntr_gc[1]_i_1\ : label is "soft_lutpair18";
+  attribute SOFT_HLUTNM of \rd_pntr_gc[2]_i_1\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \rd_pntr_gc[3]_i_1\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \rd_pntr_gc[4]_i_1\ : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of \rd_pntr_gc[5]_i_1\ : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of \rd_pntr_gc[6]_i_1\ : label is "soft_lutpair21";
+  attribute SOFT_HLUTNM of \rd_pntr_gc[7]_i_1\ : label is "soft_lutpair21";
+  attribute SOFT_HLUTNM of \rd_pntr_gc[8]_i_1\ : label is "soft_lutpair22";
+  attribute SOFT_HLUTNM of \rd_pntr_gc[9]_i_1\ : label is "soft_lutpair22";
 begin
   D(11 downto 0) <= \^d\(11 downto 0);
-  Q(11 downto 0) <= \^q\(11 downto 0);
-\gc0.count[0]_i_2\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(3),
-      O => \gc0.count[0]_i_2_n_0\
-    );
-\gc0.count[0]_i_3\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(2),
-      O => \gc0.count[0]_i_3_n_0\
-    );
-\gc0.count[0]_i_4\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(1),
-      O => \gc0.count[0]_i_4_n_0\
-    );
+  \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\(11 downto 0) <= \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(11 downto 0);
 \gc0.count[0]_i_5\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
@@ -8578,70 +8575,6 @@ begin
       I0 => \^d\(0),
       O => \gc0.count[0]_i_5_n_0\
     );
-\gc0.count[4]_i_2\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(7),
-      O => \gc0.count[4]_i_2_n_0\
-    );
-\gc0.count[4]_i_3\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(6),
-      O => \gc0.count[4]_i_3_n_0\
-    );
-\gc0.count[4]_i_4\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(5),
-      O => \gc0.count[4]_i_4_n_0\
-    );
-\gc0.count[4]_i_5\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(4),
-      O => \gc0.count[4]_i_5_n_0\
-    );
-\gc0.count[8]_i_2\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(11),
-      O => \gc0.count[8]_i_2_n_0\
-    );
-\gc0.count[8]_i_3\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(10),
-      O => \gc0.count[8]_i_3_n_0\
-    );
-\gc0.count[8]_i_4\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(9),
-      O => \gc0.count[8]_i_4_n_0\
-    );
-\gc0.count[8]_i_5\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(8),
-      O => \gc0.count[8]_i_5_n_0\
-    );
 \gc0.count_d1_reg[0]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
@@ -8649,9 +8582,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(0),
-      Q => \^q\(0)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(0)
     );
 \gc0.count_d1_reg[10]\: unisim.vcomponents.FDCE
     generic map(
@@ -8660,9 +8593,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(10),
-      Q => \^q\(10)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(10)
     );
 \gc0.count_d1_reg[11]\: unisim.vcomponents.FDCE
     generic map(
@@ -8671,9 +8604,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(11),
-      Q => \^q\(11)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(11)
     );
 \gc0.count_d1_reg[1]\: unisim.vcomponents.FDCE
     generic map(
@@ -8682,9 +8615,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(1),
-      Q => \^q\(1)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(1)
     );
 \gc0.count_d1_reg[2]\: unisim.vcomponents.FDCE
     generic map(
@@ -8693,9 +8626,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(2),
-      Q => \^q\(2)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(2)
     );
 \gc0.count_d1_reg[3]\: unisim.vcomponents.FDCE
     generic map(
@@ -8704,9 +8637,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(3),
-      Q => \^q\(3)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(3)
     );
 \gc0.count_d1_reg[4]\: unisim.vcomponents.FDCE
     generic map(
@@ -8715,9 +8648,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(4),
-      Q => \^q\(4)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(4)
     );
 \gc0.count_d1_reg[5]\: unisim.vcomponents.FDCE
     generic map(
@@ -8726,9 +8659,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(5),
-      Q => \^q\(5)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(5)
     );
 \gc0.count_d1_reg[6]\: unisim.vcomponents.FDCE
     generic map(
@@ -8737,9 +8670,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(6),
-      Q => \^q\(6)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(6)
     );
 \gc0.count_d1_reg[7]\: unisim.vcomponents.FDCE
     generic map(
@@ -8748,9 +8681,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(7),
-      Q => \^q\(7)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(7)
     );
 \gc0.count_d1_reg[8]\: unisim.vcomponents.FDCE
     generic map(
@@ -8759,9 +8692,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(8),
-      Q => \^q\(8)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(8)
     );
 \gc0.count_d1_reg[9]\: unisim.vcomponents.FDCE
     generic map(
@@ -8770,9 +8703,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(9),
-      Q => \^q\(9)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(9)
     );
 \gc0.count_reg[0]\: unisim.vcomponents.FDPE
     generic map(
@@ -8782,7 +8715,7 @@ begin
       C => rd_clk,
       CE => E(0),
       D => \gc0.count_reg[0]_i_1_n_7\,
-      PRE => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      PRE => Q(0),
       Q => \^d\(0)
     );
 \gc0.count_reg[0]_i_1\: unisim.vcomponents.CARRY4
@@ -8798,9 +8731,7 @@ begin
       O(2) => \gc0.count_reg[0]_i_1_n_5\,
       O(1) => \gc0.count_reg[0]_i_1_n_6\,
       O(0) => \gc0.count_reg[0]_i_1_n_7\,
-      S(3) => \gc0.count[0]_i_2_n_0\,
-      S(2) => \gc0.count[0]_i_3_n_0\,
-      S(1) => \gc0.count[0]_i_4_n_0\,
+      S(3 downto 1) => \^d\(3 downto 1),
       S(0) => \gc0.count[0]_i_5_n_0\
     );
 \gc0.count_reg[10]\: unisim.vcomponents.FDCE
@@ -8810,7 +8741,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \gc0.count_reg[8]_i_1_n_5\,
       Q => \^d\(10)
     );
@@ -8821,7 +8752,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \gc0.count_reg[8]_i_1_n_4\,
       Q => \^d\(11)
     );
@@ -8832,7 +8763,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \gc0.count_reg[0]_i_1_n_6\,
       Q => \^d\(1)
     );
@@ -8843,7 +8774,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \gc0.count_reg[0]_i_1_n_5\,
       Q => \^d\(2)
     );
@@ -8854,7 +8785,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \gc0.count_reg[0]_i_1_n_4\,
       Q => \^d\(3)
     );
@@ -8865,7 +8796,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \gc0.count_reg[4]_i_1_n_7\,
       Q => \^d\(4)
     );
@@ -8882,10 +8813,7 @@ begin
       O(2) => \gc0.count_reg[4]_i_1_n_5\,
       O(1) => \gc0.count_reg[4]_i_1_n_6\,
       O(0) => \gc0.count_reg[4]_i_1_n_7\,
-      S(3) => \gc0.count[4]_i_2_n_0\,
-      S(2) => \gc0.count[4]_i_3_n_0\,
-      S(1) => \gc0.count[4]_i_4_n_0\,
-      S(0) => \gc0.count[4]_i_5_n_0\
+      S(3 downto 0) => \^d\(7 downto 4)
     );
 \gc0.count_reg[5]\: unisim.vcomponents.FDCE
     generic map(
@@ -8894,7 +8822,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \gc0.count_reg[4]_i_1_n_6\,
       Q => \^d\(5)
     );
@@ -8905,7 +8833,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \gc0.count_reg[4]_i_1_n_5\,
       Q => \^d\(6)
     );
@@ -8916,7 +8844,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \gc0.count_reg[4]_i_1_n_4\,
       Q => \^d\(7)
     );
@@ -8927,7 +8855,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \gc0.count_reg[8]_i_1_n_7\,
       Q => \^d\(8)
     );
@@ -8944,10 +8872,7 @@ begin
       O(2) => \gc0.count_reg[8]_i_1_n_5\,
       O(1) => \gc0.count_reg[8]_i_1_n_6\,
       O(0) => \gc0.count_reg[8]_i_1_n_7\,
-      S(3) => \gc0.count[8]_i_2_n_0\,
-      S(2) => \gc0.count[8]_i_3_n_0\,
-      S(1) => \gc0.count[8]_i_4_n_0\,
-      S(0) => \gc0.count[8]_i_5_n_0\
+      S(3 downto 0) => \^d\(11 downto 8)
     );
 \gc0.count_reg[9]\: unisim.vcomponents.FDCE
     generic map(
@@ -8956,142 +8881,131 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \gc0.count_reg[8]_i_1_n_6\,
       Q => \^d\(9)
     );
-\gnxpm_cdc.rd_pntr_gc[0]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[0]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(0),
-      I1 => \^q\(1),
-      O => I32(0)
+      I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(0),
+      I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(1),
+      O => I15(0)
     );
-\gnxpm_cdc.rd_pntr_gc[10]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[10]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(10),
-      I1 => \^q\(11),
-      O => I32(10)
+      I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(10),
+      I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(11),
+      O => I15(10)
     );
-\gnxpm_cdc.rd_pntr_gc[1]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[1]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(1),
-      I1 => \^q\(2),
-      O => I32(1)
+      I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(1),
+      I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(2),
+      O => I15(1)
     );
-\gnxpm_cdc.rd_pntr_gc[2]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[2]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(2),
-      I1 => \^q\(3),
-      O => I32(2)
+      I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(2),
+      I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(3),
+      O => I15(2)
     );
-\gnxpm_cdc.rd_pntr_gc[3]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[3]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(3),
-      I1 => \^q\(4),
-      O => I32(3)
+      I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(3),
+      I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(4),
+      O => I15(3)
     );
-\gnxpm_cdc.rd_pntr_gc[4]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[4]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(4),
-      I1 => \^q\(5),
-      O => I32(4)
+      I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(4),
+      I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(5),
+      O => I15(4)
     );
-\gnxpm_cdc.rd_pntr_gc[5]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[5]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(5),
-      I1 => \^q\(6),
-      O => I32(5)
+      I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(5),
+      I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(6),
+      O => I15(5)
     );
-\gnxpm_cdc.rd_pntr_gc[6]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[6]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(6),
-      I1 => \^q\(7),
-      O => I32(6)
+      I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(6),
+      I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(7),
+      O => I15(6)
     );
-\gnxpm_cdc.rd_pntr_gc[7]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[7]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(7),
-      I1 => \^q\(8),
-      O => I32(7)
+      I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(7),
+      I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(8),
+      O => I15(7)
     );
-\gnxpm_cdc.rd_pntr_gc[8]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[8]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(8),
-      I1 => \^q\(9),
-      O => I32(8)
+      I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(8),
+      I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(9),
+      O => I15(8)
     );
-\gnxpm_cdc.rd_pntr_gc[9]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[9]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(9),
-      I1 => \^q\(10),
-      O => I32(9)
+      I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(9),
+      I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(10),
+      O => I15(9)
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_rd_bin_cntr__parameterized0_34\ is
+entity \design_1_d_axi_i2s_audio_0_0_rd_bin_cntr__parameterized0_27\ is
   port (
     D : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    Q : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    \gnxpm_cdc.rd_pntr_gc_reg[10]\ : out STD_LOGIC_VECTOR ( 10 downto 0 );
+    \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\ : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    \rd_pntr_gc_reg[10]\ : out STD_LOGIC_VECTOR ( 10 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     rd_clk : in STD_LOGIC;
-    \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_rd_bin_cntr__parameterized0_34\ : entity is "rd_bin_cntr";
-end \design_1_d_axi_i2s_audio_0_0_rd_bin_cntr__parameterized0_34\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_rd_bin_cntr__parameterized0_27\ : entity is "rd_bin_cntr";
+end \design_1_d_axi_i2s_audio_0_0_rd_bin_cntr__parameterized0_27\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_rd_bin_cntr__parameterized0_34\ is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_rd_bin_cntr__parameterized0_27\ is
   signal \^d\ : STD_LOGIC_VECTOR ( 11 downto 0 );
-  signal \^q\ : STD_LOGIC_VECTOR ( 11 downto 0 );
-  signal \gc0.count[0]_i_2_n_0\ : STD_LOGIC;
-  signal \gc0.count[0]_i_3_n_0\ : STD_LOGIC;
-  signal \gc0.count[0]_i_4_n_0\ : STD_LOGIC;
+  signal \^device_7series.no_bmm_info.sdp.simple_prim36.ram\ : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal \gc0.count[0]_i_5_n_0\ : STD_LOGIC;
-  signal \gc0.count[4]_i_2_n_0\ : STD_LOGIC;
-  signal \gc0.count[4]_i_3_n_0\ : STD_LOGIC;
-  signal \gc0.count[4]_i_4_n_0\ : STD_LOGIC;
-  signal \gc0.count[4]_i_5_n_0\ : STD_LOGIC;
-  signal \gc0.count[8]_i_2_n_0\ : STD_LOGIC;
-  signal \gc0.count[8]_i_3_n_0\ : STD_LOGIC;
-  signal \gc0.count[8]_i_4_n_0\ : STD_LOGIC;
-  signal \gc0.count[8]_i_5_n_0\ : STD_LOGIC;
   signal \gc0.count_reg[0]_i_1_n_0\ : STD_LOGIC;
   signal \gc0.count_reg[0]_i_1_n_1\ : STD_LOGIC;
   signal \gc0.count_reg[0]_i_1_n_2\ : STD_LOGIC;
@@ -9117,43 +9031,19 @@ architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_rd_bin_cntr__parameteriz
   signal \gc0.count_reg[8]_i_1_n_7\ : STD_LOGIC;
   signal \NLW_gc0.count_reg[8]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \gnxpm_cdc.rd_pntr_gc[0]_i_1\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.rd_pntr_gc[1]_i_1\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.rd_pntr_gc[2]_i_1\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.rd_pntr_gc[3]_i_1\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.rd_pntr_gc[4]_i_1\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.rd_pntr_gc[5]_i_1\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.rd_pntr_gc[6]_i_1\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.rd_pntr_gc[7]_i_1\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.rd_pntr_gc[8]_i_1\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.rd_pntr_gc[9]_i_1\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \rd_pntr_gc[0]_i_1\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \rd_pntr_gc[1]_i_1\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \rd_pntr_gc[2]_i_1\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of \rd_pntr_gc[3]_i_1\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of \rd_pntr_gc[4]_i_1\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \rd_pntr_gc[5]_i_1\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \rd_pntr_gc[6]_i_1\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \rd_pntr_gc[7]_i_1\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \rd_pntr_gc[8]_i_1\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \rd_pntr_gc[9]_i_1\ : label is "soft_lutpair11";
 begin
   D(11 downto 0) <= \^d\(11 downto 0);
-  Q(11 downto 0) <= \^q\(11 downto 0);
-\gc0.count[0]_i_2\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(3),
-      O => \gc0.count[0]_i_2_n_0\
-    );
-\gc0.count[0]_i_3\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(2),
-      O => \gc0.count[0]_i_3_n_0\
-    );
-\gc0.count[0]_i_4\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(1),
-      O => \gc0.count[0]_i_4_n_0\
-    );
+  \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\(11 downto 0) <= \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(11 downto 0);
 \gc0.count[0]_i_5\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
@@ -9162,70 +9052,6 @@ begin
       I0 => \^d\(0),
       O => \gc0.count[0]_i_5_n_0\
     );
-\gc0.count[4]_i_2\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(7),
-      O => \gc0.count[4]_i_2_n_0\
-    );
-\gc0.count[4]_i_3\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(6),
-      O => \gc0.count[4]_i_3_n_0\
-    );
-\gc0.count[4]_i_4\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(5),
-      O => \gc0.count[4]_i_4_n_0\
-    );
-\gc0.count[4]_i_5\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(4),
-      O => \gc0.count[4]_i_5_n_0\
-    );
-\gc0.count[8]_i_2\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(11),
-      O => \gc0.count[8]_i_2_n_0\
-    );
-\gc0.count[8]_i_3\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(10),
-      O => \gc0.count[8]_i_3_n_0\
-    );
-\gc0.count[8]_i_4\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(9),
-      O => \gc0.count[8]_i_4_n_0\
-    );
-\gc0.count[8]_i_5\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(8),
-      O => \gc0.count[8]_i_5_n_0\
-    );
 \gc0.count_d1_reg[0]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
@@ -9233,9 +9059,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(0),
-      Q => \^q\(0)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(0)
     );
 \gc0.count_d1_reg[10]\: unisim.vcomponents.FDCE
     generic map(
@@ -9244,9 +9070,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(10),
-      Q => \^q\(10)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(10)
     );
 \gc0.count_d1_reg[11]\: unisim.vcomponents.FDCE
     generic map(
@@ -9255,9 +9081,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(11),
-      Q => \^q\(11)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(11)
     );
 \gc0.count_d1_reg[1]\: unisim.vcomponents.FDCE
     generic map(
@@ -9266,9 +9092,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(1),
-      Q => \^q\(1)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(1)
     );
 \gc0.count_d1_reg[2]\: unisim.vcomponents.FDCE
     generic map(
@@ -9277,9 +9103,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(2),
-      Q => \^q\(2)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(2)
     );
 \gc0.count_d1_reg[3]\: unisim.vcomponents.FDCE
     generic map(
@@ -9288,9 +9114,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(3),
-      Q => \^q\(3)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(3)
     );
 \gc0.count_d1_reg[4]\: unisim.vcomponents.FDCE
     generic map(
@@ -9299,9 +9125,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(4),
-      Q => \^q\(4)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(4)
     );
 \gc0.count_d1_reg[5]\: unisim.vcomponents.FDCE
     generic map(
@@ -9310,9 +9136,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(5),
-      Q => \^q\(5)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(5)
     );
 \gc0.count_d1_reg[6]\: unisim.vcomponents.FDCE
     generic map(
@@ -9321,9 +9147,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(6),
-      Q => \^q\(6)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(6)
     );
 \gc0.count_d1_reg[7]\: unisim.vcomponents.FDCE
     generic map(
@@ -9332,9 +9158,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(7),
-      Q => \^q\(7)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(7)
     );
 \gc0.count_d1_reg[8]\: unisim.vcomponents.FDCE
     generic map(
@@ -9343,9 +9169,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(8),
-      Q => \^q\(8)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(8)
     );
 \gc0.count_d1_reg[9]\: unisim.vcomponents.FDCE
     generic map(
@@ -9354,9 +9180,9 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \^d\(9),
-      Q => \^q\(9)
+      Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(9)
     );
 \gc0.count_reg[0]\: unisim.vcomponents.FDPE
     generic map(
@@ -9366,7 +9192,7 @@ begin
       C => rd_clk,
       CE => E(0),
       D => \gc0.count_reg[0]_i_1_n_7\,
-      PRE => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      PRE => Q(0),
       Q => \^d\(0)
     );
 \gc0.count_reg[0]_i_1\: unisim.vcomponents.CARRY4
@@ -9382,9 +9208,7 @@ begin
       O(2) => \gc0.count_reg[0]_i_1_n_5\,
       O(1) => \gc0.count_reg[0]_i_1_n_6\,
       O(0) => \gc0.count_reg[0]_i_1_n_7\,
-      S(3) => \gc0.count[0]_i_2_n_0\,
-      S(2) => \gc0.count[0]_i_3_n_0\,
-      S(1) => \gc0.count[0]_i_4_n_0\,
+      S(3 downto 1) => \^d\(3 downto 1),
       S(0) => \gc0.count[0]_i_5_n_0\
     );
 \gc0.count_reg[10]\: unisim.vcomponents.FDCE
@@ -9394,7 +9218,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \gc0.count_reg[8]_i_1_n_5\,
       Q => \^d\(10)
     );
@@ -9405,7 +9229,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \gc0.count_reg[8]_i_1_n_4\,
       Q => \^d\(11)
     );
@@ -9416,7 +9240,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \gc0.count_reg[0]_i_1_n_6\,
       Q => \^d\(1)
     );
@@ -9427,7 +9251,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \gc0.count_reg[0]_i_1_n_5\,
       Q => \^d\(2)
     );
@@ -9438,7 +9262,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \gc0.count_reg[0]_i_1_n_4\,
       Q => \^d\(3)
     );
@@ -9449,7 +9273,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \gc0.count_reg[4]_i_1_n_7\,
       Q => \^d\(4)
     );
@@ -9466,10 +9290,7 @@ begin
       O(2) => \gc0.count_reg[4]_i_1_n_5\,
       O(1) => \gc0.count_reg[4]_i_1_n_6\,
       O(0) => \gc0.count_reg[4]_i_1_n_7\,
-      S(3) => \gc0.count[4]_i_2_n_0\,
-      S(2) => \gc0.count[4]_i_3_n_0\,
-      S(1) => \gc0.count[4]_i_4_n_0\,
-      S(0) => \gc0.count[4]_i_5_n_0\
+      S(3 downto 0) => \^d\(7 downto 4)
     );
 \gc0.count_reg[5]\: unisim.vcomponents.FDCE
     generic map(
@@ -9478,7 +9299,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \gc0.count_reg[4]_i_1_n_6\,
       Q => \^d\(5)
     );
@@ -9489,7 +9310,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \gc0.count_reg[4]_i_1_n_5\,
       Q => \^d\(6)
     );
@@ -9500,7 +9321,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \gc0.count_reg[4]_i_1_n_4\,
       Q => \^d\(7)
     );
@@ -9511,7 +9332,7 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \gc0.count_reg[8]_i_1_n_7\,
       Q => \^d\(8)
     );
@@ -9528,10 +9349,7 @@ begin
       O(2) => \gc0.count_reg[8]_i_1_n_5\,
       O(1) => \gc0.count_reg[8]_i_1_n_6\,
       O(0) => \gc0.count_reg[8]_i_1_n_7\,
-      S(3) => \gc0.count[8]_i_2_n_0\,
-      S(2) => \gc0.count[8]_i_3_n_0\,
-      S(1) => \gc0.count[8]_i_4_n_0\,
-      S(0) => \gc0.count[8]_i_5_n_0\
+      S(3 downto 0) => \^d\(11 downto 8)
     );
 \gc0.count_reg[9]\: unisim.vcomponents.FDCE
     generic map(
@@ -9540,152 +9358,140 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      CLR => Q(0),
       D => \gc0.count_reg[8]_i_1_n_6\,
       Q => \^d\(9)
     );
-\gnxpm_cdc.rd_pntr_gc[0]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[0]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(0),
-      I1 => \^q\(1),
-      O => \gnxpm_cdc.rd_pntr_gc_reg[10]\(0)
+      I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(0),
+      I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(1),
+      O => \rd_pntr_gc_reg[10]\(0)
     );
-\gnxpm_cdc.rd_pntr_gc[10]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[10]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(10),
-      I1 => \^q\(11),
-      O => \gnxpm_cdc.rd_pntr_gc_reg[10]\(10)
+      I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(10),
+      I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(11),
+      O => \rd_pntr_gc_reg[10]\(10)
     );
-\gnxpm_cdc.rd_pntr_gc[1]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[1]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(1),
-      I1 => \^q\(2),
-      O => \gnxpm_cdc.rd_pntr_gc_reg[10]\(1)
+      I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(1),
+      I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(2),
+      O => \rd_pntr_gc_reg[10]\(1)
     );
-\gnxpm_cdc.rd_pntr_gc[2]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[2]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(2),
-      I1 => \^q\(3),
-      O => \gnxpm_cdc.rd_pntr_gc_reg[10]\(2)
+      I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(2),
+      I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(3),
+      O => \rd_pntr_gc_reg[10]\(2)
     );
-\gnxpm_cdc.rd_pntr_gc[3]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[3]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(3),
-      I1 => \^q\(4),
-      O => \gnxpm_cdc.rd_pntr_gc_reg[10]\(3)
+      I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(3),
+      I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(4),
+      O => \rd_pntr_gc_reg[10]\(3)
     );
-\gnxpm_cdc.rd_pntr_gc[4]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[4]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(4),
-      I1 => \^q\(5),
-      O => \gnxpm_cdc.rd_pntr_gc_reg[10]\(4)
+      I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(4),
+      I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(5),
+      O => \rd_pntr_gc_reg[10]\(4)
     );
-\gnxpm_cdc.rd_pntr_gc[5]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[5]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(5),
-      I1 => \^q\(6),
-      O => \gnxpm_cdc.rd_pntr_gc_reg[10]\(5)
+      I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(5),
+      I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(6),
+      O => \rd_pntr_gc_reg[10]\(5)
     );
-\gnxpm_cdc.rd_pntr_gc[6]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[6]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(6),
-      I1 => \^q\(7),
-      O => \gnxpm_cdc.rd_pntr_gc_reg[10]\(6)
+      I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(6),
+      I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(7),
+      O => \rd_pntr_gc_reg[10]\(6)
     );
-\gnxpm_cdc.rd_pntr_gc[7]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[7]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(7),
-      I1 => \^q\(8),
-      O => \gnxpm_cdc.rd_pntr_gc_reg[10]\(7)
+      I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(7),
+      I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(8),
+      O => \rd_pntr_gc_reg[10]\(7)
     );
-\gnxpm_cdc.rd_pntr_gc[8]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[8]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(8),
-      I1 => \^q\(9),
-      O => \gnxpm_cdc.rd_pntr_gc_reg[10]\(8)
+      I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(8),
+      I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(9),
+      O => \rd_pntr_gc_reg[10]\(8)
     );
-\gnxpm_cdc.rd_pntr_gc[9]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_gc[9]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(9),
-      I1 => \^q\(10),
-      O => \gnxpm_cdc.rd_pntr_gc_reg[10]\(9)
+      I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(9),
+      I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(10),
+      O => \rd_pntr_gc_reg[10]\(9)
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_rd_status_flags_as is
+entity \design_1_d_axi_i2s_audio_0_0_rd_status_flags_as\ is
   port (
     empty : out STD_LOGIC;
-    \out\ : out STD_LOGIC;
+    p_2_out : out STD_LOGIC;
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
     ram_empty_fb_i_reg_0 : in STD_LOGIC;
     rd_clk : in STD_LOGIC;
-    AR : in STD_LOGIC_VECTOR ( 0 to 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     rd_en : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_rd_status_flags_as : entity is "rd_status_flags_as";
-end design_1_d_axi_i2s_audio_0_0_rd_status_flags_as;
+end \design_1_d_axi_i2s_audio_0_0_rd_status_flags_as\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_rd_status_flags_as is
-  signal ram_empty_fb_i : STD_LOGIC;
-  attribute DONT_TOUCH : boolean;
-  attribute DONT_TOUCH of ram_empty_fb_i : signal is std.standard.true;
-  signal ram_empty_i : STD_LOGIC;
-  attribute DONT_TOUCH of ram_empty_i : signal is std.standard.true;
-  attribute DONT_TOUCH of ram_empty_fb_i_reg : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of ram_empty_fb_i_reg : label is "yes";
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_rd_status_flags_as\ is
+  signal \^p_2_out\ : STD_LOGIC;
   attribute equivalent_register_removal : string;
   attribute equivalent_register_removal of ram_empty_fb_i_reg : label is "no";
-  attribute DONT_TOUCH of ram_empty_i_reg : label is std.standard.true;
-  attribute KEEP of ram_empty_i_reg : label is "yes";
   attribute equivalent_register_removal of ram_empty_i_reg : label is "no";
 begin
-  empty <= ram_empty_i;
-  \out\ <= ram_empty_fb_i;
+  p_2_out <= \^p_2_out\;
 \gc0.count_d1[3]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"2"
     )
         port map (
       I0 => rd_en,
-      I1 => ram_empty_fb_i,
+      I1 => \^p_2_out\,
       O => E(0)
     );
 ram_empty_fb_i_reg: unisim.vcomponents.FDPE
@@ -9696,8 +9502,8 @@ ram_empty_fb_i_reg: unisim.vcomponents.FDPE
       C => rd_clk,
       CE => '1',
       D => ram_empty_fb_i_reg_0,
-      PRE => AR(0),
-      Q => ram_empty_fb_i
+      PRE => Q(0),
+      Q => \^p_2_out\
     );
 ram_empty_i_reg: unisim.vcomponents.FDPE
     generic map(
@@ -9707,47 +9513,788 @@ ram_empty_i_reg: unisim.vcomponents.FDPE
       C => rd_clk,
       CE => '1',
       D => ram_empty_fb_i_reg_0,
-      PRE => AR(0),
-      Q => ram_empty_i
+      PRE => Q(0),
+      Q => empty
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_synchronizer_ff is
+entity \design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo\ is
   port (
     \out\ : out STD_LOGIC;
-    \ngwrdrst.grst.g7serrst.rd_rst_asreg_reg\ : out STD_LOGIC;
-    in0 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    rd_clk : in STD_LOGIC
+    ram_full_i_reg : out STD_LOGIC;
+    tmp_ram_rd_en : out STD_LOGIC;
+    Q : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    \gic0.gc0.count_reg[0]\ : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    wr_clk : in STD_LOGIC;
+    rst : in STD_LOGIC;
+    rd_clk : in STD_LOGIC;
+    p_2_out : in STD_LOGIC;
+    rd_en : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_synchronizer_ff : entity is "synchronizer_ff";
-end design_1_d_axi_i2s_audio_0_0_synchronizer_ff;
+end \design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_synchronizer_ff is
-  signal Q_reg : STD_LOGIC;
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo\ is
+  signal \^q\ : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal \ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1_n_0\ : STD_LOGIC;
+  signal \ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1_n_0\ : STD_LOGIC;
+  signal rd_rst_asreg : STD_LOGIC;
+  signal rd_rst_asreg_d1 : STD_LOGIC;
+  signal rd_rst_asreg_d2 : STD_LOGIC;
+  signal rst_d1 : STD_LOGIC;
   attribute async_reg : string;
-  attribute async_reg of Q_reg : signal is "true";
+  attribute async_reg of rst_d1 : signal is "true";
   attribute msgon : string;
-  attribute msgon of Q_reg : signal is "true";
+  attribute msgon of rst_d1 : signal is "true";
+  signal rst_d2 : STD_LOGIC;
+  attribute async_reg of rst_d2 : signal is "true";
+  attribute msgon of rst_d2 : signal is "true";
+  signal rst_d3 : STD_LOGIC;
+  attribute async_reg of rst_d3 : signal is "true";
+  attribute msgon of rst_d3 : signal is "true";
+  signal rst_rd_reg1 : STD_LOGIC;
+  attribute async_reg of rst_rd_reg1 : signal is "true";
+  attribute msgon of rst_rd_reg1 : signal is "true";
+  signal rst_rd_reg2 : STD_LOGIC;
+  attribute async_reg of rst_rd_reg2 : signal is "true";
+  attribute msgon of rst_rd_reg2 : signal is "true";
+  signal rst_wr_reg1 : STD_LOGIC;
+  attribute async_reg of rst_wr_reg1 : signal is "true";
+  attribute msgon of rst_wr_reg1 : signal is "true";
+  signal rst_wr_reg2 : STD_LOGIC;
+  attribute async_reg of rst_wr_reg2 : signal is "true";
+  attribute msgon of rst_wr_reg2 : signal is "true";
+  signal wr_rst_asreg : STD_LOGIC;
+  signal wr_rst_asreg_d1 : STD_LOGIC;
+  signal wr_rst_asreg_d2 : STD_LOGIC;
   attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \Q_reg_reg[0]\ : label is std.standard.true;
+  attribute ASYNC_REG_boolean of \grstd1.grst_full.grst_f.rst_d1_reg\ : label is std.standard.true;
   attribute KEEP : string;
-  attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[0]\ : label is "true";
+  attribute KEEP of \grstd1.grst_full.grst_f.rst_d1_reg\ : label is "yes";
+  attribute msgon of \grstd1.grst_full.grst_f.rst_d1_reg\ : label is "true";
+  attribute ASYNC_REG_boolean of \grstd1.grst_full.grst_f.rst_d2_reg\ : label is std.standard.true;
+  attribute KEEP of \grstd1.grst_full.grst_f.rst_d2_reg\ : label is "yes";
+  attribute msgon of \grstd1.grst_full.grst_f.rst_d2_reg\ : label is "true";
+  attribute ASYNC_REG_boolean of \grstd1.grst_full.grst_f.rst_d3_reg\ : label is std.standard.true;
+  attribute KEEP of \grstd1.grst_full.grst_f.rst_d3_reg\ : label is "yes";
+  attribute msgon of \grstd1.grst_full.grst_f.rst_d3_reg\ : label is "true";
+  attribute equivalent_register_removal : string;
+  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\ : label is "no";
+  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : label is "no";
+  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\ : label is "no";
+  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\ : label is std.standard.true;
+  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\ : label is "yes";
+  attribute msgon of \ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\ : label is "true";
+  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\ : label is std.standard.true;
+  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\ : label is "yes";
+  attribute msgon of \ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\ : label is "true";
+  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\ : label is std.standard.true;
+  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\ : label is "yes";
+  attribute msgon of \ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\ : label is "true";
+  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\ : label is std.standard.true;
+  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\ : label is "yes";
+  attribute msgon of \ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\ : label is "true";
+  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\ : label is "no";
+  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\ : label is "no";
 begin
-  \out\ <= Q_reg;
-\Q_reg_reg[0]\: unisim.vcomponents.FDRE
+  Q(2 downto 0) <= \^q\(2 downto 0);
+  \out\ <= rst_d2;
+  ram_full_i_reg <= rst_d3;
+\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"BA"
+    )
+        port map (
+      I0 => \^q\(0),
+      I1 => p_2_out,
+      I2 => rd_en,
+      O => tmp_ram_rd_en
+    );
+\grstd1.grst_full.grst_f.rst_d1_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => '0',
+      PRE => rst,
+      Q => rst_d1
+    );
+\grstd1.grst_full.grst_f.rst_d2_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => rst_d1,
+      PRE => rst,
+      Q => rst_d2
+    );
+\grstd1.grst_full.grst_f.rst_d3_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => rst_d2,
+      PRE => rst,
+      Q => rst_d3
+    );
+\ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
     )
         port map (
       C => rd_clk,
       CE => '1',
-      D => in0(0),
-      Q => Q_reg,
+      D => rd_rst_asreg,
+      Q => rd_rst_asreg_d1,
+      R => '0'
+    );
+\ngwrdrst.grst.g7serrst.rd_rst_asreg_d2_reg\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      D => rd_rst_asreg_d1,
+      Q => rd_rst_asreg_d2,
+      R => '0'
+    );
+\ngwrdrst.grst.g7serrst.rd_rst_asreg_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => rd_clk,
+      CE => rd_rst_asreg_d1,
+      D => '0',
+      PRE => rst_rd_reg2,
+      Q => rd_rst_asreg
+    );
+\ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rd_rst_asreg,
+      I1 => rd_rst_asreg_d2,
+      O => \ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1_n_0\
+    );
+\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      D => '0',
+      PRE => \ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1_n_0\,
+      Q => \^q\(0)
+    );
+\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      D => '0',
+      PRE => \ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1_n_0\,
+      Q => \^q\(1)
+    );
+\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      D => '0',
+      PRE => \ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1_n_0\,
+      Q => \^q\(2)
+    );
+\ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      D => '0',
+      PRE => rst,
+      Q => rst_rd_reg1
+    );
+\ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      D => rst_rd_reg1,
+      PRE => rst,
+      Q => rst_rd_reg2
+    );
+\ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => '0',
+      PRE => rst,
+      Q => rst_wr_reg1
+    );
+\ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => rst_wr_reg1,
+      PRE => rst,
+      Q => rst_wr_reg2
+    );
+\ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => wr_rst_asreg,
+      Q => wr_rst_asreg_d1,
+      R => '0'
+    );
+\ngwrdrst.grst.g7serrst.wr_rst_asreg_d2_reg\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => wr_rst_asreg_d1,
+      Q => wr_rst_asreg_d2,
+      R => '0'
+    );
+\ngwrdrst.grst.g7serrst.wr_rst_asreg_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => wr_clk,
+      CE => wr_rst_asreg_d1,
+      D => '0',
+      PRE => rst_wr_reg2,
+      Q => wr_rst_asreg
+    );
+\ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => wr_rst_asreg,
+      I1 => wr_rst_asreg_d2,
+      O => \ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1_n_0\
+    );
+\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => '0',
+      PRE => \ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1_n_0\,
+      Q => \gic0.gc0.count_reg[0]\(0)
+    );
+\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => '0',
+      PRE => \ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1_n_0\,
+      Q => \gic0.gc0.count_reg[0]\(1)
+    );
+end STRUCTURE;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+entity \design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo_11\ is
+  port (
+    \out\ : out STD_LOGIC;
+    ram_full_i_reg : out STD_LOGIC;
+    tmp_ram_rd_en : out STD_LOGIC;
+    Q : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    \gic0.gc0.count_reg[0]\ : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    wr_clk : in STD_LOGIC;
+    rst : in STD_LOGIC;
+    rd_clk : in STD_LOGIC;
+    p_2_out : in STD_LOGIC;
+    rd_en : in STD_LOGIC
+  );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo_11\ : entity is "reset_blk_ramfifo";
+end \design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo_11\;
+
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo_11\ is
+  signal \^q\ : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal \ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1_n_0\ : STD_LOGIC;
+  signal \ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1_n_0\ : STD_LOGIC;
+  signal rd_rst_asreg : STD_LOGIC;
+  signal rd_rst_asreg_d1 : STD_LOGIC;
+  signal rd_rst_asreg_d2 : STD_LOGIC;
+  signal rst_d1 : STD_LOGIC;
+  attribute async_reg : string;
+  attribute async_reg of rst_d1 : signal is "true";
+  attribute msgon : string;
+  attribute msgon of rst_d1 : signal is "true";
+  signal rst_d2 : STD_LOGIC;
+  attribute async_reg of rst_d2 : signal is "true";
+  attribute msgon of rst_d2 : signal is "true";
+  signal rst_d3 : STD_LOGIC;
+  attribute async_reg of rst_d3 : signal is "true";
+  attribute msgon of rst_d3 : signal is "true";
+  signal rst_rd_reg1 : STD_LOGIC;
+  attribute async_reg of rst_rd_reg1 : signal is "true";
+  attribute msgon of rst_rd_reg1 : signal is "true";
+  signal rst_rd_reg2 : STD_LOGIC;
+  attribute async_reg of rst_rd_reg2 : signal is "true";
+  attribute msgon of rst_rd_reg2 : signal is "true";
+  signal rst_wr_reg1 : STD_LOGIC;
+  attribute async_reg of rst_wr_reg1 : signal is "true";
+  attribute msgon of rst_wr_reg1 : signal is "true";
+  signal rst_wr_reg2 : STD_LOGIC;
+  attribute async_reg of rst_wr_reg2 : signal is "true";
+  attribute msgon of rst_wr_reg2 : signal is "true";
+  signal wr_rst_asreg : STD_LOGIC;
+  signal wr_rst_asreg_d1 : STD_LOGIC;
+  signal wr_rst_asreg_d2 : STD_LOGIC;
+  attribute ASYNC_REG_boolean : boolean;
+  attribute ASYNC_REG_boolean of \grstd1.grst_full.grst_f.rst_d1_reg\ : label is std.standard.true;
+  attribute KEEP : string;
+  attribute KEEP of \grstd1.grst_full.grst_f.rst_d1_reg\ : label is "yes";
+  attribute msgon of \grstd1.grst_full.grst_f.rst_d1_reg\ : label is "true";
+  attribute ASYNC_REG_boolean of \grstd1.grst_full.grst_f.rst_d2_reg\ : label is std.standard.true;
+  attribute KEEP of \grstd1.grst_full.grst_f.rst_d2_reg\ : label is "yes";
+  attribute msgon of \grstd1.grst_full.grst_f.rst_d2_reg\ : label is "true";
+  attribute ASYNC_REG_boolean of \grstd1.grst_full.grst_f.rst_d3_reg\ : label is std.standard.true;
+  attribute KEEP of \grstd1.grst_full.grst_f.rst_d3_reg\ : label is "yes";
+  attribute msgon of \grstd1.grst_full.grst_f.rst_d3_reg\ : label is "true";
+  attribute equivalent_register_removal : string;
+  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\ : label is "no";
+  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : label is "no";
+  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\ : label is "no";
+  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\ : label is std.standard.true;
+  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\ : label is "yes";
+  attribute msgon of \ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\ : label is "true";
+  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\ : label is std.standard.true;
+  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\ : label is "yes";
+  attribute msgon of \ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\ : label is "true";
+  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\ : label is std.standard.true;
+  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\ : label is "yes";
+  attribute msgon of \ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\ : label is "true";
+  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\ : label is std.standard.true;
+  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\ : label is "yes";
+  attribute msgon of \ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\ : label is "true";
+  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\ : label is "no";
+  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\ : label is "no";
+begin
+  Q(2 downto 0) <= \^q\(2 downto 0);
+  \out\ <= rst_d2;
+  ram_full_i_reg <= rst_d3;
+\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"BA"
+    )
+        port map (
+      I0 => \^q\(0),
+      I1 => p_2_out,
+      I2 => rd_en,
+      O => tmp_ram_rd_en
+    );
+\grstd1.grst_full.grst_f.rst_d1_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => '0',
+      PRE => rst,
+      Q => rst_d1
+    );
+\grstd1.grst_full.grst_f.rst_d2_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => rst_d1,
+      PRE => rst,
+      Q => rst_d2
+    );
+\grstd1.grst_full.grst_f.rst_d3_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => rst_d2,
+      PRE => rst,
+      Q => rst_d3
+    );
+\ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      D => rd_rst_asreg,
+      Q => rd_rst_asreg_d1,
+      R => '0'
+    );
+\ngwrdrst.grst.g7serrst.rd_rst_asreg_d2_reg\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      D => rd_rst_asreg_d1,
+      Q => rd_rst_asreg_d2,
+      R => '0'
+    );
+\ngwrdrst.grst.g7serrst.rd_rst_asreg_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => rd_clk,
+      CE => rd_rst_asreg_d1,
+      D => '0',
+      PRE => rst_rd_reg2,
+      Q => rd_rst_asreg
+    );
+\ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rd_rst_asreg,
+      I1 => rd_rst_asreg_d2,
+      O => \ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1_n_0\
+    );
+\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      D => '0',
+      PRE => \ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1_n_0\,
+      Q => \^q\(0)
+    );
+\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      D => '0',
+      PRE => \ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1_n_0\,
+      Q => \^q\(1)
+    );
+\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      D => '0',
+      PRE => \ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1_n_0\,
+      Q => \^q\(2)
+    );
+\ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      D => '0',
+      PRE => rst,
+      Q => rst_rd_reg1
+    );
+\ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      D => rst_rd_reg1,
+      PRE => rst,
+      Q => rst_rd_reg2
+    );
+\ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => '0',
+      PRE => rst,
+      Q => rst_wr_reg1
+    );
+\ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => rst_wr_reg1,
+      PRE => rst,
+      Q => rst_wr_reg2
+    );
+\ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => wr_rst_asreg,
+      Q => wr_rst_asreg_d1,
+      R => '0'
+    );
+\ngwrdrst.grst.g7serrst.wr_rst_asreg_d2_reg\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => wr_rst_asreg_d1,
+      Q => wr_rst_asreg_d2,
+      R => '0'
+    );
+\ngwrdrst.grst.g7serrst.wr_rst_asreg_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => wr_clk,
+      CE => wr_rst_asreg_d1,
+      D => '0',
+      PRE => rst_wr_reg2,
+      Q => wr_rst_asreg
+    );
+\ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => wr_rst_asreg,
+      I1 => wr_rst_asreg_d2,
+      O => \ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1_n_0\
+    );
+\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => '0',
+      PRE => \ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1_n_0\,
+      Q => \gic0.gc0.count_reg[0]\(0)
+    );
+\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => '0',
+      PRE => \ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1_n_0\,
+      Q => \gic0.gc0.count_reg[0]\(1)
+    );
+end STRUCTURE;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+entity \design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo_34\ is
+  port (
+    \out\ : out STD_LOGIC;
+    ram_full_fb_i_reg : out STD_LOGIC;
+    tmp_ram_rd_en : out STD_LOGIC;
+    Q : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    \gic0.gc0.count_reg[0]\ : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    wr_clk : in STD_LOGIC;
+    rst : in STD_LOGIC;
+    rd_clk : in STD_LOGIC;
+    p_2_out : in STD_LOGIC;
+    rd_en : in STD_LOGIC
+  );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo_34\ : entity is "reset_blk_ramfifo";
+end \design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo_34\;
+
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo_34\ is
+  signal \^q\ : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal \ngwrdrst.grst.g7serrst.rd_rst_asreg_i_1_n_0\ : STD_LOGIC;
+  signal \ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1_n_0\ : STD_LOGIC;
+  signal \ngwrdrst.grst.g7serrst.wr_rst_asreg_i_1_n_0\ : STD_LOGIC;
+  signal \ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1_n_0\ : STD_LOGIC;
+  signal rd_rst_asreg : STD_LOGIC;
+  signal rd_rst_asreg_d1 : STD_LOGIC;
+  signal rd_rst_asreg_d2 : STD_LOGIC;
+  signal rst_d1 : STD_LOGIC;
+  attribute async_reg : string;
+  attribute async_reg of rst_d1 : signal is "true";
+  attribute msgon : string;
+  attribute msgon of rst_d1 : signal is "true";
+  signal rst_d2 : STD_LOGIC;
+  attribute async_reg of rst_d2 : signal is "true";
+  attribute msgon of rst_d2 : signal is "true";
+  signal rst_d3 : STD_LOGIC;
+  attribute async_reg of rst_d3 : signal is "true";
+  attribute msgon of rst_d3 : signal is "true";
+  signal rst_rd_reg1 : STD_LOGIC;
+  attribute async_reg of rst_rd_reg1 : signal is "true";
+  attribute msgon of rst_rd_reg1 : signal is "true";
+  signal rst_rd_reg2 : STD_LOGIC;
+  attribute async_reg of rst_rd_reg2 : signal is "true";
+  attribute msgon of rst_rd_reg2 : signal is "true";
+  signal rst_wr_reg1 : STD_LOGIC;
+  attribute async_reg of rst_wr_reg1 : signal is "true";
+  attribute msgon of rst_wr_reg1 : signal is "true";
+  signal rst_wr_reg2 : STD_LOGIC;
+  attribute async_reg of rst_wr_reg2 : signal is "true";
+  attribute msgon of rst_wr_reg2 : signal is "true";
+  signal wr_rst_asreg : STD_LOGIC;
+  signal wr_rst_asreg_d1 : STD_LOGIC;
+  signal wr_rst_asreg_d2 : STD_LOGIC;
+  attribute ASYNC_REG_boolean : boolean;
+  attribute ASYNC_REG_boolean of \grstd1.grst_full.grst_f.rst_d1_reg\ : label is std.standard.true;
+  attribute KEEP : string;
+  attribute KEEP of \grstd1.grst_full.grst_f.rst_d1_reg\ : label is "yes";
+  attribute msgon of \grstd1.grst_full.grst_f.rst_d1_reg\ : label is "true";
+  attribute ASYNC_REG_boolean of \grstd1.grst_full.grst_f.rst_d2_reg\ : label is std.standard.true;
+  attribute KEEP of \grstd1.grst_full.grst_f.rst_d2_reg\ : label is "yes";
+  attribute msgon of \grstd1.grst_full.grst_f.rst_d2_reg\ : label is "true";
+  attribute ASYNC_REG_boolean of \grstd1.grst_full.grst_f.rst_d3_reg\ : label is std.standard.true;
+  attribute KEEP of \grstd1.grst_full.grst_f.rst_d3_reg\ : label is "yes";
+  attribute msgon of \grstd1.grst_full.grst_f.rst_d3_reg\ : label is "true";
+  attribute equivalent_register_removal : string;
+  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\ : label is "no";
+  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : label is "no";
+  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\ : label is "no";
+  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\ : label is std.standard.true;
+  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\ : label is "yes";
+  attribute msgon of \ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\ : label is "true";
+  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\ : label is std.standard.true;
+  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\ : label is "yes";
+  attribute msgon of \ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\ : label is "true";
+  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\ : label is std.standard.true;
+  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\ : label is "yes";
+  attribute msgon of \ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\ : label is "true";
+  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\ : label is std.standard.true;
+  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\ : label is "yes";
+  attribute msgon of \ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\ : label is "true";
+  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\ : label is "no";
+  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\ : label is "no";
+begin
+  Q(2 downto 0) <= \^q\(2 downto 0);
+  \out\ <= rst_d2;
+  ram_full_fb_i_reg <= rst_d3;
+\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_i_1\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"BA"
+    )
+        port map (
+      I0 => \^q\(0),
+      I1 => p_2_out,
+      I2 => rd_en,
+      O => tmp_ram_rd_en
+    );
+\grstd1.grst_full.grst_f.rst_d1_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => '0',
+      PRE => rst,
+      Q => rst_d1
+    );
+\grstd1.grst_full.grst_f.rst_d2_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => rst_d1,
+      PRE => rst,
+      Q => rst_d2
+    );
+\grstd1.grst_full.grst_f.rst_d3_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => rst_d2,
+      PRE => rst,
+      Q => rst_d3
+    );
+\ngwrdrst.grst.g7serrst.rd_rst_asreg_d1_reg\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      D => rd_rst_asreg,
+      Q => rd_rst_asreg_d1,
+      R => '0'
+    );
+\ngwrdrst.grst.g7serrst.rd_rst_asreg_d2_reg\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      D => rd_rst_asreg_d1,
+      Q => rd_rst_asreg_d2,
       R => '0'
     );
 \ngwrdrst.grst.g7serrst.rd_rst_asreg_i_1\: unisim.vcomponents.LUT2
@@ -9755,97 +10302,127 @@ begin
       INIT => X"2"
     )
         port map (
-      I0 => in0(0),
-      I1 => Q_reg,
-      O => \ngwrdrst.grst.g7serrst.rd_rst_asreg_reg\
+      I0 => rd_rst_asreg,
+      I1 => rd_rst_asreg_d1,
+      O => \ngwrdrst.grst.g7serrst.rd_rst_asreg_i_1_n_0\
     );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_synchronizer_ff_15 is
-  port (
-    \out\ : out STD_LOGIC;
-    \ngwrdrst.grst.g7serrst.rd_rst_asreg_reg\ : out STD_LOGIC;
-    in0 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    rd_clk : in STD_LOGIC
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_15 : entity is "synchronizer_ff";
-end design_1_d_axi_i2s_audio_0_0_synchronizer_ff_15;
-
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_15 is
-  signal Q_reg : STD_LOGIC;
-  attribute async_reg : string;
-  attribute async_reg of Q_reg : signal is "true";
-  attribute msgon : string;
-  attribute msgon of Q_reg : signal is "true";
-  attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \Q_reg_reg[0]\ : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[0]\ : label is "true";
-begin
-  \out\ <= Q_reg;
-\Q_reg_reg[0]\: unisim.vcomponents.FDRE
+\ngwrdrst.grst.g7serrst.rd_rst_asreg_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      D => \ngwrdrst.grst.g7serrst.rd_rst_asreg_i_1_n_0\,
+      PRE => rst_rd_reg2,
+      Q => rd_rst_asreg
+    );
+\ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => rd_rst_asreg,
+      I1 => rd_rst_asreg_d2,
+      O => \ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1_n_0\
+    );
+\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      D => '0',
+      PRE => \ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1_n_0\,
+      Q => \^q\(0)
+    );
+\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      D => '0',
+      PRE => \ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1_n_0\,
+      Q => \^q\(1)
+    );
+\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      D => '0',
+      PRE => \ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1_n_0\,
+      Q => \^q\(2)
+    );
+\ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\: unisim.vcomponents.FDPE
     generic map(
       INIT => '0'
     )
         port map (
       C => rd_clk,
       CE => '1',
-      D => in0(0),
-      Q => Q_reg,
-      R => '0'
+      D => '0',
+      PRE => rst,
+      Q => rst_rd_reg1
     );
-\ngwrdrst.grst.g7serrst.rd_rst_asreg_i_1\: unisim.vcomponents.LUT2
+\ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\: unisim.vcomponents.FDPE
     generic map(
-      INIT => X"2"
+      INIT => '0'
     )
         port map (
-      I0 => in0(0),
-      I1 => Q_reg,
-      O => \ngwrdrst.grst.g7serrst.rd_rst_asreg_reg\
+      C => rd_clk,
+      CE => '1',
+      D => rst_rd_reg1,
+      PRE => rst,
+      Q => rst_rd_reg2
     );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_synchronizer_ff_16 is
-  port (
-    \out\ : out STD_LOGIC;
-    \ngwrdrst.grst.g7serrst.wr_rst_asreg_reg\ : out STD_LOGIC;
-    in0 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    wr_clk : in STD_LOGIC
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_16 : entity is "synchronizer_ff";
-end design_1_d_axi_i2s_audio_0_0_synchronizer_ff_16;
-
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_16 is
-  signal Q_reg : STD_LOGIC;
-  attribute async_reg : string;
-  attribute async_reg of Q_reg : signal is "true";
-  attribute msgon : string;
-  attribute msgon of Q_reg : signal is "true";
-  attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \Q_reg_reg[0]\ : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[0]\ : label is "true";
-begin
-  \out\ <= Q_reg;
-\Q_reg_reg[0]\: unisim.vcomponents.FDRE
+\ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\: unisim.vcomponents.FDPE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      D => in0(0),
-      Q => Q_reg,
+      D => '0',
+      PRE => rst,
+      Q => rst_wr_reg1
+    );
+\ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => rst_wr_reg1,
+      PRE => rst,
+      Q => rst_wr_reg2
+    );
+\ngwrdrst.grst.g7serrst.wr_rst_asreg_d1_reg\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => wr_rst_asreg,
+      Q => wr_rst_asreg_d1,
+      R => '0'
+    );
+\ngwrdrst.grst.g7serrst.wr_rst_asreg_d2_reg\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      D => wr_rst_asreg_d1,
+      Q => wr_rst_asreg_d2,
       R => '0'
     );
 \ngwrdrst.grst.g7serrst.wr_rst_asreg_i_1\: unisim.vcomponents.LUT2
@@ -9853,271 +10430,68 @@ begin
       INIT => X"2"
     )
         port map (
-      I0 => in0(0),
-      I1 => Q_reg,
-      O => \ngwrdrst.grst.g7serrst.wr_rst_asreg_reg\
+      I0 => wr_rst_asreg,
+      I1 => wr_rst_asreg_d1,
+      O => \ngwrdrst.grst.g7serrst.wr_rst_asreg_i_1_n_0\
     );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_synchronizer_ff_17 is
-  port (
-    AS : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \out\ : in STD_LOGIC;
-    rd_clk : in STD_LOGIC;
-    in0 : in STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_17 : entity is "synchronizer_ff";
-end design_1_d_axi_i2s_audio_0_0_synchronizer_ff_17;
-
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_17 is
-  signal Q_reg : STD_LOGIC;
-  attribute async_reg : string;
-  attribute async_reg of Q_reg : signal is "true";
-  attribute msgon : string;
-  attribute msgon of Q_reg : signal is "true";
-  attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \Q_reg_reg[0]\ : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[0]\ : label is "true";
-begin
-\Q_reg_reg[0]\: unisim.vcomponents.FDRE
+\ngwrdrst.grst.g7serrst.wr_rst_asreg_reg\: unisim.vcomponents.FDPE
     generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      D => \out\,
-      Q => Q_reg,
-      R => '0'
-    );
-\ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => in0(0),
-      I1 => Q_reg,
-      O => AS(0)
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_synchronizer_ff_18 is
-  port (
-    AS : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \out\ : in STD_LOGIC;
-    wr_clk : in STD_LOGIC;
-    in0 : in STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_18 : entity is "synchronizer_ff";
-end design_1_d_axi_i2s_audio_0_0_synchronizer_ff_18;
-
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_18 is
-  signal Q_reg : STD_LOGIC;
-  attribute async_reg : string;
-  attribute async_reg of Q_reg : signal is "true";
-  attribute msgon : string;
-  attribute msgon of Q_reg : signal is "true";
-  attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \Q_reg_reg[0]\ : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[0]\ : label is "true";
-begin
-\Q_reg_reg[0]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
+      INIT => '1'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      D => \out\,
-      Q => Q_reg,
-      R => '0'
+      D => \ngwrdrst.grst.g7serrst.wr_rst_asreg_i_1_n_0\,
+      PRE => rst_wr_reg2,
+      Q => wr_rst_asreg
     );
 \ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"2"
     )
         port map (
-      I0 => in0(0),
-      I1 => Q_reg,
-      O => AS(0)
+      I0 => wr_rst_asreg,
+      I1 => wr_rst_asreg_d2,
+      O => \ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1_n_0\
     );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_synchronizer_ff_4 is
-  port (
-    \out\ : out STD_LOGIC;
-    \ngwrdrst.grst.g7serrst.wr_rst_asreg_reg\ : out STD_LOGIC;
-    in0 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    wr_clk : in STD_LOGIC
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_4 : entity is "synchronizer_ff";
-end design_1_d_axi_i2s_audio_0_0_synchronizer_ff_4;
-
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_4 is
-  signal Q_reg : STD_LOGIC;
-  attribute async_reg : string;
-  attribute async_reg of Q_reg : signal is "true";
-  attribute msgon : string;
-  attribute msgon of Q_reg : signal is "true";
-  attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \Q_reg_reg[0]\ : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[0]\ : label is "true";
-begin
-  \out\ <= Q_reg;
-\Q_reg_reg[0]\: unisim.vcomponents.FDRE
+\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\: unisim.vcomponents.FDPE
     generic map(
-      INIT => '0'
+      INIT => '1'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      D => in0(0),
-      Q => Q_reg,
-      R => '0'
+      D => '0',
+      PRE => \ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1_n_0\,
+      Q => \gic0.gc0.count_reg[0]\(0)
     );
-\ngwrdrst.grst.g7serrst.wr_rst_asreg_i_1\: unisim.vcomponents.LUT2
+\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\: unisim.vcomponents.FDPE
     generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => in0(0),
-      I1 => Q_reg,
-      O => \ngwrdrst.grst.g7serrst.wr_rst_asreg_reg\
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_synchronizer_ff_42 is
-  port (
-    \out\ : out STD_LOGIC;
-    \ngwrdrst.grst.g7serrst.rd_rst_asreg_reg\ : out STD_LOGIC;
-    in0 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    rd_clk : in STD_LOGIC
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_42 : entity is "synchronizer_ff";
-end design_1_d_axi_i2s_audio_0_0_synchronizer_ff_42;
-
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_42 is
-  signal Q_reg : STD_LOGIC;
-  attribute async_reg : string;
-  attribute async_reg of Q_reg : signal is "true";
-  attribute msgon : string;
-  attribute msgon of Q_reg : signal is "true";
-  attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \Q_reg_reg[0]\ : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[0]\ : label is "true";
-begin
-  \out\ <= Q_reg;
-\Q_reg_reg[0]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      D => in0(0),
-      Q => Q_reg,
-      R => '0'
-    );
-\ngwrdrst.grst.g7serrst.rd_rst_asreg_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => in0(0),
-      I1 => Q_reg,
-      O => \ngwrdrst.grst.g7serrst.rd_rst_asreg_reg\
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_synchronizer_ff_43 is
-  port (
-    \out\ : out STD_LOGIC;
-    \ngwrdrst.grst.g7serrst.wr_rst_asreg_reg\ : out STD_LOGIC;
-    in0 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    wr_clk : in STD_LOGIC
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_43 : entity is "synchronizer_ff";
-end design_1_d_axi_i2s_audio_0_0_synchronizer_ff_43;
-
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_43 is
-  signal Q_reg : STD_LOGIC;
-  attribute async_reg : string;
-  attribute async_reg of Q_reg : signal is "true";
-  attribute msgon : string;
-  attribute msgon of Q_reg : signal is "true";
-  attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \Q_reg_reg[0]\ : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[0]\ : label is "true";
-begin
-  \out\ <= Q_reg;
-\Q_reg_reg[0]\: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
+      INIT => '1'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      D => in0(0),
-      Q => Q_reg,
-      R => '0'
-    );
-\ngwrdrst.grst.g7serrst.wr_rst_asreg_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => in0(0),
-      I1 => Q_reg,
-      O => \ngwrdrst.grst.g7serrst.wr_rst_asreg_reg\
+      D => '0',
+      PRE => \ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1_n_0\,
+      Q => \gic0.gc0.count_reg[0]\(1)
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_synchronizer_ff_44 is
+entity \design_1_d_axi_i2s_audio_0_0_synchronizer_ff\ is
   port (
-    AS : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \out\ : in STD_LOGIC;
+    D : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 3 downto 0 );
     rd_clk : in STD_LOGIC;
-    in0 : in STD_LOGIC_VECTOR ( 0 to 0 )
+    \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_44 : entity is "synchronizer_ff";
-end design_1_d_axi_i2s_audio_0_0_synchronizer_ff_44;
+end \design_1_d_axi_i2s_audio_0_0_synchronizer_ff\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_44 is
-  signal Q_reg : STD_LOGIC;
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff\ is
+  signal Q_reg : STD_LOGIC_VECTOR ( 3 downto 0 );
   attribute async_reg : string;
   attribute async_reg of Q_reg : signal is "true";
   attribute msgon : string;
@@ -10127,45 +10501,79 @@ architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_44 is
   attribute KEEP : string;
   attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
   attribute msgon of \Q_reg_reg[0]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[1]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[1]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[1]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[2]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[2]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[2]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[3]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[3]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[3]\ : label is "true";
 begin
-\Q_reg_reg[0]\: unisim.vcomponents.FDRE
+  D(3 downto 0) <= Q_reg(3 downto 0);
+\Q_reg_reg[0]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => rd_clk,
       CE => '1',
-      D => \out\,
-      Q => Q_reg,
-      R => '0'
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(0),
+      Q => Q_reg(0)
     );
-\ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1\: unisim.vcomponents.LUT2
+\Q_reg_reg[1]\: unisim.vcomponents.FDCE
     generic map(
-      INIT => X"2"
+      INIT => '0'
     )
         port map (
-      I0 => in0(0),
-      I1 => Q_reg,
-      O => AS(0)
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(1),
+      Q => Q_reg(1)
+    );
+\Q_reg_reg[2]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(2),
+      Q => Q_reg(2)
+    );
+\Q_reg_reg[3]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(3),
+      Q => Q_reg(3)
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_synchronizer_ff_45 is
+entity \design_1_d_axi_i2s_audio_0_0_synchronizer_ff_35\ is
   port (
-    AS : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \out\ : in STD_LOGIC;
+    D : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 3 downto 0 );
     wr_clk : in STD_LOGIC;
-    in0 : in STD_LOGIC_VECTOR ( 0 to 0 )
+    \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_45 : entity is "synchronizer_ff";
-end design_1_d_axi_i2s_audio_0_0_synchronizer_ff_45;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff_35\ : entity is "synchronizer_ff";
+end \design_1_d_axi_i2s_audio_0_0_synchronizer_ff_35\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_45 is
-  signal Q_reg : STD_LOGIC;
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff_35\ is
+  signal Q_reg : STD_LOGIC_VECTOR ( 3 downto 0 );
   attribute async_reg : string;
   attribute async_reg of Q_reg : signal is "true";
   attribute msgon : string;
@@ -10175,45 +10583,80 @@ architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_45 is
   attribute KEEP : string;
   attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
   attribute msgon of \Q_reg_reg[0]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[1]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[1]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[1]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[2]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[2]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[2]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[3]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[3]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[3]\ : label is "true";
 begin
-\Q_reg_reg[0]\: unisim.vcomponents.FDRE
+  D(3 downto 0) <= Q_reg(3 downto 0);
+\Q_reg_reg[0]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      D => \out\,
-      Q => Q_reg,
-      R => '0'
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(0),
+      Q => Q_reg(0)
     );
-\ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1\: unisim.vcomponents.LUT2
+\Q_reg_reg[1]\: unisim.vcomponents.FDCE
     generic map(
-      INIT => X"2"
+      INIT => '0'
     )
         port map (
-      I0 => in0(0),
-      I1 => Q_reg,
-      O => AS(0)
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(1),
+      Q => Q_reg(1)
+    );
+\Q_reg_reg[2]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(2),
+      Q => Q_reg(2)
+    );
+\Q_reg_reg[3]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(3),
+      Q => Q_reg(3)
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_synchronizer_ff_5 is
+entity \design_1_d_axi_i2s_audio_0_0_synchronizer_ff_36\ is
   port (
-    AS : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \out\ : in STD_LOGIC;
+    \out\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    D : out STD_LOGIC_VECTOR ( 0 to 0 );
+    \Q_reg_reg[3]_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     rd_clk : in STD_LOGIC;
-    in0 : in STD_LOGIC_VECTOR ( 0 to 0 )
+    \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_5 : entity is "synchronizer_ff";
-end design_1_d_axi_i2s_audio_0_0_synchronizer_ff_5;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff_36\ : entity is "synchronizer_ff";
+end \design_1_d_axi_i2s_audio_0_0_synchronizer_ff_36\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_5 is
-  signal Q_reg : STD_LOGIC;
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff_36\ is
+  signal Q_reg : STD_LOGIC_VECTOR ( 3 downto 0 );
   attribute async_reg : string;
   attribute async_reg of Q_reg : signal is "true";
   attribute msgon : string;
@@ -10223,45 +10666,89 @@ architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_5 is
   attribute KEEP : string;
   attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
   attribute msgon of \Q_reg_reg[0]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[1]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[1]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[1]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[2]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[2]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[2]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[3]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[3]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[3]\ : label is "true";
 begin
-\Q_reg_reg[0]\: unisim.vcomponents.FDRE
+  \out\(3 downto 0) <= Q_reg(3 downto 0);
+\Q_reg_reg[0]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => rd_clk,
       CE => '1',
-      D => \out\,
-      Q => Q_reg,
-      R => '0'
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => \Q_reg_reg[3]_0\(0),
+      Q => Q_reg(0)
     );
-\ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1\: unisim.vcomponents.LUT2
+\Q_reg_reg[1]\: unisim.vcomponents.FDCE
     generic map(
-      INIT => X"2"
+      INIT => '0'
     )
         port map (
-      I0 => in0(0),
-      I1 => Q_reg,
-      O => AS(0)
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => \Q_reg_reg[3]_0\(1),
+      Q => Q_reg(1)
+    );
+\Q_reg_reg[2]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => \Q_reg_reg[3]_0\(2),
+      Q => Q_reg(2)
+    );
+\Q_reg_reg[3]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => \Q_reg_reg[3]_0\(3),
+      Q => Q_reg(3)
+    );
+\wr_pntr_bin[2]_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"6"
+    )
+        port map (
+      I0 => Q_reg(2),
+      I1 => Q_reg(3),
+      O => D(0)
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_synchronizer_ff_6 is
+entity \design_1_d_axi_i2s_audio_0_0_synchronizer_ff_37\ is
   port (
-    AS : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \out\ : in STD_LOGIC;
+    \out\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    D : out STD_LOGIC_VECTOR ( 0 to 0 );
+    \Q_reg_reg[3]_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     wr_clk : in STD_LOGIC;
-    in0 : in STD_LOGIC_VECTOR ( 0 to 0 )
+    \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_6 : entity is "synchronizer_ff";
-end design_1_d_axi_i2s_audio_0_0_synchronizer_ff_6;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff_37\ : entity is "synchronizer_ff";
+end \design_1_d_axi_i2s_audio_0_0_synchronizer_ff_37\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_6 is
-  signal Q_reg : STD_LOGIC;
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff_37\ is
+  signal Q_reg : STD_LOGIC_VECTOR ( 3 downto 0 );
   attribute async_reg : string;
   attribute async_reg of Q_reg : signal is "true";
   attribute msgon : string;
@@ -10271,26 +10758,69 @@ architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_synchronizer_ff_6 is
   attribute KEEP : string;
   attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
   attribute msgon of \Q_reg_reg[0]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[1]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[1]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[1]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[2]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[2]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[2]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[3]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[3]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[3]\ : label is "true";
 begin
-\Q_reg_reg[0]\: unisim.vcomponents.FDRE
+  \out\(3 downto 0) <= Q_reg(3 downto 0);
+\Q_reg_reg[0]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      D => \out\,
-      Q => Q_reg,
-      R => '0'
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => \Q_reg_reg[3]_0\(0),
+      Q => Q_reg(0)
     );
-\ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1\: unisim.vcomponents.LUT2
+\Q_reg_reg[1]\: unisim.vcomponents.FDCE
     generic map(
-      INIT => X"2"
+      INIT => '0'
     )
         port map (
-      I0 => in0(0),
-      I1 => Q_reg,
-      O => AS(0)
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => \Q_reg_reg[3]_0\(1),
+      Q => Q_reg(1)
+    );
+\Q_reg_reg[2]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => \Q_reg_reg[3]_0\(2),
+      Q => Q_reg(2)
+    );
+\Q_reg_reg[3]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => \Q_reg_reg[3]_0\(3),
+      Q => Q_reg(3)
+    );
+\rd_pntr_bin[2]_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"6"
+    )
+        port map (
+      I0 => Q_reg(2),
+      I1 => Q_reg(3),
+      O => D(0)
     );
 end STRUCTURE;
 library IEEE;
@@ -10299,8 +10829,8 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized0\ is
   port (
-    D : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    Q : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    D : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
     rd_clk : in STD_LOGIC;
     \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
@@ -10309,7 +10839,7 @@ entity \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized0\ is
 end \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized0\;
 
 architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized0\ is
-  signal Q_reg : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal Q_reg : STD_LOGIC_VECTOR ( 11 downto 0 );
   attribute async_reg : string;
   attribute async_reg of Q_reg : signal is "true";
   attribute msgon : string;
@@ -10319,6 +10849,12 @@ architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__paramet
   attribute KEEP : string;
   attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
   attribute msgon of \Q_reg_reg[0]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[10]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[10]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[10]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[11]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[11]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[11]\ : label is "true";
   attribute ASYNC_REG_boolean of \Q_reg_reg[1]\ : label is std.standard.true;
   attribute KEEP of \Q_reg_reg[1]\ : label is "yes";
   attribute msgon of \Q_reg_reg[1]\ : label is "true";
@@ -10328,8 +10864,26 @@ architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__paramet
   attribute ASYNC_REG_boolean of \Q_reg_reg[3]\ : label is std.standard.true;
   attribute KEEP of \Q_reg_reg[3]\ : label is "yes";
   attribute msgon of \Q_reg_reg[3]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[4]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[4]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[4]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[5]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[5]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[5]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[6]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[6]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[6]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[7]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[7]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[7]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[8]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[8]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[8]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[9]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[9]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[9]\ : label is "true";
 begin
-  D(3 downto 0) <= Q_reg(3 downto 0);
+  D(11 downto 0) <= Q_reg(11 downto 0);
 \Q_reg_reg[0]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
@@ -10340,6 +10894,28 @@ begin
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
       D => Q(0),
       Q => Q_reg(0)
+    );
+\Q_reg_reg[10]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(10),
+      Q => Q_reg(10)
+    );
+\Q_reg_reg[11]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(11),
+      Q => Q_reg(11)
     );
 \Q_reg_reg[1]\: unisim.vcomponents.FDCE
     generic map(
@@ -10373,6 +10949,266 @@ begin
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
       D => Q(3),
       Q => Q_reg(3)
+    );
+\Q_reg_reg[4]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(4),
+      Q => Q_reg(4)
+    );
+\Q_reg_reg[5]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(5),
+      Q => Q_reg(5)
+    );
+\Q_reg_reg[6]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(6),
+      Q => Q_reg(6)
+    );
+\Q_reg_reg[7]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(7),
+      Q => Q_reg(7)
+    );
+\Q_reg_reg[8]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(8),
+      Q => Q_reg(8)
+    );
+\Q_reg_reg[9]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(9),
+      Q => Q_reg(9)
+    );
+end STRUCTURE;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+entity \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized0_30\ is
+  port (
+    D : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    rd_clk : in STD_LOGIC;
+    \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized0_30\ : entity is "synchronizer_ff";
+end \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized0_30\;
+
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized0_30\ is
+  signal Q_reg : STD_LOGIC_VECTOR ( 11 downto 0 );
+  attribute async_reg : string;
+  attribute async_reg of Q_reg : signal is "true";
+  attribute msgon : string;
+  attribute msgon of Q_reg : signal is "true";
+  attribute ASYNC_REG_boolean : boolean;
+  attribute ASYNC_REG_boolean of \Q_reg_reg[0]\ : label is std.standard.true;
+  attribute KEEP : string;
+  attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[0]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[10]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[10]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[10]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[11]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[11]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[11]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[1]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[1]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[1]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[2]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[2]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[2]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[3]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[3]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[3]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[4]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[4]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[4]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[5]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[5]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[5]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[6]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[6]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[6]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[7]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[7]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[7]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[8]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[8]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[8]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[9]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[9]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[9]\ : label is "true";
+begin
+  D(11 downto 0) <= Q_reg(11 downto 0);
+\Q_reg_reg[0]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(0),
+      Q => Q_reg(0)
+    );
+\Q_reg_reg[10]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(10),
+      Q => Q_reg(10)
+    );
+\Q_reg_reg[11]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(11),
+      Q => Q_reg(11)
+    );
+\Q_reg_reg[1]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(1),
+      Q => Q_reg(1)
+    );
+\Q_reg_reg[2]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(2),
+      Q => Q_reg(2)
+    );
+\Q_reg_reg[3]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(3),
+      Q => Q_reg(3)
+    );
+\Q_reg_reg[4]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(4),
+      Q => Q_reg(4)
+    );
+\Q_reg_reg[5]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(5),
+      Q => Q_reg(5)
+    );
+\Q_reg_reg[6]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(6),
+      Q => Q_reg(6)
+    );
+\Q_reg_reg[7]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(7),
+      Q => Q_reg(7)
+    );
+\Q_reg_reg[8]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(8),
+      Q => Q_reg(8)
+    );
+\Q_reg_reg[9]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(9),
+      Q => Q_reg(9)
     );
 end STRUCTURE;
 library IEEE;
@@ -10381,17 +11217,17 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized1\ is
   port (
-    D : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    Q : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    D : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
     wr_clk : in STD_LOGIC;
-    AR : in STD_LOGIC_VECTOR ( 0 to 0 )
+    \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized1\ : entity is "synchronizer_ff";
 end \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized1\;
 
 architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized1\ is
-  signal Q_reg : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal Q_reg : STD_LOGIC_VECTOR ( 11 downto 0 );
   attribute async_reg : string;
   attribute async_reg of Q_reg : signal is "true";
   attribute msgon : string;
@@ -10401,6 +11237,12 @@ architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__paramet
   attribute KEEP : string;
   attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
   attribute msgon of \Q_reg_reg[0]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[10]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[10]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[10]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[11]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[11]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[11]\ : label is "true";
   attribute ASYNC_REG_boolean of \Q_reg_reg[1]\ : label is std.standard.true;
   attribute KEEP of \Q_reg_reg[1]\ : label is "yes";
   attribute msgon of \Q_reg_reg[1]\ : label is "true";
@@ -10410,8 +11252,26 @@ architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__paramet
   attribute ASYNC_REG_boolean of \Q_reg_reg[3]\ : label is std.standard.true;
   attribute KEEP of \Q_reg_reg[3]\ : label is "yes";
   attribute msgon of \Q_reg_reg[3]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[4]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[4]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[4]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[5]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[5]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[5]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[6]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[6]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[6]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[7]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[7]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[7]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[8]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[8]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[8]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[9]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[9]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[9]\ : label is "true";
 begin
-  D(3 downto 0) <= Q_reg(3 downto 0);
+  D(11 downto 0) <= Q_reg(11 downto 0);
 \Q_reg_reg[0]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
@@ -10419,9 +11279,31 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
       D => Q(0),
       Q => Q_reg(0)
+    );
+\Q_reg_reg[10]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(10),
+      Q => Q_reg(10)
+    );
+\Q_reg_reg[11]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(11),
+      Q => Q_reg(11)
     );
 \Q_reg_reg[1]\: unisim.vcomponents.FDCE
     generic map(
@@ -10430,7 +11312,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
       D => Q(1),
       Q => Q_reg(1)
     );
@@ -10441,7 +11323,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
       D => Q(2),
       Q => Q_reg(2)
     );
@@ -10452,9 +11334,269 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
       D => Q(3),
       Q => Q_reg(3)
+    );
+\Q_reg_reg[4]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(4),
+      Q => Q_reg(4)
+    );
+\Q_reg_reg[5]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(5),
+      Q => Q_reg(5)
+    );
+\Q_reg_reg[6]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(6),
+      Q => Q_reg(6)
+    );
+\Q_reg_reg[7]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(7),
+      Q => Q_reg(7)
+    );
+\Q_reg_reg[8]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(8),
+      Q => Q_reg(8)
+    );
+\Q_reg_reg[9]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(9),
+      Q => Q_reg(9)
+    );
+end STRUCTURE;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+entity \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized1_31\ is
+  port (
+    D : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    wr_clk : in STD_LOGIC;
+    \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized1_31\ : entity is "synchronizer_ff";
+end \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized1_31\;
+
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized1_31\ is
+  signal Q_reg : STD_LOGIC_VECTOR ( 11 downto 0 );
+  attribute async_reg : string;
+  attribute async_reg of Q_reg : signal is "true";
+  attribute msgon : string;
+  attribute msgon of Q_reg : signal is "true";
+  attribute ASYNC_REG_boolean : boolean;
+  attribute ASYNC_REG_boolean of \Q_reg_reg[0]\ : label is std.standard.true;
+  attribute KEEP : string;
+  attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[0]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[10]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[10]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[10]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[11]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[11]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[11]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[1]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[1]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[1]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[2]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[2]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[2]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[3]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[3]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[3]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[4]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[4]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[4]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[5]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[5]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[5]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[6]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[6]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[6]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[7]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[7]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[7]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[8]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[8]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[8]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[9]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[9]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[9]\ : label is "true";
+begin
+  D(11 downto 0) <= Q_reg(11 downto 0);
+\Q_reg_reg[0]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(0),
+      Q => Q_reg(0)
+    );
+\Q_reg_reg[10]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(10),
+      Q => Q_reg(10)
+    );
+\Q_reg_reg[11]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(11),
+      Q => Q_reg(11)
+    );
+\Q_reg_reg[1]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(1),
+      Q => Q_reg(1)
+    );
+\Q_reg_reg[2]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(2),
+      Q => Q_reg(2)
+    );
+\Q_reg_reg[3]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(3),
+      Q => Q_reg(3)
+    );
+\Q_reg_reg[4]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(4),
+      Q => Q_reg(4)
+    );
+\Q_reg_reg[5]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(5),
+      Q => Q_reg(5)
+    );
+\Q_reg_reg[6]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(6),
+      Q => Q_reg(6)
+    );
+\Q_reg_reg[7]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(7),
+      Q => Q_reg(7)
+    );
+\Q_reg_reg[8]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(8),
+      Q => Q_reg(8)
+    );
+\Q_reg_reg[9]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => Q(9),
+      Q => Q_reg(9)
     );
 end STRUCTURE;
 library IEEE;
@@ -10463,9 +11605,9 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized2\ is
   port (
-    \out\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    D : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \Q_reg_reg[3]_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    \out\ : out STD_LOGIC_VECTOR ( 0 to 0 );
+    \wr_pntr_bin_reg[10]\ : out STD_LOGIC_VECTOR ( 10 downto 0 );
+    D : in STD_LOGIC_VECTOR ( 11 downto 0 );
     rd_clk : in STD_LOGIC;
     \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
@@ -10474,16 +11616,25 @@ entity \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized2\ is
 end \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized2\;
 
 architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized2\ is
-  signal Q_reg : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal Q_reg : STD_LOGIC_VECTOR ( 11 downto 0 );
   attribute async_reg : string;
   attribute async_reg of Q_reg : signal is "true";
   attribute msgon : string;
   attribute msgon of Q_reg : signal is "true";
+  signal \wr_pntr_bin[0]_i_2_n_0\ : STD_LOGIC;
+  signal \wr_pntr_bin[1]_i_2_n_0\ : STD_LOGIC;
+  signal \^wr_pntr_bin_reg[10]\ : STD_LOGIC_VECTOR ( 10 downto 0 );
   attribute ASYNC_REG_boolean : boolean;
   attribute ASYNC_REG_boolean of \Q_reg_reg[0]\ : label is std.standard.true;
   attribute KEEP : string;
   attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
   attribute msgon of \Q_reg_reg[0]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[10]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[10]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[10]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[11]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[11]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[11]\ : label is "true";
   attribute ASYNC_REG_boolean of \Q_reg_reg[1]\ : label is std.standard.true;
   attribute KEEP of \Q_reg_reg[1]\ : label is "yes";
   attribute msgon of \Q_reg_reg[1]\ : label is "true";
@@ -10493,8 +11644,27 @@ architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__paramet
   attribute ASYNC_REG_boolean of \Q_reg_reg[3]\ : label is std.standard.true;
   attribute KEEP of \Q_reg_reg[3]\ : label is "yes";
   attribute msgon of \Q_reg_reg[3]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[4]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[4]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[4]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[5]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[5]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[5]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[6]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[6]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[6]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[7]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[7]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[7]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[8]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[8]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[8]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[9]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[9]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[9]\ : label is "true";
 begin
-  \out\(3 downto 0) <= Q_reg(3 downto 0);
+  \out\(0) <= Q_reg(11);
+  \wr_pntr_bin_reg[10]\(10 downto 0) <= \^wr_pntr_bin_reg[10]\(10 downto 0);
 \Q_reg_reg[0]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
@@ -10503,8 +11673,30 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => \Q_reg_reg[3]_0\(0),
+      D => D(0),
       Q => Q_reg(0)
+    );
+\Q_reg_reg[10]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(10),
+      Q => Q_reg(10)
+    );
+\Q_reg_reg[11]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(11),
+      Q => Q_reg(11)
     );
 \Q_reg_reg[1]\: unisim.vcomponents.FDCE
     generic map(
@@ -10514,7 +11706,7 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => \Q_reg_reg[3]_0\(1),
+      D => D(1),
       Q => Q_reg(1)
     );
 \Q_reg_reg[2]\: unisim.vcomponents.FDCE
@@ -10525,7 +11717,7 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => \Q_reg_reg[3]_0\(2),
+      D => D(2),
       Q => Q_reg(2)
     );
 \Q_reg_reg[3]\: unisim.vcomponents.FDCE
@@ -10536,17 +11728,571 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => \Q_reg_reg[3]_0\(3),
+      D => D(3),
       Q => Q_reg(3)
     );
-\gnxpm_cdc.wr_pntr_bin[2]_i_1\: unisim.vcomponents.LUT2
+\Q_reg_reg[4]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(4),
+      Q => Q_reg(4)
+    );
+\Q_reg_reg[5]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(5),
+      Q => Q_reg(5)
+    );
+\Q_reg_reg[6]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(6),
+      Q => Q_reg(6)
+    );
+\Q_reg_reg[7]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(7),
+      Q => Q_reg(7)
+    );
+\Q_reg_reg[8]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(8),
+      Q => Q_reg(8)
+    );
+\Q_reg_reg[9]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(9),
+      Q => Q_reg(9)
+    );
+\wr_pntr_bin[0]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"96696996"
+    )
+        port map (
+      I0 => \wr_pntr_bin[0]_i_2_n_0\,
+      I1 => Q_reg(1),
+      I2 => Q_reg(0),
+      I3 => Q_reg(2),
+      I4 => \^wr_pntr_bin_reg[10]\(6),
+      O => \^wr_pntr_bin_reg[10]\(0)
+    );
+\wr_pntr_bin[0]_i_2\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"96"
+    )
+        port map (
+      I0 => Q_reg(4),
+      I1 => Q_reg(3),
+      I2 => Q_reg(5),
+      O => \wr_pntr_bin[0]_i_2_n_0\
+    );
+\wr_pntr_bin[10]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => Q_reg(2),
+      I0 => Q_reg(10),
+      I1 => Q_reg(11),
+      O => \^wr_pntr_bin_reg[10]\(10)
+    );
+\wr_pntr_bin[1]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"6996966996696996"
+    )
+        port map (
+      I0 => \wr_pntr_bin[1]_i_2_n_0\,
+      I1 => Q_reg(6),
+      I2 => Q_reg(2),
+      I3 => Q_reg(1),
+      I4 => Q_reg(3),
+      I5 => \^wr_pntr_bin_reg[10]\(7),
+      O => \^wr_pntr_bin_reg[10]\(1)
+    );
+\wr_pntr_bin[1]_i_2\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"6"
+    )
+        port map (
+      I0 => Q_reg(4),
+      I1 => Q_reg(5),
+      O => \wr_pntr_bin[1]_i_2_n_0\
+    );
+\wr_pntr_bin[2]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"6996966996696996"
+    )
+        port map (
+      I0 => Q_reg(5),
+      I1 => Q_reg(6),
+      I2 => Q_reg(3),
+      I3 => Q_reg(2),
+      I4 => Q_reg(4),
+      I5 => \^wr_pntr_bin_reg[10]\(7),
+      O => \^wr_pntr_bin_reg[10]\(2)
+    );
+\wr_pntr_bin[3]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"6996966996696996"
+    )
+        port map (
+      I0 => Q_reg(6),
+      I1 => Q_reg(7),
+      I2 => Q_reg(4),
+      I3 => Q_reg(3),
+      I4 => Q_reg(5),
+      I5 => \^wr_pntr_bin_reg[10]\(8),
+      O => \^wr_pntr_bin_reg[10]\(3)
+    );
+\wr_pntr_bin[4]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"96696996"
+    )
+        port map (
+      I0 => Q_reg(6),
+      I1 => Q_reg(7),
+      I2 => Q_reg(4),
+      I3 => Q_reg(5),
+      I4 => \^wr_pntr_bin_reg[10]\(8),
+      O => \^wr_pntr_bin_reg[10]\(4)
+    );
+\wr_pntr_bin[5]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"96696996"
+    )
+        port map (
+      I0 => Q_reg(7),
+      I1 => Q_reg(8),
+      I2 => Q_reg(5),
+      I3 => Q_reg(6),
+      I4 => \^wr_pntr_bin_reg[10]\(9),
+      O => \^wr_pntr_bin_reg[10]\(5)
+    );
+\wr_pntr_bin[6]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"6996966996696996"
+    )
+        port map (
+      I0 => Q_reg(8),
+      I1 => Q_reg(6),
+      I2 => Q_reg(7),
+      I3 => Q_reg(11),
+      I4 => Q_reg(9),
+      I5 => Q_reg(10),
+      O => \^wr_pntr_bin_reg[10]\(6)
+    );
+\wr_pntr_bin[7]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"96696996"
+    )
+        port map (
+      I0 => Q_reg(9),
+      I1 => Q_reg(7),
+      I2 => Q_reg(8),
+      I3 => Q_reg(11),
+      I4 => Q_reg(10),
+      O => \^wr_pntr_bin_reg[10]\(7)
+    );
+\wr_pntr_bin[8]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"6996"
+    )
+        port map (
+      I0 => Q_reg(9),
+      I1 => Q_reg(8),
+      I2 => Q_reg(11),
+      I3 => Q_reg(10),
+      O => \^wr_pntr_bin_reg[10]\(8)
+    );
+\wr_pntr_bin[9]_i_1\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"96"
+    )
+        port map (
+      I0 => Q_reg(10),
+      I1 => Q_reg(9),
+      I2 => Q_reg(11),
+      O => \^wr_pntr_bin_reg[10]\(9)
+    );
+end STRUCTURE;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+entity \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized2_32\ is
+  port (
+    \out\ : out STD_LOGIC_VECTOR ( 0 to 0 );
+    \wr_pntr_bin_reg[10]\ : out STD_LOGIC_VECTOR ( 10 downto 0 );
+    D : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    rd_clk : in STD_LOGIC;
+    \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized2_32\ : entity is "synchronizer_ff";
+end \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized2_32\;
+
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized2_32\ is
+  signal Q_reg : STD_LOGIC_VECTOR ( 11 downto 0 );
+  attribute async_reg : string;
+  attribute async_reg of Q_reg : signal is "true";
+  attribute msgon : string;
+  attribute msgon of Q_reg : signal is "true";
+  signal \wr_pntr_bin[0]_i_2_n_0\ : STD_LOGIC;
+  signal \wr_pntr_bin[1]_i_2_n_0\ : STD_LOGIC;
+  signal \^wr_pntr_bin_reg[10]\ : STD_LOGIC_VECTOR ( 10 downto 0 );
+  attribute ASYNC_REG_boolean : boolean;
+  attribute ASYNC_REG_boolean of \Q_reg_reg[0]\ : label is std.standard.true;
+  attribute KEEP : string;
+  attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[0]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[10]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[10]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[10]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[11]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[11]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[11]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[1]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[1]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[1]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[2]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[2]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[2]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[3]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[3]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[3]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[4]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[4]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[4]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[5]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[5]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[5]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[6]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[6]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[6]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[7]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[7]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[7]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[8]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[8]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[8]\ : label is "true";
+  attribute ASYNC_REG_boolean of \Q_reg_reg[9]\ : label is std.standard.true;
+  attribute KEEP of \Q_reg_reg[9]\ : label is "yes";
+  attribute msgon of \Q_reg_reg[9]\ : label is "true";
+begin
+  \out\(0) <= Q_reg(11);
+  \wr_pntr_bin_reg[10]\(10 downto 0) <= \^wr_pntr_bin_reg[10]\(10 downto 0);
+\Q_reg_reg[0]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(0),
+      Q => Q_reg(0)
+    );
+\Q_reg_reg[10]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(10),
+      Q => Q_reg(10)
+    );
+\Q_reg_reg[11]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(11),
+      Q => Q_reg(11)
+    );
+\Q_reg_reg[1]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(1),
+      Q => Q_reg(1)
+    );
+\Q_reg_reg[2]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(2),
+      Q => Q_reg(2)
+    );
+\Q_reg_reg[3]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(3),
+      Q => Q_reg(3)
+    );
+\Q_reg_reg[4]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(4),
+      Q => Q_reg(4)
+    );
+\Q_reg_reg[5]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(5),
+      Q => Q_reg(5)
+    );
+\Q_reg_reg[6]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(6),
+      Q => Q_reg(6)
+    );
+\Q_reg_reg[7]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(7),
+      Q => Q_reg(7)
+    );
+\Q_reg_reg[8]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(8),
+      Q => Q_reg(8)
+    );
+\Q_reg_reg[9]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(9),
+      Q => Q_reg(9)
+    );
+\wr_pntr_bin[0]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"96696996"
+    )
+        port map (
+      I0 => \wr_pntr_bin[0]_i_2_n_0\,
+      I1 => Q_reg(1),
+      I2 => Q_reg(0),
+      I3 => Q_reg(2),
+      I4 => \^wr_pntr_bin_reg[10]\(6),
+      O => \^wr_pntr_bin_reg[10]\(0)
+    );
+\wr_pntr_bin[0]_i_2\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"96"
+    )
+        port map (
+      I0 => Q_reg(4),
       I1 => Q_reg(3),
-      O => D(0)
+      I2 => Q_reg(5),
+      O => \wr_pntr_bin[0]_i_2_n_0\
+    );
+\wr_pntr_bin[10]_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"6"
+    )
+        port map (
+      I0 => Q_reg(10),
+      I1 => Q_reg(11),
+      O => \^wr_pntr_bin_reg[10]\(10)
+    );
+\wr_pntr_bin[1]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"6996966996696996"
+    )
+        port map (
+      I0 => \wr_pntr_bin[1]_i_2_n_0\,
+      I1 => Q_reg(6),
+      I2 => Q_reg(2),
+      I3 => Q_reg(1),
+      I4 => Q_reg(3),
+      I5 => \^wr_pntr_bin_reg[10]\(7),
+      O => \^wr_pntr_bin_reg[10]\(1)
+    );
+\wr_pntr_bin[1]_i_2\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"6"
+    )
+        port map (
+      I0 => Q_reg(4),
+      I1 => Q_reg(5),
+      O => \wr_pntr_bin[1]_i_2_n_0\
+    );
+\wr_pntr_bin[2]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"6996966996696996"
+    )
+        port map (
+      I0 => Q_reg(5),
+      I1 => Q_reg(6),
+      I2 => Q_reg(3),
+      I3 => Q_reg(2),
+      I4 => Q_reg(4),
+      I5 => \^wr_pntr_bin_reg[10]\(7),
+      O => \^wr_pntr_bin_reg[10]\(2)
+    );
+\wr_pntr_bin[3]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"6996966996696996"
+    )
+        port map (
+      I0 => Q_reg(6),
+      I1 => Q_reg(7),
+      I2 => Q_reg(4),
+      I3 => Q_reg(3),
+      I4 => Q_reg(5),
+      I5 => \^wr_pntr_bin_reg[10]\(8),
+      O => \^wr_pntr_bin_reg[10]\(3)
+    );
+\wr_pntr_bin[4]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"96696996"
+    )
+        port map (
+      I0 => Q_reg(6),
+      I1 => Q_reg(7),
+      I2 => Q_reg(4),
+      I3 => Q_reg(5),
+      I4 => \^wr_pntr_bin_reg[10]\(8),
+      O => \^wr_pntr_bin_reg[10]\(4)
+    );
+\wr_pntr_bin[5]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"96696996"
+    )
+        port map (
+      I0 => Q_reg(7),
+      I1 => Q_reg(8),
+      I2 => Q_reg(5),
+      I3 => Q_reg(6),
+      I4 => \^wr_pntr_bin_reg[10]\(9),
+      O => \^wr_pntr_bin_reg[10]\(5)
+    );
+\wr_pntr_bin[6]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"6996966996696996"
+    )
+        port map (
+      I0 => Q_reg(8),
+      I1 => Q_reg(6),
+      I2 => Q_reg(7),
+      I3 => Q_reg(11),
+      I4 => Q_reg(9),
+      I5 => Q_reg(10),
+      O => \^wr_pntr_bin_reg[10]\(6)
+    );
+\wr_pntr_bin[7]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"96696996"
+    )
+        port map (
+      I0 => Q_reg(9),
+      I1 => Q_reg(7),
+      I2 => Q_reg(8),
+      I3 => Q_reg(11),
+      I4 => Q_reg(10),
+      O => \^wr_pntr_bin_reg[10]\(7)
+    );
+\wr_pntr_bin[8]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"6996"
+    )
+        port map (
+      I0 => Q_reg(9),
+      I1 => Q_reg(8),
+      I2 => Q_reg(11),
+      I3 => Q_reg(10),
+      O => \^wr_pntr_bin_reg[10]\(8)
+    );
+\wr_pntr_bin[9]_i_1\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"96"
+    )
+        port map (
+      I0 => Q_reg(10),
+      I1 => Q_reg(9),
+      I2 => Q_reg(11),
+      O => \^wr_pntr_bin_reg[10]\(9)
     );
 end STRUCTURE;
 library IEEE;
@@ -10555,113 +12301,25 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized3\ is
   port (
-    \out\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    D : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \Q_reg_reg[3]_0\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    \out\ : out STD_LOGIC_VECTOR ( 0 to 0 );
+    \rd_pntr_bin_reg[10]\ : out STD_LOGIC_VECTOR ( 10 downto 0 );
+    D : in STD_LOGIC_VECTOR ( 11 downto 0 );
     wr_clk : in STD_LOGIC;
-    AR : in STD_LOGIC_VECTOR ( 0 to 0 )
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized3\ : entity is "synchronizer_ff";
 end \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized3\;
 
 architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized3\ is
-  signal Q_reg : STD_LOGIC_VECTOR ( 3 downto 0 );
-  attribute async_reg : string;
-  attribute async_reg of Q_reg : signal is "true";
-  attribute msgon : string;
-  attribute msgon of Q_reg : signal is "true";
-  attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \Q_reg_reg[0]\ : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[0]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[1]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[1]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[1]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[2]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[2]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[2]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[3]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[3]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[3]\ : label is "true";
-begin
-  \out\(3 downto 0) <= Q_reg(3 downto 0);
-\Q_reg_reg[0]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => \Q_reg_reg[3]_0\(0),
-      Q => Q_reg(0)
-    );
-\Q_reg_reg[1]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => \Q_reg_reg[3]_0\(1),
-      Q => Q_reg(1)
-    );
-\Q_reg_reg[2]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => \Q_reg_reg[3]_0\(2),
-      Q => Q_reg(2)
-    );
-\Q_reg_reg[3]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => \Q_reg_reg[3]_0\(3),
-      Q => Q_reg(3)
-    );
-\gnxpm_cdc.rd_pntr_bin[2]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"6"
-    )
-        port map (
-      I0 => Q_reg(2),
-      I1 => Q_reg(3),
-      O => D(0)
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized4\ is
-  port (
-    D : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    rd_clk : in STD_LOGIC;
-    \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized4\ : entity is "synchronizer_ff";
-end \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized4\;
-
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized4\ is
   signal Q_reg : STD_LOGIC_VECTOR ( 11 downto 0 );
   attribute async_reg : string;
   attribute async_reg of Q_reg : signal is "true";
   attribute msgon : string;
   attribute msgon of Q_reg : signal is "true";
+  signal \rd_pntr_bin[0]_i_2_n_0\ : STD_LOGIC;
+  signal \rd_pntr_bin[1]_i_2_n_0\ : STD_LOGIC;
+  signal \^rd_pntr_bin_reg[10]\ : STD_LOGIC_VECTOR ( 10 downto 0 );
   attribute ASYNC_REG_boolean : boolean;
   attribute ASYNC_REG_boolean of \Q_reg_reg[0]\ : label is std.standard.true;
   attribute KEEP : string;
@@ -10701,1484 +12359,8 @@ architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__paramet
   attribute KEEP of \Q_reg_reg[9]\ : label is "yes";
   attribute msgon of \Q_reg_reg[9]\ : label is "true";
 begin
-  D(11 downto 0) <= Q_reg(11 downto 0);
-\Q_reg_reg[0]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(0),
-      Q => Q_reg(0)
-    );
-\Q_reg_reg[10]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(10),
-      Q => Q_reg(10)
-    );
-\Q_reg_reg[11]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(11),
-      Q => Q_reg(11)
-    );
-\Q_reg_reg[1]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(1),
-      Q => Q_reg(1)
-    );
-\Q_reg_reg[2]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(2),
-      Q => Q_reg(2)
-    );
-\Q_reg_reg[3]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(3),
-      Q => Q_reg(3)
-    );
-\Q_reg_reg[4]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(4),
-      Q => Q_reg(4)
-    );
-\Q_reg_reg[5]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(5),
-      Q => Q_reg(5)
-    );
-\Q_reg_reg[6]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(6),
-      Q => Q_reg(6)
-    );
-\Q_reg_reg[7]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(7),
-      Q => Q_reg(7)
-    );
-\Q_reg_reg[8]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(8),
-      Q => Q_reg(8)
-    );
-\Q_reg_reg[9]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(9),
-      Q => Q_reg(9)
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized4_37\ is
-  port (
-    D : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    rd_clk : in STD_LOGIC;
-    \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized4_37\ : entity is "synchronizer_ff";
-end \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized4_37\;
-
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized4_37\ is
-  signal Q_reg : STD_LOGIC_VECTOR ( 11 downto 0 );
-  attribute async_reg : string;
-  attribute async_reg of Q_reg : signal is "true";
-  attribute msgon : string;
-  attribute msgon of Q_reg : signal is "true";
-  attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \Q_reg_reg[0]\ : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[0]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[10]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[10]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[10]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[11]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[11]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[11]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[1]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[1]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[1]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[2]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[2]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[2]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[3]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[3]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[3]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[4]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[4]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[4]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[5]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[5]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[5]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[6]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[6]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[6]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[7]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[7]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[7]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[8]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[8]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[8]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[9]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[9]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[9]\ : label is "true";
-begin
-  D(11 downto 0) <= Q_reg(11 downto 0);
-\Q_reg_reg[0]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(0),
-      Q => Q_reg(0)
-    );
-\Q_reg_reg[10]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(10),
-      Q => Q_reg(10)
-    );
-\Q_reg_reg[11]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(11),
-      Q => Q_reg(11)
-    );
-\Q_reg_reg[1]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(1),
-      Q => Q_reg(1)
-    );
-\Q_reg_reg[2]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(2),
-      Q => Q_reg(2)
-    );
-\Q_reg_reg[3]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(3),
-      Q => Q_reg(3)
-    );
-\Q_reg_reg[4]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(4),
-      Q => Q_reg(4)
-    );
-\Q_reg_reg[5]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(5),
-      Q => Q_reg(5)
-    );
-\Q_reg_reg[6]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(6),
-      Q => Q_reg(6)
-    );
-\Q_reg_reg[7]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(7),
-      Q => Q_reg(7)
-    );
-\Q_reg_reg[8]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(8),
-      Q => Q_reg(8)
-    );
-\Q_reg_reg[9]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(9),
-      Q => Q_reg(9)
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized5\ is
-  port (
-    D : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    wr_clk : in STD_LOGIC;
-    AR : in STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized5\ : entity is "synchronizer_ff";
-end \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized5\;
-
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized5\ is
-  signal Q_reg : STD_LOGIC_VECTOR ( 11 downto 0 );
-  attribute async_reg : string;
-  attribute async_reg of Q_reg : signal is "true";
-  attribute msgon : string;
-  attribute msgon of Q_reg : signal is "true";
-  attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \Q_reg_reg[0]\ : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[0]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[10]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[10]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[10]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[11]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[11]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[11]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[1]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[1]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[1]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[2]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[2]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[2]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[3]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[3]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[3]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[4]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[4]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[4]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[5]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[5]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[5]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[6]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[6]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[6]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[7]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[7]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[7]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[8]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[8]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[8]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[9]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[9]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[9]\ : label is "true";
-begin
-  D(11 downto 0) <= Q_reg(11 downto 0);
-\Q_reg_reg[0]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(0),
-      Q => Q_reg(0)
-    );
-\Q_reg_reg[10]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(10),
-      Q => Q_reg(10)
-    );
-\Q_reg_reg[11]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(11),
-      Q => Q_reg(11)
-    );
-\Q_reg_reg[1]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(1),
-      Q => Q_reg(1)
-    );
-\Q_reg_reg[2]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(2),
-      Q => Q_reg(2)
-    );
-\Q_reg_reg[3]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(3),
-      Q => Q_reg(3)
-    );
-\Q_reg_reg[4]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(4),
-      Q => Q_reg(4)
-    );
-\Q_reg_reg[5]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(5),
-      Q => Q_reg(5)
-    );
-\Q_reg_reg[6]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(6),
-      Q => Q_reg(6)
-    );
-\Q_reg_reg[7]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(7),
-      Q => Q_reg(7)
-    );
-\Q_reg_reg[8]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(8),
-      Q => Q_reg(8)
-    );
-\Q_reg_reg[9]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(9),
-      Q => Q_reg(9)
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized5_38\ is
-  port (
-    D : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    wr_clk : in STD_LOGIC;
-    AR : in STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized5_38\ : entity is "synchronizer_ff";
-end \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized5_38\;
-
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized5_38\ is
-  signal Q_reg : STD_LOGIC_VECTOR ( 11 downto 0 );
-  attribute async_reg : string;
-  attribute async_reg of Q_reg : signal is "true";
-  attribute msgon : string;
-  attribute msgon of Q_reg : signal is "true";
-  attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \Q_reg_reg[0]\ : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[0]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[10]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[10]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[10]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[11]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[11]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[11]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[1]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[1]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[1]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[2]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[2]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[2]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[3]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[3]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[3]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[4]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[4]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[4]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[5]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[5]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[5]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[6]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[6]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[6]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[7]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[7]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[7]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[8]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[8]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[8]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[9]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[9]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[9]\ : label is "true";
-begin
-  D(11 downto 0) <= Q_reg(11 downto 0);
-\Q_reg_reg[0]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(0),
-      Q => Q_reg(0)
-    );
-\Q_reg_reg[10]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(10),
-      Q => Q_reg(10)
-    );
-\Q_reg_reg[11]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(11),
-      Q => Q_reg(11)
-    );
-\Q_reg_reg[1]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(1),
-      Q => Q_reg(1)
-    );
-\Q_reg_reg[2]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(2),
-      Q => Q_reg(2)
-    );
-\Q_reg_reg[3]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(3),
-      Q => Q_reg(3)
-    );
-\Q_reg_reg[4]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(4),
-      Q => Q_reg(4)
-    );
-\Q_reg_reg[5]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(5),
-      Q => Q_reg(5)
-    );
-\Q_reg_reg[6]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(6),
-      Q => Q_reg(6)
-    );
-\Q_reg_reg[7]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(7),
-      Q => Q_reg(7)
-    );
-\Q_reg_reg[8]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(8),
-      Q => Q_reg(8)
-    );
-\Q_reg_reg[9]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => Q(9),
-      Q => Q_reg(9)
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized6\ is
-  port (
-    \out\ : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \gnxpm_cdc.wr_pntr_bin_reg[10]\ : out STD_LOGIC_VECTOR ( 10 downto 0 );
-    D : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    rd_clk : in STD_LOGIC;
-    \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized6\ : entity is "synchronizer_ff";
-end \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized6\;
-
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized6\ is
-  signal Q_reg : STD_LOGIC_VECTOR ( 11 downto 0 );
-  attribute async_reg : string;
-  attribute async_reg of Q_reg : signal is "true";
-  attribute msgon : string;
-  attribute msgon of Q_reg : signal is "true";
-  signal \gnxpm_cdc.wr_pntr_bin[0]_i_2_n_0\ : STD_LOGIC;
-  signal \gnxpm_cdc.wr_pntr_bin[1]_i_2_n_0\ : STD_LOGIC;
-  signal \^gnxpm_cdc.wr_pntr_bin_reg[10]\ : STD_LOGIC_VECTOR ( 10 downto 0 );
-  attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \Q_reg_reg[0]\ : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[0]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[10]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[10]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[10]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[11]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[11]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[11]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[1]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[1]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[1]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[2]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[2]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[2]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[3]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[3]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[3]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[4]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[4]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[4]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[5]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[5]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[5]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[6]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[6]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[6]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[7]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[7]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[7]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[8]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[8]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[8]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[9]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[9]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[9]\ : label is "true";
-begin
-  \gnxpm_cdc.wr_pntr_bin_reg[10]\(10 downto 0) <= \^gnxpm_cdc.wr_pntr_bin_reg[10]\(10 downto 0);
   \out\(0) <= Q_reg(11);
-\Q_reg_reg[0]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(0),
-      Q => Q_reg(0)
-    );
-\Q_reg_reg[10]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(10),
-      Q => Q_reg(10)
-    );
-\Q_reg_reg[11]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(11),
-      Q => Q_reg(11)
-    );
-\Q_reg_reg[1]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(1),
-      Q => Q_reg(1)
-    );
-\Q_reg_reg[2]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(2),
-      Q => Q_reg(2)
-    );
-\Q_reg_reg[3]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(3),
-      Q => Q_reg(3)
-    );
-\Q_reg_reg[4]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(4),
-      Q => Q_reg(4)
-    );
-\Q_reg_reg[5]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(5),
-      Q => Q_reg(5)
-    );
-\Q_reg_reg[6]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(6),
-      Q => Q_reg(6)
-    );
-\Q_reg_reg[7]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(7),
-      Q => Q_reg(7)
-    );
-\Q_reg_reg[8]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(8),
-      Q => Q_reg(8)
-    );
-\Q_reg_reg[9]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(9),
-      Q => Q_reg(9)
-    );
-\gnxpm_cdc.wr_pntr_bin[0]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"96696996"
-    )
-        port map (
-      I0 => \gnxpm_cdc.wr_pntr_bin[0]_i_2_n_0\,
-      I1 => Q_reg(1),
-      I2 => Q_reg(0),
-      I3 => Q_reg(2),
-      I4 => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(6),
-      O => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(0)
-    );
-\gnxpm_cdc.wr_pntr_bin[0]_i_2\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"96"
-    )
-        port map (
-      I0 => Q_reg(4),
-      I1 => Q_reg(3),
-      I2 => Q_reg(5),
-      O => \gnxpm_cdc.wr_pntr_bin[0]_i_2_n_0\
-    );
-\gnxpm_cdc.wr_pntr_bin[10]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"6"
-    )
-        port map (
-      I0 => Q_reg(10),
-      I1 => Q_reg(11),
-      O => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(10)
-    );
-\gnxpm_cdc.wr_pntr_bin[1]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"6996966996696996"
-    )
-        port map (
-      I0 => \gnxpm_cdc.wr_pntr_bin[1]_i_2_n_0\,
-      I1 => Q_reg(6),
-      I2 => Q_reg(2),
-      I3 => Q_reg(1),
-      I4 => Q_reg(3),
-      I5 => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(7),
-      O => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(1)
-    );
-\gnxpm_cdc.wr_pntr_bin[1]_i_2\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"6"
-    )
-        port map (
-      I0 => Q_reg(4),
-      I1 => Q_reg(5),
-      O => \gnxpm_cdc.wr_pntr_bin[1]_i_2_n_0\
-    );
-\gnxpm_cdc.wr_pntr_bin[2]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"6996966996696996"
-    )
-        port map (
-      I0 => Q_reg(5),
-      I1 => Q_reg(6),
-      I2 => Q_reg(3),
-      I3 => Q_reg(2),
-      I4 => Q_reg(4),
-      I5 => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(7),
-      O => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(2)
-    );
-\gnxpm_cdc.wr_pntr_bin[3]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"6996966996696996"
-    )
-        port map (
-      I0 => Q_reg(6),
-      I1 => Q_reg(7),
-      I2 => Q_reg(4),
-      I3 => Q_reg(3),
-      I4 => Q_reg(5),
-      I5 => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(8),
-      O => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(3)
-    );
-\gnxpm_cdc.wr_pntr_bin[4]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"96696996"
-    )
-        port map (
-      I0 => Q_reg(6),
-      I1 => Q_reg(7),
-      I2 => Q_reg(4),
-      I3 => Q_reg(5),
-      I4 => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(8),
-      O => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(4)
-    );
-\gnxpm_cdc.wr_pntr_bin[5]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"96696996"
-    )
-        port map (
-      I0 => Q_reg(7),
-      I1 => Q_reg(8),
-      I2 => Q_reg(5),
-      I3 => Q_reg(6),
-      I4 => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(9),
-      O => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(5)
-    );
-\gnxpm_cdc.wr_pntr_bin[6]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"6996966996696996"
-    )
-        port map (
-      I0 => Q_reg(8),
-      I1 => Q_reg(6),
-      I2 => Q_reg(7),
-      I3 => Q_reg(11),
-      I4 => Q_reg(9),
-      I5 => Q_reg(10),
-      O => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(6)
-    );
-\gnxpm_cdc.wr_pntr_bin[7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"96696996"
-    )
-        port map (
-      I0 => Q_reg(9),
-      I1 => Q_reg(7),
-      I2 => Q_reg(8),
-      I3 => Q_reg(11),
-      I4 => Q_reg(10),
-      O => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(7)
-    );
-\gnxpm_cdc.wr_pntr_bin[8]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"6996"
-    )
-        port map (
-      I0 => Q_reg(9),
-      I1 => Q_reg(8),
-      I2 => Q_reg(11),
-      I3 => Q_reg(10),
-      O => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(8)
-    );
-\gnxpm_cdc.wr_pntr_bin[9]_i_1\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"96"
-    )
-        port map (
-      I0 => Q_reg(10),
-      I1 => Q_reg(9),
-      I2 => Q_reg(11),
-      O => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(9)
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized6_39\ is
-  port (
-    \out\ : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \gnxpm_cdc.wr_pntr_bin_reg[10]\ : out STD_LOGIC_VECTOR ( 10 downto 0 );
-    D : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    rd_clk : in STD_LOGIC;
-    \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized6_39\ : entity is "synchronizer_ff";
-end \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized6_39\;
-
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized6_39\ is
-  signal Q_reg : STD_LOGIC_VECTOR ( 11 downto 0 );
-  attribute async_reg : string;
-  attribute async_reg of Q_reg : signal is "true";
-  attribute msgon : string;
-  attribute msgon of Q_reg : signal is "true";
-  signal \gnxpm_cdc.wr_pntr_bin[0]_i_2_n_0\ : STD_LOGIC;
-  signal \gnxpm_cdc.wr_pntr_bin[1]_i_2_n_0\ : STD_LOGIC;
-  signal \^gnxpm_cdc.wr_pntr_bin_reg[10]\ : STD_LOGIC_VECTOR ( 10 downto 0 );
-  attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \Q_reg_reg[0]\ : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[0]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[10]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[10]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[10]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[11]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[11]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[11]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[1]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[1]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[1]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[2]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[2]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[2]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[3]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[3]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[3]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[4]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[4]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[4]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[5]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[5]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[5]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[6]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[6]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[6]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[7]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[7]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[7]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[8]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[8]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[8]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[9]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[9]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[9]\ : label is "true";
-begin
-  \gnxpm_cdc.wr_pntr_bin_reg[10]\(10 downto 0) <= \^gnxpm_cdc.wr_pntr_bin_reg[10]\(10 downto 0);
-  \out\(0) <= Q_reg(11);
-\Q_reg_reg[0]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(0),
-      Q => Q_reg(0)
-    );
-\Q_reg_reg[10]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(10),
-      Q => Q_reg(10)
-    );
-\Q_reg_reg[11]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(11),
-      Q => Q_reg(11)
-    );
-\Q_reg_reg[1]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(1),
-      Q => Q_reg(1)
-    );
-\Q_reg_reg[2]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(2),
-      Q => Q_reg(2)
-    );
-\Q_reg_reg[3]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(3),
-      Q => Q_reg(3)
-    );
-\Q_reg_reg[4]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(4),
-      Q => Q_reg(4)
-    );
-\Q_reg_reg[5]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(5),
-      Q => Q_reg(5)
-    );
-\Q_reg_reg[6]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(6),
-      Q => Q_reg(6)
-    );
-\Q_reg_reg[7]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(7),
-      Q => Q_reg(7)
-    );
-\Q_reg_reg[8]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(8),
-      Q => Q_reg(8)
-    );
-\Q_reg_reg[9]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(9),
-      Q => Q_reg(9)
-    );
-\gnxpm_cdc.wr_pntr_bin[0]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"96696996"
-    )
-        port map (
-      I0 => \gnxpm_cdc.wr_pntr_bin[0]_i_2_n_0\,
-      I1 => Q_reg(1),
-      I2 => Q_reg(0),
-      I3 => Q_reg(2),
-      I4 => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(6),
-      O => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(0)
-    );
-\gnxpm_cdc.wr_pntr_bin[0]_i_2\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"96"
-    )
-        port map (
-      I0 => Q_reg(4),
-      I1 => Q_reg(3),
-      I2 => Q_reg(5),
-      O => \gnxpm_cdc.wr_pntr_bin[0]_i_2_n_0\
-    );
-\gnxpm_cdc.wr_pntr_bin[10]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"6"
-    )
-        port map (
-      I0 => Q_reg(10),
-      I1 => Q_reg(11),
-      O => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(10)
-    );
-\gnxpm_cdc.wr_pntr_bin[1]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"6996966996696996"
-    )
-        port map (
-      I0 => \gnxpm_cdc.wr_pntr_bin[1]_i_2_n_0\,
-      I1 => Q_reg(6),
-      I2 => Q_reg(2),
-      I3 => Q_reg(1),
-      I4 => Q_reg(3),
-      I5 => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(7),
-      O => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(1)
-    );
-\gnxpm_cdc.wr_pntr_bin[1]_i_2\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"6"
-    )
-        port map (
-      I0 => Q_reg(4),
-      I1 => Q_reg(5),
-      O => \gnxpm_cdc.wr_pntr_bin[1]_i_2_n_0\
-    );
-\gnxpm_cdc.wr_pntr_bin[2]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"6996966996696996"
-    )
-        port map (
-      I0 => Q_reg(5),
-      I1 => Q_reg(6),
-      I2 => Q_reg(3),
-      I3 => Q_reg(2),
-      I4 => Q_reg(4),
-      I5 => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(7),
-      O => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(2)
-    );
-\gnxpm_cdc.wr_pntr_bin[3]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"6996966996696996"
-    )
-        port map (
-      I0 => Q_reg(6),
-      I1 => Q_reg(7),
-      I2 => Q_reg(4),
-      I3 => Q_reg(3),
-      I4 => Q_reg(5),
-      I5 => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(8),
-      O => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(3)
-    );
-\gnxpm_cdc.wr_pntr_bin[4]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"96696996"
-    )
-        port map (
-      I0 => Q_reg(6),
-      I1 => Q_reg(7),
-      I2 => Q_reg(4),
-      I3 => Q_reg(5),
-      I4 => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(8),
-      O => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(4)
-    );
-\gnxpm_cdc.wr_pntr_bin[5]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"96696996"
-    )
-        port map (
-      I0 => Q_reg(7),
-      I1 => Q_reg(8),
-      I2 => Q_reg(5),
-      I3 => Q_reg(6),
-      I4 => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(9),
-      O => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(5)
-    );
-\gnxpm_cdc.wr_pntr_bin[6]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"6996966996696996"
-    )
-        port map (
-      I0 => Q_reg(8),
-      I1 => Q_reg(6),
-      I2 => Q_reg(7),
-      I3 => Q_reg(11),
-      I4 => Q_reg(9),
-      I5 => Q_reg(10),
-      O => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(6)
-    );
-\gnxpm_cdc.wr_pntr_bin[7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"96696996"
-    )
-        port map (
-      I0 => Q_reg(9),
-      I1 => Q_reg(7),
-      I2 => Q_reg(8),
-      I3 => Q_reg(11),
-      I4 => Q_reg(10),
-      O => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(7)
-    );
-\gnxpm_cdc.wr_pntr_bin[8]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"6996"
-    )
-        port map (
-      I0 => Q_reg(9),
-      I1 => Q_reg(8),
-      I2 => Q_reg(11),
-      I3 => Q_reg(10),
-      O => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(8)
-    );
-\gnxpm_cdc.wr_pntr_bin[9]_i_1\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"96"
-    )
-        port map (
-      I0 => Q_reg(10),
-      I1 => Q_reg(9),
-      I2 => Q_reg(11),
-      O => \^gnxpm_cdc.wr_pntr_bin_reg[10]\(9)
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized7\ is
-  port (
-    \out\ : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \gnxpm_cdc.rd_pntr_bin_reg[10]\ : out STD_LOGIC_VECTOR ( 10 downto 0 );
-    D : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    wr_clk : in STD_LOGIC;
-    AR : in STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized7\ : entity is "synchronizer_ff";
-end \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized7\;
-
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized7\ is
-  signal Q_reg : STD_LOGIC_VECTOR ( 11 downto 0 );
-  attribute async_reg : string;
-  attribute async_reg of Q_reg : signal is "true";
-  attribute msgon : string;
-  attribute msgon of Q_reg : signal is "true";
-  signal \gnxpm_cdc.rd_pntr_bin[0]_i_2_n_0\ : STD_LOGIC;
-  signal \gnxpm_cdc.rd_pntr_bin[1]_i_2_n_0\ : STD_LOGIC;
-  signal \^gnxpm_cdc.rd_pntr_bin_reg[10]\ : STD_LOGIC_VECTOR ( 10 downto 0 );
-  attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \Q_reg_reg[0]\ : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of \Q_reg_reg[0]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[0]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[10]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[10]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[10]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[11]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[11]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[11]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[1]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[1]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[1]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[2]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[2]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[2]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[3]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[3]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[3]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[4]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[4]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[4]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[5]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[5]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[5]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[6]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[6]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[6]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[7]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[7]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[7]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[8]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[8]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[8]\ : label is "true";
-  attribute ASYNC_REG_boolean of \Q_reg_reg[9]\ : label is std.standard.true;
-  attribute KEEP of \Q_reg_reg[9]\ : label is "yes";
-  attribute msgon of \Q_reg_reg[9]\ : label is "true";
-begin
-  \gnxpm_cdc.rd_pntr_bin_reg[10]\(10 downto 0) <= \^gnxpm_cdc.rd_pntr_bin_reg[10]\(10 downto 0);
-  \out\(0) <= Q_reg(11);
+  \rd_pntr_bin_reg[10]\(10 downto 0) <= \^rd_pntr_bin_reg[10]\(10 downto 0);
 \Q_reg_reg[0]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
@@ -12186,7 +12368,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(0),
       Q => Q_reg(0)
     );
@@ -12197,7 +12379,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(10),
       Q => Q_reg(10)
     );
@@ -12208,7 +12390,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(11),
       Q => Q_reg(11)
     );
@@ -12219,7 +12401,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(1),
       Q => Q_reg(1)
     );
@@ -12230,7 +12412,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(2),
       Q => Q_reg(2)
     );
@@ -12241,7 +12423,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(3),
       Q => Q_reg(3)
     );
@@ -12252,7 +12434,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(4),
       Q => Q_reg(4)
     );
@@ -12263,7 +12445,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(5),
       Q => Q_reg(5)
     );
@@ -12274,7 +12456,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(6),
       Q => Q_reg(6)
     );
@@ -12285,7 +12467,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(7),
       Q => Q_reg(7)
     );
@@ -12296,7 +12478,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(8),
       Q => Q_reg(8)
     );
@@ -12307,23 +12489,23 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(9),
       Q => Q_reg(9)
     );
-\gnxpm_cdc.rd_pntr_bin[0]_i_1\: unisim.vcomponents.LUT5
+\rd_pntr_bin[0]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"96696996"
     )
         port map (
-      I0 => \gnxpm_cdc.rd_pntr_bin[0]_i_2_n_0\,
+      I0 => \rd_pntr_bin[0]_i_2_n_0\,
       I1 => Q_reg(1),
       I2 => Q_reg(0),
       I3 => Q_reg(2),
-      I4 => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(6),
-      O => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(0)
+      I4 => \^rd_pntr_bin_reg[10]\(6),
+      O => \^rd_pntr_bin_reg[10]\(0)
     );
-\gnxpm_cdc.rd_pntr_bin[0]_i_2\: unisim.vcomponents.LUT3
+\rd_pntr_bin[0]_i_2\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"96"
     )
@@ -12331,40 +12513,40 @@ begin
       I0 => Q_reg(4),
       I1 => Q_reg(3),
       I2 => Q_reg(5),
-      O => \gnxpm_cdc.rd_pntr_bin[0]_i_2_n_0\
+      O => \rd_pntr_bin[0]_i_2_n_0\
     );
-\gnxpm_cdc.rd_pntr_bin[10]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_bin[10]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => Q_reg(10),
       I1 => Q_reg(11),
-      O => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(10)
+      O => \^rd_pntr_bin_reg[10]\(10)
     );
-\gnxpm_cdc.rd_pntr_bin[1]_i_1\: unisim.vcomponents.LUT6
+\rd_pntr_bin[1]_i_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"6996966996696996"
     )
         port map (
-      I0 => \gnxpm_cdc.rd_pntr_bin[1]_i_2_n_0\,
+      I0 => \rd_pntr_bin[1]_i_2_n_0\,
       I1 => Q_reg(6),
       I2 => Q_reg(2),
       I3 => Q_reg(1),
       I4 => Q_reg(3),
-      I5 => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(7),
-      O => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(1)
+      I5 => \^rd_pntr_bin_reg[10]\(7),
+      O => \^rd_pntr_bin_reg[10]\(1)
     );
-\gnxpm_cdc.rd_pntr_bin[1]_i_2\: unisim.vcomponents.LUT2
+\rd_pntr_bin[1]_i_2\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => Q_reg(4),
       I1 => Q_reg(5),
-      O => \gnxpm_cdc.rd_pntr_bin[1]_i_2_n_0\
+      O => \rd_pntr_bin[1]_i_2_n_0\
     );
-\gnxpm_cdc.rd_pntr_bin[2]_i_1\: unisim.vcomponents.LUT6
+\rd_pntr_bin[2]_i_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"6996966996696996"
     )
@@ -12374,10 +12556,10 @@ begin
       I2 => Q_reg(3),
       I3 => Q_reg(2),
       I4 => Q_reg(4),
-      I5 => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(7),
-      O => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(2)
+      I5 => \^rd_pntr_bin_reg[10]\(7),
+      O => \^rd_pntr_bin_reg[10]\(2)
     );
-\gnxpm_cdc.rd_pntr_bin[3]_i_1\: unisim.vcomponents.LUT6
+\rd_pntr_bin[3]_i_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"6996966996696996"
     )
@@ -12387,10 +12569,10 @@ begin
       I2 => Q_reg(4),
       I3 => Q_reg(3),
       I4 => Q_reg(5),
-      I5 => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(8),
-      O => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(3)
+      I5 => \^rd_pntr_bin_reg[10]\(8),
+      O => \^rd_pntr_bin_reg[10]\(3)
     );
-\gnxpm_cdc.rd_pntr_bin[4]_i_1\: unisim.vcomponents.LUT5
+\rd_pntr_bin[4]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"96696996"
     )
@@ -12399,10 +12581,10 @@ begin
       I1 => Q_reg(7),
       I2 => Q_reg(4),
       I3 => Q_reg(5),
-      I4 => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(8),
-      O => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(4)
+      I4 => \^rd_pntr_bin_reg[10]\(8),
+      O => \^rd_pntr_bin_reg[10]\(4)
     );
-\gnxpm_cdc.rd_pntr_bin[5]_i_1\: unisim.vcomponents.LUT5
+\rd_pntr_bin[5]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"96696996"
     )
@@ -12411,10 +12593,10 @@ begin
       I1 => Q_reg(8),
       I2 => Q_reg(5),
       I3 => Q_reg(6),
-      I4 => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(9),
-      O => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(5)
+      I4 => \^rd_pntr_bin_reg[10]\(9),
+      O => \^rd_pntr_bin_reg[10]\(5)
     );
-\gnxpm_cdc.rd_pntr_bin[6]_i_1\: unisim.vcomponents.LUT6
+\rd_pntr_bin[6]_i_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"6996966996696996"
     )
@@ -12425,9 +12607,9 @@ begin
       I3 => Q_reg(11),
       I4 => Q_reg(9),
       I5 => Q_reg(10),
-      O => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(6)
+      O => \^rd_pntr_bin_reg[10]\(6)
     );
-\gnxpm_cdc.rd_pntr_bin[7]_i_1\: unisim.vcomponents.LUT5
+\rd_pntr_bin[7]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"96696996"
     )
@@ -12437,9 +12619,9 @@ begin
       I2 => Q_reg(8),
       I3 => Q_reg(11),
       I4 => Q_reg(10),
-      O => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(7)
+      O => \^rd_pntr_bin_reg[10]\(7)
     );
-\gnxpm_cdc.rd_pntr_bin[8]_i_1\: unisim.vcomponents.LUT4
+\rd_pntr_bin[8]_i_1\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"6996"
     )
@@ -12448,9 +12630,9 @@ begin
       I1 => Q_reg(8),
       I2 => Q_reg(11),
       I3 => Q_reg(10),
-      O => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(8)
+      O => \^rd_pntr_bin_reg[10]\(8)
     );
-\gnxpm_cdc.rd_pntr_bin[9]_i_1\: unisim.vcomponents.LUT3
+\rd_pntr_bin[9]_i_1\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"96"
     )
@@ -12458,34 +12640,34 @@ begin
       I0 => Q_reg(10),
       I1 => Q_reg(9),
       I2 => Q_reg(11),
-      O => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(9)
+      O => \^rd_pntr_bin_reg[10]\(9)
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized7_40\ is
+entity \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized3_33\ is
   port (
     \out\ : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \gnxpm_cdc.rd_pntr_bin_reg[10]\ : out STD_LOGIC_VECTOR ( 10 downto 0 );
+    \rd_pntr_bin_reg[10]\ : out STD_LOGIC_VECTOR ( 10 downto 0 );
     D : in STD_LOGIC_VECTOR ( 11 downto 0 );
     wr_clk : in STD_LOGIC;
-    AR : in STD_LOGIC_VECTOR ( 0 to 0 )
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized7_40\ : entity is "synchronizer_ff";
-end \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized7_40\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized3_33\ : entity is "synchronizer_ff";
+end \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized3_33\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized7_40\ is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized3_33\ is
   signal Q_reg : STD_LOGIC_VECTOR ( 11 downto 0 );
   attribute async_reg : string;
   attribute async_reg of Q_reg : signal is "true";
   attribute msgon : string;
   attribute msgon of Q_reg : signal is "true";
-  signal \gnxpm_cdc.rd_pntr_bin[0]_i_2_n_0\ : STD_LOGIC;
-  signal \gnxpm_cdc.rd_pntr_bin[1]_i_2_n_0\ : STD_LOGIC;
-  signal \^gnxpm_cdc.rd_pntr_bin_reg[10]\ : STD_LOGIC_VECTOR ( 10 downto 0 );
+  signal \rd_pntr_bin[0]_i_2_n_0\ : STD_LOGIC;
+  signal \rd_pntr_bin[1]_i_2_n_0\ : STD_LOGIC;
+  signal \^rd_pntr_bin_reg[10]\ : STD_LOGIC_VECTOR ( 10 downto 0 );
   attribute ASYNC_REG_boolean : boolean;
   attribute ASYNC_REG_boolean of \Q_reg_reg[0]\ : label is std.standard.true;
   attribute KEEP : string;
@@ -12525,8 +12707,8 @@ architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_synchronizer_ff__paramet
   attribute KEEP of \Q_reg_reg[9]\ : label is "yes";
   attribute msgon of \Q_reg_reg[9]\ : label is "true";
 begin
-  \gnxpm_cdc.rd_pntr_bin_reg[10]\(10 downto 0) <= \^gnxpm_cdc.rd_pntr_bin_reg[10]\(10 downto 0);
   \out\(0) <= Q_reg(11);
+  \rd_pntr_bin_reg[10]\(10 downto 0) <= \^rd_pntr_bin_reg[10]\(10 downto 0);
 \Q_reg_reg[0]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
@@ -12534,7 +12716,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(0),
       Q => Q_reg(0)
     );
@@ -12545,7 +12727,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(10),
       Q => Q_reg(10)
     );
@@ -12556,7 +12738,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(11),
       Q => Q_reg(11)
     );
@@ -12567,7 +12749,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(1),
       Q => Q_reg(1)
     );
@@ -12578,7 +12760,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(2),
       Q => Q_reg(2)
     );
@@ -12589,7 +12771,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(3),
       Q => Q_reg(3)
     );
@@ -12600,7 +12782,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(4),
       Q => Q_reg(4)
     );
@@ -12611,7 +12793,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(5),
       Q => Q_reg(5)
     );
@@ -12622,7 +12804,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(6),
       Q => Q_reg(6)
     );
@@ -12633,7 +12815,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(7),
       Q => Q_reg(7)
     );
@@ -12644,7 +12826,7 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(8),
       Q => Q_reg(8)
     );
@@ -12655,23 +12837,23 @@ begin
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(9),
       Q => Q_reg(9)
     );
-\gnxpm_cdc.rd_pntr_bin[0]_i_1\: unisim.vcomponents.LUT5
+\rd_pntr_bin[0]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"96696996"
     )
         port map (
-      I0 => \gnxpm_cdc.rd_pntr_bin[0]_i_2_n_0\,
+      I0 => \rd_pntr_bin[0]_i_2_n_0\,
       I1 => Q_reg(1),
       I2 => Q_reg(0),
       I3 => Q_reg(2),
-      I4 => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(6),
-      O => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(0)
+      I4 => \^rd_pntr_bin_reg[10]\(6),
+      O => \^rd_pntr_bin_reg[10]\(0)
     );
-\gnxpm_cdc.rd_pntr_bin[0]_i_2\: unisim.vcomponents.LUT3
+\rd_pntr_bin[0]_i_2\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"96"
     )
@@ -12679,40 +12861,40 @@ begin
       I0 => Q_reg(4),
       I1 => Q_reg(3),
       I2 => Q_reg(5),
-      O => \gnxpm_cdc.rd_pntr_bin[0]_i_2_n_0\
+      O => \rd_pntr_bin[0]_i_2_n_0\
     );
-\gnxpm_cdc.rd_pntr_bin[10]_i_1\: unisim.vcomponents.LUT2
+\rd_pntr_bin[10]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => Q_reg(10),
       I1 => Q_reg(11),
-      O => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(10)
+      O => \^rd_pntr_bin_reg[10]\(10)
     );
-\gnxpm_cdc.rd_pntr_bin[1]_i_1\: unisim.vcomponents.LUT6
+\rd_pntr_bin[1]_i_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"6996966996696996"
     )
         port map (
-      I0 => \gnxpm_cdc.rd_pntr_bin[1]_i_2_n_0\,
+      I0 => \rd_pntr_bin[1]_i_2_n_0\,
       I1 => Q_reg(6),
       I2 => Q_reg(2),
       I3 => Q_reg(1),
       I4 => Q_reg(3),
-      I5 => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(7),
-      O => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(1)
+      I5 => \^rd_pntr_bin_reg[10]\(7),
+      O => \^rd_pntr_bin_reg[10]\(1)
     );
-\gnxpm_cdc.rd_pntr_bin[1]_i_2\: unisim.vcomponents.LUT2
+\rd_pntr_bin[1]_i_2\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => Q_reg(4),
       I1 => Q_reg(5),
-      O => \gnxpm_cdc.rd_pntr_bin[1]_i_2_n_0\
+      O => \rd_pntr_bin[1]_i_2_n_0\
     );
-\gnxpm_cdc.rd_pntr_bin[2]_i_1\: unisim.vcomponents.LUT6
+\rd_pntr_bin[2]_i_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"6996966996696996"
     )
@@ -12722,10 +12904,10 @@ begin
       I2 => Q_reg(3),
       I3 => Q_reg(2),
       I4 => Q_reg(4),
-      I5 => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(7),
-      O => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(2)
+      I5 => \^rd_pntr_bin_reg[10]\(7),
+      O => \^rd_pntr_bin_reg[10]\(2)
     );
-\gnxpm_cdc.rd_pntr_bin[3]_i_1\: unisim.vcomponents.LUT6
+\rd_pntr_bin[3]_i_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"6996966996696996"
     )
@@ -12735,10 +12917,10 @@ begin
       I2 => Q_reg(4),
       I3 => Q_reg(3),
       I4 => Q_reg(5),
-      I5 => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(8),
-      O => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(3)
+      I5 => \^rd_pntr_bin_reg[10]\(8),
+      O => \^rd_pntr_bin_reg[10]\(3)
     );
-\gnxpm_cdc.rd_pntr_bin[4]_i_1\: unisim.vcomponents.LUT5
+\rd_pntr_bin[4]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"96696996"
     )
@@ -12747,10 +12929,10 @@ begin
       I1 => Q_reg(7),
       I2 => Q_reg(4),
       I3 => Q_reg(5),
-      I4 => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(8),
-      O => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(4)
+      I4 => \^rd_pntr_bin_reg[10]\(8),
+      O => \^rd_pntr_bin_reg[10]\(4)
     );
-\gnxpm_cdc.rd_pntr_bin[5]_i_1\: unisim.vcomponents.LUT5
+\rd_pntr_bin[5]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"96696996"
     )
@@ -12759,10 +12941,10 @@ begin
       I1 => Q_reg(8),
       I2 => Q_reg(5),
       I3 => Q_reg(6),
-      I4 => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(9),
-      O => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(5)
+      I4 => \^rd_pntr_bin_reg[10]\(9),
+      O => \^rd_pntr_bin_reg[10]\(5)
     );
-\gnxpm_cdc.rd_pntr_bin[6]_i_1\: unisim.vcomponents.LUT6
+\rd_pntr_bin[6]_i_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"6996966996696996"
     )
@@ -12773,9 +12955,9 @@ begin
       I3 => Q_reg(11),
       I4 => Q_reg(9),
       I5 => Q_reg(10),
-      O => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(6)
+      O => \^rd_pntr_bin_reg[10]\(6)
     );
-\gnxpm_cdc.rd_pntr_bin[7]_i_1\: unisim.vcomponents.LUT5
+\rd_pntr_bin[7]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"96696996"
     )
@@ -12785,9 +12967,9 @@ begin
       I2 => Q_reg(8),
       I3 => Q_reg(11),
       I4 => Q_reg(10),
-      O => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(7)
+      O => \^rd_pntr_bin_reg[10]\(7)
     );
-\gnxpm_cdc.rd_pntr_bin[8]_i_1\: unisim.vcomponents.LUT4
+\rd_pntr_bin[8]_i_1\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"6996"
     )
@@ -12796,9 +12978,9 @@ begin
       I1 => Q_reg(8),
       I2 => Q_reg(11),
       I3 => Q_reg(10),
-      O => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(8)
+      O => \^rd_pntr_bin_reg[10]\(8)
     );
-\gnxpm_cdc.rd_pntr_bin[9]_i_1\: unisim.vcomponents.LUT3
+\rd_pntr_bin[9]_i_1\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"96"
     )
@@ -12806,33 +12988,31 @@ begin
       I0 => Q_reg(10),
       I1 => Q_reg(9),
       I2 => Q_reg(11),
-      O => \^gnxpm_cdc.rd_pntr_bin_reg[10]\(9)
+      O => \^rd_pntr_bin_reg[10]\(9)
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_wr_bin_cntr is
+entity \design_1_d_axi_i2s_audio_0_0_wr_bin_cntr\ is
   port (
     Q : out STD_LOGIC_VECTOR ( 3 downto 0 );
     \gic0.gc0.count_d2_reg[3]_0\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     wr_clk : in STD_LOGIC;
-    AR : in STD_LOGIC_VECTOR ( 0 to 0 )
+    \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_wr_bin_cntr : entity is "wr_bin_cntr";
-end design_1_d_axi_i2s_audio_0_0_wr_bin_cntr;
+end \design_1_d_axi_i2s_audio_0_0_wr_bin_cntr\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_wr_bin_cntr is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_wr_bin_cntr\ is
   signal \^q\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \^gic0.gc0.count_d2_reg[3]_0\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \plusOp__0\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \gic0.gc0.count[2]_i_1\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \gic0.gc0.count[3]_i_1\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \gic0.gc0.count[2]_i_1\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \gic0.gc0.count[3]_i_1\ : label is "soft_lutpair5";
 begin
   Q(3 downto 0) <= \^q\(3 downto 0);
   \gic0.gc0.count_d2_reg[3]_0\(3 downto 0) <= \^gic0.gc0.count_d2_reg[3]_0\(3 downto 0);
@@ -12882,7 +13062,7 @@ begin
       C => wr_clk,
       CE => E(0),
       D => \^q\(0),
-      PRE => AR(0),
+      PRE => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\(0),
       Q => \^gic0.gc0.count_d2_reg[3]_0\(0)
     );
 \gic0.gc0.count_d1_reg[1]\: unisim.vcomponents.FDCE
@@ -12892,7 +13072,7 @@ begin
         port map (
       C => wr_clk,
       CE => E(0),
-      CLR => AR(0),
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\(0),
       D => \^q\(1),
       Q => \^gic0.gc0.count_d2_reg[3]_0\(1)
     );
@@ -12903,7 +13083,7 @@ begin
         port map (
       C => wr_clk,
       CE => E(0),
-      CLR => AR(0),
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\(0),
       D => \^q\(2),
       Q => \^gic0.gc0.count_d2_reg[3]_0\(2)
     );
@@ -12914,7 +13094,7 @@ begin
         port map (
       C => wr_clk,
       CE => E(0),
-      CLR => AR(0),
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\(0),
       D => \^q\(3),
       Q => \^gic0.gc0.count_d2_reg[3]_0\(3)
     );
@@ -12925,7 +13105,7 @@ begin
         port map (
       C => wr_clk,
       CE => E(0),
-      CLR => AR(0),
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\(0),
       D => \^gic0.gc0.count_d2_reg[3]_0\(0),
       Q => \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram\(0)
     );
@@ -12936,7 +13116,7 @@ begin
         port map (
       C => wr_clk,
       CE => E(0),
-      CLR => AR(0),
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\(0),
       D => \^gic0.gc0.count_d2_reg[3]_0\(1),
       Q => \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram\(1)
     );
@@ -12947,7 +13127,7 @@ begin
         port map (
       C => wr_clk,
       CE => E(0),
-      CLR => AR(0),
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\(0),
       D => \^gic0.gc0.count_d2_reg[3]_0\(2),
       Q => \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram\(2)
     );
@@ -12958,7 +13138,7 @@ begin
         port map (
       C => wr_clk,
       CE => E(0),
-      CLR => AR(0),
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\(0),
       D => \^gic0.gc0.count_d2_reg[3]_0\(3),
       Q => \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram\(3)
     );
@@ -12969,7 +13149,7 @@ begin
         port map (
       C => wr_clk,
       CE => E(0),
-      CLR => AR(0),
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\(0),
       D => \plusOp__0\(0),
       Q => \^q\(0)
     );
@@ -12981,7 +13161,7 @@ begin
       C => wr_clk,
       CE => E(0),
       D => \plusOp__0\(1),
-      PRE => AR(0),
+      PRE => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\(0),
       Q => \^q\(1)
     );
 \gic0.gc0.count_reg[2]\: unisim.vcomponents.FDCE
@@ -12991,7 +13171,7 @@ begin
         port map (
       C => wr_clk,
       CE => E(0),
-      CLR => AR(0),
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\(0),
       D => \plusOp__0\(2),
       Q => \^q\(2)
     );
@@ -13002,7 +13182,7 @@ begin
         port map (
       C => wr_clk,
       CE => E(0),
-      CLR => AR(0),
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\(0),
       D => \plusOp__0\(3),
       Q => \^q\(3)
     );
@@ -13014,12 +13194,12 @@ use UNISIM.VCOMPONENTS.ALL;
 entity \design_1_d_axi_i2s_audio_0_0_wr_bin_cntr__parameterized0\ is
   port (
     D : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    Q : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    \gic0.gc0.count_d2_reg[11]_0\ : out STD_LOGIC_VECTOR ( 11 downto 0 );
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\ : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    bin2gray : out STD_LOGIC_VECTOR ( 10 downto 0 );
-    ram_full_fb_i_reg : in STD_LOGIC;
+    p_0_in10_out : out STD_LOGIC_VECTOR ( 10 downto 0 );
+    E : in STD_LOGIC_VECTOR ( 0 to 0 );
     wr_clk : in STD_LOGIC;
-    \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_wr_bin_cntr__parameterized0\ : entity is "wr_bin_cntr";
@@ -13028,19 +13208,8 @@ end \design_1_d_axi_i2s_audio_0_0_wr_bin_cntr__parameterized0\;
 architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_wr_bin_cntr__parameterized0\ is
   signal \^d\ : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal \^device_7series.no_bmm_info.sdp.simple_prim36.ram\ : STD_LOGIC_VECTOR ( 11 downto 0 );
-  signal \^q\ : STD_LOGIC_VECTOR ( 11 downto 0 );
-  signal \gic0.gc0.count[0]_i_2_n_0\ : STD_LOGIC;
-  signal \gic0.gc0.count[0]_i_3_n_0\ : STD_LOGIC;
-  signal \gic0.gc0.count[0]_i_4_n_0\ : STD_LOGIC;
   signal \gic0.gc0.count[0]_i_5_n_0\ : STD_LOGIC;
-  signal \gic0.gc0.count[4]_i_2_n_0\ : STD_LOGIC;
-  signal \gic0.gc0.count[4]_i_3_n_0\ : STD_LOGIC;
-  signal \gic0.gc0.count[4]_i_4_n_0\ : STD_LOGIC;
-  signal \gic0.gc0.count[4]_i_5_n_0\ : STD_LOGIC;
-  signal \gic0.gc0.count[8]_i_2_n_0\ : STD_LOGIC;
-  signal \gic0.gc0.count[8]_i_3_n_0\ : STD_LOGIC;
-  signal \gic0.gc0.count[8]_i_4_n_0\ : STD_LOGIC;
-  signal \gic0.gc0.count[8]_i_5_n_0\ : STD_LOGIC;
+  signal \^gic0.gc0.count_d2_reg[11]_0\ : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal \gic0.gc0.count_reg[0]_i_1_n_0\ : STD_LOGIC;
   signal \gic0.gc0.count_reg[0]_i_1_n_1\ : STD_LOGIC;
   signal \gic0.gc0.count_reg[0]_i_1_n_2\ : STD_LOGIC;
@@ -13066,44 +13235,20 @@ architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_wr_bin_cntr__parameteriz
   signal \gic0.gc0.count_reg[8]_i_1_n_7\ : STD_LOGIC;
   signal \NLW_gic0.gc0.count_reg[8]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \gnxpm_cdc.wr_pntr_gc[0]_i_1\ : label is "soft_lutpair20";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.wr_pntr_gc[1]_i_1\ : label is "soft_lutpair20";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.wr_pntr_gc[2]_i_1\ : label is "soft_lutpair21";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.wr_pntr_gc[3]_i_1\ : label is "soft_lutpair21";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.wr_pntr_gc[4]_i_1\ : label is "soft_lutpair22";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.wr_pntr_gc[5]_i_1\ : label is "soft_lutpair22";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.wr_pntr_gc[6]_i_1\ : label is "soft_lutpair23";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.wr_pntr_gc[7]_i_1\ : label is "soft_lutpair23";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.wr_pntr_gc[8]_i_1\ : label is "soft_lutpair24";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.wr_pntr_gc[9]_i_1\ : label is "soft_lutpair24";
+  attribute SOFT_HLUTNM of \wr_pntr_gc[0]_i_1\ : label is "soft_lutpair23";
+  attribute SOFT_HLUTNM of \wr_pntr_gc[1]_i_1\ : label is "soft_lutpair23";
+  attribute SOFT_HLUTNM of \wr_pntr_gc[2]_i_1\ : label is "soft_lutpair24";
+  attribute SOFT_HLUTNM of \wr_pntr_gc[3]_i_1\ : label is "soft_lutpair24";
+  attribute SOFT_HLUTNM of \wr_pntr_gc[4]_i_1\ : label is "soft_lutpair25";
+  attribute SOFT_HLUTNM of \wr_pntr_gc[5]_i_1\ : label is "soft_lutpair25";
+  attribute SOFT_HLUTNM of \wr_pntr_gc[6]_i_1\ : label is "soft_lutpair26";
+  attribute SOFT_HLUTNM of \wr_pntr_gc[7]_i_1\ : label is "soft_lutpair26";
+  attribute SOFT_HLUTNM of \wr_pntr_gc[8]_i_1\ : label is "soft_lutpair27";
+  attribute SOFT_HLUTNM of \wr_pntr_gc[9]_i_1\ : label is "soft_lutpair27";
 begin
   D(11 downto 0) <= \^d\(11 downto 0);
   \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\(11 downto 0) <= \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(11 downto 0);
-  Q(11 downto 0) <= \^q\(11 downto 0);
-\gic0.gc0.count[0]_i_2\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(3),
-      O => \gic0.gc0.count[0]_i_2_n_0\
-    );
-\gic0.gc0.count[0]_i_3\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(2),
-      O => \gic0.gc0.count[0]_i_3_n_0\
-    );
-\gic0.gc0.count[0]_i_4\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(1),
-      O => \gic0.gc0.count[0]_i_4_n_0\
-    );
+  \gic0.gc0.count_d2_reg[11]_0\(11 downto 0) <= \^gic0.gc0.count_d2_reg[11]_0\(11 downto 0);
 \gic0.gc0.count[0]_i_5\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
@@ -13112,80 +13257,16 @@ begin
       I0 => \^d\(0),
       O => \gic0.gc0.count[0]_i_5_n_0\
     );
-\gic0.gc0.count[4]_i_2\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(7),
-      O => \gic0.gc0.count[4]_i_2_n_0\
-    );
-\gic0.gc0.count[4]_i_3\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(6),
-      O => \gic0.gc0.count[4]_i_3_n_0\
-    );
-\gic0.gc0.count[4]_i_4\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(5),
-      O => \gic0.gc0.count[4]_i_4_n_0\
-    );
-\gic0.gc0.count[4]_i_5\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(4),
-      O => \gic0.gc0.count[4]_i_5_n_0\
-    );
-\gic0.gc0.count[8]_i_2\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(11),
-      O => \gic0.gc0.count[8]_i_2_n_0\
-    );
-\gic0.gc0.count[8]_i_3\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(10),
-      O => \gic0.gc0.count[8]_i_3_n_0\
-    );
-\gic0.gc0.count[8]_i_4\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(9),
-      O => \gic0.gc0.count[8]_i_4_n_0\
-    );
-\gic0.gc0.count[8]_i_5\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(8),
-      O => \gic0.gc0.count[8]_i_5_n_0\
-    );
 \gic0.gc0.count_d1_reg[0]\: unisim.vcomponents.FDPE
     generic map(
       INIT => '1'
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
+      CE => E(0),
       D => \^d\(0),
-      PRE => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      Q => \^q\(0)
+      PRE => Q(0),
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(0)
     );
 \gic0.gc0.count_d1_reg[10]\: unisim.vcomponents.FDCE
     generic map(
@@ -13193,10 +13274,10 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \^d\(10),
-      Q => \^q\(10)
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(10)
     );
 \gic0.gc0.count_d1_reg[11]\: unisim.vcomponents.FDCE
     generic map(
@@ -13204,10 +13285,10 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \^d\(11),
-      Q => \^q\(11)
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(11)
     );
 \gic0.gc0.count_d1_reg[1]\: unisim.vcomponents.FDCE
     generic map(
@@ -13215,10 +13296,10 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \^d\(1),
-      Q => \^q\(1)
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(1)
     );
 \gic0.gc0.count_d1_reg[2]\: unisim.vcomponents.FDCE
     generic map(
@@ -13226,10 +13307,10 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \^d\(2),
-      Q => \^q\(2)
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(2)
     );
 \gic0.gc0.count_d1_reg[3]\: unisim.vcomponents.FDCE
     generic map(
@@ -13237,10 +13318,10 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \^d\(3),
-      Q => \^q\(3)
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(3)
     );
 \gic0.gc0.count_d1_reg[4]\: unisim.vcomponents.FDCE
     generic map(
@@ -13248,10 +13329,10 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \^d\(4),
-      Q => \^q\(4)
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(4)
     );
 \gic0.gc0.count_d1_reg[5]\: unisim.vcomponents.FDCE
     generic map(
@@ -13259,10 +13340,10 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \^d\(5),
-      Q => \^q\(5)
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(5)
     );
 \gic0.gc0.count_d1_reg[6]\: unisim.vcomponents.FDCE
     generic map(
@@ -13270,10 +13351,10 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \^d\(6),
-      Q => \^q\(6)
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(6)
     );
 \gic0.gc0.count_d1_reg[7]\: unisim.vcomponents.FDCE
     generic map(
@@ -13281,10 +13362,10 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \^d\(7),
-      Q => \^q\(7)
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(7)
     );
 \gic0.gc0.count_d1_reg[8]\: unisim.vcomponents.FDCE
     generic map(
@@ -13292,10 +13373,10 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \^d\(8),
-      Q => \^q\(8)
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(8)
     );
 \gic0.gc0.count_d1_reg[9]\: unisim.vcomponents.FDCE
     generic map(
@@ -13303,10 +13384,10 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \^d\(9),
-      Q => \^q\(9)
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(9)
     );
 \gic0.gc0.count_d2_reg[0]\: unisim.vcomponents.FDCE
     generic map(
@@ -13314,9 +13395,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(0),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(0),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(0)
     );
 \gic0.gc0.count_d2_reg[10]\: unisim.vcomponents.FDCE
@@ -13325,9 +13406,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(10),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(10),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(10)
     );
 \gic0.gc0.count_d2_reg[11]\: unisim.vcomponents.FDCE
@@ -13336,9 +13417,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(11),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(11),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(11)
     );
 \gic0.gc0.count_d2_reg[1]\: unisim.vcomponents.FDCE
@@ -13347,9 +13428,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(1),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(1),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(1)
     );
 \gic0.gc0.count_d2_reg[2]\: unisim.vcomponents.FDCE
@@ -13358,9 +13439,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(2),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(2),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(2)
     );
 \gic0.gc0.count_d2_reg[3]\: unisim.vcomponents.FDCE
@@ -13369,9 +13450,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(3),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(3),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(3)
     );
 \gic0.gc0.count_d2_reg[4]\: unisim.vcomponents.FDCE
@@ -13380,9 +13461,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(4),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(4),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(4)
     );
 \gic0.gc0.count_d2_reg[5]\: unisim.vcomponents.FDCE
@@ -13391,9 +13472,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(5),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(5),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(5)
     );
 \gic0.gc0.count_d2_reg[6]\: unisim.vcomponents.FDCE
@@ -13402,9 +13483,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(6),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(6),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(6)
     );
 \gic0.gc0.count_d2_reg[7]\: unisim.vcomponents.FDCE
@@ -13413,9 +13494,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(7),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(7),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(7)
     );
 \gic0.gc0.count_d2_reg[8]\: unisim.vcomponents.FDCE
@@ -13424,9 +13505,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(8),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(8),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(8)
     );
 \gic0.gc0.count_d2_reg[9]\: unisim.vcomponents.FDCE
@@ -13435,9 +13516,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(9),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(9),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(9)
     );
 \gic0.gc0.count_reg[0]\: unisim.vcomponents.FDCE
@@ -13446,8 +13527,8 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \gic0.gc0.count_reg[0]_i_1_n_7\,
       Q => \^d\(0)
     );
@@ -13464,9 +13545,7 @@ begin
       O(2) => \gic0.gc0.count_reg[0]_i_1_n_5\,
       O(1) => \gic0.gc0.count_reg[0]_i_1_n_6\,
       O(0) => \gic0.gc0.count_reg[0]_i_1_n_7\,
-      S(3) => \gic0.gc0.count[0]_i_2_n_0\,
-      S(2) => \gic0.gc0.count[0]_i_3_n_0\,
-      S(1) => \gic0.gc0.count[0]_i_4_n_0\,
+      S(3 downto 1) => \^d\(3 downto 1),
       S(0) => \gic0.gc0.count[0]_i_5_n_0\
     );
 \gic0.gc0.count_reg[10]\: unisim.vcomponents.FDCE
@@ -13475,8 +13554,8 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \gic0.gc0.count_reg[8]_i_1_n_5\,
       Q => \^d\(10)
     );
@@ -13486,8 +13565,8 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \gic0.gc0.count_reg[8]_i_1_n_4\,
       Q => \^d\(11)
     );
@@ -13497,9 +13576,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
+      CE => E(0),
       D => \gic0.gc0.count_reg[0]_i_1_n_6\,
-      PRE => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      PRE => Q(0),
       Q => \^d\(1)
     );
 \gic0.gc0.count_reg[2]\: unisim.vcomponents.FDCE
@@ -13508,8 +13587,8 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \gic0.gc0.count_reg[0]_i_1_n_5\,
       Q => \^d\(2)
     );
@@ -13519,8 +13598,8 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \gic0.gc0.count_reg[0]_i_1_n_4\,
       Q => \^d\(3)
     );
@@ -13530,8 +13609,8 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \gic0.gc0.count_reg[4]_i_1_n_7\,
       Q => \^d\(4)
     );
@@ -13548,10 +13627,7 @@ begin
       O(2) => \gic0.gc0.count_reg[4]_i_1_n_5\,
       O(1) => \gic0.gc0.count_reg[4]_i_1_n_6\,
       O(0) => \gic0.gc0.count_reg[4]_i_1_n_7\,
-      S(3) => \gic0.gc0.count[4]_i_2_n_0\,
-      S(2) => \gic0.gc0.count[4]_i_3_n_0\,
-      S(1) => \gic0.gc0.count[4]_i_4_n_0\,
-      S(0) => \gic0.gc0.count[4]_i_5_n_0\
+      S(3 downto 0) => \^d\(7 downto 4)
     );
 \gic0.gc0.count_reg[5]\: unisim.vcomponents.FDCE
     generic map(
@@ -13559,8 +13635,8 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \gic0.gc0.count_reg[4]_i_1_n_6\,
       Q => \^d\(5)
     );
@@ -13570,8 +13646,8 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \gic0.gc0.count_reg[4]_i_1_n_5\,
       Q => \^d\(6)
     );
@@ -13581,8 +13657,8 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \gic0.gc0.count_reg[4]_i_1_n_4\,
       Q => \^d\(7)
     );
@@ -13592,8 +13668,8 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \gic0.gc0.count_reg[8]_i_1_n_7\,
       Q => \^d\(8)
     );
@@ -13610,10 +13686,7 @@ begin
       O(2) => \gic0.gc0.count_reg[8]_i_1_n_5\,
       O(1) => \gic0.gc0.count_reg[8]_i_1_n_6\,
       O(0) => \gic0.gc0.count_reg[8]_i_1_n_7\,
-      S(3) => \gic0.gc0.count[8]_i_2_n_0\,
-      S(2) => \gic0.gc0.count[8]_i_3_n_0\,
-      S(1) => \gic0.gc0.count[8]_i_4_n_0\,
-      S(0) => \gic0.gc0.count[8]_i_5_n_0\
+      S(3 downto 0) => \^d\(11 downto 8)
     );
 \gic0.gc0.count_reg[9]\: unisim.vcomponents.FDCE
     generic map(
@@ -13621,145 +13694,134 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \gic0.gc0.count_reg[8]_i_1_n_6\,
       Q => \^d\(9)
     );
-\gnxpm_cdc.wr_pntr_gc[0]_i_1\: unisim.vcomponents.LUT2
+\wr_pntr_gc[0]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(0),
       I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(1),
-      O => bin2gray(0)
+      O => p_0_in10_out(0)
     );
-\gnxpm_cdc.wr_pntr_gc[10]_i_1\: unisim.vcomponents.LUT2
+\wr_pntr_gc[10]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(10),
       I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(11),
-      O => bin2gray(10)
+      O => p_0_in10_out(10)
     );
-\gnxpm_cdc.wr_pntr_gc[1]_i_1\: unisim.vcomponents.LUT2
+\wr_pntr_gc[1]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(1),
       I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(2),
-      O => bin2gray(1)
+      O => p_0_in10_out(1)
     );
-\gnxpm_cdc.wr_pntr_gc[2]_i_1\: unisim.vcomponents.LUT2
+\wr_pntr_gc[2]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(2),
       I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(3),
-      O => bin2gray(2)
+      O => p_0_in10_out(2)
     );
-\gnxpm_cdc.wr_pntr_gc[3]_i_1\: unisim.vcomponents.LUT2
+\wr_pntr_gc[3]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(3),
       I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(4),
-      O => bin2gray(3)
+      O => p_0_in10_out(3)
     );
-\gnxpm_cdc.wr_pntr_gc[4]_i_1\: unisim.vcomponents.LUT2
+\wr_pntr_gc[4]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(4),
       I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(5),
-      O => bin2gray(4)
+      O => p_0_in10_out(4)
     );
-\gnxpm_cdc.wr_pntr_gc[5]_i_1\: unisim.vcomponents.LUT2
+\wr_pntr_gc[5]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(5),
       I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(6),
-      O => bin2gray(5)
+      O => p_0_in10_out(5)
     );
-\gnxpm_cdc.wr_pntr_gc[6]_i_1\: unisim.vcomponents.LUT2
+\wr_pntr_gc[6]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(6),
       I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(7),
-      O => bin2gray(6)
+      O => p_0_in10_out(6)
     );
-\gnxpm_cdc.wr_pntr_gc[7]_i_1\: unisim.vcomponents.LUT2
+\wr_pntr_gc[7]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(7),
       I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(8),
-      O => bin2gray(7)
+      O => p_0_in10_out(7)
     );
-\gnxpm_cdc.wr_pntr_gc[8]_i_1\: unisim.vcomponents.LUT2
+\wr_pntr_gc[8]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(8),
       I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(9),
-      O => bin2gray(8)
+      O => p_0_in10_out(8)
     );
-\gnxpm_cdc.wr_pntr_gc[9]_i_1\: unisim.vcomponents.LUT2
+\wr_pntr_gc[9]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(9),
       I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(10),
-      O => bin2gray(9)
+      O => p_0_in10_out(9)
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_wr_bin_cntr__parameterized0_30\ is
+entity \design_1_d_axi_i2s_audio_0_0_wr_bin_cntr__parameterized0_23\ is
   port (
     D : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    Q : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    \gic0.gc0.count_d2_reg[11]_0\ : out STD_LOGIC_VECTOR ( 11 downto 0 );
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\ : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    \gnxpm_cdc.wr_pntr_gc_reg[10]\ : out STD_LOGIC_VECTOR ( 10 downto 0 );
-    ram_full_fb_i_reg : in STD_LOGIC;
+    \wr_pntr_gc_reg[10]\ : out STD_LOGIC_VECTOR ( 10 downto 0 );
+    E : in STD_LOGIC_VECTOR ( 0 to 0 );
     wr_clk : in STD_LOGIC;
-    \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_wr_bin_cntr__parameterized0_30\ : entity is "wr_bin_cntr";
-end \design_1_d_axi_i2s_audio_0_0_wr_bin_cntr__parameterized0_30\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_wr_bin_cntr__parameterized0_23\ : entity is "wr_bin_cntr";
+end \design_1_d_axi_i2s_audio_0_0_wr_bin_cntr__parameterized0_23\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_wr_bin_cntr__parameterized0_30\ is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_wr_bin_cntr__parameterized0_23\ is
   signal \^d\ : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal \^device_7series.no_bmm_info.sdp.simple_prim36.ram\ : STD_LOGIC_VECTOR ( 11 downto 0 );
-  signal \^q\ : STD_LOGIC_VECTOR ( 11 downto 0 );
-  signal \gic0.gc0.count[0]_i_2_n_0\ : STD_LOGIC;
-  signal \gic0.gc0.count[0]_i_3_n_0\ : STD_LOGIC;
-  signal \gic0.gc0.count[0]_i_4_n_0\ : STD_LOGIC;
   signal \gic0.gc0.count[0]_i_5_n_0\ : STD_LOGIC;
-  signal \gic0.gc0.count[4]_i_2_n_0\ : STD_LOGIC;
-  signal \gic0.gc0.count[4]_i_3_n_0\ : STD_LOGIC;
-  signal \gic0.gc0.count[4]_i_4_n_0\ : STD_LOGIC;
-  signal \gic0.gc0.count[4]_i_5_n_0\ : STD_LOGIC;
-  signal \gic0.gc0.count[8]_i_2_n_0\ : STD_LOGIC;
-  signal \gic0.gc0.count[8]_i_3_n_0\ : STD_LOGIC;
-  signal \gic0.gc0.count[8]_i_4_n_0\ : STD_LOGIC;
-  signal \gic0.gc0.count[8]_i_5_n_0\ : STD_LOGIC;
+  signal \^gic0.gc0.count_d2_reg[11]_0\ : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal \gic0.gc0.count_reg[0]_i_1_n_0\ : STD_LOGIC;
   signal \gic0.gc0.count_reg[0]_i_1_n_1\ : STD_LOGIC;
   signal \gic0.gc0.count_reg[0]_i_1_n_2\ : STD_LOGIC;
@@ -13785,44 +13847,20 @@ architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_wr_bin_cntr__parameteriz
   signal \gic0.gc0.count_reg[8]_i_1_n_7\ : STD_LOGIC;
   signal \NLW_gic0.gc0.count_reg[8]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \gnxpm_cdc.wr_pntr_gc[0]_i_1\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.wr_pntr_gc[1]_i_1\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.wr_pntr_gc[2]_i_1\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.wr_pntr_gc[3]_i_1\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.wr_pntr_gc[4]_i_1\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.wr_pntr_gc[5]_i_1\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.wr_pntr_gc[6]_i_1\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.wr_pntr_gc[7]_i_1\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.wr_pntr_gc[8]_i_1\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.wr_pntr_gc[9]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \wr_pntr_gc[0]_i_1\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \wr_pntr_gc[1]_i_1\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \wr_pntr_gc[2]_i_1\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \wr_pntr_gc[3]_i_1\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \wr_pntr_gc[4]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \wr_pntr_gc[5]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \wr_pntr_gc[6]_i_1\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \wr_pntr_gc[7]_i_1\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \wr_pntr_gc[8]_i_1\ : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of \wr_pntr_gc[9]_i_1\ : label is "soft_lutpair16";
 begin
   D(11 downto 0) <= \^d\(11 downto 0);
   \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\(11 downto 0) <= \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(11 downto 0);
-  Q(11 downto 0) <= \^q\(11 downto 0);
-\gic0.gc0.count[0]_i_2\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(3),
-      O => \gic0.gc0.count[0]_i_2_n_0\
-    );
-\gic0.gc0.count[0]_i_3\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(2),
-      O => \gic0.gc0.count[0]_i_3_n_0\
-    );
-\gic0.gc0.count[0]_i_4\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(1),
-      O => \gic0.gc0.count[0]_i_4_n_0\
-    );
+  \gic0.gc0.count_d2_reg[11]_0\(11 downto 0) <= \^gic0.gc0.count_d2_reg[11]_0\(11 downto 0);
 \gic0.gc0.count[0]_i_5\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
@@ -13831,80 +13869,16 @@ begin
       I0 => \^d\(0),
       O => \gic0.gc0.count[0]_i_5_n_0\
     );
-\gic0.gc0.count[4]_i_2\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(7),
-      O => \gic0.gc0.count[4]_i_2_n_0\
-    );
-\gic0.gc0.count[4]_i_3\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(6),
-      O => \gic0.gc0.count[4]_i_3_n_0\
-    );
-\gic0.gc0.count[4]_i_4\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(5),
-      O => \gic0.gc0.count[4]_i_4_n_0\
-    );
-\gic0.gc0.count[4]_i_5\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(4),
-      O => \gic0.gc0.count[4]_i_5_n_0\
-    );
-\gic0.gc0.count[8]_i_2\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(11),
-      O => \gic0.gc0.count[8]_i_2_n_0\
-    );
-\gic0.gc0.count[8]_i_3\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(10),
-      O => \gic0.gc0.count[8]_i_3_n_0\
-    );
-\gic0.gc0.count[8]_i_4\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(9),
-      O => \gic0.gc0.count[8]_i_4_n_0\
-    );
-\gic0.gc0.count[8]_i_5\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^d\(8),
-      O => \gic0.gc0.count[8]_i_5_n_0\
-    );
 \gic0.gc0.count_d1_reg[0]\: unisim.vcomponents.FDPE
     generic map(
       INIT => '1'
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
+      CE => E(0),
       D => \^d\(0),
-      PRE => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      Q => \^q\(0)
+      PRE => Q(0),
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(0)
     );
 \gic0.gc0.count_d1_reg[10]\: unisim.vcomponents.FDCE
     generic map(
@@ -13912,10 +13886,10 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \^d\(10),
-      Q => \^q\(10)
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(10)
     );
 \gic0.gc0.count_d1_reg[11]\: unisim.vcomponents.FDCE
     generic map(
@@ -13923,10 +13897,10 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \^d\(11),
-      Q => \^q\(11)
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(11)
     );
 \gic0.gc0.count_d1_reg[1]\: unisim.vcomponents.FDCE
     generic map(
@@ -13934,10 +13908,10 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \^d\(1),
-      Q => \^q\(1)
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(1)
     );
 \gic0.gc0.count_d1_reg[2]\: unisim.vcomponents.FDCE
     generic map(
@@ -13945,10 +13919,10 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \^d\(2),
-      Q => \^q\(2)
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(2)
     );
 \gic0.gc0.count_d1_reg[3]\: unisim.vcomponents.FDCE
     generic map(
@@ -13956,10 +13930,10 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \^d\(3),
-      Q => \^q\(3)
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(3)
     );
 \gic0.gc0.count_d1_reg[4]\: unisim.vcomponents.FDCE
     generic map(
@@ -13967,10 +13941,10 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \^d\(4),
-      Q => \^q\(4)
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(4)
     );
 \gic0.gc0.count_d1_reg[5]\: unisim.vcomponents.FDCE
     generic map(
@@ -13978,10 +13952,10 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \^d\(5),
-      Q => \^q\(5)
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(5)
     );
 \gic0.gc0.count_d1_reg[6]\: unisim.vcomponents.FDCE
     generic map(
@@ -13989,10 +13963,10 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \^d\(6),
-      Q => \^q\(6)
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(6)
     );
 \gic0.gc0.count_d1_reg[7]\: unisim.vcomponents.FDCE
     generic map(
@@ -14000,10 +13974,10 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \^d\(7),
-      Q => \^q\(7)
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(7)
     );
 \gic0.gc0.count_d1_reg[8]\: unisim.vcomponents.FDCE
     generic map(
@@ -14011,10 +13985,10 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \^d\(8),
-      Q => \^q\(8)
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(8)
     );
 \gic0.gc0.count_d1_reg[9]\: unisim.vcomponents.FDCE
     generic map(
@@ -14022,10 +13996,10 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \^d\(9),
-      Q => \^q\(9)
+      Q => \^gic0.gc0.count_d2_reg[11]_0\(9)
     );
 \gic0.gc0.count_d2_reg[0]\: unisim.vcomponents.FDCE
     generic map(
@@ -14033,9 +14007,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(0),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(0),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(0)
     );
 \gic0.gc0.count_d2_reg[10]\: unisim.vcomponents.FDCE
@@ -14044,9 +14018,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(10),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(10),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(10)
     );
 \gic0.gc0.count_d2_reg[11]\: unisim.vcomponents.FDCE
@@ -14055,9 +14029,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(11),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(11),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(11)
     );
 \gic0.gc0.count_d2_reg[1]\: unisim.vcomponents.FDCE
@@ -14066,9 +14040,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(1),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(1),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(1)
     );
 \gic0.gc0.count_d2_reg[2]\: unisim.vcomponents.FDCE
@@ -14077,9 +14051,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(2),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(2),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(2)
     );
 \gic0.gc0.count_d2_reg[3]\: unisim.vcomponents.FDCE
@@ -14088,9 +14062,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(3),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(3),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(3)
     );
 \gic0.gc0.count_d2_reg[4]\: unisim.vcomponents.FDCE
@@ -14099,9 +14073,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(4),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(4),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(4)
     );
 \gic0.gc0.count_d2_reg[5]\: unisim.vcomponents.FDCE
@@ -14110,9 +14084,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(5),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(5),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(5)
     );
 \gic0.gc0.count_d2_reg[6]\: unisim.vcomponents.FDCE
@@ -14121,9 +14095,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(6),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(6),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(6)
     );
 \gic0.gc0.count_d2_reg[7]\: unisim.vcomponents.FDCE
@@ -14132,9 +14106,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(7),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(7),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(7)
     );
 \gic0.gc0.count_d2_reg[8]\: unisim.vcomponents.FDCE
@@ -14143,9 +14117,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(8),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(8),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(8)
     );
 \gic0.gc0.count_d2_reg[9]\: unisim.vcomponents.FDCE
@@ -14154,9 +14128,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      D => \^q\(9),
+      CE => E(0),
+      CLR => Q(0),
+      D => \^gic0.gc0.count_d2_reg[11]_0\(9),
       Q => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(9)
     );
 \gic0.gc0.count_reg[0]\: unisim.vcomponents.FDCE
@@ -14165,8 +14139,8 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \gic0.gc0.count_reg[0]_i_1_n_7\,
       Q => \^d\(0)
     );
@@ -14183,9 +14157,7 @@ begin
       O(2) => \gic0.gc0.count_reg[0]_i_1_n_5\,
       O(1) => \gic0.gc0.count_reg[0]_i_1_n_6\,
       O(0) => \gic0.gc0.count_reg[0]_i_1_n_7\,
-      S(3) => \gic0.gc0.count[0]_i_2_n_0\,
-      S(2) => \gic0.gc0.count[0]_i_3_n_0\,
-      S(1) => \gic0.gc0.count[0]_i_4_n_0\,
+      S(3 downto 1) => \^d\(3 downto 1),
       S(0) => \gic0.gc0.count[0]_i_5_n_0\
     );
 \gic0.gc0.count_reg[10]\: unisim.vcomponents.FDCE
@@ -14194,8 +14166,8 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \gic0.gc0.count_reg[8]_i_1_n_5\,
       Q => \^d\(10)
     );
@@ -14205,8 +14177,8 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \gic0.gc0.count_reg[8]_i_1_n_4\,
       Q => \^d\(11)
     );
@@ -14216,9 +14188,9 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
+      CE => E(0),
       D => \gic0.gc0.count_reg[0]_i_1_n_6\,
-      PRE => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      PRE => Q(0),
       Q => \^d\(1)
     );
 \gic0.gc0.count_reg[2]\: unisim.vcomponents.FDCE
@@ -14227,8 +14199,8 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \gic0.gc0.count_reg[0]_i_1_n_5\,
       Q => \^d\(2)
     );
@@ -14238,8 +14210,8 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \gic0.gc0.count_reg[0]_i_1_n_4\,
       Q => \^d\(3)
     );
@@ -14249,8 +14221,8 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \gic0.gc0.count_reg[4]_i_1_n_7\,
       Q => \^d\(4)
     );
@@ -14267,10 +14239,7 @@ begin
       O(2) => \gic0.gc0.count_reg[4]_i_1_n_5\,
       O(1) => \gic0.gc0.count_reg[4]_i_1_n_6\,
       O(0) => \gic0.gc0.count_reg[4]_i_1_n_7\,
-      S(3) => \gic0.gc0.count[4]_i_2_n_0\,
-      S(2) => \gic0.gc0.count[4]_i_3_n_0\,
-      S(1) => \gic0.gc0.count[4]_i_4_n_0\,
-      S(0) => \gic0.gc0.count[4]_i_5_n_0\
+      S(3 downto 0) => \^d\(7 downto 4)
     );
 \gic0.gc0.count_reg[5]\: unisim.vcomponents.FDCE
     generic map(
@@ -14278,8 +14247,8 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \gic0.gc0.count_reg[4]_i_1_n_6\,
       Q => \^d\(5)
     );
@@ -14289,8 +14258,8 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \gic0.gc0.count_reg[4]_i_1_n_5\,
       Q => \^d\(6)
     );
@@ -14300,8 +14269,8 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \gic0.gc0.count_reg[4]_i_1_n_4\,
       Q => \^d\(7)
     );
@@ -14311,8 +14280,8 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \gic0.gc0.count_reg[8]_i_1_n_7\,
       Q => \^d\(8)
     );
@@ -14329,10 +14298,7 @@ begin
       O(2) => \gic0.gc0.count_reg[8]_i_1_n_5\,
       O(1) => \gic0.gc0.count_reg[8]_i_1_n_6\,
       O(0) => \gic0.gc0.count_reg[8]_i_1_n_7\,
-      S(3) => \gic0.gc0.count[8]_i_2_n_0\,
-      S(2) => \gic0.gc0.count[8]_i_3_n_0\,
-      S(1) => \gic0.gc0.count[8]_i_4_n_0\,
-      S(0) => \gic0.gc0.count[8]_i_5_n_0\
+      S(3 downto 0) => \^d\(11 downto 8)
     );
 \gic0.gc0.count_reg[9]\: unisim.vcomponents.FDCE
     generic map(
@@ -14340,154 +14306,142 @@ begin
     )
         port map (
       C => wr_clk,
-      CE => ram_full_fb_i_reg,
-      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
+      CE => E(0),
+      CLR => Q(0),
       D => \gic0.gc0.count_reg[8]_i_1_n_6\,
       Q => \^d\(9)
     );
-\gnxpm_cdc.wr_pntr_gc[0]_i_1\: unisim.vcomponents.LUT2
+\wr_pntr_gc[0]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(0),
       I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(1),
-      O => \gnxpm_cdc.wr_pntr_gc_reg[10]\(0)
+      O => \wr_pntr_gc_reg[10]\(0)
     );
-\gnxpm_cdc.wr_pntr_gc[10]_i_1\: unisim.vcomponents.LUT2
+\wr_pntr_gc[10]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(10),
       I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(11),
-      O => \gnxpm_cdc.wr_pntr_gc_reg[10]\(10)
+      O => \wr_pntr_gc_reg[10]\(10)
     );
-\gnxpm_cdc.wr_pntr_gc[1]_i_1\: unisim.vcomponents.LUT2
+\wr_pntr_gc[1]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(1),
       I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(2),
-      O => \gnxpm_cdc.wr_pntr_gc_reg[10]\(1)
+      O => \wr_pntr_gc_reg[10]\(1)
     );
-\gnxpm_cdc.wr_pntr_gc[2]_i_1\: unisim.vcomponents.LUT2
+\wr_pntr_gc[2]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(2),
       I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(3),
-      O => \gnxpm_cdc.wr_pntr_gc_reg[10]\(2)
+      O => \wr_pntr_gc_reg[10]\(2)
     );
-\gnxpm_cdc.wr_pntr_gc[3]_i_1\: unisim.vcomponents.LUT2
+\wr_pntr_gc[3]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(3),
       I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(4),
-      O => \gnxpm_cdc.wr_pntr_gc_reg[10]\(3)
+      O => \wr_pntr_gc_reg[10]\(3)
     );
-\gnxpm_cdc.wr_pntr_gc[4]_i_1\: unisim.vcomponents.LUT2
+\wr_pntr_gc[4]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(4),
       I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(5),
-      O => \gnxpm_cdc.wr_pntr_gc_reg[10]\(4)
+      O => \wr_pntr_gc_reg[10]\(4)
     );
-\gnxpm_cdc.wr_pntr_gc[5]_i_1\: unisim.vcomponents.LUT2
+\wr_pntr_gc[5]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(5),
       I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(6),
-      O => \gnxpm_cdc.wr_pntr_gc_reg[10]\(5)
+      O => \wr_pntr_gc_reg[10]\(5)
     );
-\gnxpm_cdc.wr_pntr_gc[6]_i_1\: unisim.vcomponents.LUT2
+\wr_pntr_gc[6]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(6),
       I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(7),
-      O => \gnxpm_cdc.wr_pntr_gc_reg[10]\(6)
+      O => \wr_pntr_gc_reg[10]\(6)
     );
-\gnxpm_cdc.wr_pntr_gc[7]_i_1\: unisim.vcomponents.LUT2
+\wr_pntr_gc[7]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(7),
       I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(8),
-      O => \gnxpm_cdc.wr_pntr_gc_reg[10]\(7)
+      O => \wr_pntr_gc_reg[10]\(7)
     );
-\gnxpm_cdc.wr_pntr_gc[8]_i_1\: unisim.vcomponents.LUT2
+\wr_pntr_gc[8]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(8),
       I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(9),
-      O => \gnxpm_cdc.wr_pntr_gc_reg[10]\(8)
+      O => \wr_pntr_gc_reg[10]\(8)
     );
-\gnxpm_cdc.wr_pntr_gc[9]_i_1\: unisim.vcomponents.LUT2
+\wr_pntr_gc[9]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
       I0 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(9),
       I1 => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(10),
-      O => \gnxpm_cdc.wr_pntr_gc_reg[10]\(9)
+      O => \wr_pntr_gc_reg[10]\(9)
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_wr_status_flags_as is
+entity \design_1_d_axi_i2s_audio_0_0_wr_status_flags_as\ is
   port (
     full : out STD_LOGIC;
-    ram_full_fb_i_reg_0 : out STD_LOGIC;
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \gic0.gc0.count_d1_reg[3]\ : in STD_LOGIC;
+    ram_full_fb_i_reg_0 : out STD_LOGIC;
+    ram_full_i : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
     \out\ : in STD_LOGIC;
     wr_en : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \gnxpm_cdc.rd_pntr_bin_reg[3]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
+    \rd_pntr_bin_reg[3]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_wr_status_flags_as : entity is "wr_status_flags_as";
-end design_1_d_axi_i2s_audio_0_0_wr_status_flags_as;
+end \design_1_d_axi_i2s_audio_0_0_wr_status_flags_as\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_wr_status_flags_as is
-  signal ram_full_fb_i : STD_LOGIC;
-  attribute DONT_TOUCH : boolean;
-  attribute DONT_TOUCH of ram_full_fb_i : signal is std.standard.true;
-  signal ram_full_i : STD_LOGIC;
-  attribute DONT_TOUCH of ram_full_i : signal is std.standard.true;
-  attribute DONT_TOUCH of ram_full_fb_i_reg : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of ram_full_fb_i_reg : label is "yes";
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_wr_status_flags_as\ is
+  signal ram_full_fb : STD_LOGIC;
   attribute equivalent_register_removal : string;
   attribute equivalent_register_removal of ram_full_fb_i_reg : label is "no";
-  attribute DONT_TOUCH of ram_full_i_reg : label is std.standard.true;
-  attribute KEEP of ram_full_i_reg : label is "yes";
   attribute equivalent_register_removal of ram_full_i_reg : label is "no";
 begin
-  full <= ram_full_i;
 \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_i_2\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"2"
     )
         port map (
       I0 => wr_en,
-      I1 => ram_full_fb_i,
+      I1 => ram_full_fb,
       O => E(0)
     );
 ram_full_fb_i_reg: unisim.vcomponents.FDPE
@@ -14497,19 +14451,19 @@ ram_full_fb_i_reg: unisim.vcomponents.FDPE
         port map (
       C => wr_clk,
       CE => '1',
-      D => \gic0.gc0.count_d1_reg[3]\,
+      D => ram_full_i,
       PRE => \out\,
-      Q => ram_full_fb_i
+      Q => ram_full_fb
     );
 ram_full_i_i_3: unisim.vcomponents.LUT4
     generic map(
       INIT => X"4004"
     )
         port map (
-      I0 => ram_full_fb_i,
+      I0 => ram_full_fb,
       I1 => wr_en,
       I2 => Q(0),
-      I3 => \gnxpm_cdc.rd_pntr_bin_reg[3]\(0),
+      I3 => \rd_pntr_bin_reg[3]\(0),
       O => ram_full_fb_i_reg_0
     );
 ram_full_i_reg: unisim.vcomponents.FDPE
@@ -14519,41 +14473,39 @@ ram_full_i_reg: unisim.vcomponents.FDPE
         port map (
       C => wr_clk,
       CE => '1',
-      D => \gic0.gc0.count_d1_reg[3]\,
+      D => ram_full_i,
       PRE => \out\,
-      Q => ram_full_i
+      Q => full
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width is
+entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 3 downto 0 );
     rd_clk : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gc0.count_d1_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \gic0.gc0.count_d2_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     din : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
-end design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width;
+end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width\ is
 begin
-\prim_noinit.ram\: entity work.design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper
+\prim_noinit.ram\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper\
      port map (
       E(0) => E(0),
+      Q(0) => Q(0),
       din(3 downto 0) => din(3 downto 0),
       dout(3 downto 0) => dout(3 downto 0),
       \gc0.count_d1_reg[3]\(3 downto 0) => \gc0.count_d1_reg[3]\(3 downto 0),
       \gic0.gc0.count_d2_reg[3]\(3 downto 0) => \gic0.gc0.count_d2_reg[3]\(3 downto 0),
-      \out\(0) => \out\(0),
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
       wr_clk => wr_clk
@@ -14570,8 +14522,8 @@ entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized0\ is
     rd_clk : in STD_LOGIC;
     ram_full_fb_i_reg : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \gic0.gc0.count_d2_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     din : in STD_LOGIC_VECTOR ( 8 downto 0 )
   );
@@ -14583,11 +14535,11 @@ architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__
 begin
 \prim_noinit.ram\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized0\
      port map (
-      Q(11 downto 0) => Q(11 downto 0),
+      Q(0) => Q(0),
       din(8 downto 0) => din(8 downto 0),
       dout(8 downto 0) => dout(8 downto 0),
       \gc0.count_d1_reg[11]\(11 downto 0) => \gc0.count_d1_reg[11]\(11 downto 0),
-      \out\(0) => \out\(0),
+      \gic0.gc0.count_d2_reg[11]\(11 downto 0) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ram_full_fb_i_reg => ram_full_fb_i_reg,
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
@@ -14598,31 +14550,31 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized0_23\ is
+entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized0_16\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 8 downto 0 );
     wr_clk : in STD_LOGIC;
     rd_clk : in STD_LOGIC;
     ram_full_fb_i_reg : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \gic0.gc0.count_d2_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     din : in STD_LOGIC_VECTOR ( 8 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized0_23\ : entity is "blk_mem_gen_prim_width";
-end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized0_23\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized0_16\ : entity is "blk_mem_gen_prim_width";
+end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized0_16\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized0_23\ is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized0_16\ is
 begin
-\prim_noinit.ram\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized0_28\
+\prim_noinit.ram\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized0_21\
      port map (
-      Q(11 downto 0) => Q(11 downto 0),
+      Q(0) => Q(0),
       din(8 downto 0) => din(8 downto 0),
       dout(8 downto 0) => dout(8 downto 0),
       \gc0.count_d1_reg[11]\(11 downto 0) => \gc0.count_d1_reg[11]\(11 downto 0),
-      \out\(0) => \out\(0),
+      \gic0.gc0.count_d2_reg[11]\(11 downto 0) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ram_full_fb_i_reg => ram_full_fb_i_reg,
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
@@ -14640,8 +14592,8 @@ entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized1\ is
     rd_clk : in STD_LOGIC;
     ram_full_fb_i_reg : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \gic0.gc0.count_d2_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     din : in STD_LOGIC_VECTOR ( 8 downto 0 )
   );
@@ -14653,11 +14605,11 @@ architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__
 begin
 \prim_noinit.ram\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized1\
      port map (
-      Q(11 downto 0) => Q(11 downto 0),
+      Q(0) => Q(0),
       din(8 downto 0) => din(8 downto 0),
       dout(8 downto 0) => dout(8 downto 0),
       \gc0.count_d1_reg[11]\(11 downto 0) => \gc0.count_d1_reg[11]\(11 downto 0),
-      \out\(0) => \out\(0),
+      \gic0.gc0.count_d2_reg[11]\(11 downto 0) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ram_full_fb_i_reg => ram_full_fb_i_reg,
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
@@ -14668,31 +14620,31 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized1_24\ is
+entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized1_17\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 8 downto 0 );
     wr_clk : in STD_LOGIC;
     rd_clk : in STD_LOGIC;
     ram_full_fb_i_reg : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \gic0.gc0.count_d2_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     din : in STD_LOGIC_VECTOR ( 8 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized1_24\ : entity is "blk_mem_gen_prim_width";
-end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized1_24\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized1_17\ : entity is "blk_mem_gen_prim_width";
+end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized1_17\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized1_24\ is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized1_17\ is
 begin
-\prim_noinit.ram\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized1_27\
+\prim_noinit.ram\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized1_20\
      port map (
-      Q(11 downto 0) => Q(11 downto 0),
+      Q(0) => Q(0),
       din(8 downto 0) => din(8 downto 0),
       dout(8 downto 0) => dout(8 downto 0),
       \gc0.count_d1_reg[11]\(11 downto 0) => \gc0.count_d1_reg[11]\(11 downto 0),
-      \out\(0) => \out\(0),
+      \gic0.gc0.count_d2_reg[11]\(11 downto 0) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ram_full_fb_i_reg => ram_full_fb_i_reg,
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
@@ -14710,8 +14662,8 @@ entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized2\ is
     rd_clk : in STD_LOGIC;
     ram_full_fb_i_reg : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \gic0.gc0.count_d2_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     din : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
@@ -14723,11 +14675,11 @@ architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__
 begin
 \prim_noinit.ram\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized2\
      port map (
-      Q(11 downto 0) => Q(11 downto 0),
+      Q(0) => Q(0),
       din(5 downto 0) => din(5 downto 0),
       dout(5 downto 0) => dout(5 downto 0),
       \gc0.count_d1_reg[11]\(11 downto 0) => \gc0.count_d1_reg[11]\(11 downto 0),
-      \out\(0) => \out\(0),
+      \gic0.gc0.count_d2_reg[11]\(11 downto 0) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ram_full_fb_i_reg => ram_full_fb_i_reg,
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
@@ -14738,31 +14690,31 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized2_25\ is
+entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized2_18\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 5 downto 0 );
     wr_clk : in STD_LOGIC;
     rd_clk : in STD_LOGIC;
     ram_full_fb_i_reg : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \gic0.gc0.count_d2_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     din : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized2_25\ : entity is "blk_mem_gen_prim_width";
-end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized2_25\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized2_18\ : entity is "blk_mem_gen_prim_width";
+end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized2_18\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized2_25\ is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized2_18\ is
 begin
-\prim_noinit.ram\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized2_26\
+\prim_noinit.ram\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_wrapper__parameterized2_19\
      port map (
-      Q(11 downto 0) => Q(11 downto 0),
+      Q(0) => Q(0),
       din(5 downto 0) => din(5 downto 0),
       dout(5 downto 0) => dout(5 downto 0),
       \gc0.count_d1_reg[11]\(11 downto 0) => \gc0.count_d1_reg[11]\(11 downto 0),
-      \out\(0) => \out\(0),
+      \gic0.gc0.count_d2_reg[11]\(11 downto 0) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ram_full_fb_i_reg => ram_full_fb_i_reg,
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
@@ -14773,325 +14725,129 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_clk_x_pntrs is
+entity \design_1_d_axi_i2s_audio_0_0_clk_x_pntrs\ is
   port (
-    \out\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
     ram_empty_fb_i_reg : out STD_LOGIC;
-    ram_full_fb_i_reg : out STD_LOGIC;
-    ram_full_fb_i_reg_0 : out STD_LOGIC_VECTOR ( 0 to 0 );
-    D : in STD_LOGIC_VECTOR ( 0 to 0 );
+    ram_full_i : out STD_LOGIC;
+    ram_full_fb_i_reg : out STD_LOGIC_VECTOR ( 0 to 0 );
     rd_en : in STD_LOGIC;
-    ram_empty_fb_i_reg_0 : in STD_LOGIC;
+    p_2_out : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \gc0.count_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    ram_full_fb_i_reg_1 : in STD_LOGIC;
+    ram_full_fb_i_reg_0 : in STD_LOGIC;
     \gic0.gc0.count_d1_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    wr_rst_busy : in STD_LOGIC;
+    \out\ : in STD_LOGIC;
     \gic0.gc0.count_reg[2]\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
     \gic0.gc0.count_d2_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     wr_clk : in STD_LOGIC;
-    AR : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     rd_clk : in STD_LOGIC;
     \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \gc0.count_d1_reg[2]\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
+    D : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_clk_x_pntrs : entity is "clk_x_pntrs";
-end design_1_d_axi_i2s_audio_0_0_clk_x_pntrs;
+end \design_1_d_axi_i2s_audio_0_0_clk_x_pntrs\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_clk_x_pntrs is
-  signal \__1_n_0\ : STD_LOGIC;
-  signal \__2_n_0\ : STD_LOGIC;
-  signal bin2gray : STD_LOGIC_VECTOR ( 2 downto 0 );
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_4\ : STD_LOGIC;
-  signal gray2bin : STD_LOGIC_VECTOR ( 1 to 1 );
-  signal \^out\ : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal p_0_out : STD_LOGIC;
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_clk_x_pntrs\ is
+  signal \gsync_stage[2].wr_stg_inst_n_4\ : STD_LOGIC;
+  signal p_0_in : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal \p_0_in0_inferred__2_n_0\ : STD_LOGIC;
+  signal \p_0_in0_inferred__3_n_0\ : STD_LOGIC;
+  signal p_0_in2_out : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal p_0_out : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal p_1_out : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal p_22_out : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal p_23_out : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal p_2_out_0 : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal p_3_out : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal p_4_out : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal p_6_out : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal ram_empty_i_i_2_n_0 : STD_LOGIC;
   signal ram_empty_i_i_3_n_0 : STD_LOGIC;
   signal ram_empty_i_i_4_n_0 : STD_LOGIC;
   signal ram_empty_i_i_5_n_0 : STD_LOGIC;
-  signal \^ram_full_fb_i_reg_0\ : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal \^ram_full_fb_i_reg\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal ram_full_i_i_2_n_0 : STD_LOGIC;
   signal ram_full_i_i_4_n_0 : STD_LOGIC;
   signal rd_pntr_gc : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal wr_pntr_gc : STD_LOGIC_VECTOR ( 3 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \__1\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \__2\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.wr_pntr_gc[0]_i_1\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \gnxpm_cdc.wr_pntr_gc[1]_i_1\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of p_0_in0 : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \p_0_in0_inferred__0\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \p_0_in0_inferred__2\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \p_0_in0_inferred__3\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \wr_pntr_gc[1]_i_1\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \wr_pntr_gc[2]_i_1\ : label is "soft_lutpair2";
 begin
-  \out\(3 downto 0) <= \^out\(3 downto 0);
-  ram_full_fb_i_reg_0(0) <= \^ram_full_fb_i_reg_0\(0);
-\__0\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"96"
-    )
-        port map (
-      I0 => \^out\(2),
-      I1 => \^out\(1),
-      I2 => \^out\(3),
-      O => gray2bin(1)
-    );
-\__1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"6996"
-    )
-        port map (
-      I0 => p_6_out(1),
-      I1 => p_6_out(0),
-      I2 => p_6_out(3),
-      I3 => p_6_out(2),
-      O => \__1_n_0\
-    );
-\__2\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"96"
-    )
-        port map (
-      I0 => p_6_out(2),
-      I1 => p_6_out(1),
-      I2 => p_6_out(3),
-      O => \__2_n_0\
-    );
-\gnxpm_cdc.gsync_stage[1].rd_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized0\
+  ram_full_fb_i_reg(0) <= \^ram_full_fb_i_reg\(0);
+\gsync_stage[1].rd_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff\
      port map (
       D(3 downto 0) => p_3_out(3 downto 0),
       Q(3 downto 0) => wr_pntr_gc(3 downto 0),
       \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0) => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
       rd_clk => rd_clk
     );
-\gnxpm_cdc.gsync_stage[1].wr_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized1\
+\gsync_stage[1].wr_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff_35\
      port map (
-      AR(0) => AR(0),
-      D(3 downto 0) => p_4_out(3 downto 0),
+      D(3 downto 0) => p_2_out_0(3 downto 0),
       Q(3 downto 0) => rd_pntr_gc(3 downto 0),
+      \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0) => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
       wr_clk => wr_clk
     );
-\gnxpm_cdc.gsync_stage[2].rd_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized2\
+\gsync_stage[2].rd_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff_36\
      port map (
-      D(0) => p_0_out,
+      D(0) => p_0_in(2),
       \Q_reg_reg[3]_0\(3 downto 0) => p_3_out(3 downto 0),
       \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0) => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      \out\(3 downto 0) => \^out\(3 downto 0),
+      \out\(3 downto 0) => p_1_out(3 downto 0),
       rd_clk => rd_clk
     );
-\gnxpm_cdc.gsync_stage[2].wr_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized3\
+\gsync_stage[2].wr_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff_37\
      port map (
-      AR(0) => AR(0),
-      D(0) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_4\,
-      \Q_reg_reg[3]_0\(3 downto 0) => p_4_out(3 downto 0),
-      \out\(3 downto 0) => p_6_out(3 downto 0),
+      D(0) => \gsync_stage[2].wr_stg_inst_n_4\,
+      \Q_reg_reg[3]_0\(3 downto 0) => p_2_out_0(3 downto 0),
+      \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0) => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      \out\(3 downto 0) => p_0_out(3 downto 0),
       wr_clk => wr_clk
     );
-\gnxpm_cdc.rd_pntr_bin_reg[0]\: unisim.vcomponents.FDCE
+p_0_in0: unisim.vcomponents.LUT4
     generic map(
-      INIT => '0'
+      INIT => X"6996"
     )
         port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => \__1_n_0\,
-      Q => p_23_out(0)
+      I0 => p_1_out(1),
+      I1 => p_1_out(0),
+      I2 => p_1_out(3),
+      I3 => p_1_out(2),
+      O => p_0_in(0)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[1]\: unisim.vcomponents.FDCE
+\p_0_in0_inferred__0\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
+      INIT => X"96"
     )
         port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => \__2_n_0\,
-      Q => p_23_out(1)
+      I0 => p_1_out(2),
+      I1 => p_1_out(1),
+      I2 => p_1_out(3),
+      O => p_0_in(1)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[2]\: unisim.vcomponents.FDCE
+\p_0_in0_inferred__2\: unisim.vcomponents.LUT4
     generic map(
-      INIT => '0'
+      INIT => X"6996"
     )
         port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_4\,
-      Q => p_23_out(2)
+      I0 => p_0_out(1),
+      I1 => p_0_out(0),
+      I2 => p_0_out(3),
+      I3 => p_0_out(2),
+      O => \p_0_in0_inferred__2_n_0\
     );
-\gnxpm_cdc.rd_pntr_bin_reg[3]\: unisim.vcomponents.FDCE
+\p_0_in0_inferred__3\: unisim.vcomponents.LUT3
     generic map(
-      INIT => '0'
+      INIT => X"96"
     )
         port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => p_6_out(3),
-      Q => \^ram_full_fb_i_reg_0\(0)
-    );
-\gnxpm_cdc.rd_pntr_gc_reg[0]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => \gc0.count_d1_reg[2]\(0),
-      Q => rd_pntr_gc(0)
-    );
-\gnxpm_cdc.rd_pntr_gc_reg[1]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => \gc0.count_d1_reg[2]\(1),
-      Q => rd_pntr_gc(1)
-    );
-\gnxpm_cdc.rd_pntr_gc_reg[2]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => \gc0.count_d1_reg[2]\(2),
-      Q => rd_pntr_gc(2)
-    );
-\gnxpm_cdc.rd_pntr_gc_reg[3]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => Q(3),
-      Q => rd_pntr_gc(3)
-    );
-\gnxpm_cdc.wr_pntr_bin_reg[0]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => D(0),
-      Q => p_22_out(0)
-    );
-\gnxpm_cdc.wr_pntr_bin_reg[1]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => gray2bin(1),
-      Q => p_22_out(1)
-    );
-\gnxpm_cdc.wr_pntr_bin_reg[2]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => p_0_out,
-      Q => p_22_out(2)
-    );
-\gnxpm_cdc.wr_pntr_bin_reg[3]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => \^out\(3),
-      Q => p_22_out(3)
-    );
-\gnxpm_cdc.wr_pntr_gc[0]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"6"
-    )
-        port map (
-      I0 => \gic0.gc0.count_d2_reg[3]\(0),
-      I1 => \gic0.gc0.count_d2_reg[3]\(1),
-      O => bin2gray(0)
-    );
-\gnxpm_cdc.wr_pntr_gc[1]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"6"
-    )
-        port map (
-      I0 => \gic0.gc0.count_d2_reg[3]\(1),
-      I1 => \gic0.gc0.count_d2_reg[3]\(2),
-      O => bin2gray(1)
-    );
-\gnxpm_cdc.wr_pntr_gc[2]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"6"
-    )
-        port map (
-      I0 => \gic0.gc0.count_d2_reg[3]\(2),
-      I1 => \gic0.gc0.count_d2_reg[3]\(3),
-      O => bin2gray(2)
-    );
-\gnxpm_cdc.wr_pntr_gc_reg[0]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => bin2gray(0),
-      Q => wr_pntr_gc(0)
-    );
-\gnxpm_cdc.wr_pntr_gc_reg[1]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => bin2gray(1),
-      Q => wr_pntr_gc(1)
-    );
-\gnxpm_cdc.wr_pntr_gc_reg[2]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => bin2gray(2),
-      Q => wr_pntr_gc(2)
-    );
-\gnxpm_cdc.wr_pntr_gc_reg[3]\: unisim.vcomponents.FDCE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      CLR => AR(0),
-      D => \gic0.gc0.count_d2_reg[3]\(3),
-      Q => wr_pntr_gc(3)
+      I0 => p_0_out(2),
+      I1 => p_0_out(1),
+      I2 => p_0_out(3),
+      O => \p_0_in0_inferred__3_n_0\
     );
 ram_empty_i_i_1: unisim.vcomponents.LUT6
     generic map(
@@ -15101,7 +14857,7 @@ ram_empty_i_i_1: unisim.vcomponents.LUT6
       I0 => ram_empty_i_i_2_n_0,
       I1 => ram_empty_i_i_3_n_0,
       I2 => rd_en,
-      I3 => ram_empty_fb_i_reg_0,
+      I3 => p_2_out,
       I4 => ram_empty_i_i_4_n_0,
       I5 => ram_empty_i_i_5_n_0,
       O => ram_empty_fb_i_reg
@@ -15156,12 +14912,12 @@ ram_full_i_i_1: unisim.vcomponents.LUT6
     )
         port map (
       I0 => ram_full_i_i_2_n_0,
-      I1 => ram_full_fb_i_reg_1,
+      I1 => ram_full_fb_i_reg_0,
       I2 => \gic0.gc0.count_d1_reg[3]\(3),
-      I3 => \^ram_full_fb_i_reg_0\(0),
-      I4 => wr_rst_busy,
+      I3 => \^ram_full_fb_i_reg\(0),
+      I4 => \out\,
       I5 => ram_full_i_i_4_n_0,
-      O => ram_full_fb_i_reg
+      O => ram_full_i
     );
 ram_full_i_i_2: unisim.vcomponents.LUT6
     generic map(
@@ -15189,6 +14945,209 @@ ram_full_i_i_4: unisim.vcomponents.LUT6
       I5 => p_23_out(0),
       O => ram_full_i_i_4_n_0
     );
+\rd_pntr_bin_reg[0]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => \p_0_in0_inferred__2_n_0\,
+      Q => p_23_out(0)
+    );
+\rd_pntr_bin_reg[1]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => \p_0_in0_inferred__3_n_0\,
+      Q => p_23_out(1)
+    );
+\rd_pntr_bin_reg[2]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => \gsync_stage[2].wr_stg_inst_n_4\,
+      Q => p_23_out(2)
+    );
+\rd_pntr_bin_reg[3]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => p_0_out(3),
+      Q => \^ram_full_fb_i_reg\(0)
+    );
+\rd_pntr_gc_reg[0]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(0),
+      Q => rd_pntr_gc(0)
+    );
+\rd_pntr_gc_reg[1]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(1),
+      Q => rd_pntr_gc(1)
+    );
+\rd_pntr_gc_reg[2]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => D(2),
+      Q => rd_pntr_gc(2)
+    );
+\rd_pntr_gc_reg[3]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => Q(3),
+      Q => rd_pntr_gc(3)
+    );
+\wr_pntr_bin_reg[0]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => p_0_in(0),
+      Q => p_22_out(0)
+    );
+\wr_pntr_bin_reg[1]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => p_0_in(1),
+      Q => p_22_out(1)
+    );
+\wr_pntr_bin_reg[2]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => p_0_in(2),
+      Q => p_22_out(2)
+    );
+\wr_pntr_bin_reg[3]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => rd_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
+      D => p_1_out(3),
+      Q => p_22_out(3)
+    );
+\wr_pntr_gc[0]_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"6"
+    )
+        port map (
+      I0 => \gic0.gc0.count_d2_reg[3]\(0),
+      I1 => \gic0.gc0.count_d2_reg[3]\(1),
+      O => p_0_in2_out(0)
+    );
+\wr_pntr_gc[1]_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"6"
+    )
+        port map (
+      I0 => \gic0.gc0.count_d2_reg[3]\(1),
+      I1 => \gic0.gc0.count_d2_reg[3]\(2),
+      O => p_0_in2_out(1)
+    );
+\wr_pntr_gc[2]_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"6"
+    )
+        port map (
+      I0 => \gic0.gc0.count_d2_reg[3]\(2),
+      I1 => \gic0.gc0.count_d2_reg[3]\(3),
+      O => p_0_in2_out(2)
+    );
+\wr_pntr_gc_reg[0]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => p_0_in2_out(0),
+      Q => wr_pntr_gc(0)
+    );
+\wr_pntr_gc_reg[1]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => p_0_in2_out(1),
+      Q => wr_pntr_gc(1)
+    );
+\wr_pntr_gc_reg[2]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => p_0_in2_out(2),
+      Q => wr_pntr_gc(2)
+    );
+\wr_pntr_gc_reg[3]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => wr_clk,
+      CE => '1',
+      CLR => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0),
+      D => \gic0.gc0.count_d2_reg[3]\(3),
+      Q => wr_pntr_gc(3)
+    );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -15198,212 +15157,210 @@ entity \design_1_d_axi_i2s_audio_0_0_clk_x_pntrs__parameterized0\ is
   port (
     WR_PNTR_RD : out STD_LOGIC_VECTOR ( 11 downto 0 );
     RD_PNTR_WR : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    bin2gray : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    p_0_in10_out : in STD_LOGIC_VECTOR ( 11 downto 0 );
     wr_clk : in STD_LOGIC;
-    AR : in STD_LOGIC_VECTOR ( 0 to 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     rd_clk : in STD_LOGIC;
     \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    I32 : in STD_LOGIC_VECTOR ( 11 downto 0 )
+    I15 : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_clk_x_pntrs__parameterized0\ : entity is "clk_x_pntrs";
 end \design_1_d_axi_i2s_audio_0_0_clk_x_pntrs__parameterized0\;
 
 architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_clk_x_pntrs__parameterized0\ is
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_1\ : STD_LOGIC;
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_10\ : STD_LOGIC;
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_11\ : STD_LOGIC;
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_2\ : STD_LOGIC;
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_3\ : STD_LOGIC;
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_4\ : STD_LOGIC;
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_5\ : STD_LOGIC;
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_6\ : STD_LOGIC;
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_7\ : STD_LOGIC;
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_8\ : STD_LOGIC;
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_9\ : STD_LOGIC;
-  signal gray2bin : STD_LOGIC_VECTOR ( 9 downto 0 );
-  signal p_0_out : STD_LOGIC;
+  signal \gsync_stage[2].wr_stg_inst_n_1\ : STD_LOGIC;
+  signal \gsync_stage[2].wr_stg_inst_n_10\ : STD_LOGIC;
+  signal \gsync_stage[2].wr_stg_inst_n_11\ : STD_LOGIC;
+  signal \gsync_stage[2].wr_stg_inst_n_2\ : STD_LOGIC;
+  signal \gsync_stage[2].wr_stg_inst_n_3\ : STD_LOGIC;
+  signal \gsync_stage[2].wr_stg_inst_n_4\ : STD_LOGIC;
+  signal \gsync_stage[2].wr_stg_inst_n_5\ : STD_LOGIC;
+  signal \gsync_stage[2].wr_stg_inst_n_6\ : STD_LOGIC;
+  signal \gsync_stage[2].wr_stg_inst_n_7\ : STD_LOGIC;
+  signal \gsync_stage[2].wr_stg_inst_n_8\ : STD_LOGIC;
+  signal \gsync_stage[2].wr_stg_inst_n_9\ : STD_LOGIC;
+  signal p_0_in : STD_LOGIC_VECTOR ( 10 downto 0 );
+  signal p_0_out : STD_LOGIC_VECTOR ( 11 to 11 );
+  signal p_1_out : STD_LOGIC_VECTOR ( 11 to 11 );
+  signal p_2_out : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal p_3_out : STD_LOGIC_VECTOR ( 11 downto 0 );
-  signal p_4_out : STD_LOGIC_VECTOR ( 11 downto 0 );
-  signal p_5_out : STD_LOGIC_VECTOR ( 11 to 11 );
-  signal p_6_out : STD_LOGIC_VECTOR ( 11 to 11 );
   signal rd_pntr_gc : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal wr_pntr_gc : STD_LOGIC_VECTOR ( 11 downto 0 );
 begin
-\gnxpm_cdc.gsync_stage[1].rd_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized4\
+\gsync_stage[1].rd_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized0\
      port map (
       D(11 downto 0) => p_3_out(11 downto 0),
       Q(11 downto 0) => wr_pntr_gc(11 downto 0),
       \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0) => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
       rd_clk => rd_clk
     );
-\gnxpm_cdc.gsync_stage[1].wr_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized5\
+\gsync_stage[1].wr_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized1\
      port map (
-      AR(0) => AR(0),
-      D(11 downto 0) => p_4_out(11 downto 0),
+      D(11 downto 0) => p_2_out(11 downto 0),
       Q(11 downto 0) => rd_pntr_gc(11 downto 0),
+      \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0) => Q(0),
       wr_clk => wr_clk
     );
-\gnxpm_cdc.gsync_stage[2].rd_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized6\
+\gsync_stage[2].rd_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized2\
      port map (
       D(11 downto 0) => p_3_out(11 downto 0),
-      \gnxpm_cdc.wr_pntr_bin_reg[10]\(10) => p_0_out,
-      \gnxpm_cdc.wr_pntr_bin_reg[10]\(9 downto 0) => gray2bin(9 downto 0),
       \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0) => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      \out\(0) => p_5_out(11),
-      rd_clk => rd_clk
+      \out\(0) => p_1_out(11),
+      rd_clk => rd_clk,
+      \wr_pntr_bin_reg[10]\(10 downto 0) => p_0_in(10 downto 0)
     );
-\gnxpm_cdc.gsync_stage[2].wr_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized7\
+\gsync_stage[2].wr_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized3\
      port map (
-      AR(0) => AR(0),
-      D(11 downto 0) => p_4_out(11 downto 0),
-      \gnxpm_cdc.rd_pntr_bin_reg[10]\(10) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_1\,
-      \gnxpm_cdc.rd_pntr_bin_reg[10]\(9) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_2\,
-      \gnxpm_cdc.rd_pntr_bin_reg[10]\(8) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_3\,
-      \gnxpm_cdc.rd_pntr_bin_reg[10]\(7) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_4\,
-      \gnxpm_cdc.rd_pntr_bin_reg[10]\(6) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_5\,
-      \gnxpm_cdc.rd_pntr_bin_reg[10]\(5) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_6\,
-      \gnxpm_cdc.rd_pntr_bin_reg[10]\(4) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_7\,
-      \gnxpm_cdc.rd_pntr_bin_reg[10]\(3) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_8\,
-      \gnxpm_cdc.rd_pntr_bin_reg[10]\(2) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_9\,
-      \gnxpm_cdc.rd_pntr_bin_reg[10]\(1) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_10\,
-      \gnxpm_cdc.rd_pntr_bin_reg[10]\(0) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_11\,
-      \out\(0) => p_6_out(11),
+      D(11 downto 0) => p_2_out(11 downto 0),
+      Q(0) => Q(0),
+      \out\(0) => p_0_out(11),
+      \rd_pntr_bin_reg[10]\(10) => \gsync_stage[2].wr_stg_inst_n_1\,
+      \rd_pntr_bin_reg[10]\(9) => \gsync_stage[2].wr_stg_inst_n_2\,
+      \rd_pntr_bin_reg[10]\(8) => \gsync_stage[2].wr_stg_inst_n_3\,
+      \rd_pntr_bin_reg[10]\(7) => \gsync_stage[2].wr_stg_inst_n_4\,
+      \rd_pntr_bin_reg[10]\(6) => \gsync_stage[2].wr_stg_inst_n_5\,
+      \rd_pntr_bin_reg[10]\(5) => \gsync_stage[2].wr_stg_inst_n_6\,
+      \rd_pntr_bin_reg[10]\(4) => \gsync_stage[2].wr_stg_inst_n_7\,
+      \rd_pntr_bin_reg[10]\(3) => \gsync_stage[2].wr_stg_inst_n_8\,
+      \rd_pntr_bin_reg[10]\(2) => \gsync_stage[2].wr_stg_inst_n_9\,
+      \rd_pntr_bin_reg[10]\(1) => \gsync_stage[2].wr_stg_inst_n_10\,
+      \rd_pntr_bin_reg[10]\(0) => \gsync_stage[2].wr_stg_inst_n_11\,
       wr_clk => wr_clk
     );
-\gnxpm_cdc.rd_pntr_bin_reg[0]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[0]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_11\,
+      CLR => Q(0),
+      D => \gsync_stage[2].wr_stg_inst_n_11\,
       Q => RD_PNTR_WR(0)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[10]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[10]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_1\,
+      CLR => Q(0),
+      D => \gsync_stage[2].wr_stg_inst_n_1\,
       Q => RD_PNTR_WR(10)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[11]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[11]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => p_6_out(11),
+      CLR => Q(0),
+      D => p_0_out(11),
       Q => RD_PNTR_WR(11)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[1]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[1]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_10\,
+      CLR => Q(0),
+      D => \gsync_stage[2].wr_stg_inst_n_10\,
       Q => RD_PNTR_WR(1)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[2]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[2]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_9\,
+      CLR => Q(0),
+      D => \gsync_stage[2].wr_stg_inst_n_9\,
       Q => RD_PNTR_WR(2)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[3]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[3]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_8\,
+      CLR => Q(0),
+      D => \gsync_stage[2].wr_stg_inst_n_8\,
       Q => RD_PNTR_WR(3)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[4]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[4]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_7\,
+      CLR => Q(0),
+      D => \gsync_stage[2].wr_stg_inst_n_7\,
       Q => RD_PNTR_WR(4)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[5]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[5]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_6\,
+      CLR => Q(0),
+      D => \gsync_stage[2].wr_stg_inst_n_6\,
       Q => RD_PNTR_WR(5)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[6]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[6]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_5\,
+      CLR => Q(0),
+      D => \gsync_stage[2].wr_stg_inst_n_5\,
       Q => RD_PNTR_WR(6)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[7]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[7]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_4\,
+      CLR => Q(0),
+      D => \gsync_stage[2].wr_stg_inst_n_4\,
       Q => RD_PNTR_WR(7)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[8]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[8]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_3\,
+      CLR => Q(0),
+      D => \gsync_stage[2].wr_stg_inst_n_3\,
       Q => RD_PNTR_WR(8)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[9]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[9]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_2\,
+      CLR => Q(0),
+      D => \gsync_stage[2].wr_stg_inst_n_2\,
       Q => RD_PNTR_WR(9)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[0]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[0]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15411,10 +15368,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => I32(0),
+      D => I15(0),
       Q => rd_pntr_gc(0)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[10]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[10]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15422,10 +15379,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => I32(10),
+      D => I15(10),
       Q => rd_pntr_gc(10)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[11]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[11]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15433,10 +15390,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => I32(11),
+      D => I15(11),
       Q => rd_pntr_gc(11)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[1]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[1]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15444,10 +15401,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => I32(1),
+      D => I15(1),
       Q => rd_pntr_gc(1)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[2]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[2]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15455,10 +15412,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => I32(2),
+      D => I15(2),
       Q => rd_pntr_gc(2)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[3]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[3]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15466,10 +15423,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => I32(3),
+      D => I15(3),
       Q => rd_pntr_gc(3)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[4]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[4]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15477,10 +15434,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => I32(4),
+      D => I15(4),
       Q => rd_pntr_gc(4)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[5]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[5]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15488,10 +15445,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => I32(5),
+      D => I15(5),
       Q => rd_pntr_gc(5)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[6]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[6]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15499,10 +15456,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => I32(6),
+      D => I15(6),
       Q => rd_pntr_gc(6)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[7]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[7]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15510,10 +15467,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => I32(7),
+      D => I15(7),
       Q => rd_pntr_gc(7)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[8]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[8]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15521,10 +15478,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => I32(8),
+      D => I15(8),
       Q => rd_pntr_gc(8)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[9]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[9]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15532,10 +15489,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => I32(9),
+      D => I15(9),
       Q => rd_pntr_gc(9)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[0]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[0]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15543,10 +15500,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => gray2bin(0),
+      D => p_0_in(0),
       Q => WR_PNTR_RD(0)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[10]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[10]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15554,10 +15511,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => p_0_out,
+      D => p_0_in(10),
       Q => WR_PNTR_RD(10)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[11]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[11]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15565,10 +15522,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => p_5_out(11),
+      D => p_1_out(11),
       Q => WR_PNTR_RD(11)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[1]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[1]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15576,10 +15533,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => gray2bin(1),
+      D => p_0_in(1),
       Q => WR_PNTR_RD(1)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[2]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[2]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15587,10 +15544,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => gray2bin(2),
+      D => p_0_in(2),
       Q => WR_PNTR_RD(2)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[3]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[3]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15598,10 +15555,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => gray2bin(3),
+      D => p_0_in(3),
       Q => WR_PNTR_RD(3)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[4]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[4]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15609,10 +15566,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => gray2bin(4),
+      D => p_0_in(4),
       Q => WR_PNTR_RD(4)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[5]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[5]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15620,10 +15577,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => gray2bin(5),
+      D => p_0_in(5),
       Q => WR_PNTR_RD(5)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[6]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[6]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15631,10 +15588,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => gray2bin(6),
+      D => p_0_in(6),
       Q => WR_PNTR_RD(6)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[7]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[7]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15642,10 +15599,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => gray2bin(7),
+      D => p_0_in(7),
       Q => WR_PNTR_RD(7)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[8]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[8]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15653,10 +15610,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => gray2bin(8),
+      D => p_0_in(8),
       Q => WR_PNTR_RD(8)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[9]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[9]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -15664,139 +15621,139 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => gray2bin(9),
+      D => p_0_in(9),
       Q => WR_PNTR_RD(9)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[0]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[0]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => bin2gray(0),
+      CLR => Q(0),
+      D => p_0_in10_out(0),
       Q => wr_pntr_gc(0)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[10]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[10]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => bin2gray(10),
+      CLR => Q(0),
+      D => p_0_in10_out(10),
       Q => wr_pntr_gc(10)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[11]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[11]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => bin2gray(11),
+      CLR => Q(0),
+      D => p_0_in10_out(11),
       Q => wr_pntr_gc(11)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[1]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[1]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => bin2gray(1),
+      CLR => Q(0),
+      D => p_0_in10_out(1),
       Q => wr_pntr_gc(1)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[2]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[2]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => bin2gray(2),
+      CLR => Q(0),
+      D => p_0_in10_out(2),
       Q => wr_pntr_gc(2)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[3]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[3]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => bin2gray(3),
+      CLR => Q(0),
+      D => p_0_in10_out(3),
       Q => wr_pntr_gc(3)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[4]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[4]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => bin2gray(4),
+      CLR => Q(0),
+      D => p_0_in10_out(4),
       Q => wr_pntr_gc(4)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[5]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[5]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => bin2gray(5),
+      CLR => Q(0),
+      D => p_0_in10_out(5),
       Q => wr_pntr_gc(5)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[6]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[6]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => bin2gray(6),
+      CLR => Q(0),
+      D => p_0_in10_out(6),
       Q => wr_pntr_gc(6)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[7]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[7]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => bin2gray(7),
+      CLR => Q(0),
+      D => p_0_in10_out(7),
       Q => wr_pntr_gc(7)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[8]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[8]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => bin2gray(8),
+      CLR => Q(0),
+      D => p_0_in10_out(8),
       Q => wr_pntr_gc(8)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[9]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[9]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => bin2gray(9),
+      CLR => Q(0),
+      D => p_0_in10_out(9),
       Q => wr_pntr_gc(9)
     );
 end STRUCTURE;
@@ -15804,216 +15761,214 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_clk_x_pntrs__parameterized0_10\ is
+entity \design_1_d_axi_i2s_audio_0_0_clk_x_pntrs__parameterized0_7\ is
   port (
-    Q : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    ram_full_fb_i_reg : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    ram_empty_fb_i_reg : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    ram_full_i_reg : out STD_LOGIC_VECTOR ( 11 downto 0 );
     D : in STD_LOGIC_VECTOR ( 11 downto 0 );
     wr_clk : in STD_LOGIC;
-    AR : in STD_LOGIC_VECTOR ( 0 to 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     rd_clk : in STD_LOGIC;
     \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_clk_x_pntrs__parameterized0_10\ : entity is "clk_x_pntrs";
-end \design_1_d_axi_i2s_audio_0_0_clk_x_pntrs__parameterized0_10\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_clk_x_pntrs__parameterized0_7\ : entity is "clk_x_pntrs";
+end \design_1_d_axi_i2s_audio_0_0_clk_x_pntrs__parameterized0_7\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_clk_x_pntrs__parameterized0_10\ is
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_1\ : STD_LOGIC;
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_10\ : STD_LOGIC;
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_11\ : STD_LOGIC;
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_2\ : STD_LOGIC;
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_3\ : STD_LOGIC;
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_4\ : STD_LOGIC;
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_5\ : STD_LOGIC;
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_6\ : STD_LOGIC;
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_7\ : STD_LOGIC;
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_8\ : STD_LOGIC;
-  signal \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_9\ : STD_LOGIC;
-  signal gray2bin : STD_LOGIC_VECTOR ( 9 downto 0 );
-  signal p_0_out : STD_LOGIC;
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_clk_x_pntrs__parameterized0_7\ is
+  signal \gsync_stage[2].wr_stg_inst_n_1\ : STD_LOGIC;
+  signal \gsync_stage[2].wr_stg_inst_n_10\ : STD_LOGIC;
+  signal \gsync_stage[2].wr_stg_inst_n_11\ : STD_LOGIC;
+  signal \gsync_stage[2].wr_stg_inst_n_2\ : STD_LOGIC;
+  signal \gsync_stage[2].wr_stg_inst_n_3\ : STD_LOGIC;
+  signal \gsync_stage[2].wr_stg_inst_n_4\ : STD_LOGIC;
+  signal \gsync_stage[2].wr_stg_inst_n_5\ : STD_LOGIC;
+  signal \gsync_stage[2].wr_stg_inst_n_6\ : STD_LOGIC;
+  signal \gsync_stage[2].wr_stg_inst_n_7\ : STD_LOGIC;
+  signal \gsync_stage[2].wr_stg_inst_n_8\ : STD_LOGIC;
+  signal \gsync_stage[2].wr_stg_inst_n_9\ : STD_LOGIC;
+  signal p_0_in : STD_LOGIC_VECTOR ( 10 downto 0 );
+  signal p_0_out : STD_LOGIC_VECTOR ( 11 to 11 );
+  signal p_1_out : STD_LOGIC_VECTOR ( 11 to 11 );
+  signal p_2_out : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal p_3_out : STD_LOGIC_VECTOR ( 11 downto 0 );
-  signal p_4_out : STD_LOGIC_VECTOR ( 11 downto 0 );
-  signal p_5_out : STD_LOGIC_VECTOR ( 11 to 11 );
-  signal p_6_out : STD_LOGIC_VECTOR ( 11 to 11 );
   signal rd_pntr_gc : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal wr_pntr_gc : STD_LOGIC_VECTOR ( 11 downto 0 );
 begin
-\gnxpm_cdc.gsync_stage[1].rd_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized4_37\
+\gsync_stage[1].rd_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized0_30\
      port map (
       D(11 downto 0) => p_3_out(11 downto 0),
       Q(11 downto 0) => wr_pntr_gc(11 downto 0),
       \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0) => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
       rd_clk => rd_clk
     );
-\gnxpm_cdc.gsync_stage[1].wr_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized5_38\
+\gsync_stage[1].wr_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized1_31\
      port map (
-      AR(0) => AR(0),
-      D(11 downto 0) => p_4_out(11 downto 0),
+      D(11 downto 0) => p_2_out(11 downto 0),
       Q(11 downto 0) => rd_pntr_gc(11 downto 0),
+      \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0) => Q(0),
       wr_clk => wr_clk
     );
-\gnxpm_cdc.gsync_stage[2].rd_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized6_39\
+\gsync_stage[2].rd_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized2_32\
      port map (
       D(11 downto 0) => p_3_out(11 downto 0),
-      \gnxpm_cdc.wr_pntr_bin_reg[10]\(10) => p_0_out,
-      \gnxpm_cdc.wr_pntr_bin_reg[10]\(9 downto 0) => gray2bin(9 downto 0),
       \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0) => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      \out\(0) => p_5_out(11),
-      rd_clk => rd_clk
+      \out\(0) => p_1_out(11),
+      rd_clk => rd_clk,
+      \wr_pntr_bin_reg[10]\(10 downto 0) => p_0_in(10 downto 0)
     );
-\gnxpm_cdc.gsync_stage[2].wr_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized7_40\
+\gsync_stage[2].wr_stg_inst\: entity work.\design_1_d_axi_i2s_audio_0_0_synchronizer_ff__parameterized3_33\
      port map (
-      AR(0) => AR(0),
-      D(11 downto 0) => p_4_out(11 downto 0),
-      \gnxpm_cdc.rd_pntr_bin_reg[10]\(10) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_1\,
-      \gnxpm_cdc.rd_pntr_bin_reg[10]\(9) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_2\,
-      \gnxpm_cdc.rd_pntr_bin_reg[10]\(8) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_3\,
-      \gnxpm_cdc.rd_pntr_bin_reg[10]\(7) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_4\,
-      \gnxpm_cdc.rd_pntr_bin_reg[10]\(6) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_5\,
-      \gnxpm_cdc.rd_pntr_bin_reg[10]\(5) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_6\,
-      \gnxpm_cdc.rd_pntr_bin_reg[10]\(4) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_7\,
-      \gnxpm_cdc.rd_pntr_bin_reg[10]\(3) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_8\,
-      \gnxpm_cdc.rd_pntr_bin_reg[10]\(2) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_9\,
-      \gnxpm_cdc.rd_pntr_bin_reg[10]\(1) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_10\,
-      \gnxpm_cdc.rd_pntr_bin_reg[10]\(0) => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_11\,
-      \out\(0) => p_6_out(11),
+      D(11 downto 0) => p_2_out(11 downto 0),
+      Q(0) => Q(0),
+      \out\(0) => p_0_out(11),
+      \rd_pntr_bin_reg[10]\(10) => \gsync_stage[2].wr_stg_inst_n_1\,
+      \rd_pntr_bin_reg[10]\(9) => \gsync_stage[2].wr_stg_inst_n_2\,
+      \rd_pntr_bin_reg[10]\(8) => \gsync_stage[2].wr_stg_inst_n_3\,
+      \rd_pntr_bin_reg[10]\(7) => \gsync_stage[2].wr_stg_inst_n_4\,
+      \rd_pntr_bin_reg[10]\(6) => \gsync_stage[2].wr_stg_inst_n_5\,
+      \rd_pntr_bin_reg[10]\(5) => \gsync_stage[2].wr_stg_inst_n_6\,
+      \rd_pntr_bin_reg[10]\(4) => \gsync_stage[2].wr_stg_inst_n_7\,
+      \rd_pntr_bin_reg[10]\(3) => \gsync_stage[2].wr_stg_inst_n_8\,
+      \rd_pntr_bin_reg[10]\(2) => \gsync_stage[2].wr_stg_inst_n_9\,
+      \rd_pntr_bin_reg[10]\(1) => \gsync_stage[2].wr_stg_inst_n_10\,
+      \rd_pntr_bin_reg[10]\(0) => \gsync_stage[2].wr_stg_inst_n_11\,
       wr_clk => wr_clk
     );
-\gnxpm_cdc.rd_pntr_bin_reg[0]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[0]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_11\,
-      Q => ram_full_fb_i_reg(0)
+      CLR => Q(0),
+      D => \gsync_stage[2].wr_stg_inst_n_11\,
+      Q => ram_full_i_reg(0)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[10]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[10]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_1\,
-      Q => ram_full_fb_i_reg(10)
+      CLR => Q(0),
+      D => \gsync_stage[2].wr_stg_inst_n_1\,
+      Q => ram_full_i_reg(10)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[11]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[11]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => p_6_out(11),
-      Q => ram_full_fb_i_reg(11)
+      CLR => Q(0),
+      D => p_0_out(11),
+      Q => ram_full_i_reg(11)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[1]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[1]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_10\,
-      Q => ram_full_fb_i_reg(1)
+      CLR => Q(0),
+      D => \gsync_stage[2].wr_stg_inst_n_10\,
+      Q => ram_full_i_reg(1)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[2]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[2]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_9\,
-      Q => ram_full_fb_i_reg(2)
+      CLR => Q(0),
+      D => \gsync_stage[2].wr_stg_inst_n_9\,
+      Q => ram_full_i_reg(2)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[3]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[3]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_8\,
-      Q => ram_full_fb_i_reg(3)
+      CLR => Q(0),
+      D => \gsync_stage[2].wr_stg_inst_n_8\,
+      Q => ram_full_i_reg(3)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[4]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[4]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_7\,
-      Q => ram_full_fb_i_reg(4)
+      CLR => Q(0),
+      D => \gsync_stage[2].wr_stg_inst_n_7\,
+      Q => ram_full_i_reg(4)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[5]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[5]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_6\,
-      Q => ram_full_fb_i_reg(5)
+      CLR => Q(0),
+      D => \gsync_stage[2].wr_stg_inst_n_6\,
+      Q => ram_full_i_reg(5)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[6]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[6]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_5\,
-      Q => ram_full_fb_i_reg(6)
+      CLR => Q(0),
+      D => \gsync_stage[2].wr_stg_inst_n_5\,
+      Q => ram_full_i_reg(6)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[7]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[7]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_4\,
-      Q => ram_full_fb_i_reg(7)
+      CLR => Q(0),
+      D => \gsync_stage[2].wr_stg_inst_n_4\,
+      Q => ram_full_i_reg(7)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[8]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[8]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_3\,
-      Q => ram_full_fb_i_reg(8)
+      CLR => Q(0),
+      D => \gsync_stage[2].wr_stg_inst_n_3\,
+      Q => ram_full_i_reg(8)
     );
-\gnxpm_cdc.rd_pntr_bin_reg[9]\: unisim.vcomponents.FDCE
+\rd_pntr_bin_reg[9]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
-      D => \gnxpm_cdc.gsync_stage[2].wr_stg_inst_n_2\,
-      Q => ram_full_fb_i_reg(9)
+      CLR => Q(0),
+      D => \gsync_stage[2].wr_stg_inst_n_2\,
+      Q => ram_full_i_reg(9)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[0]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[0]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16024,7 +15979,7 @@ begin
       D => \gc0.count_d1_reg[11]\(0),
       Q => rd_pntr_gc(0)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[10]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[10]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16035,7 +15990,7 @@ begin
       D => \gc0.count_d1_reg[11]\(10),
       Q => rd_pntr_gc(10)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[11]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[11]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16046,7 +16001,7 @@ begin
       D => \gc0.count_d1_reg[11]\(11),
       Q => rd_pntr_gc(11)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[1]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[1]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16057,7 +16012,7 @@ begin
       D => \gc0.count_d1_reg[11]\(1),
       Q => rd_pntr_gc(1)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[2]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[2]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16068,7 +16023,7 @@ begin
       D => \gc0.count_d1_reg[11]\(2),
       Q => rd_pntr_gc(2)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[3]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[3]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16079,7 +16034,7 @@ begin
       D => \gc0.count_d1_reg[11]\(3),
       Q => rd_pntr_gc(3)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[4]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[4]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16090,7 +16045,7 @@ begin
       D => \gc0.count_d1_reg[11]\(4),
       Q => rd_pntr_gc(4)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[5]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[5]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16101,7 +16056,7 @@ begin
       D => \gc0.count_d1_reg[11]\(5),
       Q => rd_pntr_gc(5)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[6]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[6]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16112,7 +16067,7 @@ begin
       D => \gc0.count_d1_reg[11]\(6),
       Q => rd_pntr_gc(6)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[7]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[7]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16123,7 +16078,7 @@ begin
       D => \gc0.count_d1_reg[11]\(7),
       Q => rd_pntr_gc(7)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[8]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[8]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16134,7 +16089,7 @@ begin
       D => \gc0.count_d1_reg[11]\(8),
       Q => rd_pntr_gc(8)
     );
-\gnxpm_cdc.rd_pntr_gc_reg[9]\: unisim.vcomponents.FDCE
+\rd_pntr_gc_reg[9]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16145,7 +16100,7 @@ begin
       D => \gc0.count_d1_reg[11]\(9),
       Q => rd_pntr_gc(9)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[0]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[0]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16153,10 +16108,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => gray2bin(0),
-      Q => Q(0)
+      D => p_0_in(0),
+      Q => ram_empty_fb_i_reg(0)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[10]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[10]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16164,10 +16119,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => p_0_out,
-      Q => Q(10)
+      D => p_0_in(10),
+      Q => ram_empty_fb_i_reg(10)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[11]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[11]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16175,10 +16130,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => p_5_out(11),
-      Q => Q(11)
+      D => p_1_out(11),
+      Q => ram_empty_fb_i_reg(11)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[1]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[1]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16186,10 +16141,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => gray2bin(1),
-      Q => Q(1)
+      D => p_0_in(1),
+      Q => ram_empty_fb_i_reg(1)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[2]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[2]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16197,10 +16152,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => gray2bin(2),
-      Q => Q(2)
+      D => p_0_in(2),
+      Q => ram_empty_fb_i_reg(2)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[3]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[3]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16208,10 +16163,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => gray2bin(3),
-      Q => Q(3)
+      D => p_0_in(3),
+      Q => ram_empty_fb_i_reg(3)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[4]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[4]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16219,10 +16174,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => gray2bin(4),
-      Q => Q(4)
+      D => p_0_in(4),
+      Q => ram_empty_fb_i_reg(4)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[5]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[5]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16230,10 +16185,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => gray2bin(5),
-      Q => Q(5)
+      D => p_0_in(5),
+      Q => ram_empty_fb_i_reg(5)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[6]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[6]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16241,10 +16196,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => gray2bin(6),
-      Q => Q(6)
+      D => p_0_in(6),
+      Q => ram_empty_fb_i_reg(6)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[7]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[7]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16252,10 +16207,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => gray2bin(7),
-      Q => Q(7)
+      D => p_0_in(7),
+      Q => ram_empty_fb_i_reg(7)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[8]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[8]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16263,10 +16218,10 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => gray2bin(8),
-      Q => Q(8)
+      D => p_0_in(8),
+      Q => ram_empty_fb_i_reg(8)
     );
-\gnxpm_cdc.wr_pntr_bin_reg[9]\: unisim.vcomponents.FDCE
+\wr_pntr_bin_reg[9]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
@@ -16274,138 +16229,138 @@ begin
       C => rd_clk,
       CE => '1',
       CLR => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0),
-      D => gray2bin(9),
-      Q => Q(9)
+      D => p_0_in(9),
+      Q => ram_empty_fb_i_reg(9)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[0]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[0]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(0),
       Q => wr_pntr_gc(0)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[10]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[10]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(10),
       Q => wr_pntr_gc(10)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[11]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[11]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(11),
       Q => wr_pntr_gc(11)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[1]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[1]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(1),
       Q => wr_pntr_gc(1)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[2]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[2]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(2),
       Q => wr_pntr_gc(2)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[3]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[3]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(3),
       Q => wr_pntr_gc(3)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[4]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[4]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(4),
       Q => wr_pntr_gc(4)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[5]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[5]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(5),
       Q => wr_pntr_gc(5)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[6]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[6]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(6),
       Q => wr_pntr_gc(6)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[7]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[7]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(7),
       Q => wr_pntr_gc(7)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[8]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[8]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(8),
       Q => wr_pntr_gc(8)
     );
-\gnxpm_cdc.wr_pntr_gc_reg[9]\: unisim.vcomponents.FDCE
+\wr_pntr_gc_reg[9]\: unisim.vcomponents.FDCE
     generic map(
       INIT => '0'
     )
         port map (
       C => wr_clk,
       CE => '1',
-      CLR => AR(0),
+      CLR => Q(0),
       D => D(9),
       Q => wr_pntr_gc(9)
     );
@@ -16414,42 +16369,40 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_rd_logic is
+entity \design_1_d_axi_i2s_audio_0_0_rd_logic\ is
   port (
     empty : out STD_LOGIC;
-    \out\ : out STD_LOGIC;
-    Q : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    \gnxpm_cdc.rd_pntr_gc_reg[2]\ : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    p_2_out : out STD_LOGIC;
+    \gc0.count_d1_reg[3]\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    D : out STD_LOGIC_VECTOR ( 2 downto 0 );
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
     ram_empty_fb_i_reg : in STD_LOGIC;
     rd_clk : in STD_LOGIC;
-    AR : in STD_LOGIC_VECTOR ( 0 to 0 );
+    Q : in STD_LOGIC_VECTOR ( 1 downto 0 );
     rd_en : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_rd_logic : entity is "rd_logic";
-end design_1_d_axi_i2s_audio_0_0_rd_logic;
+end \design_1_d_axi_i2s_audio_0_0_rd_logic\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_rd_logic is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_rd_logic\ is
   signal \gras.rsts_n_2\ : STD_LOGIC;
 begin
-\gras.rsts\: entity work.design_1_d_axi_i2s_audio_0_0_rd_status_flags_as
+\gras.rsts\: entity work.\design_1_d_axi_i2s_audio_0_0_rd_status_flags_as\
      port map (
-      AR(0) => AR(0),
       E(0) => \gras.rsts_n_2\,
+      Q(0) => Q(1),
       empty => empty,
-      \out\ => \out\,
+      p_2_out => p_2_out,
       ram_empty_fb_i_reg_0 => ram_empty_fb_i_reg,
       rd_clk => rd_clk,
       rd_en => rd_en
     );
-rpntr: entity work.design_1_d_axi_i2s_audio_0_0_rd_bin_cntr
+rpntr: entity work.\design_1_d_axi_i2s_audio_0_0_rd_bin_cntr\
      port map (
-      AR(0) => AR(0),
+      D(2 downto 0) => D(2 downto 0),
       \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram\(3 downto 0) => \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram\(3 downto 0),
       E(0) => \gras.rsts_n_2\,
-      Q(3 downto 0) => Q(3 downto 0),
-      \gnxpm_cdc.rd_pntr_gc_reg[2]\(2 downto 0) => \gnxpm_cdc.rd_pntr_gc_reg[2]\(2 downto 0),
+      Q(3 downto 0) => \gc0.count_d1_reg[3]\(3 downto 0),
+      \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\(0) => Q(0),
       rd_clk => rd_clk
     );
 end STRUCTURE;
@@ -16460,13 +16413,13 @@ use UNISIM.VCOMPONENTS.ALL;
 entity \design_1_d_axi_i2s_audio_0_0_rd_status_flags_as__parameterized0\ is
   port (
     empty : out STD_LOGIC;
-    \out\ : out STD_LOGIC;
+    p_2_out : out STD_LOGIC;
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
     rd_clk : in STD_LOGIC;
-    \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     rd_en : in STD_LOGIC;
     WR_PNTR_RD : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     D : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -16476,28 +16429,21 @@ end \design_1_d_axi_i2s_audio_0_0_rd_status_flags_as__parameterized0\;
 architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_rd_status_flags_as__parameterized0\ is
   signal comp0 : STD_LOGIC;
   signal comp1 : STD_LOGIC;
-  signal ram_empty_fb_i : STD_LOGIC;
-  attribute DONT_TOUCH : boolean;
-  attribute DONT_TOUCH of ram_empty_fb_i : signal is std.standard.true;
-  signal ram_empty_i : STD_LOGIC;
-  attribute DONT_TOUCH of ram_empty_i : signal is std.standard.true;
+  signal \^p_2_out\ : STD_LOGIC;
   signal ram_empty_i0_n_0 : STD_LOGIC;
-  attribute DONT_TOUCH of ram_empty_fb_i_reg : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of ram_empty_fb_i_reg : label is "yes";
+  attribute SOFT_HLUTNM : string;
+  attribute SOFT_HLUTNM of \gc0.count_d1[11]_i_1\ : label is "soft_lutpair17";
   attribute equivalent_register_removal : string;
   attribute equivalent_register_removal of ram_empty_fb_i_reg : label is "no";
-  attribute DONT_TOUCH of ram_empty_i_reg : label is std.standard.true;
-  attribute KEEP of ram_empty_i_reg : label is "yes";
+  attribute SOFT_HLUTNM of ram_empty_i0 : label is "soft_lutpair17";
   attribute equivalent_register_removal of ram_empty_i_reg : label is "no";
 begin
-  empty <= ram_empty_i;
-  \out\ <= ram_empty_fb_i;
+  p_2_out <= \^p_2_out\;
 c0: entity work.\design_1_d_axi_i2s_audio_0_0_compare__parameterized0\
      port map (
-      Q(11 downto 0) => Q(11 downto 0),
       WR_PNTR_RD(11 downto 0) => WR_PNTR_RD(11 downto 0),
-      comp0 => comp0
+      comp0 => comp0,
+      \gc0.count_d1_reg[11]\(11 downto 0) => \gc0.count_d1_reg[11]\(11 downto 0)
     );
 c1: entity work.\design_1_d_axi_i2s_audio_0_0_compare__parameterized1\
      port map (
@@ -16511,7 +16457,7 @@ c1: entity work.\design_1_d_axi_i2s_audio_0_0_compare__parameterized1\
     )
         port map (
       I0 => rd_en,
-      I1 => ram_empty_fb_i,
+      I1 => \^p_2_out\,
       O => E(0)
     );
 ram_empty_fb_i_reg: unisim.vcomponents.FDPE
@@ -16522,8 +16468,8 @@ ram_empty_fb_i_reg: unisim.vcomponents.FDPE
       C => rd_clk,
       CE => '1',
       D => ram_empty_i0_n_0,
-      PRE => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
-      Q => ram_empty_fb_i
+      PRE => Q(0),
+      Q => \^p_2_out\
     );
 ram_empty_i0: unisim.vcomponents.LUT4
     generic map(
@@ -16532,7 +16478,7 @@ ram_empty_i0: unisim.vcomponents.LUT4
         port map (
       I0 => comp0,
       I1 => rd_en,
-      I2 => ram_empty_fb_i,
+      I2 => \^p_2_out\,
       I3 => comp1,
       O => ram_empty_i0_n_0
     );
@@ -16544,61 +16490,54 @@ ram_empty_i_reg: unisim.vcomponents.FDPE
       C => rd_clk,
       CE => '1',
       D => ram_empty_i0_n_0,
-      PRE => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
-      Q => ram_empty_i
+      PRE => Q(0),
+      Q => empty
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_rd_status_flags_as__parameterized0_33\ is
+entity \design_1_d_axi_i2s_audio_0_0_rd_status_flags_as__parameterized0_26\ is
   port (
     empty : out STD_LOGIC;
-    \out\ : out STD_LOGIC;
+    p_2_out : out STD_LOGIC;
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
     rd_clk : in STD_LOGIC;
-    \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     rd_en : in STD_LOGIC;
-    \gnxpm_cdc.wr_pntr_bin_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    \wr_pntr_bin_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     D : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_rd_status_flags_as__parameterized0_33\ : entity is "rd_status_flags_as";
-end \design_1_d_axi_i2s_audio_0_0_rd_status_flags_as__parameterized0_33\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_rd_status_flags_as__parameterized0_26\ : entity is "rd_status_flags_as";
+end \design_1_d_axi_i2s_audio_0_0_rd_status_flags_as__parameterized0_26\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_rd_status_flags_as__parameterized0_33\ is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_rd_status_flags_as__parameterized0_26\ is
   signal comp0 : STD_LOGIC;
   signal comp1 : STD_LOGIC;
-  signal ram_empty_fb_i : STD_LOGIC;
-  attribute DONT_TOUCH : boolean;
-  attribute DONT_TOUCH of ram_empty_fb_i : signal is std.standard.true;
-  signal ram_empty_i : STD_LOGIC;
-  attribute DONT_TOUCH of ram_empty_i : signal is std.standard.true;
+  signal \^p_2_out\ : STD_LOGIC;
   signal ram_empty_i0_n_0 : STD_LOGIC;
-  attribute DONT_TOUCH of ram_empty_fb_i_reg : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of ram_empty_fb_i_reg : label is "yes";
+  attribute SOFT_HLUTNM : string;
+  attribute SOFT_HLUTNM of \gc0.count_d1[11]_i_1\ : label is "soft_lutpair6";
   attribute equivalent_register_removal : string;
   attribute equivalent_register_removal of ram_empty_fb_i_reg : label is "no";
-  attribute DONT_TOUCH of ram_empty_i_reg : label is std.standard.true;
-  attribute KEEP of ram_empty_i_reg : label is "yes";
+  attribute SOFT_HLUTNM of ram_empty_i0 : label is "soft_lutpair6";
   attribute equivalent_register_removal of ram_empty_i_reg : label is "no";
 begin
-  empty <= ram_empty_i;
-  \out\ <= ram_empty_fb_i;
-c0: entity work.\design_1_d_axi_i2s_audio_0_0_compare__parameterized0_35\
+  p_2_out <= \^p_2_out\;
+c0: entity work.\design_1_d_axi_i2s_audio_0_0_compare__parameterized0_28\
      port map (
-      Q(11 downto 0) => Q(11 downto 0),
       comp0 => comp0,
-      \gnxpm_cdc.wr_pntr_bin_reg[11]\(11 downto 0) => \gnxpm_cdc.wr_pntr_bin_reg[11]\(11 downto 0)
+      \gc0.count_d1_reg[11]\(11 downto 0) => \gc0.count_d1_reg[11]\(11 downto 0),
+      \wr_pntr_bin_reg[11]\(11 downto 0) => \wr_pntr_bin_reg[11]\(11 downto 0)
     );
-c1: entity work.\design_1_d_axi_i2s_audio_0_0_compare__parameterized1_36\
+c1: entity work.\design_1_d_axi_i2s_audio_0_0_compare__parameterized1_29\
      port map (
       D(11 downto 0) => D(11 downto 0),
       comp1 => comp1,
-      \gnxpm_cdc.wr_pntr_bin_reg[11]\(11 downto 0) => \gnxpm_cdc.wr_pntr_bin_reg[11]\(11 downto 0)
+      \wr_pntr_bin_reg[11]\(11 downto 0) => \wr_pntr_bin_reg[11]\(11 downto 0)
     );
 \gc0.count_d1[11]_i_1\: unisim.vcomponents.LUT2
     generic map(
@@ -16606,7 +16545,7 @@ c1: entity work.\design_1_d_axi_i2s_audio_0_0_compare__parameterized1_36\
     )
         port map (
       I0 => rd_en,
-      I1 => ram_empty_fb_i,
+      I1 => \^p_2_out\,
       O => E(0)
     );
 ram_empty_fb_i_reg: unisim.vcomponents.FDPE
@@ -16617,8 +16556,8 @@ ram_empty_fb_i_reg: unisim.vcomponents.FDPE
       C => rd_clk,
       CE => '1',
       D => ram_empty_i0_n_0,
-      PRE => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
-      Q => ram_empty_fb_i
+      PRE => Q(0),
+      Q => \^p_2_out\
     );
 ram_empty_i0: unisim.vcomponents.LUT4
     generic map(
@@ -16627,7 +16566,7 @@ ram_empty_i0: unisim.vcomponents.LUT4
         port map (
       I0 => comp0,
       I1 => rd_en,
-      I2 => ram_empty_fb_i,
+      I2 => \^p_2_out\,
       I3 => comp1,
       O => ram_empty_i0_n_0
     );
@@ -16639,985 +16578,56 @@ ram_empty_i_reg: unisim.vcomponents.FDPE
       C => rd_clk,
       CE => '1',
       D => ram_empty_i0_n_0,
-      PRE => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
-      Q => ram_empty_i
+      PRE => Q(0),
+      Q => empty
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo is
-  port (
-    \out\ : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    \gc0.count_reg[0]\ : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    \grstd1.grst_full.grst_f.rst_d3_reg_0\ : out STD_LOGIC;
-    wr_rst_busy : out STD_LOGIC;
-    tmp_ram_rd_en : out STD_LOGIC;
-    rd_clk : in STD_LOGIC;
-    wr_clk : in STD_LOGIC;
-    rst : in STD_LOGIC;
-    ram_empty_fb_i_reg : in STD_LOGIC;
-    rd_en : in STD_LOGIC
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo : entity is "reset_blk_ramfifo";
-end design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo;
-
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo is
-  signal \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst_n_1\ : STD_LOGIC;
-  signal \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst_n_1\ : STD_LOGIC;
-  signal \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst_n_0\ : STD_LOGIC;
-  signal \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst_n_0\ : STD_LOGIC;
-  signal p_7_out : STD_LOGIC;
-  signal p_8_out : STD_LOGIC;
-  signal rd_rst_asreg : STD_LOGIC;
-  signal rd_rst_reg : STD_LOGIC_VECTOR ( 2 downto 0 );
-  attribute DONT_TOUCH : boolean;
-  attribute DONT_TOUCH of rd_rst_reg : signal is std.standard.true;
-  signal rst_d1 : STD_LOGIC;
-  attribute async_reg : string;
-  attribute async_reg of rst_d1 : signal is "true";
-  attribute msgon : string;
-  attribute msgon of rst_d1 : signal is "true";
-  signal rst_d2 : STD_LOGIC;
-  attribute async_reg of rst_d2 : signal is "true";
-  attribute msgon of rst_d2 : signal is "true";
-  signal rst_d3 : STD_LOGIC;
-  attribute async_reg of rst_d3 : signal is "true";
-  attribute msgon of rst_d3 : signal is "true";
-  signal rst_rd_reg1 : STD_LOGIC;
-  attribute async_reg of rst_rd_reg1 : signal is "true";
-  attribute msgon of rst_rd_reg1 : signal is "true";
-  signal rst_rd_reg2 : STD_LOGIC;
-  attribute async_reg of rst_rd_reg2 : signal is "true";
-  attribute msgon of rst_rd_reg2 : signal is "true";
-  signal rst_wr_reg1 : STD_LOGIC;
-  attribute async_reg of rst_wr_reg1 : signal is "true";
-  attribute msgon of rst_wr_reg1 : signal is "true";
-  signal rst_wr_reg2 : STD_LOGIC;
-  attribute async_reg of rst_wr_reg2 : signal is "true";
-  attribute msgon of rst_wr_reg2 : signal is "true";
-  signal wr_rst_asreg : STD_LOGIC;
-  signal wr_rst_reg : STD_LOGIC_VECTOR ( 2 downto 0 );
-  attribute DONT_TOUCH of wr_rst_reg : signal is std.standard.true;
-  attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \grstd1.grst_full.grst_f.rst_d1_reg\ : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of \grstd1.grst_full.grst_f.rst_d1_reg\ : label is "yes";
-  attribute msgon of \grstd1.grst_full.grst_f.rst_d1_reg\ : label is "true";
-  attribute ASYNC_REG_boolean of \grstd1.grst_full.grst_f.rst_d2_reg\ : label is std.standard.true;
-  attribute KEEP of \grstd1.grst_full.grst_f.rst_d2_reg\ : label is "yes";
-  attribute msgon of \grstd1.grst_full.grst_f.rst_d2_reg\ : label is "true";
-  attribute ASYNC_REG_boolean of \grstd1.grst_full.grst_f.rst_d3_reg\ : label is std.standard.true;
-  attribute KEEP of \grstd1.grst_full.grst_f.rst_d3_reg\ : label is "yes";
-  attribute msgon of \grstd1.grst_full.grst_f.rst_d3_reg\ : label is "true";
-  attribute DONT_TOUCH of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\ : label is "yes";
-  attribute equivalent_register_removal : string;
-  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\ : label is "no";
-  attribute DONT_TOUCH of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : label is "yes";
-  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : label is "no";
-  attribute DONT_TOUCH of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\ : label is "yes";
-  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\ : label is "no";
-  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\ : label is "yes";
-  attribute msgon of \ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\ : label is "true";
-  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\ : label is "yes";
-  attribute msgon of \ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\ : label is "true";
-  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\ : label is "yes";
-  attribute msgon of \ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\ : label is "true";
-  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\ : label is "yes";
-  attribute msgon of \ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\ : label is "true";
-  attribute DONT_TOUCH of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\ : label is "yes";
-  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\ : label is "no";
-  attribute DONT_TOUCH of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\ : label is "yes";
-  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\ : label is "no";
-  attribute DONT_TOUCH of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\ : label is "yes";
-  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\ : label is "no";
-begin
-  \gc0.count_reg[0]\(2 downto 0) <= rd_rst_reg(2 downto 0);
-  \grstd1.grst_full.grst_f.rst_d3_reg_0\ <= rst_d2;
-  \out\(1 downto 0) <= wr_rst_reg(1 downto 0);
-  wr_rst_busy <= rst_d3;
-\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"BA"
-    )
-        port map (
-      I0 => rd_rst_reg(0),
-      I1 => ram_empty_fb_i_reg,
-      I2 => rd_en,
-      O => tmp_ram_rd_en
-    );
-\grstd1.grst_full.grst_f.rst_d1_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => '0',
-      PRE => rst_wr_reg2,
-      Q => rst_d1
-    );
-\grstd1.grst_full.grst_f.rst_d2_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => rst_d1,
-      PRE => rst_wr_reg2,
-      Q => rst_d2
-    );
-\grstd1.grst_full.grst_f.rst_d3_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => rst_d2,
-      PRE => rst_wr_reg2,
-      Q => rst_d3
-    );
-\ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst\: entity work.design_1_d_axi_i2s_audio_0_0_synchronizer_ff
-     port map (
-      in0(0) => rd_rst_asreg,
-      \ngwrdrst.grst.g7serrst.rd_rst_asreg_reg\ => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst_n_1\,
-      \out\ => p_7_out,
-      rd_clk => rd_clk
-    );
-\ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst\: entity work.design_1_d_axi_i2s_audio_0_0_synchronizer_ff_4
-     port map (
-      in0(0) => wr_rst_asreg,
-      \ngwrdrst.grst.g7serrst.wr_rst_asreg_reg\ => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst_n_1\,
-      \out\ => p_8_out,
-      wr_clk => wr_clk
-    );
-\ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst\: entity work.design_1_d_axi_i2s_audio_0_0_synchronizer_ff_5
-     port map (
-      AS(0) => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst_n_0\,
-      in0(0) => rd_rst_asreg,
-      \out\ => p_7_out,
-      rd_clk => rd_clk
-    );
-\ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst\: entity work.design_1_d_axi_i2s_audio_0_0_synchronizer_ff_6
-     port map (
-      AS(0) => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst_n_0\,
-      in0(0) => wr_rst_asreg,
-      \out\ => p_8_out,
-      wr_clk => wr_clk
-    );
-\ngwrdrst.grst.g7serrst.rd_rst_asreg_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      D => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst_n_1\,
-      PRE => rst_rd_reg2,
-      Q => rd_rst_asreg
-    );
-\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      D => '0',
-      PRE => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst_n_0\,
-      Q => rd_rst_reg(0)
-    );
-\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      D => '0',
-      PRE => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst_n_0\,
-      Q => rd_rst_reg(1)
-    );
-\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      D => '0',
-      PRE => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst_n_0\,
-      Q => rd_rst_reg(2)
-    );
-\ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      D => '0',
-      PRE => rst,
-      Q => rst_rd_reg1
-    );
-\ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      D => rst_rd_reg1,
-      PRE => rst,
-      Q => rst_rd_reg2
-    );
-\ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => '0',
-      PRE => rst,
-      Q => rst_wr_reg1
-    );
-\ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => rst_wr_reg1,
-      PRE => rst,
-      Q => rst_wr_reg2
-    );
-\ngwrdrst.grst.g7serrst.wr_rst_asreg_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst_n_1\,
-      PRE => rst_wr_reg2,
-      Q => wr_rst_asreg
-    );
-\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => '0',
-      PRE => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst_n_0\,
-      Q => wr_rst_reg(0)
-    );
-\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => '0',
-      PRE => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst_n_0\,
-      Q => wr_rst_reg(1)
-    );
-\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => '0',
-      PRE => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst_n_0\,
-      Q => wr_rst_reg(2)
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo_14 is
-  port (
-    \out\ : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    \gc0.count_reg[0]\ : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    \grstd1.grst_full.grst_f.rst_d3_reg_0\ : out STD_LOGIC;
-    wr_rst_busy : out STD_LOGIC;
-    tmp_ram_rd_en : out STD_LOGIC;
-    rd_clk : in STD_LOGIC;
-    wr_clk : in STD_LOGIC;
-    rst : in STD_LOGIC;
-    ram_empty_fb_i_reg : in STD_LOGIC;
-    rd_en : in STD_LOGIC
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo_14 : entity is "reset_blk_ramfifo";
-end design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo_14;
-
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo_14 is
-  signal \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst_n_1\ : STD_LOGIC;
-  signal \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst_n_1\ : STD_LOGIC;
-  signal \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst_n_0\ : STD_LOGIC;
-  signal \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst_n_0\ : STD_LOGIC;
-  signal p_7_out : STD_LOGIC;
-  signal p_8_out : STD_LOGIC;
-  signal rd_rst_asreg : STD_LOGIC;
-  signal rd_rst_reg : STD_LOGIC_VECTOR ( 2 downto 0 );
-  attribute DONT_TOUCH : boolean;
-  attribute DONT_TOUCH of rd_rst_reg : signal is std.standard.true;
-  signal rst_d1 : STD_LOGIC;
-  attribute async_reg : string;
-  attribute async_reg of rst_d1 : signal is "true";
-  attribute msgon : string;
-  attribute msgon of rst_d1 : signal is "true";
-  signal rst_d2 : STD_LOGIC;
-  attribute async_reg of rst_d2 : signal is "true";
-  attribute msgon of rst_d2 : signal is "true";
-  signal rst_d3 : STD_LOGIC;
-  attribute async_reg of rst_d3 : signal is "true";
-  attribute msgon of rst_d3 : signal is "true";
-  signal rst_rd_reg1 : STD_LOGIC;
-  attribute async_reg of rst_rd_reg1 : signal is "true";
-  attribute msgon of rst_rd_reg1 : signal is "true";
-  signal rst_rd_reg2 : STD_LOGIC;
-  attribute async_reg of rst_rd_reg2 : signal is "true";
-  attribute msgon of rst_rd_reg2 : signal is "true";
-  signal rst_wr_reg1 : STD_LOGIC;
-  attribute async_reg of rst_wr_reg1 : signal is "true";
-  attribute msgon of rst_wr_reg1 : signal is "true";
-  signal rst_wr_reg2 : STD_LOGIC;
-  attribute async_reg of rst_wr_reg2 : signal is "true";
-  attribute msgon of rst_wr_reg2 : signal is "true";
-  signal wr_rst_asreg : STD_LOGIC;
-  signal wr_rst_reg : STD_LOGIC_VECTOR ( 2 downto 0 );
-  attribute DONT_TOUCH of wr_rst_reg : signal is std.standard.true;
-  attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \grstd1.grst_full.grst_f.rst_d1_reg\ : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of \grstd1.grst_full.grst_f.rst_d1_reg\ : label is "yes";
-  attribute msgon of \grstd1.grst_full.grst_f.rst_d1_reg\ : label is "true";
-  attribute ASYNC_REG_boolean of \grstd1.grst_full.grst_f.rst_d2_reg\ : label is std.standard.true;
-  attribute KEEP of \grstd1.grst_full.grst_f.rst_d2_reg\ : label is "yes";
-  attribute msgon of \grstd1.grst_full.grst_f.rst_d2_reg\ : label is "true";
-  attribute ASYNC_REG_boolean of \grstd1.grst_full.grst_f.rst_d3_reg\ : label is std.standard.true;
-  attribute KEEP of \grstd1.grst_full.grst_f.rst_d3_reg\ : label is "yes";
-  attribute msgon of \grstd1.grst_full.grst_f.rst_d3_reg\ : label is "true";
-  attribute DONT_TOUCH of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\ : label is "yes";
-  attribute equivalent_register_removal : string;
-  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\ : label is "no";
-  attribute DONT_TOUCH of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : label is "yes";
-  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : label is "no";
-  attribute DONT_TOUCH of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\ : label is "yes";
-  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\ : label is "no";
-  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\ : label is "yes";
-  attribute msgon of \ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\ : label is "true";
-  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\ : label is "yes";
-  attribute msgon of \ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\ : label is "true";
-  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\ : label is "yes";
-  attribute msgon of \ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\ : label is "true";
-  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\ : label is "yes";
-  attribute msgon of \ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\ : label is "true";
-  attribute DONT_TOUCH of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\ : label is "yes";
-  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\ : label is "no";
-  attribute DONT_TOUCH of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\ : label is "yes";
-  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\ : label is "no";
-  attribute DONT_TOUCH of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\ : label is "yes";
-  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\ : label is "no";
-begin
-  \gc0.count_reg[0]\(2 downto 0) <= rd_rst_reg(2 downto 0);
-  \grstd1.grst_full.grst_f.rst_d3_reg_0\ <= rst_d2;
-  \out\(1 downto 0) <= wr_rst_reg(1 downto 0);
-  wr_rst_busy <= rst_d3;
-\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_2\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"BA"
-    )
-        port map (
-      I0 => rd_rst_reg(0),
-      I1 => ram_empty_fb_i_reg,
-      I2 => rd_en,
-      O => tmp_ram_rd_en
-    );
-\grstd1.grst_full.grst_f.rst_d1_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => '0',
-      PRE => rst_wr_reg2,
-      Q => rst_d1
-    );
-\grstd1.grst_full.grst_f.rst_d2_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => rst_d1,
-      PRE => rst_wr_reg2,
-      Q => rst_d2
-    );
-\grstd1.grst_full.grst_f.rst_d3_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => rst_d2,
-      PRE => rst_wr_reg2,
-      Q => rst_d3
-    );
-\ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst\: entity work.design_1_d_axi_i2s_audio_0_0_synchronizer_ff_15
-     port map (
-      in0(0) => rd_rst_asreg,
-      \ngwrdrst.grst.g7serrst.rd_rst_asreg_reg\ => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst_n_1\,
-      \out\ => p_7_out,
-      rd_clk => rd_clk
-    );
-\ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst\: entity work.design_1_d_axi_i2s_audio_0_0_synchronizer_ff_16
-     port map (
-      in0(0) => wr_rst_asreg,
-      \ngwrdrst.grst.g7serrst.wr_rst_asreg_reg\ => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst_n_1\,
-      \out\ => p_8_out,
-      wr_clk => wr_clk
-    );
-\ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst\: entity work.design_1_d_axi_i2s_audio_0_0_synchronizer_ff_17
-     port map (
-      AS(0) => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst_n_0\,
-      in0(0) => rd_rst_asreg,
-      \out\ => p_7_out,
-      rd_clk => rd_clk
-    );
-\ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst\: entity work.design_1_d_axi_i2s_audio_0_0_synchronizer_ff_18
-     port map (
-      AS(0) => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst_n_0\,
-      in0(0) => wr_rst_asreg,
-      \out\ => p_8_out,
-      wr_clk => wr_clk
-    );
-\ngwrdrst.grst.g7serrst.rd_rst_asreg_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      D => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst_n_1\,
-      PRE => rst_rd_reg2,
-      Q => rd_rst_asreg
-    );
-\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      D => '0',
-      PRE => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst_n_0\,
-      Q => rd_rst_reg(0)
-    );
-\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      D => '0',
-      PRE => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst_n_0\,
-      Q => rd_rst_reg(1)
-    );
-\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      D => '0',
-      PRE => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst_n_0\,
-      Q => rd_rst_reg(2)
-    );
-\ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      D => '0',
-      PRE => rst,
-      Q => rst_rd_reg1
-    );
-\ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      D => rst_rd_reg1,
-      PRE => rst,
-      Q => rst_rd_reg2
-    );
-\ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => '0',
-      PRE => rst,
-      Q => rst_wr_reg1
-    );
-\ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => rst_wr_reg1,
-      PRE => rst,
-      Q => rst_wr_reg2
-    );
-\ngwrdrst.grst.g7serrst.wr_rst_asreg_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst_n_1\,
-      PRE => rst_wr_reg2,
-      Q => wr_rst_asreg
-    );
-\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => '0',
-      PRE => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst_n_0\,
-      Q => wr_rst_reg(0)
-    );
-\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => '0',
-      PRE => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst_n_0\,
-      Q => wr_rst_reg(1)
-    );
-\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => '0',
-      PRE => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst_n_0\,
-      Q => wr_rst_reg(2)
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo_41 is
-  port (
-    \out\ : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    \gc0.count_reg[1]\ : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    \grstd1.grst_full.grst_f.rst_d3_reg_0\ : out STD_LOGIC;
-    wr_rst_busy : out STD_LOGIC;
-    tmp_ram_rd_en : out STD_LOGIC;
-    rd_clk : in STD_LOGIC;
-    wr_clk : in STD_LOGIC;
-    rst : in STD_LOGIC;
-    ram_empty_fb_i_reg : in STD_LOGIC;
-    rd_en : in STD_LOGIC
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo_41 : entity is "reset_blk_ramfifo";
-end design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo_41;
-
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo_41 is
-  signal \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst_n_1\ : STD_LOGIC;
-  signal \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst_n_1\ : STD_LOGIC;
-  signal \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst_n_0\ : STD_LOGIC;
-  signal \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst_n_0\ : STD_LOGIC;
-  signal p_7_out : STD_LOGIC;
-  signal p_8_out : STD_LOGIC;
-  signal rd_rst_asreg : STD_LOGIC;
-  signal rd_rst_reg : STD_LOGIC_VECTOR ( 2 downto 0 );
-  attribute DONT_TOUCH : boolean;
-  attribute DONT_TOUCH of rd_rst_reg : signal is std.standard.true;
-  signal rst_d1 : STD_LOGIC;
-  attribute async_reg : string;
-  attribute async_reg of rst_d1 : signal is "true";
-  attribute msgon : string;
-  attribute msgon of rst_d1 : signal is "true";
-  signal rst_d2 : STD_LOGIC;
-  attribute async_reg of rst_d2 : signal is "true";
-  attribute msgon of rst_d2 : signal is "true";
-  signal rst_d3 : STD_LOGIC;
-  attribute async_reg of rst_d3 : signal is "true";
-  attribute msgon of rst_d3 : signal is "true";
-  signal rst_rd_reg1 : STD_LOGIC;
-  attribute async_reg of rst_rd_reg1 : signal is "true";
-  attribute msgon of rst_rd_reg1 : signal is "true";
-  signal rst_rd_reg2 : STD_LOGIC;
-  attribute async_reg of rst_rd_reg2 : signal is "true";
-  attribute msgon of rst_rd_reg2 : signal is "true";
-  signal rst_wr_reg1 : STD_LOGIC;
-  attribute async_reg of rst_wr_reg1 : signal is "true";
-  attribute msgon of rst_wr_reg1 : signal is "true";
-  signal rst_wr_reg2 : STD_LOGIC;
-  attribute async_reg of rst_wr_reg2 : signal is "true";
-  attribute msgon of rst_wr_reg2 : signal is "true";
-  signal wr_rst_asreg : STD_LOGIC;
-  signal wr_rst_reg : STD_LOGIC_VECTOR ( 2 downto 0 );
-  attribute DONT_TOUCH of wr_rst_reg : signal is std.standard.true;
-  attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \grstd1.grst_full.grst_f.rst_d1_reg\ : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of \grstd1.grst_full.grst_f.rst_d1_reg\ : label is "yes";
-  attribute msgon of \grstd1.grst_full.grst_f.rst_d1_reg\ : label is "true";
-  attribute ASYNC_REG_boolean of \grstd1.grst_full.grst_f.rst_d2_reg\ : label is std.standard.true;
-  attribute KEEP of \grstd1.grst_full.grst_f.rst_d2_reg\ : label is "yes";
-  attribute msgon of \grstd1.grst_full.grst_f.rst_d2_reg\ : label is "true";
-  attribute ASYNC_REG_boolean of \grstd1.grst_full.grst_f.rst_d3_reg\ : label is std.standard.true;
-  attribute KEEP of \grstd1.grst_full.grst_f.rst_d3_reg\ : label is "yes";
-  attribute msgon of \grstd1.grst_full.grst_f.rst_d3_reg\ : label is "true";
-  attribute DONT_TOUCH of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\ : label is "yes";
-  attribute equivalent_register_removal : string;
-  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\ : label is "no";
-  attribute DONT_TOUCH of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : label is "yes";
-  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\ : label is "no";
-  attribute DONT_TOUCH of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\ : label is "yes";
-  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\ : label is "no";
-  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\ : label is "yes";
-  attribute msgon of \ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\ : label is "true";
-  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\ : label is "yes";
-  attribute msgon of \ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\ : label is "true";
-  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\ : label is "yes";
-  attribute msgon of \ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\ : label is "true";
-  attribute ASYNC_REG_boolean of \ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\ : label is "yes";
-  attribute msgon of \ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\ : label is "true";
-  attribute DONT_TOUCH of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\ : label is "yes";
-  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\ : label is "no";
-  attribute DONT_TOUCH of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\ : label is "yes";
-  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\ : label is "no";
-  attribute DONT_TOUCH of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\ : label is std.standard.true;
-  attribute KEEP of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\ : label is "yes";
-  attribute equivalent_register_removal of \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\ : label is "no";
-begin
-  \gc0.count_reg[1]\(2 downto 0) <= rd_rst_reg(2 downto 0);
-  \grstd1.grst_full.grst_f.rst_d3_reg_0\ <= rst_d2;
-  \out\(1 downto 0) <= wr_rst_reg(1 downto 0);
-  wr_rst_busy <= rst_d3;
-\DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_i_1\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"BA"
-    )
-        port map (
-      I0 => rd_rst_reg(0),
-      I1 => ram_empty_fb_i_reg,
-      I2 => rd_en,
-      O => tmp_ram_rd_en
-    );
-\grstd1.grst_full.grst_f.rst_d1_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => '0',
-      PRE => rst_wr_reg2,
-      Q => rst_d1
-    );
-\grstd1.grst_full.grst_f.rst_d2_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => rst_d1,
-      PRE => rst_wr_reg2,
-      Q => rst_d2
-    );
-\grstd1.grst_full.grst_f.rst_d3_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => rst_d2,
-      PRE => rst_wr_reg2,
-      Q => rst_d3
-    );
-\ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst\: entity work.design_1_d_axi_i2s_audio_0_0_synchronizer_ff_42
-     port map (
-      in0(0) => rd_rst_asreg,
-      \ngwrdrst.grst.g7serrst.rd_rst_asreg_reg\ => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst_n_1\,
-      \out\ => p_7_out,
-      rd_clk => rd_clk
-    );
-\ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst\: entity work.design_1_d_axi_i2s_audio_0_0_synchronizer_ff_43
-     port map (
-      in0(0) => wr_rst_asreg,
-      \ngwrdrst.grst.g7serrst.wr_rst_asreg_reg\ => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst_n_1\,
-      \out\ => p_8_out,
-      wr_clk => wr_clk
-    );
-\ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst\: entity work.design_1_d_axi_i2s_audio_0_0_synchronizer_ff_44
-     port map (
-      AS(0) => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst_n_0\,
-      in0(0) => rd_rst_asreg,
-      \out\ => p_7_out,
-      rd_clk => rd_clk
-    );
-\ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst\: entity work.design_1_d_axi_i2s_audio_0_0_synchronizer_ff_45
-     port map (
-      AS(0) => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst_n_0\,
-      in0(0) => wr_rst_asreg,
-      \out\ => p_8_out,
-      wr_clk => wr_clk
-    );
-\ngwrdrst.grst.g7serrst.rd_rst_asreg_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      D => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst_n_1\,
-      PRE => rst_rd_reg2,
-      Q => rd_rst_asreg
-    );
-\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      D => '0',
-      PRE => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst_n_0\,
-      Q => rd_rst_reg(0)
-    );
-\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      D => '0',
-      PRE => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst_n_0\,
-      Q => rd_rst_reg(1)
-    );
-\ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      D => '0',
-      PRE => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst_n_0\,
-      Q => rd_rst_reg(2)
-    );
-\ngwrdrst.grst.g7serrst.rst_rd_reg1_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      D => '0',
-      PRE => rst,
-      Q => rst_rd_reg1
-    );
-\ngwrdrst.grst.g7serrst.rst_rd_reg2_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => rd_clk,
-      CE => '1',
-      D => rst_rd_reg1,
-      PRE => rst,
-      Q => rst_rd_reg2
-    );
-\ngwrdrst.grst.g7serrst.rst_wr_reg1_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => '0',
-      PRE => rst,
-      Q => rst_wr_reg1
-    );
-\ngwrdrst.grst.g7serrst.rst_wr_reg2_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => rst_wr_reg1,
-      PRE => rst,
-      Q => rst_wr_reg2
-    );
-\ngwrdrst.grst.g7serrst.wr_rst_asreg_reg\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst_n_1\,
-      PRE => rst_wr_reg2,
-      Q => wr_rst_asreg
-    );
-\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => '0',
-      PRE => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst_n_0\,
-      Q => wr_rst_reg(0)
-    );
-\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => '0',
-      PRE => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst_n_0\,
-      Q => wr_rst_reg(1)
-    );
-\ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\: unisim.vcomponents.FDPE
-    generic map(
-      INIT => '1'
-    )
-        port map (
-      C => wr_clk,
-      CE => '1',
-      D => '0',
-      PRE => \ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst_n_0\,
-      Q => wr_rst_reg(2)
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_wr_logic is
+entity \design_1_d_axi_i2s_audio_0_0_wr_logic\ is
   port (
     full : out STD_LOGIC;
+    E : out STD_LOGIC_VECTOR ( 0 to 0 );
     Q : out STD_LOGIC_VECTOR ( 2 downto 0 );
     ram_full_fb_i_reg : out STD_LOGIC;
-    E : out STD_LOGIC_VECTOR ( 0 to 0 );
     \gic0.gc0.count_d2_reg[3]\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram\ : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    \gic0.gc0.count_d1_reg[3]\ : in STD_LOGIC;
+    ram_full_i : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
     \out\ : in STD_LOGIC;
     wr_en : in STD_LOGIC;
-    \gnxpm_cdc.rd_pntr_bin_reg[3]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    AR : in STD_LOGIC_VECTOR ( 0 to 0 )
+    \rd_pntr_bin_reg[3]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_wr_logic : entity is "wr_logic";
-end design_1_d_axi_i2s_audio_0_0_wr_logic;
+end \design_1_d_axi_i2s_audio_0_0_wr_logic\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_wr_logic is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_wr_logic\ is
   signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal wr_pntr_plus2 : STD_LOGIC_VECTOR ( 3 to 3 );
 begin
   E(0) <= \^e\(0);
-\gwas.wsts\: entity work.design_1_d_axi_i2s_audio_0_0_wr_status_flags_as
+\gwas.wsts\: entity work.\design_1_d_axi_i2s_audio_0_0_wr_status_flags_as\
      port map (
       E(0) => \^e\(0),
       Q(0) => wr_pntr_plus2(3),
       full => full,
-      \gic0.gc0.count_d1_reg[3]\ => \gic0.gc0.count_d1_reg[3]\,
-      \gnxpm_cdc.rd_pntr_bin_reg[3]\(0) => \gnxpm_cdc.rd_pntr_bin_reg[3]\(0),
       \out\ => \out\,
       ram_full_fb_i_reg_0 => ram_full_fb_i_reg,
+      ram_full_i => ram_full_i,
+      \rd_pntr_bin_reg[3]\(0) => \rd_pntr_bin_reg[3]\(0),
       wr_clk => wr_clk,
       wr_en => wr_en
     );
-wpntr: entity work.design_1_d_axi_i2s_audio_0_0_wr_bin_cntr
+wpntr: entity work.\design_1_d_axi_i2s_audio_0_0_wr_bin_cntr\
      port map (
-      AR(0) => AR(0),
       \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram\(3 downto 0) => \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram\(3 downto 0),
       E(0) => \^e\(0),
       Q(3) => wr_pntr_plus2(3),
       Q(2 downto 0) => Q(2 downto 0),
       \gic0.gc0.count_d2_reg[3]_0\(3 downto 0) => \gic0.gc0.count_d2_reg[3]\(3 downto 0),
+      \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\(0) => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\(0),
       wr_clk => wr_clk
     );
 end STRUCTURE;
@@ -17627,11 +16637,14 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity \design_1_d_axi_i2s_audio_0_0_wr_status_flags_as__parameterized0\ is
   port (
+    comp1 : out STD_LOGIC;
+    comp2 : out STD_LOGIC;
     full : out STD_LOGIC;
-    \gic0.gc0.count_d1_reg[11]\ : out STD_LOGIC;
+    ram_full_fb : out STD_LOGIC;
+    E : out STD_LOGIC_VECTOR ( 0 to 0 );
+    ram_full_i : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
     \out\ : in STD_LOGIC;
-    wr_rst_busy : in STD_LOGIC;
     wr_en : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
     RD_PNTR_WR : in STD_LOGIC_VECTOR ( 11 downto 0 );
@@ -17642,44 +16655,20 @@ entity \design_1_d_axi_i2s_audio_0_0_wr_status_flags_as__parameterized0\ is
 end \design_1_d_axi_i2s_audio_0_0_wr_status_flags_as__parameterized0\;
 
 architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_wr_status_flags_as__parameterized0\ is
-  signal \/i__n_0\ : STD_LOGIC;
-  signal comp1 : STD_LOGIC;
-  signal comp2 : STD_LOGIC;
-  signal ram_full_fb_i : STD_LOGIC;
-  attribute DONT_TOUCH : boolean;
-  attribute DONT_TOUCH of ram_full_fb_i : signal is std.standard.true;
-  signal ram_full_i : STD_LOGIC;
-  attribute DONT_TOUCH of ram_full_i : signal is std.standard.true;
-  attribute DONT_TOUCH of ram_full_fb_i_reg : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of ram_full_fb_i_reg : label is "yes";
+  signal \^ram_full_fb\ : STD_LOGIC;
   attribute equivalent_register_removal : string;
   attribute equivalent_register_removal of ram_full_fb_i_reg : label is "no";
-  attribute DONT_TOUCH of ram_full_i_reg : label is std.standard.true;
-  attribute KEEP of ram_full_i_reg : label is "yes";
   attribute equivalent_register_removal of ram_full_i_reg : label is "no";
 begin
-  full <= ram_full_i;
-\/i_\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"55550400"
-    )
-        port map (
-      I0 => wr_rst_busy,
-      I1 => comp2,
-      I2 => ram_full_fb_i,
-      I3 => wr_en,
-      I4 => comp1,
-      O => \/i__n_0\
-    );
+  ram_full_fb <= \^ram_full_fb\;
 \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"2"
     )
         port map (
       I0 => wr_en,
-      I1 => ram_full_fb_i,
-      O => \gic0.gc0.count_d1_reg[11]\
+      I1 => \^ram_full_fb\,
+      O => E(0)
     );
 c1: entity work.\design_1_d_axi_i2s_audio_0_0_compare__parameterized2\
      port map (
@@ -17700,9 +16689,9 @@ ram_full_fb_i_reg: unisim.vcomponents.FDPE
         port map (
       C => wr_clk,
       CE => '1',
-      D => \/i__n_0\,
+      D => ram_full_i,
       PRE => \out\,
-      Q => ram_full_fb_i
+      Q => \^ram_full_fb\
     );
 ram_full_i_reg: unisim.vcomponents.FDPE
     generic map(
@@ -17711,82 +16700,61 @@ ram_full_i_reg: unisim.vcomponents.FDPE
         port map (
       C => wr_clk,
       CE => '1',
-      D => \/i__n_0\,
+      D => ram_full_i,
       PRE => \out\,
-      Q => ram_full_i
+      Q => full
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_wr_status_flags_as__parameterized0_29\ is
+entity \design_1_d_axi_i2s_audio_0_0_wr_status_flags_as__parameterized0_22\ is
   port (
+    comp1 : out STD_LOGIC;
+    comp2 : out STD_LOGIC;
     full : out STD_LOGIC;
-    \gic0.gc0.count_d1_reg[11]\ : out STD_LOGIC;
+    ram_full_fb : out STD_LOGIC;
+    E : out STD_LOGIC_VECTOR ( 0 to 0 );
+    ram_full_i : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
     \out\ : in STD_LOGIC;
-    wr_rst_busy : in STD_LOGIC;
     wr_en : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    \gnxpm_cdc.rd_pntr_bin_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    \rd_pntr_bin_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     D : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_wr_status_flags_as__parameterized0_29\ : entity is "wr_status_flags_as";
-end \design_1_d_axi_i2s_audio_0_0_wr_status_flags_as__parameterized0_29\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_wr_status_flags_as__parameterized0_22\ : entity is "wr_status_flags_as";
+end \design_1_d_axi_i2s_audio_0_0_wr_status_flags_as__parameterized0_22\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_wr_status_flags_as__parameterized0_29\ is
-  signal \/i__n_0\ : STD_LOGIC;
-  signal comp1 : STD_LOGIC;
-  signal comp2 : STD_LOGIC;
-  signal ram_full_fb_i : STD_LOGIC;
-  attribute DONT_TOUCH : boolean;
-  attribute DONT_TOUCH of ram_full_fb_i : signal is std.standard.true;
-  signal ram_full_i : STD_LOGIC;
-  attribute DONT_TOUCH of ram_full_i : signal is std.standard.true;
-  attribute DONT_TOUCH of ram_full_fb_i_reg : label is std.standard.true;
-  attribute KEEP : string;
-  attribute KEEP of ram_full_fb_i_reg : label is "yes";
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_wr_status_flags_as__parameterized0_22\ is
+  signal \^ram_full_fb\ : STD_LOGIC;
   attribute equivalent_register_removal : string;
   attribute equivalent_register_removal of ram_full_fb_i_reg : label is "no";
-  attribute DONT_TOUCH of ram_full_i_reg : label is std.standard.true;
-  attribute KEEP of ram_full_i_reg : label is "yes";
   attribute equivalent_register_removal of ram_full_i_reg : label is "no";
 begin
-  full <= ram_full_i;
-\/i_\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"55550400"
-    )
-        port map (
-      I0 => wr_rst_busy,
-      I1 => comp2,
-      I2 => ram_full_fb_i,
-      I3 => wr_en,
-      I4 => comp1,
-      O => \/i__n_0\
-    );
+  ram_full_fb <= \^ram_full_fb\;
 \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"2"
     )
         port map (
       I0 => wr_en,
-      I1 => ram_full_fb_i,
-      O => \gic0.gc0.count_d1_reg[11]\
+      I1 => \^ram_full_fb\,
+      O => E(0)
     );
-c1: entity work.\design_1_d_axi_i2s_audio_0_0_compare__parameterized2_31\
+c1: entity work.\design_1_d_axi_i2s_audio_0_0_compare__parameterized2_24\
      port map (
       Q(11 downto 0) => Q(11 downto 0),
       comp1 => comp1,
-      \gnxpm_cdc.rd_pntr_bin_reg[11]\(11 downto 0) => \gnxpm_cdc.rd_pntr_bin_reg[11]\(11 downto 0)
+      \rd_pntr_bin_reg[11]\(11 downto 0) => \rd_pntr_bin_reg[11]\(11 downto 0)
     );
-c2: entity work.\design_1_d_axi_i2s_audio_0_0_compare__parameterized3_32\
+c2: entity work.\design_1_d_axi_i2s_audio_0_0_compare__parameterized3_25\
      port map (
       D(11 downto 0) => D(11 downto 0),
       comp2 => comp2,
-      \gnxpm_cdc.rd_pntr_bin_reg[11]\(11 downto 0) => \gnxpm_cdc.rd_pntr_bin_reg[11]\(11 downto 0)
+      \rd_pntr_bin_reg[11]\(11 downto 0) => \rd_pntr_bin_reg[11]\(11 downto 0)
     );
 ram_full_fb_i_reg: unisim.vcomponents.FDPE
     generic map(
@@ -17795,9 +16763,9 @@ ram_full_fb_i_reg: unisim.vcomponents.FDPE
         port map (
       C => wr_clk,
       CE => '1',
-      D => \/i__n_0\,
+      D => ram_full_i,
       PRE => \out\,
-      Q => ram_full_fb_i
+      Q => \^ram_full_fb\
     );
 ram_full_i_reg: unisim.vcomponents.FDPE
     generic map(
@@ -17806,41 +16774,39 @@ ram_full_i_reg: unisim.vcomponents.FDPE
         port map (
       C => wr_clk,
       CE => '1',
-      D => \/i__n_0\,
+      D => ram_full_i,
       PRE => \out\,
-      Q => ram_full_i
+      Q => full
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_blk_mem_gen_generic_cstr is
+entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_generic_cstr\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 3 downto 0 );
     rd_clk : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gc0.count_d1_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \gic0.gc0.count_d2_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     din : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
-end design_1_d_axi_i2s_audio_0_0_blk_mem_gen_generic_cstr;
+end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_generic_cstr\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_blk_mem_gen_generic_cstr is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_generic_cstr\ is
 begin
-\ramloop[0].ram.r\: entity work.design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width
+\ramloop[0].ram.r\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width\
      port map (
       E(0) => E(0),
+      Q(0) => Q(0),
       din(3 downto 0) => din(3 downto 0),
       dout(3 downto 0) => dout(3 downto 0),
       \gc0.count_d1_reg[3]\(3 downto 0) => \gc0.count_d1_reg[3]\(3 downto 0),
       \gic0.gc0.count_d2_reg[3]\(3 downto 0) => \gic0.gc0.count_d2_reg[3]\(3 downto 0),
-      \out\(0) => \out\(0),
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
       wr_clk => wr_clk
@@ -17857,8 +16823,8 @@ entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_generic_cstr__parameterized0\ i
     rd_clk : in STD_LOGIC;
     ram_full_fb_i_reg : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \gic0.gc0.count_d2_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     din : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
@@ -17870,11 +16836,11 @@ architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_generic_cstr
 begin
 \ramloop[0].ram.r\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized0\
      port map (
-      Q(11 downto 0) => Q(11 downto 0),
+      Q(0) => Q(0),
       din(8 downto 0) => din(8 downto 0),
       dout(8 downto 0) => dout(8 downto 0),
       \gc0.count_d1_reg[11]\(11 downto 0) => \gc0.count_d1_reg[11]\(11 downto 0),
-      \out\(0) => \out\(0),
+      \gic0.gc0.count_d2_reg[11]\(11 downto 0) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ram_full_fb_i_reg => ram_full_fb_i_reg,
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
@@ -17882,11 +16848,11 @@ begin
     );
 \ramloop[1].ram.r\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized1\
      port map (
-      Q(11 downto 0) => Q(11 downto 0),
+      Q(0) => Q(0),
       din(8 downto 0) => din(17 downto 9),
       dout(8 downto 0) => dout(17 downto 9),
       \gc0.count_d1_reg[11]\(11 downto 0) => \gc0.count_d1_reg[11]\(11 downto 0),
-      \out\(0) => \out\(0),
+      \gic0.gc0.count_d2_reg[11]\(11 downto 0) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ram_full_fb_i_reg => ram_full_fb_i_reg,
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
@@ -17894,11 +16860,11 @@ begin
     );
 \ramloop[2].ram.r\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized2\
      port map (
-      Q(11 downto 0) => Q(11 downto 0),
+      Q(0) => Q(0),
       din(5 downto 0) => din(23 downto 18),
       dout(5 downto 0) => dout(23 downto 18),
       \gc0.count_d1_reg[11]\(11 downto 0) => \gc0.count_d1_reg[11]\(11 downto 0),
-      \out\(0) => \out\(0),
+      \gic0.gc0.count_d2_reg[11]\(11 downto 0) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ram_full_fb_i_reg => ram_full_fb_i_reg,
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
@@ -17909,55 +16875,55 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_generic_cstr__parameterized0_22\ is
+entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_generic_cstr__parameterized0_15\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 23 downto 0 );
     wr_clk : in STD_LOGIC;
     rd_clk : in STD_LOGIC;
     ram_full_fb_i_reg : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \gic0.gc0.count_d2_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     din : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_generic_cstr__parameterized0_22\ : entity is "blk_mem_gen_generic_cstr";
-end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_generic_cstr__parameterized0_22\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_generic_cstr__parameterized0_15\ : entity is "blk_mem_gen_generic_cstr";
+end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_generic_cstr__parameterized0_15\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_generic_cstr__parameterized0_22\ is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_generic_cstr__parameterized0_15\ is
 begin
-\ramloop[0].ram.r\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized0_23\
+\ramloop[0].ram.r\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized0_16\
      port map (
-      Q(11 downto 0) => Q(11 downto 0),
+      Q(0) => Q(0),
       din(8 downto 0) => din(8 downto 0),
       dout(8 downto 0) => dout(8 downto 0),
       \gc0.count_d1_reg[11]\(11 downto 0) => \gc0.count_d1_reg[11]\(11 downto 0),
-      \out\(0) => \out\(0),
+      \gic0.gc0.count_d2_reg[11]\(11 downto 0) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ram_full_fb_i_reg => ram_full_fb_i_reg,
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
       wr_clk => wr_clk
     );
-\ramloop[1].ram.r\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized1_24\
+\ramloop[1].ram.r\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized1_17\
      port map (
-      Q(11 downto 0) => Q(11 downto 0),
+      Q(0) => Q(0),
       din(8 downto 0) => din(17 downto 9),
       dout(8 downto 0) => dout(17 downto 9),
       \gc0.count_d1_reg[11]\(11 downto 0) => \gc0.count_d1_reg[11]\(11 downto 0),
-      \out\(0) => \out\(0),
+      \gic0.gc0.count_d2_reg[11]\(11 downto 0) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ram_full_fb_i_reg => ram_full_fb_i_reg,
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
       wr_clk => wr_clk
     );
-\ramloop[2].ram.r\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized2_25\
+\ramloop[2].ram.r\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_prim_width__parameterized2_18\
      port map (
-      Q(11 downto 0) => Q(11 downto 0),
+      Q(0) => Q(0),
       din(5 downto 0) => din(23 downto 18),
       dout(5 downto 0) => dout(23 downto 18),
       \gc0.count_d1_reg[11]\(11 downto 0) => \gc0.count_d1_reg[11]\(11 downto 0),
-      \out\(0) => \out\(0),
+      \gic0.gc0.count_d2_reg[11]\(11 downto 0) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ram_full_fb_i_reg => ram_full_fb_i_reg,
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
@@ -17971,11 +16937,11 @@ use UNISIM.VCOMPONENTS.ALL;
 entity \design_1_d_axi_i2s_audio_0_0_rd_logic__parameterized0\ is
   port (
     empty : out STD_LOGIC;
-    \out\ : out STD_LOGIC;
-    Q : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    I32 : out STD_LOGIC_VECTOR ( 10 downto 0 );
+    p_2_out : out STD_LOGIC;
+    \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\ : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    I15 : out STD_LOGIC_VECTOR ( 10 downto 0 );
     rd_clk : in STD_LOGIC;
-    \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
+    Q : in STD_LOGIC_VECTOR ( 1 downto 0 );
     rd_en : in STD_LOGIC;
     WR_PNTR_RD : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
@@ -17984,30 +16950,30 @@ entity \design_1_d_axi_i2s_audio_0_0_rd_logic__parameterized0\ is
 end \design_1_d_axi_i2s_audio_0_0_rd_logic__parameterized0\;
 
 architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_rd_logic__parameterized0\ is
-  signal \^q\ : STD_LOGIC_VECTOR ( 11 downto 0 );
+  signal \^device_7series.no_bmm_info.sdp.simple_prim36.ram\ : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal \gras.rsts_n_2\ : STD_LOGIC;
   signal rd_pntr_plus1 : STD_LOGIC_VECTOR ( 11 downto 0 );
 begin
-  Q(11 downto 0) <= \^q\(11 downto 0);
+  \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\(11 downto 0) <= \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(11 downto 0);
 \gras.rsts\: entity work.\design_1_d_axi_i2s_audio_0_0_rd_status_flags_as__parameterized0\
      port map (
       D(11 downto 0) => rd_pntr_plus1(11 downto 0),
       E(0) => \gras.rsts_n_2\,
-      Q(11 downto 0) => \^q\(11 downto 0),
+      Q(0) => Q(1),
       WR_PNTR_RD(11 downto 0) => WR_PNTR_RD(11 downto 0),
       empty => empty,
-      \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0) => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
-      \out\ => \out\,
+      \gc0.count_d1_reg[11]\(11 downto 0) => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(11 downto 0),
+      p_2_out => p_2_out,
       rd_clk => rd_clk,
       rd_en => rd_en
     );
 rpntr: entity work.\design_1_d_axi_i2s_audio_0_0_rd_bin_cntr__parameterized0\
      port map (
       D(11 downto 0) => rd_pntr_plus1(11 downto 0),
+      \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\(11 downto 0) => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(11 downto 0),
       E(0) => \gras.rsts_n_2\,
-      I32(10 downto 0) => I32(10 downto 0),
-      Q(11 downto 0) => \^q\(11 downto 0),
-      \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0) => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
+      I15(10 downto 0) => I15(10 downto 0),
+      Q(0) => Q(0),
       rd_clk => rd_clk
     );
 end STRUCTURE;
@@ -18015,47 +16981,47 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_rd_logic__parameterized0_11\ is
+entity \design_1_d_axi_i2s_audio_0_0_rd_logic__parameterized0_8\ is
   port (
     empty : out STD_LOGIC;
-    \out\ : out STD_LOGIC;
-    Q : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    \gnxpm_cdc.rd_pntr_gc_reg[10]\ : out STD_LOGIC_VECTOR ( 10 downto 0 );
+    p_2_out : out STD_LOGIC;
+    \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\ : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    \rd_pntr_gc_reg[10]\ : out STD_LOGIC_VECTOR ( 10 downto 0 );
     rd_clk : in STD_LOGIC;
-    \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
+    Q : in STD_LOGIC_VECTOR ( 1 downto 0 );
     rd_en : in STD_LOGIC;
-    \gnxpm_cdc.wr_pntr_bin_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 )
+    \wr_pntr_bin_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_rd_logic__parameterized0_11\ : entity is "rd_logic";
-end \design_1_d_axi_i2s_audio_0_0_rd_logic__parameterized0_11\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_rd_logic__parameterized0_8\ : entity is "rd_logic";
+end \design_1_d_axi_i2s_audio_0_0_rd_logic__parameterized0_8\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_rd_logic__parameterized0_11\ is
-  signal \^q\ : STD_LOGIC_VECTOR ( 11 downto 0 );
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_rd_logic__parameterized0_8\ is
+  signal \^device_7series.no_bmm_info.sdp.simple_prim36.ram\ : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal \gras.rsts_n_2\ : STD_LOGIC;
   signal rd_pntr_plus1 : STD_LOGIC_VECTOR ( 11 downto 0 );
 begin
-  Q(11 downto 0) <= \^q\(11 downto 0);
-\gras.rsts\: entity work.\design_1_d_axi_i2s_audio_0_0_rd_status_flags_as__parameterized0_33\
+  \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\(11 downto 0) <= \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(11 downto 0);
+\gras.rsts\: entity work.\design_1_d_axi_i2s_audio_0_0_rd_status_flags_as__parameterized0_26\
      port map (
       D(11 downto 0) => rd_pntr_plus1(11 downto 0),
       E(0) => \gras.rsts_n_2\,
-      Q(11 downto 0) => \^q\(11 downto 0),
+      Q(0) => Q(1),
       empty => empty,
-      \gnxpm_cdc.wr_pntr_bin_reg[11]\(11 downto 0) => \gnxpm_cdc.wr_pntr_bin_reg[11]\(11 downto 0),
-      \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0) => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
-      \out\ => \out\,
+      \gc0.count_d1_reg[11]\(11 downto 0) => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(11 downto 0),
+      p_2_out => p_2_out,
       rd_clk => rd_clk,
-      rd_en => rd_en
+      rd_en => rd_en,
+      \wr_pntr_bin_reg[11]\(11 downto 0) => \wr_pntr_bin_reg[11]\(11 downto 0)
     );
-rpntr: entity work.\design_1_d_axi_i2s_audio_0_0_rd_bin_cntr__parameterized0_34\
+rpntr: entity work.\design_1_d_axi_i2s_audio_0_0_rd_bin_cntr__parameterized0_27\
      port map (
       D(11 downto 0) => rd_pntr_plus1(11 downto 0),
+      \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\(11 downto 0) => \^device_7series.no_bmm_info.sdp.simple_prim36.ram\(11 downto 0),
       E(0) => \gras.rsts_n_2\,
-      Q(11 downto 0) => \^q\(11 downto 0),
-      \gnxpm_cdc.rd_pntr_gc_reg[10]\(10 downto 0) => \gnxpm_cdc.rd_pntr_gc_reg[10]\(10 downto 0),
-      \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0) => \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0),
-      rd_clk => rd_clk
+      Q(0) => Q(0),
+      rd_clk => rd_clk,
+      \rd_pntr_gc_reg[10]\(10 downto 0) => \rd_pntr_gc_reg[10]\(10 downto 0)
     );
 end STRUCTURE;
 library IEEE;
@@ -18065,46 +17031,65 @@ use UNISIM.VCOMPONENTS.ALL;
 entity \design_1_d_axi_i2s_audio_0_0_wr_logic__parameterized0\ is
   port (
     full : out STD_LOGIC;
-    \gic0.gc0.count_d1_reg[11]\ : out STD_LOGIC;
-    Q : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    bin2gray : out STD_LOGIC_VECTOR ( 10 downto 0 );
+    \gic0.gc0.count_reg[11]\ : out STD_LOGIC;
+    \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\ : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    p_0_in10_out : out STD_LOGIC_VECTOR ( 10 downto 0 );
     wr_clk : in STD_LOGIC;
     \out\ : in STD_LOGIC;
     wr_en : in STD_LOGIC;
-    \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     RD_PNTR_WR : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    wr_rst_busy : in STD_LOGIC
+    \grstd1.grst_full.grst_f.rst_d3_reg\ : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_wr_logic__parameterized0\ : entity is "wr_logic";
 end \design_1_d_axi_i2s_audio_0_0_wr_logic__parameterized0\;
 
 architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_wr_logic__parameterized0\ is
-  signal \^gic0.gc0.count_d1_reg[11]\ : STD_LOGIC;
+  signal comp1 : STD_LOGIC;
+  signal comp2 : STD_LOGIC;
+  signal \^gic0.gc0.count_reg[11]\ : STD_LOGIC;
   signal p_13_out : STD_LOGIC_VECTOR ( 11 downto 0 );
+  signal ram_full_fb : STD_LOGIC;
+  signal ram_full_i : STD_LOGIC;
   signal wr_pntr_plus2 : STD_LOGIC_VECTOR ( 11 downto 0 );
 begin
-  \gic0.gc0.count_d1_reg[11]\ <= \^gic0.gc0.count_d1_reg[11]\;
+  \gic0.gc0.count_reg[11]\ <= \^gic0.gc0.count_reg[11]\;
 \gwas.wsts\: entity work.\design_1_d_axi_i2s_audio_0_0_wr_status_flags_as__parameterized0\
      port map (
       D(11 downto 0) => wr_pntr_plus2(11 downto 0),
+      E(0) => \^gic0.gc0.count_reg[11]\,
       Q(11 downto 0) => p_13_out(11 downto 0),
       RD_PNTR_WR(11 downto 0) => RD_PNTR_WR(11 downto 0),
+      comp1 => comp1,
+      comp2 => comp2,
       full => full,
-      \gic0.gc0.count_d1_reg[11]\ => \^gic0.gc0.count_d1_reg[11]\,
       \out\ => \out\,
+      ram_full_fb => ram_full_fb,
+      ram_full_i => ram_full_i,
       wr_clk => wr_clk,
-      wr_en => wr_en,
-      wr_rst_busy => wr_rst_busy
+      wr_en => wr_en
+    );
+\gwas.wsts/\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"55550400"
+    )
+        port map (
+      I0 => \grstd1.grst_full.grst_f.rst_d3_reg\,
+      I1 => comp2,
+      I2 => ram_full_fb,
+      I3 => wr_en,
+      I4 => comp1,
+      O => ram_full_i
     );
 wpntr: entity work.\design_1_d_axi_i2s_audio_0_0_wr_bin_cntr__parameterized0\
      port map (
       D(11 downto 0) => wr_pntr_plus2(11 downto 0),
-      \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\(11 downto 0) => Q(11 downto 0),
-      Q(11 downto 0) => p_13_out(11 downto 0),
-      bin2gray(10 downto 0) => bin2gray(10 downto 0),
-      \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0) => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      ram_full_fb_i_reg => \^gic0.gc0.count_d1_reg[11]\,
+      \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\(11 downto 0) => \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\(11 downto 0),
+      E(0) => \^gic0.gc0.count_reg[11]\,
+      Q(0) => Q(0),
+      \gic0.gc0.count_d2_reg[11]_0\(11 downto 0) => p_13_out(11 downto 0),
+      p_0_in10_out(10 downto 0) => p_0_in10_out(10 downto 0),
       wr_clk => wr_clk
     );
 end STRUCTURE;
@@ -18112,82 +17097,99 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_wr_logic__parameterized0_12\ is
+entity \design_1_d_axi_i2s_audio_0_0_wr_logic__parameterized0_9\ is
   port (
     full : out STD_LOGIC;
-    \gic0.gc0.count_d1_reg[11]\ : out STD_LOGIC;
-    Q : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    \gic0.gc0.count_reg[11]\ : out STD_LOGIC;
+    \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\ : out STD_LOGIC_VECTOR ( 11 downto 0 );
     D : out STD_LOGIC_VECTOR ( 10 downto 0 );
     wr_clk : in STD_LOGIC;
     \out\ : in STD_LOGIC;
     wr_en : in STD_LOGIC;
-    \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \gnxpm_cdc.rd_pntr_bin_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    wr_rst_busy : in STD_LOGIC
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \rd_pntr_bin_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    \grstd1.grst_full.grst_f.rst_d3_reg\ : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_wr_logic__parameterized0_12\ : entity is "wr_logic";
-end \design_1_d_axi_i2s_audio_0_0_wr_logic__parameterized0_12\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_wr_logic__parameterized0_9\ : entity is "wr_logic";
+end \design_1_d_axi_i2s_audio_0_0_wr_logic__parameterized0_9\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_wr_logic__parameterized0_12\ is
-  signal \^gic0.gc0.count_d1_reg[11]\ : STD_LOGIC;
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_wr_logic__parameterized0_9\ is
+  signal comp1 : STD_LOGIC;
+  signal comp2 : STD_LOGIC;
+  signal \^gic0.gc0.count_reg[11]\ : STD_LOGIC;
   signal p_13_out : STD_LOGIC_VECTOR ( 11 downto 0 );
+  signal ram_full_fb : STD_LOGIC;
+  signal ram_full_i : STD_LOGIC;
   signal wr_pntr_plus2 : STD_LOGIC_VECTOR ( 11 downto 0 );
 begin
-  \gic0.gc0.count_d1_reg[11]\ <= \^gic0.gc0.count_d1_reg[11]\;
-\gwas.wsts\: entity work.\design_1_d_axi_i2s_audio_0_0_wr_status_flags_as__parameterized0_29\
+  \gic0.gc0.count_reg[11]\ <= \^gic0.gc0.count_reg[11]\;
+\gwas.wsts\: entity work.\design_1_d_axi_i2s_audio_0_0_wr_status_flags_as__parameterized0_22\
      port map (
       D(11 downto 0) => wr_pntr_plus2(11 downto 0),
+      E(0) => \^gic0.gc0.count_reg[11]\,
       Q(11 downto 0) => p_13_out(11 downto 0),
+      comp1 => comp1,
+      comp2 => comp2,
       full => full,
-      \gic0.gc0.count_d1_reg[11]\ => \^gic0.gc0.count_d1_reg[11]\,
-      \gnxpm_cdc.rd_pntr_bin_reg[11]\(11 downto 0) => \gnxpm_cdc.rd_pntr_bin_reg[11]\(11 downto 0),
       \out\ => \out\,
+      ram_full_fb => ram_full_fb,
+      ram_full_i => ram_full_i,
+      \rd_pntr_bin_reg[11]\(11 downto 0) => \rd_pntr_bin_reg[11]\(11 downto 0),
       wr_clk => wr_clk,
-      wr_en => wr_en,
-      wr_rst_busy => wr_rst_busy
+      wr_en => wr_en
     );
-wpntr: entity work.\design_1_d_axi_i2s_audio_0_0_wr_bin_cntr__parameterized0_30\
+\gwas.wsts/\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"55550400"
+    )
+        port map (
+      I0 => \grstd1.grst_full.grst_f.rst_d3_reg\,
+      I1 => comp2,
+      I2 => ram_full_fb,
+      I3 => wr_en,
+      I4 => comp1,
+      O => ram_full_i
+    );
+wpntr: entity work.\design_1_d_axi_i2s_audio_0_0_wr_bin_cntr__parameterized0_23\
      port map (
       D(11 downto 0) => wr_pntr_plus2(11 downto 0),
-      \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\(11 downto 0) => Q(11 downto 0),
-      Q(11 downto 0) => p_13_out(11 downto 0),
-      \gnxpm_cdc.wr_pntr_gc_reg[10]\(10 downto 0) => D(10 downto 0),
-      \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0) => \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0),
-      ram_full_fb_i_reg => \^gic0.gc0.count_d1_reg[11]\,
-      wr_clk => wr_clk
+      \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\(11 downto 0) => \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\(11 downto 0),
+      E(0) => \^gic0.gc0.count_reg[11]\,
+      Q(0) => Q(0),
+      \gic0.gc0.count_d2_reg[11]_0\(11 downto 0) => p_13_out(11 downto 0),
+      wr_clk => wr_clk,
+      \wr_pntr_gc_reg[10]\(10 downto 0) => D(10 downto 0)
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_blk_mem_gen_top is
+entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_top\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 3 downto 0 );
     rd_clk : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gc0.count_d1_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \gic0.gc0.count_d2_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     din : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_blk_mem_gen_top : entity is "blk_mem_gen_top";
-end design_1_d_axi_i2s_audio_0_0_blk_mem_gen_top;
+end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_top\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_blk_mem_gen_top is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_top\ is
 begin
-\valid.cstr\: entity work.design_1_d_axi_i2s_audio_0_0_blk_mem_gen_generic_cstr
+\valid.cstr\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_generic_cstr\
      port map (
       E(0) => E(0),
+      Q(0) => Q(0),
       din(3 downto 0) => din(3 downto 0),
       dout(3 downto 0) => dout(3 downto 0),
       \gc0.count_d1_reg[3]\(3 downto 0) => \gc0.count_d1_reg[3]\(3 downto 0),
       \gic0.gc0.count_d2_reg[3]\(3 downto 0) => \gic0.gc0.count_d2_reg[3]\(3 downto 0),
-      \out\(0) => \out\(0),
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
       wr_clk => wr_clk
@@ -18204,8 +17206,8 @@ entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_top__parameterized0\ is
     rd_clk : in STD_LOGIC;
     ram_full_fb_i_reg : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \gic0.gc0.count_d2_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     din : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
@@ -18217,11 +17219,11 @@ architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_top__paramet
 begin
 \valid.cstr\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_generic_cstr__parameterized0\
      port map (
-      Q(11 downto 0) => Q(11 downto 0),
+      Q(0) => Q(0),
       din(23 downto 0) => din(23 downto 0),
       dout(23 downto 0) => dout(23 downto 0),
       \gc0.count_d1_reg[11]\(11 downto 0) => \gc0.count_d1_reg[11]\(11 downto 0),
-      \out\(0) => \out\(0),
+      \gic0.gc0.count_d2_reg[11]\(11 downto 0) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ram_full_fb_i_reg => ram_full_fb_i_reg,
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
@@ -18232,31 +17234,31 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_top__parameterized0_21\ is
+entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_top__parameterized0_14\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 23 downto 0 );
     wr_clk : in STD_LOGIC;
     rd_clk : in STD_LOGIC;
     ram_full_fb_i_reg : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \gic0.gc0.count_d2_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     din : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_top__parameterized0_21\ : entity is "blk_mem_gen_top";
-end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_top__parameterized0_21\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_top__parameterized0_14\ : entity is "blk_mem_gen_top";
+end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_top__parameterized0_14\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_top__parameterized0_21\ is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_top__parameterized0_14\ is
 begin
-\valid.cstr\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_generic_cstr__parameterized0_22\
+\valid.cstr\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_generic_cstr__parameterized0_15\
      port map (
-      Q(11 downto 0) => Q(11 downto 0),
+      Q(0) => Q(0),
       din(23 downto 0) => din(23 downto 0),
       dout(23 downto 0) => dout(23 downto 0),
       \gc0.count_d1_reg[11]\(11 downto 0) => \gc0.count_d1_reg[11]\(11 downto 0),
-      \out\(0) => \out\(0),
+      \gic0.gc0.count_d2_reg[11]\(11 downto 0) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ram_full_fb_i_reg => ram_full_fb_i_reg,
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
@@ -18267,32 +17269,30 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5_synth is
+entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3_synth\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 3 downto 0 );
     rd_clk : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gc0.count_d1_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \gic0.gc0.count_d2_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     din : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5_synth : entity is "blk_mem_gen_v8_3_5_synth";
-end design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5_synth;
+end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3_synth\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5_synth is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3_synth\ is
 begin
-\gnbram.gnativebmg.native_blk_mem_gen\: entity work.design_1_d_axi_i2s_audio_0_0_blk_mem_gen_top
+\gnbram.gnativebmg.native_blk_mem_gen\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_top\
      port map (
       E(0) => E(0),
+      Q(0) => Q(0),
       din(3 downto 0) => din(3 downto 0),
       dout(3 downto 0) => dout(3 downto 0),
       \gc0.count_d1_reg[3]\(3 downto 0) => \gc0.count_d1_reg[3]\(3 downto 0),
       \gic0.gc0.count_d2_reg[3]\(3 downto 0) => \gic0.gc0.count_d2_reg[3]\(3 downto 0),
-      \out\(0) => \out\(0),
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
       wr_clk => wr_clk
@@ -18302,31 +17302,31 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5_synth__parameterized0\ is
+entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3_synth__parameterized0\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 23 downto 0 );
     wr_clk : in STD_LOGIC;
     rd_clk : in STD_LOGIC;
     ram_full_fb_i_reg : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \gic0.gc0.count_d2_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     din : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5_synth__parameterized0\ : entity is "blk_mem_gen_v8_3_5_synth";
-end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5_synth__parameterized0\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3_synth__parameterized0\ : entity is "blk_mem_gen_v8_3_3_synth";
+end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3_synth__parameterized0\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5_synth__parameterized0\ is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3_synth__parameterized0\ is
 begin
 \gnbram.gnativebmg.native_blk_mem_gen\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_top__parameterized0\
      port map (
-      Q(11 downto 0) => Q(11 downto 0),
+      Q(0) => Q(0),
       din(23 downto 0) => din(23 downto 0),
       dout(23 downto 0) => dout(23 downto 0),
       \gc0.count_d1_reg[11]\(11 downto 0) => \gc0.count_d1_reg[11]\(11 downto 0),
-      \out\(0) => \out\(0),
+      \gic0.gc0.count_d2_reg[11]\(11 downto 0) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ram_full_fb_i_reg => ram_full_fb_i_reg,
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
@@ -18337,31 +17337,31 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5_synth__parameterized0_20\ is
+entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3_synth__parameterized0_13\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 23 downto 0 );
     wr_clk : in STD_LOGIC;
     rd_clk : in STD_LOGIC;
     ram_full_fb_i_reg : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \gic0.gc0.count_d2_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     din : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5_synth__parameterized0_20\ : entity is "blk_mem_gen_v8_3_5_synth";
-end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5_synth__parameterized0_20\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3_synth__parameterized0_13\ : entity is "blk_mem_gen_v8_3_3_synth";
+end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3_synth__parameterized0_13\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5_synth__parameterized0_20\ is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3_synth__parameterized0_13\ is
 begin
-\gnbram.gnativebmg.native_blk_mem_gen\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_top__parameterized0_21\
+\gnbram.gnativebmg.native_blk_mem_gen\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_top__parameterized0_14\
      port map (
-      Q(11 downto 0) => Q(11 downto 0),
+      Q(0) => Q(0),
       din(23 downto 0) => din(23 downto 0),
       dout(23 downto 0) => dout(23 downto 0),
       \gc0.count_d1_reg[11]\(11 downto 0) => \gc0.count_d1_reg[11]\(11 downto 0),
-      \out\(0) => \out\(0),
+      \gic0.gc0.count_d2_reg[11]\(11 downto 0) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ram_full_fb_i_reg => ram_full_fb_i_reg,
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
@@ -18372,32 +17372,30 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5 is
+entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 3 downto 0 );
     rd_clk : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gc0.count_d1_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \gic0.gc0.count_d2_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     din : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5 : entity is "blk_mem_gen_v8_3_5";
-end design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5;
+end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5 is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3\ is
 begin
-inst_blk_mem_gen: entity work.design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5_synth
+inst_blk_mem_gen: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3_synth\
      port map (
       E(0) => E(0),
+      Q(0) => Q(0),
       din(3 downto 0) => din(3 downto 0),
       dout(3 downto 0) => dout(3 downto 0),
       \gc0.count_d1_reg[3]\(3 downto 0) => \gc0.count_d1_reg[3]\(3 downto 0),
       \gic0.gc0.count_d2_reg[3]\(3 downto 0) => \gic0.gc0.count_d2_reg[3]\(3 downto 0),
-      \out\(0) => \out\(0),
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
       wr_clk => wr_clk
@@ -18407,31 +17405,31 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5__parameterized1\ is
+entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3__parameterized1\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 23 downto 0 );
     wr_clk : in STD_LOGIC;
     rd_clk : in STD_LOGIC;
     ram_full_fb_i_reg : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \gic0.gc0.count_d2_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     din : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5__parameterized1\ : entity is "blk_mem_gen_v8_3_5";
-end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5__parameterized1\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3__parameterized1\ : entity is "blk_mem_gen_v8_3_3";
+end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3__parameterized1\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5__parameterized1\ is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3__parameterized1\ is
 begin
-inst_blk_mem_gen: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5_synth__parameterized0\
+inst_blk_mem_gen: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3_synth__parameterized0\
      port map (
-      Q(11 downto 0) => Q(11 downto 0),
+      Q(0) => Q(0),
       din(23 downto 0) => din(23 downto 0),
       dout(23 downto 0) => dout(23 downto 0),
       \gc0.count_d1_reg[11]\(11 downto 0) => \gc0.count_d1_reg[11]\(11 downto 0),
-      \out\(0) => \out\(0),
+      \gic0.gc0.count_d2_reg[11]\(11 downto 0) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ram_full_fb_i_reg => ram_full_fb_i_reg,
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
@@ -18442,31 +17440,31 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5__parameterized1_19\ is
+entity \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3__parameterized1_12\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 23 downto 0 );
     wr_clk : in STD_LOGIC;
     rd_clk : in STD_LOGIC;
     ram_full_fb_i_reg : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \gic0.gc0.count_d2_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     din : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5__parameterized1_19\ : entity is "blk_mem_gen_v8_3_5";
-end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5__parameterized1_19\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3__parameterized1_12\ : entity is "blk_mem_gen_v8_3_3";
+end \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3__parameterized1_12\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5__parameterized1_19\ is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3__parameterized1_12\ is
 begin
-inst_blk_mem_gen: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5_synth__parameterized0_20\
+inst_blk_mem_gen: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3_synth__parameterized0_13\
      port map (
-      Q(11 downto 0) => Q(11 downto 0),
+      Q(0) => Q(0),
       din(23 downto 0) => din(23 downto 0),
       dout(23 downto 0) => dout(23 downto 0),
       \gc0.count_d1_reg[11]\(11 downto 0) => \gc0.count_d1_reg[11]\(11 downto 0),
-      \out\(0) => \out\(0),
+      \gic0.gc0.count_d2_reg[11]\(11 downto 0) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ram_full_fb_i_reg => ram_full_fb_i_reg,
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
@@ -18477,32 +17475,30 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_memory is
+entity \design_1_d_axi_i2s_audio_0_0_memory\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 3 downto 0 );
     rd_clk : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gc0.count_d1_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \gic0.gc0.count_d2_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     din : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_memory : entity is "memory";
-end design_1_d_axi_i2s_audio_0_0_memory;
+end \design_1_d_axi_i2s_audio_0_0_memory\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_memory is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_memory\ is
 begin
-\gbm.gbmg.gbmga.ngecc.bmg\: entity work.design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5
+\gbm.gbmg.gbmga.ngecc.bmg\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3\
      port map (
       E(0) => E(0),
+      Q(0) => Q(0),
       din(3 downto 0) => din(3 downto 0),
       dout(3 downto 0) => dout(3 downto 0),
       \gc0.count_d1_reg[3]\(3 downto 0) => \gc0.count_d1_reg[3]\(3 downto 0),
       \gic0.gc0.count_d2_reg[3]\(3 downto 0) => \gic0.gc0.count_d2_reg[3]\(3 downto 0),
-      \out\(0) => \out\(0),
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
       wr_clk => wr_clk
@@ -18519,8 +17515,8 @@ entity \design_1_d_axi_i2s_audio_0_0_memory__parameterized0\ is
     rd_clk : in STD_LOGIC;
     ram_full_fb_i_reg : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \gic0.gc0.count_d2_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     din : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
@@ -18530,13 +17526,13 @@ end \design_1_d_axi_i2s_audio_0_0_memory__parameterized0\;
 
 architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_memory__parameterized0\ is
 begin
-\gbm.gbmg.gbmga.ngecc.bmg\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5__parameterized1\
+\gbm.gbmg.gbmga.ngecc.bmg\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3__parameterized1\
      port map (
-      Q(11 downto 0) => Q(11 downto 0),
+      Q(0) => Q(0),
       din(23 downto 0) => din(23 downto 0),
       dout(23 downto 0) => dout(23 downto 0),
       \gc0.count_d1_reg[11]\(11 downto 0) => \gc0.count_d1_reg[11]\(11 downto 0),
-      \out\(0) => \out\(0),
+      \gic0.gc0.count_d2_reg[11]\(11 downto 0) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ram_full_fb_i_reg => ram_full_fb_i_reg,
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
@@ -18547,31 +17543,31 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_memory__parameterized0_13\ is
+entity \design_1_d_axi_i2s_audio_0_0_memory__parameterized0_10\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 23 downto 0 );
     wr_clk : in STD_LOGIC;
     rd_clk : in STD_LOGIC;
     ram_full_fb_i_reg : in STD_LOGIC;
     tmp_ram_rd_en : in STD_LOGIC;
-    \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    Q : in STD_LOGIC_VECTOR ( 0 to 0 );
+    \gic0.gc0.count_d2_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \gc0.count_d1_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     din : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_memory__parameterized0_13\ : entity is "memory";
-end \design_1_d_axi_i2s_audio_0_0_memory__parameterized0_13\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_memory__parameterized0_10\ : entity is "memory";
+end \design_1_d_axi_i2s_audio_0_0_memory__parameterized0_10\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_memory__parameterized0_13\ is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_memory__parameterized0_10\ is
 begin
-\gbm.gbmg.gbmga.ngecc.bmg\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_5__parameterized1_19\
+\gbm.gbmg.gbmga.ngecc.bmg\: entity work.\design_1_d_axi_i2s_audio_0_0_blk_mem_gen_v8_3_3__parameterized1_12\
      port map (
-      Q(11 downto 0) => Q(11 downto 0),
+      Q(0) => Q(0),
       din(23 downto 0) => din(23 downto 0),
       dout(23 downto 0) => dout(23 downto 0),
       \gc0.count_d1_reg[11]\(11 downto 0) => \gc0.count_d1_reg[11]\(11 downto 0),
-      \out\(0) => \out\(0),
+      \gic0.gc0.count_d2_reg[11]\(11 downto 0) => \gic0.gc0.count_d2_reg[11]\(11 downto 0),
       ram_full_fb_i_reg => ram_full_fb_i_reg,
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
@@ -18582,135 +17578,122 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo is
+entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo\ is
   port (
-    wr_rst_busy : out STD_LOGIC;
     dout : out STD_LOGIC_VECTOR ( 3 downto 0 );
     empty : out STD_LOGIC;
     full : out STD_LOGIC;
     rd_en : in STD_LOGIC;
+    wr_en : in STD_LOGIC;
     rd_clk : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
     din : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    rst : in STD_LOGIC;
-    wr_en : in STD_LOGIC
+    rst : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo : entity is "fifo_generator_ramfifo";
-end design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo;
+end \design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo is
-  signal \gntv_or_sync_fifo.gcx.clkx_n_4\ : STD_LOGIC;
-  signal \gntv_or_sync_fifo.gcx.clkx_n_5\ : STD_LOGIC;
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo\ is
+  signal RD_RST : STD_LOGIC;
+  signal \gntv_or_sync_fifo.gcx.clkx_n_0\ : STD_LOGIC;
   signal \gntv_or_sync_fifo.gl0.rd_n_6\ : STD_LOGIC;
   signal \gntv_or_sync_fifo.gl0.rd_n_7\ : STD_LOGIC;
   signal \gntv_or_sync_fifo.gl0.rd_n_8\ : STD_LOGIC;
-  signal \gntv_or_sync_fifo.gl0.wr_n_4\ : STD_LOGIC;
-  signal gray2bin : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal p_0_out_0 : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal \gntv_or_sync_fifo.gl0.wr_n_5\ : STD_LOGIC;
+  signal \gwas.wsts/ram_full_i\ : STD_LOGIC;
+  signal p_0_out : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal p_12_out : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal p_13_out : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal p_18_out : STD_LOGIC;
   signal p_23_out : STD_LOGIC_VECTOR ( 3 to 3 );
   signal p_2_out : STD_LOGIC;
-  signal p_5_out : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal rd_pntr_plus1 : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal rd_rst_i : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal rd_rst_i : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rst_full_ff_i : STD_LOGIC;
+  signal rst_full_gen_i : STD_LOGIC;
+  signal rstblk_n_3 : STD_LOGIC;
   signal tmp_ram_rd_en : STD_LOGIC;
   signal wr_pntr_plus2 : STD_LOGIC_VECTOR ( 2 downto 0 );
-  signal \^wr_rst_busy\ : STD_LOGIC;
-  signal wr_rst_i : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal wr_rst_reg : STD_LOGIC_VECTOR ( 2 downto 0 );
 begin
-  wr_rst_busy <= \^wr_rst_busy\;
-\gntv_or_sync_fifo.gcx.clkx\: entity work.design_1_d_axi_i2s_audio_0_0_clk_x_pntrs
+\gntv_or_sync_fifo.gcx.clkx\: entity work.\design_1_d_axi_i2s_audio_0_0_clk_x_pntrs\
      port map (
-      AR(0) => wr_rst_i(0),
-      D(0) => gray2bin(0),
-      Q(3 downto 0) => p_0_out_0(3 downto 0),
-      \gc0.count_d1_reg[2]\(2) => \gntv_or_sync_fifo.gl0.rd_n_6\,
-      \gc0.count_d1_reg[2]\(1) => \gntv_or_sync_fifo.gl0.rd_n_7\,
-      \gc0.count_d1_reg[2]\(0) => \gntv_or_sync_fifo.gl0.rd_n_8\,
+      D(2) => \gntv_or_sync_fifo.gl0.rd_n_6\,
+      D(1) => \gntv_or_sync_fifo.gl0.rd_n_7\,
+      D(0) => \gntv_or_sync_fifo.gl0.rd_n_8\,
+      Q(3 downto 0) => p_0_out(3 downto 0),
       \gc0.count_reg[3]\(3 downto 0) => rd_pntr_plus1(3 downto 0),
       \gic0.gc0.count_d1_reg[3]\(3 downto 0) => p_13_out(3 downto 0),
       \gic0.gc0.count_d2_reg[3]\(3 downto 0) => p_12_out(3 downto 0),
       \gic0.gc0.count_reg[2]\(2 downto 0) => wr_pntr_plus2(2 downto 0),
-      \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0) => rd_rst_i(1),
-      \out\(3 downto 0) => p_5_out(3 downto 0),
-      ram_empty_fb_i_reg => \gntv_or_sync_fifo.gcx.clkx_n_4\,
-      ram_empty_fb_i_reg_0 => p_2_out,
-      ram_full_fb_i_reg => \gntv_or_sync_fifo.gcx.clkx_n_5\,
-      ram_full_fb_i_reg_0(0) => p_23_out(3),
-      ram_full_fb_i_reg_1 => \gntv_or_sync_fifo.gl0.wr_n_4\,
+      \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0) => RD_RST,
+      \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]\(0) => wr_rst_reg(0),
+      \out\ => rst_full_gen_i,
+      p_2_out => p_2_out,
+      ram_empty_fb_i_reg => \gntv_or_sync_fifo.gcx.clkx_n_0\,
+      ram_full_fb_i_reg(0) => p_23_out(3),
+      ram_full_fb_i_reg_0 => \gntv_or_sync_fifo.gl0.wr_n_5\,
+      ram_full_i => \gwas.wsts/ram_full_i\,
       rd_clk => rd_clk,
       rd_en => rd_en,
-      wr_clk => wr_clk,
-      wr_rst_busy => \^wr_rst_busy\
+      wr_clk => wr_clk
     );
-\gntv_or_sync_fifo.gcx.clkx/\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"6996"
-    )
-        port map (
-      I0 => p_5_out(1),
-      I1 => p_5_out(0),
-      I2 => p_5_out(3),
-      I3 => p_5_out(2),
-      O => gray2bin(0)
-    );
-\gntv_or_sync_fifo.gl0.rd\: entity work.design_1_d_axi_i2s_audio_0_0_rd_logic
+\gntv_or_sync_fifo.gl0.rd\: entity work.\design_1_d_axi_i2s_audio_0_0_rd_logic\
      port map (
-      AR(0) => rd_rst_i(2),
-      \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram\(3 downto 0) => p_0_out_0(3 downto 0),
-      Q(3 downto 0) => rd_pntr_plus1(3 downto 0),
+      D(2) => \gntv_or_sync_fifo.gl0.rd_n_6\,
+      D(1) => \gntv_or_sync_fifo.gl0.rd_n_7\,
+      D(0) => \gntv_or_sync_fifo.gl0.rd_n_8\,
+      \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram\(3 downto 0) => p_0_out(3 downto 0),
+      Q(1) => rstblk_n_3,
+      Q(0) => rd_rst_i(0),
       empty => empty,
-      \gnxpm_cdc.rd_pntr_gc_reg[2]\(2) => \gntv_or_sync_fifo.gl0.rd_n_6\,
-      \gnxpm_cdc.rd_pntr_gc_reg[2]\(1) => \gntv_or_sync_fifo.gl0.rd_n_7\,
-      \gnxpm_cdc.rd_pntr_gc_reg[2]\(0) => \gntv_or_sync_fifo.gl0.rd_n_8\,
-      \out\ => p_2_out,
-      ram_empty_fb_i_reg => \gntv_or_sync_fifo.gcx.clkx_n_4\,
+      \gc0.count_d1_reg[3]\(3 downto 0) => rd_pntr_plus1(3 downto 0),
+      p_2_out => p_2_out,
+      ram_empty_fb_i_reg => \gntv_or_sync_fifo.gcx.clkx_n_0\,
       rd_clk => rd_clk,
       rd_en => rd_en
     );
-\gntv_or_sync_fifo.gl0.wr\: entity work.design_1_d_axi_i2s_audio_0_0_wr_logic
+\gntv_or_sync_fifo.gl0.wr\: entity work.\design_1_d_axi_i2s_audio_0_0_wr_logic\
      port map (
-      AR(0) => wr_rst_i(1),
       \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram\(3 downto 0) => p_12_out(3 downto 0),
       E(0) => p_18_out,
       Q(2 downto 0) => wr_pntr_plus2(2 downto 0),
       full => full,
-      \gic0.gc0.count_d1_reg[3]\ => \gntv_or_sync_fifo.gcx.clkx_n_5\,
       \gic0.gc0.count_d2_reg[3]\(3 downto 0) => p_13_out(3 downto 0),
-      \gnxpm_cdc.rd_pntr_bin_reg[3]\(0) => p_23_out(3),
+      \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\(0) => wr_rst_reg(2),
       \out\ => rst_full_ff_i,
-      ram_full_fb_i_reg => \gntv_or_sync_fifo.gl0.wr_n_4\,
+      ram_full_fb_i_reg => \gntv_or_sync_fifo.gl0.wr_n_5\,
+      ram_full_i => \gwas.wsts/ram_full_i\,
+      \rd_pntr_bin_reg[3]\(0) => p_23_out(3),
       wr_clk => wr_clk,
       wr_en => wr_en
     );
-\gntv_or_sync_fifo.mem\: entity work.design_1_d_axi_i2s_audio_0_0_memory
+\gntv_or_sync_fifo.mem\: entity work.\design_1_d_axi_i2s_audio_0_0_memory\
      port map (
       E(0) => p_18_out,
+      Q(0) => rd_rst_i(0),
       din(3 downto 0) => din(3 downto 0),
       dout(3 downto 0) => dout(3 downto 0),
-      \gc0.count_d1_reg[3]\(3 downto 0) => p_0_out_0(3 downto 0),
+      \gc0.count_d1_reg[3]\(3 downto 0) => p_0_out(3 downto 0),
       \gic0.gc0.count_d2_reg[3]\(3 downto 0) => p_12_out(3 downto 0),
-      \out\(0) => rd_rst_i(0),
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
       wr_clk => wr_clk
     );
-rstblk: entity work.design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo_41
+rstblk: entity work.\design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo_34\
      port map (
-      \gc0.count_reg[1]\(2 downto 0) => rd_rst_i(2 downto 0),
-      \grstd1.grst_full.grst_f.rst_d3_reg_0\ => rst_full_ff_i,
-      \out\(1 downto 0) => wr_rst_i(1 downto 0),
-      ram_empty_fb_i_reg => p_2_out,
+      Q(2) => rstblk_n_3,
+      Q(1) => RD_RST,
+      Q(0) => rd_rst_i(0),
+      \gic0.gc0.count_reg[0]\(1) => wr_rst_reg(2),
+      \gic0.gc0.count_reg[0]\(0) => wr_rst_reg(0),
+      \out\ => rst_full_ff_i,
+      p_2_out => p_2_out,
+      ram_full_fb_i_reg => rst_full_gen_i,
       rd_clk => rd_clk,
       rd_en => rd_en,
       rst => rst,
       tmp_ram_rd_en => tmp_ram_rd_en,
-      wr_clk => wr_clk,
-      wr_rst_busy => \^wr_rst_busy\
+      wr_clk => wr_clk
     );
 end STRUCTURE;
 library IEEE;
@@ -18719,7 +17702,6 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo__parameterized0\ is
   port (
-    wr_rst_busy : out STD_LOGIC;
     dout : out STD_LOGIC_VECTOR ( 23 downto 0 );
     empty : out STD_LOGIC;
     full : out STD_LOGIC;
@@ -18735,7 +17717,8 @@ entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo__parameterized0\ is
 end \design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo__parameterized0\;
 
 architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo__parameterized0\ is
-  signal bin2gray : STD_LOGIC_VECTOR ( 10 downto 0 );
+  signal RD_RST : STD_LOGIC;
+  signal \^rst\ : STD_LOGIC;
   signal \gntv_or_sync_fifo.gl0.rd_n_14\ : STD_LOGIC;
   signal \gntv_or_sync_fifo.gl0.rd_n_15\ : STD_LOGIC;
   signal \gntv_or_sync_fifo.gl0.rd_n_16\ : STD_LOGIC;
@@ -18748,108 +17731,110 @@ architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo__
   signal \gntv_or_sync_fifo.gl0.rd_n_23\ : STD_LOGIC;
   signal \gntv_or_sync_fifo.gl0.rd_n_24\ : STD_LOGIC;
   signal \gntv_or_sync_fifo.gl0.wr_n_1\ : STD_LOGIC;
+  signal p_0_in10_out : STD_LOGIC_VECTOR ( 10 downto 0 );
   signal p_0_out : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal p_12_out : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal p_22_out : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal p_23_out : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal p_2_out : STD_LOGIC;
-  signal rd_rst_i : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal rd_rst_i : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal rst_full_ff_i : STD_LOGIC;
+  signal rst_full_gen_i : STD_LOGIC;
   signal tmp_ram_rd_en : STD_LOGIC;
-  signal \^wr_rst_busy\ : STD_LOGIC;
-  signal wr_rst_i : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal wr_rst_i : STD_LOGIC_VECTOR ( 0 to 0 );
 begin
-  wr_rst_busy <= \^wr_rst_busy\;
 \gntv_or_sync_fifo.gcx.clkx\: entity work.\design_1_d_axi_i2s_audio_0_0_clk_x_pntrs__parameterized0\
      port map (
-      AR(0) => wr_rst_i(0),
-      I32(11) => p_0_out(11),
-      I32(10) => \gntv_or_sync_fifo.gl0.rd_n_14\,
-      I32(9) => \gntv_or_sync_fifo.gl0.rd_n_15\,
-      I32(8) => \gntv_or_sync_fifo.gl0.rd_n_16\,
-      I32(7) => \gntv_or_sync_fifo.gl0.rd_n_17\,
-      I32(6) => \gntv_or_sync_fifo.gl0.rd_n_18\,
-      I32(5) => \gntv_or_sync_fifo.gl0.rd_n_19\,
-      I32(4) => \gntv_or_sync_fifo.gl0.rd_n_20\,
-      I32(3) => \gntv_or_sync_fifo.gl0.rd_n_21\,
-      I32(2) => \gntv_or_sync_fifo.gl0.rd_n_22\,
-      I32(1) => \gntv_or_sync_fifo.gl0.rd_n_23\,
-      I32(0) => \gntv_or_sync_fifo.gl0.rd_n_24\,
+      I15(11) => p_0_out(11),
+      I15(10) => \gntv_or_sync_fifo.gl0.rd_n_14\,
+      I15(9) => \gntv_or_sync_fifo.gl0.rd_n_15\,
+      I15(8) => \gntv_or_sync_fifo.gl0.rd_n_16\,
+      I15(7) => \gntv_or_sync_fifo.gl0.rd_n_17\,
+      I15(6) => \gntv_or_sync_fifo.gl0.rd_n_18\,
+      I15(5) => \gntv_or_sync_fifo.gl0.rd_n_19\,
+      I15(4) => \gntv_or_sync_fifo.gl0.rd_n_20\,
+      I15(3) => \gntv_or_sync_fifo.gl0.rd_n_21\,
+      I15(2) => \gntv_or_sync_fifo.gl0.rd_n_22\,
+      I15(1) => \gntv_or_sync_fifo.gl0.rd_n_23\,
+      I15(0) => \gntv_or_sync_fifo.gl0.rd_n_24\,
+      Q(0) => wr_rst_i(0),
       RD_PNTR_WR(11 downto 0) => p_23_out(11 downto 0),
       WR_PNTR_RD(11 downto 0) => p_22_out(11 downto 0),
-      bin2gray(11) => p_12_out(11),
-      bin2gray(10 downto 0) => bin2gray(10 downto 0),
       \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0) => rd_rst_i(1),
+      p_0_in10_out(11) => p_12_out(11),
+      p_0_in10_out(10 downto 0) => p_0_in10_out(10 downto 0),
       rd_clk => rd_clk,
       wr_clk => wr_clk
     );
 \gntv_or_sync_fifo.gl0.rd\: entity work.\design_1_d_axi_i2s_audio_0_0_rd_logic__parameterized0\
      port map (
-      I32(10) => \gntv_or_sync_fifo.gl0.rd_n_14\,
-      I32(9) => \gntv_or_sync_fifo.gl0.rd_n_15\,
-      I32(8) => \gntv_or_sync_fifo.gl0.rd_n_16\,
-      I32(7) => \gntv_or_sync_fifo.gl0.rd_n_17\,
-      I32(6) => \gntv_or_sync_fifo.gl0.rd_n_18\,
-      I32(5) => \gntv_or_sync_fifo.gl0.rd_n_19\,
-      I32(4) => \gntv_or_sync_fifo.gl0.rd_n_20\,
-      I32(3) => \gntv_or_sync_fifo.gl0.rd_n_21\,
-      I32(2) => \gntv_or_sync_fifo.gl0.rd_n_22\,
-      I32(1) => \gntv_or_sync_fifo.gl0.rd_n_23\,
-      I32(0) => \gntv_or_sync_fifo.gl0.rd_n_24\,
-      Q(11 downto 0) => p_0_out(11 downto 0),
+      \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\(11 downto 0) => p_0_out(11 downto 0),
+      I15(10) => \gntv_or_sync_fifo.gl0.rd_n_14\,
+      I15(9) => \gntv_or_sync_fifo.gl0.rd_n_15\,
+      I15(8) => \gntv_or_sync_fifo.gl0.rd_n_16\,
+      I15(7) => \gntv_or_sync_fifo.gl0.rd_n_17\,
+      I15(6) => \gntv_or_sync_fifo.gl0.rd_n_18\,
+      I15(5) => \gntv_or_sync_fifo.gl0.rd_n_19\,
+      I15(4) => \gntv_or_sync_fifo.gl0.rd_n_20\,
+      I15(3) => \gntv_or_sync_fifo.gl0.rd_n_21\,
+      I15(2) => \gntv_or_sync_fifo.gl0.rd_n_22\,
+      I15(1) => \gntv_or_sync_fifo.gl0.rd_n_23\,
+      I15(0) => \gntv_or_sync_fifo.gl0.rd_n_24\,
+      Q(1) => RD_RST,
+      Q(0) => rd_rst_i(0),
       WR_PNTR_RD(11 downto 0) => p_22_out(11 downto 0),
       empty => empty,
-      \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0) => rd_rst_i(2),
-      \out\ => p_2_out,
+      p_2_out => p_2_out,
       rd_clk => rd_clk,
       rd_en => rd_en
     );
 \gntv_or_sync_fifo.gl0.wr\: entity work.\design_1_d_axi_i2s_audio_0_0_wr_logic__parameterized0\
      port map (
-      Q(11 downto 0) => p_12_out(11 downto 0),
+      \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\(11 downto 0) => p_12_out(11 downto 0),
+      Q(0) => \^rst\,
       RD_PNTR_WR(11 downto 0) => p_23_out(11 downto 0),
-      bin2gray(10 downto 0) => bin2gray(10 downto 0),
       full => full,
-      \gic0.gc0.count_d1_reg[11]\ => \gntv_or_sync_fifo.gl0.wr_n_1\,
-      \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0) => wr_rst_i(1),
+      \gic0.gc0.count_reg[11]\ => \gntv_or_sync_fifo.gl0.wr_n_1\,
+      \grstd1.grst_full.grst_f.rst_d3_reg\ => rst_full_gen_i,
       \out\ => rst_full_ff_i,
+      p_0_in10_out(10 downto 0) => p_0_in10_out(10 downto 0),
       wr_clk => wr_clk,
-      wr_en => wr_en,
-      wr_rst_busy => \^wr_rst_busy\
+      wr_en => wr_en
     );
 \gntv_or_sync_fifo.mem\: entity work.\design_1_d_axi_i2s_audio_0_0_memory__parameterized0\
      port map (
-      Q(11 downto 0) => p_12_out(11 downto 0),
+      Q(0) => rd_rst_i(0),
       din(23 downto 0) => din(23 downto 0),
       dout(23 downto 0) => dout(23 downto 0),
       \gc0.count_d1_reg[11]\(11 downto 0) => p_0_out(11 downto 0),
-      \out\(0) => rd_rst_i(0),
+      \gic0.gc0.count_d2_reg[11]\(11 downto 0) => p_12_out(11 downto 0),
       ram_full_fb_i_reg => \gntv_or_sync_fifo.gl0.wr_n_1\,
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
       wr_clk => wr_clk
     );
-rstblk: entity work.design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo
+rstblk: entity work.\design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo\
      port map (
-      \gc0.count_reg[0]\(2 downto 0) => rd_rst_i(2 downto 0),
-      \grstd1.grst_full.grst_f.rst_d3_reg_0\ => rst_full_ff_i,
-      \out\(1 downto 0) => wr_rst_i(1 downto 0),
-      ram_empty_fb_i_reg => p_2_out,
+      Q(2) => RD_RST,
+      Q(1 downto 0) => rd_rst_i(1 downto 0),
+      \gic0.gc0.count_reg[0]\(1) => \^rst\,
+      \gic0.gc0.count_reg[0]\(0) => wr_rst_i(0),
+      \out\ => rst_full_ff_i,
+      p_2_out => p_2_out,
+      ram_full_i_reg => rst_full_gen_i,
       rd_clk => rd_clk,
       rd_en => rd_en,
       rst => rst,
       tmp_ram_rd_en => tmp_ram_rd_en,
-      wr_clk => wr_clk,
-      wr_rst_busy => \^wr_rst_busy\
+      wr_clk => wr_clk
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo__parameterized0_9\ is
+entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo__parameterized0_6\ is
   port (
-    wr_rst_busy : out STD_LOGIC;
     dout : out STD_LOGIC_VECTOR ( 23 downto 0 );
     empty : out STD_LOGIC;
     full : out STD_LOGIC;
@@ -18861,11 +17846,12 @@ entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo__parameterized0_9\ i
     rst : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo__parameterized0_9\ : entity is "fifo_generator_ramfifo";
-end \design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo__parameterized0_9\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo__parameterized0_6\ : entity is "fifo_generator_ramfifo";
+end \design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo__parameterized0_6\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo__parameterized0_9\ is
-  signal bin2gray : STD_LOGIC_VECTOR ( 10 downto 0 );
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo__parameterized0_6\ is
+  signal RD_RST : STD_LOGIC;
+  signal \^rst\ : STD_LOGIC;
   signal \gntv_or_sync_fifo.gl0.rd_n_14\ : STD_LOGIC;
   signal \gntv_or_sync_fifo.gl0.rd_n_15\ : STD_LOGIC;
   signal \gntv_or_sync_fifo.gl0.rd_n_16\ : STD_LOGIC;
@@ -18878,24 +17864,23 @@ architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo__
   signal \gntv_or_sync_fifo.gl0.rd_n_23\ : STD_LOGIC;
   signal \gntv_or_sync_fifo.gl0.rd_n_24\ : STD_LOGIC;
   signal \gntv_or_sync_fifo.gl0.wr_n_1\ : STD_LOGIC;
+  signal p_0_in10_out : STD_LOGIC_VECTOR ( 10 downto 0 );
   signal p_0_out : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal p_12_out : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal p_22_out : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal p_23_out : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal p_2_out : STD_LOGIC;
-  signal rd_rst_i : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal rd_rst_i : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal rst_full_ff_i : STD_LOGIC;
+  signal rst_full_gen_i : STD_LOGIC;
   signal tmp_ram_rd_en : STD_LOGIC;
-  signal \^wr_rst_busy\ : STD_LOGIC;
-  signal wr_rst_i : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal wr_rst_i : STD_LOGIC_VECTOR ( 0 to 0 );
 begin
-  wr_rst_busy <= \^wr_rst_busy\;
-\gntv_or_sync_fifo.gcx.clkx\: entity work.\design_1_d_axi_i2s_audio_0_0_clk_x_pntrs__parameterized0_10\
+\gntv_or_sync_fifo.gcx.clkx\: entity work.\design_1_d_axi_i2s_audio_0_0_clk_x_pntrs__parameterized0_7\
      port map (
-      AR(0) => wr_rst_i(0),
       D(11) => p_12_out(11),
-      D(10 downto 0) => bin2gray(10 downto 0),
-      Q(11 downto 0) => p_22_out(11 downto 0),
+      D(10 downto 0) => p_0_in10_out(10 downto 0),
+      Q(0) => wr_rst_i(0),
       \gc0.count_d1_reg[11]\(11) => p_0_out(11),
       \gc0.count_d1_reg[11]\(10) => \gntv_or_sync_fifo.gl0.rd_n_14\,
       \gc0.count_d1_reg[11]\(9) => \gntv_or_sync_fifo.gl0.rd_n_15\,
@@ -18909,94 +17894,95 @@ begin
       \gc0.count_d1_reg[11]\(1) => \gntv_or_sync_fifo.gl0.rd_n_23\,
       \gc0.count_d1_reg[11]\(0) => \gntv_or_sync_fifo.gl0.rd_n_24\,
       \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]\(0) => rd_rst_i(1),
-      ram_full_fb_i_reg(11 downto 0) => p_23_out(11 downto 0),
+      ram_empty_fb_i_reg(11 downto 0) => p_22_out(11 downto 0),
+      ram_full_i_reg(11 downto 0) => p_23_out(11 downto 0),
       rd_clk => rd_clk,
       wr_clk => wr_clk
     );
-\gntv_or_sync_fifo.gl0.rd\: entity work.\design_1_d_axi_i2s_audio_0_0_rd_logic__parameterized0_11\
+\gntv_or_sync_fifo.gl0.rd\: entity work.\design_1_d_axi_i2s_audio_0_0_rd_logic__parameterized0_8\
      port map (
-      Q(11 downto 0) => p_0_out(11 downto 0),
+      \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\(11 downto 0) => p_0_out(11 downto 0),
+      Q(1) => RD_RST,
+      Q(0) => rd_rst_i(0),
       empty => empty,
-      \gnxpm_cdc.rd_pntr_gc_reg[10]\(10) => \gntv_or_sync_fifo.gl0.rd_n_14\,
-      \gnxpm_cdc.rd_pntr_gc_reg[10]\(9) => \gntv_or_sync_fifo.gl0.rd_n_15\,
-      \gnxpm_cdc.rd_pntr_gc_reg[10]\(8) => \gntv_or_sync_fifo.gl0.rd_n_16\,
-      \gnxpm_cdc.rd_pntr_gc_reg[10]\(7) => \gntv_or_sync_fifo.gl0.rd_n_17\,
-      \gnxpm_cdc.rd_pntr_gc_reg[10]\(6) => \gntv_or_sync_fifo.gl0.rd_n_18\,
-      \gnxpm_cdc.rd_pntr_gc_reg[10]\(5) => \gntv_or_sync_fifo.gl0.rd_n_19\,
-      \gnxpm_cdc.rd_pntr_gc_reg[10]\(4) => \gntv_or_sync_fifo.gl0.rd_n_20\,
-      \gnxpm_cdc.rd_pntr_gc_reg[10]\(3) => \gntv_or_sync_fifo.gl0.rd_n_21\,
-      \gnxpm_cdc.rd_pntr_gc_reg[10]\(2) => \gntv_or_sync_fifo.gl0.rd_n_22\,
-      \gnxpm_cdc.rd_pntr_gc_reg[10]\(1) => \gntv_or_sync_fifo.gl0.rd_n_23\,
-      \gnxpm_cdc.rd_pntr_gc_reg[10]\(0) => \gntv_or_sync_fifo.gl0.rd_n_24\,
-      \gnxpm_cdc.wr_pntr_bin_reg[11]\(11 downto 0) => p_22_out(11 downto 0),
-      \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]\(0) => rd_rst_i(2),
-      \out\ => p_2_out,
+      p_2_out => p_2_out,
       rd_clk => rd_clk,
-      rd_en => rd_en
+      rd_en => rd_en,
+      \rd_pntr_gc_reg[10]\(10) => \gntv_or_sync_fifo.gl0.rd_n_14\,
+      \rd_pntr_gc_reg[10]\(9) => \gntv_or_sync_fifo.gl0.rd_n_15\,
+      \rd_pntr_gc_reg[10]\(8) => \gntv_or_sync_fifo.gl0.rd_n_16\,
+      \rd_pntr_gc_reg[10]\(7) => \gntv_or_sync_fifo.gl0.rd_n_17\,
+      \rd_pntr_gc_reg[10]\(6) => \gntv_or_sync_fifo.gl0.rd_n_18\,
+      \rd_pntr_gc_reg[10]\(5) => \gntv_or_sync_fifo.gl0.rd_n_19\,
+      \rd_pntr_gc_reg[10]\(4) => \gntv_or_sync_fifo.gl0.rd_n_20\,
+      \rd_pntr_gc_reg[10]\(3) => \gntv_or_sync_fifo.gl0.rd_n_21\,
+      \rd_pntr_gc_reg[10]\(2) => \gntv_or_sync_fifo.gl0.rd_n_22\,
+      \rd_pntr_gc_reg[10]\(1) => \gntv_or_sync_fifo.gl0.rd_n_23\,
+      \rd_pntr_gc_reg[10]\(0) => \gntv_or_sync_fifo.gl0.rd_n_24\,
+      \wr_pntr_bin_reg[11]\(11 downto 0) => p_22_out(11 downto 0)
     );
-\gntv_or_sync_fifo.gl0.wr\: entity work.\design_1_d_axi_i2s_audio_0_0_wr_logic__parameterized0_12\
+\gntv_or_sync_fifo.gl0.wr\: entity work.\design_1_d_axi_i2s_audio_0_0_wr_logic__parameterized0_9\
      port map (
-      D(10 downto 0) => bin2gray(10 downto 0),
-      Q(11 downto 0) => p_12_out(11 downto 0),
+      D(10 downto 0) => p_0_in10_out(10 downto 0),
+      \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\(11 downto 0) => p_12_out(11 downto 0),
+      Q(0) => \^rst\,
       full => full,
-      \gic0.gc0.count_d1_reg[11]\ => \gntv_or_sync_fifo.gl0.wr_n_1\,
-      \gnxpm_cdc.rd_pntr_bin_reg[11]\(11 downto 0) => p_23_out(11 downto 0),
-      \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]\(0) => wr_rst_i(1),
+      \gic0.gc0.count_reg[11]\ => \gntv_or_sync_fifo.gl0.wr_n_1\,
+      \grstd1.grst_full.grst_f.rst_d3_reg\ => rst_full_gen_i,
       \out\ => rst_full_ff_i,
+      \rd_pntr_bin_reg[11]\(11 downto 0) => p_23_out(11 downto 0),
       wr_clk => wr_clk,
-      wr_en => wr_en,
-      wr_rst_busy => \^wr_rst_busy\
+      wr_en => wr_en
     );
-\gntv_or_sync_fifo.mem\: entity work.\design_1_d_axi_i2s_audio_0_0_memory__parameterized0_13\
+\gntv_or_sync_fifo.mem\: entity work.\design_1_d_axi_i2s_audio_0_0_memory__parameterized0_10\
      port map (
-      Q(11 downto 0) => p_12_out(11 downto 0),
+      Q(0) => rd_rst_i(0),
       din(23 downto 0) => din(23 downto 0),
       dout(23 downto 0) => dout(23 downto 0),
       \gc0.count_d1_reg[11]\(11 downto 0) => p_0_out(11 downto 0),
-      \out\(0) => rd_rst_i(0),
+      \gic0.gc0.count_d2_reg[11]\(11 downto 0) => p_12_out(11 downto 0),
       ram_full_fb_i_reg => \gntv_or_sync_fifo.gl0.wr_n_1\,
       rd_clk => rd_clk,
       tmp_ram_rd_en => tmp_ram_rd_en,
       wr_clk => wr_clk
     );
-rstblk: entity work.design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo_14
+rstblk: entity work.\design_1_d_axi_i2s_audio_0_0_reset_blk_ramfifo_11\
      port map (
-      \gc0.count_reg[0]\(2 downto 0) => rd_rst_i(2 downto 0),
-      \grstd1.grst_full.grst_f.rst_d3_reg_0\ => rst_full_ff_i,
-      \out\(1 downto 0) => wr_rst_i(1 downto 0),
-      ram_empty_fb_i_reg => p_2_out,
+      Q(2) => RD_RST,
+      Q(1 downto 0) => rd_rst_i(1 downto 0),
+      \gic0.gc0.count_reg[0]\(1) => \^rst\,
+      \gic0.gc0.count_reg[0]\(0) => wr_rst_i(0),
+      \out\ => rst_full_ff_i,
+      p_2_out => p_2_out,
+      ram_full_i_reg => rst_full_gen_i,
       rd_clk => rd_clk,
       rd_en => rd_en,
       rst => rst,
       tmp_ram_rd_en => tmp_ram_rd_en,
-      wr_clk => wr_clk,
-      wr_rst_busy => \^wr_rst_busy\
+      wr_clk => wr_clk
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_fifo_generator_top is
+entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_top\ is
   port (
-    wr_rst_busy : out STD_LOGIC;
     dout : out STD_LOGIC_VECTOR ( 3 downto 0 );
     empty : out STD_LOGIC;
     full : out STD_LOGIC;
     rd_en : in STD_LOGIC;
+    wr_en : in STD_LOGIC;
     rd_clk : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
     din : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    rst : in STD_LOGIC;
-    wr_en : in STD_LOGIC
+    rst : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_fifo_generator_top : entity is "fifo_generator_top";
-end design_1_d_axi_i2s_audio_0_0_fifo_generator_top;
+end \design_1_d_axi_i2s_audio_0_0_fifo_generator_top\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_fifo_generator_top is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_top\ is
 begin
-\grf.rf\: entity work.design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo
+\grf.rf\: entity work.\design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo\
      port map (
       din(3 downto 0) => din(3 downto 0),
       dout(3 downto 0) => dout(3 downto 0),
@@ -19006,8 +17992,7 @@ begin
       rd_en => rd_en,
       rst => rst,
       wr_clk => wr_clk,
-      wr_en => wr_en,
-      wr_rst_busy => wr_rst_busy
+      wr_en => wr_en
     );
 end STRUCTURE;
 library IEEE;
@@ -19016,7 +18001,6 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_top__parameterized0\ is
   port (
-    wr_rst_busy : out STD_LOGIC;
     dout : out STD_LOGIC_VECTOR ( 23 downto 0 );
     empty : out STD_LOGIC;
     full : out STD_LOGIC;
@@ -19043,17 +18027,15 @@ begin
       rd_en => rd_en,
       rst => rst,
       wr_clk => wr_clk,
-      wr_en => wr_en,
-      wr_rst_busy => wr_rst_busy
+      wr_en => wr_en
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_top__parameterized0_8\ is
+entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_top__parameterized0_5\ is
   port (
-    wr_rst_busy : out STD_LOGIC;
     dout : out STD_LOGIC_VECTOR ( 23 downto 0 );
     empty : out STD_LOGIC;
     full : out STD_LOGIC;
@@ -19065,12 +18047,12 @@ entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_top__parameterized0_8\ is
     rst : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_fifo_generator_top__parameterized0_8\ : entity is "fifo_generator_top";
-end \design_1_d_axi_i2s_audio_0_0_fifo_generator_top__parameterized0_8\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_fifo_generator_top__parameterized0_5\ : entity is "fifo_generator_top";
+end \design_1_d_axi_i2s_audio_0_0_fifo_generator_top__parameterized0_5\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_top__parameterized0_8\ is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_top__parameterized0_5\ is
 begin
-\grf.rf\: entity work.\design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo__parameterized0_9\
+\grf.rf\: entity work.\design_1_d_axi_i2s_audio_0_0_fifo_generator_ramfifo__parameterized0_6\
      port map (
       din(23 downto 0) => din(23 downto 0),
       dout(23 downto 0) => dout(23 downto 0),
@@ -19080,34 +18062,30 @@ begin
       rd_en => rd_en,
       rst => rst,
       wr_clk => wr_clk,
-      wr_en => wr_en,
-      wr_rst_busy => wr_rst_busy
+      wr_en => wr_en
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3_synth is
+entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1_synth\ is
   port (
-    wr_rst_busy : out STD_LOGIC;
     dout : out STD_LOGIC_VECTOR ( 3 downto 0 );
     empty : out STD_LOGIC;
     full : out STD_LOGIC;
     rd_en : in STD_LOGIC;
+    wr_en : in STD_LOGIC;
     rd_clk : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
     din : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    rst : in STD_LOGIC;
-    wr_en : in STD_LOGIC
+    rst : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3_synth : entity is "fifo_generator_v13_1_3_synth";
-end design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3_synth;
+end \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1_synth\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3_synth is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1_synth\ is
 begin
-\gconvfifo.rf\: entity work.design_1_d_axi_i2s_audio_0_0_fifo_generator_top
+\gconvfifo.rf\: entity work.\design_1_d_axi_i2s_audio_0_0_fifo_generator_top\
      port map (
       din(3 downto 0) => din(3 downto 0),
       dout(3 downto 0) => dout(3 downto 0),
@@ -19117,17 +18095,15 @@ begin
       rd_en => rd_en,
       rst => rst,
       wr_clk => wr_clk,
-      wr_en => wr_en,
-      wr_rst_busy => wr_rst_busy
+      wr_en => wr_en
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3_synth__parameterized0\ is
+entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1_synth__parameterized0\ is
   port (
-    wr_rst_busy : out STD_LOGIC;
     dout : out STD_LOGIC_VECTOR ( 23 downto 0 );
     empty : out STD_LOGIC;
     full : out STD_LOGIC;
@@ -19139,10 +18115,10 @@ entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3_synth__parameterized
     rst : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3_synth__parameterized0\ : entity is "fifo_generator_v13_1_3_synth";
-end \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3_synth__parameterized0\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1_synth__parameterized0\ : entity is "fifo_generator_v13_1_1_synth";
+end \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1_synth__parameterized0\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3_synth__parameterized0\ is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1_synth__parameterized0\ is
 begin
 \gconvfifo.rf\: entity work.\design_1_d_axi_i2s_audio_0_0_fifo_generator_top__parameterized0\
      port map (
@@ -19154,17 +18130,15 @@ begin
       rd_en => rd_en,
       rst => rst,
       wr_clk => wr_clk,
-      wr_en => wr_en,
-      wr_rst_busy => wr_rst_busy
+      wr_en => wr_en
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3_synth__parameterized0_7\ is
+entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1_synth__parameterized0_4\ is
   port (
-    wr_rst_busy : out STD_LOGIC;
     dout : out STD_LOGIC_VECTOR ( 23 downto 0 );
     empty : out STD_LOGIC;
     full : out STD_LOGIC;
@@ -19176,12 +18150,12 @@ entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3_synth__parameterized
     rst : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3_synth__parameterized0_7\ : entity is "fifo_generator_v13_1_3_synth";
-end \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3_synth__parameterized0_7\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1_synth__parameterized0_4\ : entity is "fifo_generator_v13_1_1_synth";
+end \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1_synth__parameterized0_4\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3_synth__parameterized0_7\ is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1_synth__parameterized0_4\ is
 begin
-\gconvfifo.rf\: entity work.\design_1_d_axi_i2s_audio_0_0_fifo_generator_top__parameterized0_8\
+\gconvfifo.rf\: entity work.\design_1_d_axi_i2s_audio_0_0_fifo_generator_top__parameterized0_5\
      port map (
       din(23 downto 0) => din(23 downto 0),
       dout(23 downto 0) => dout(23 downto 0),
@@ -19191,15 +18165,14 @@ begin
       rd_en => rd_en,
       rst => rst,
       wr_clk => wr_clk,
-      wr_en => wr_en,
-      wr_rst_busy => wr_rst_busy
+      wr_en => wr_en
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 is
+entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ is
   port (
     backup : in STD_LOGIC;
     backup_marker : in STD_LOGIC;
@@ -19434,414 +18407,412 @@ entity design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 is
     axis_prog_empty : out STD_LOGIC
   );
   attribute C_ADD_NGC_CONSTRAINT : integer;
-  attribute C_ADD_NGC_CONSTRAINT of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_ADD_NGC_CONSTRAINT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_APPLICATION_TYPE_AXIS : integer;
-  attribute C_APPLICATION_TYPE_AXIS of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_APPLICATION_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_APPLICATION_TYPE_RACH : integer;
-  attribute C_APPLICATION_TYPE_RACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_APPLICATION_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_APPLICATION_TYPE_RDCH : integer;
-  attribute C_APPLICATION_TYPE_RDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_APPLICATION_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_APPLICATION_TYPE_WACH : integer;
-  attribute C_APPLICATION_TYPE_WACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_APPLICATION_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_APPLICATION_TYPE_WDCH : integer;
-  attribute C_APPLICATION_TYPE_WDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_APPLICATION_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_APPLICATION_TYPE_WRCH : integer;
-  attribute C_APPLICATION_TYPE_WRCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_APPLICATION_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_AXIS_TDATA_WIDTH : integer;
-  attribute C_AXIS_TDATA_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 8;
+  attribute C_AXIS_TDATA_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 8;
   attribute C_AXIS_TDEST_WIDTH : integer;
-  attribute C_AXIS_TDEST_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_AXIS_TDEST_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_AXIS_TID_WIDTH : integer;
-  attribute C_AXIS_TID_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_AXIS_TID_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_AXIS_TKEEP_WIDTH : integer;
-  attribute C_AXIS_TKEEP_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_AXIS_TKEEP_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_AXIS_TSTRB_WIDTH : integer;
-  attribute C_AXIS_TSTRB_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_AXIS_TSTRB_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_AXIS_TUSER_WIDTH : integer;
-  attribute C_AXIS_TUSER_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 4;
+  attribute C_AXIS_TUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 4;
   attribute C_AXIS_TYPE : integer;
-  attribute C_AXIS_TYPE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_AXIS_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_AXI_ADDR_WIDTH : integer;
-  attribute C_AXI_ADDR_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 32;
+  attribute C_AXI_ADDR_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 32;
   attribute C_AXI_ARUSER_WIDTH : integer;
-  attribute C_AXI_ARUSER_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_AXI_ARUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_AXI_AWUSER_WIDTH : integer;
-  attribute C_AXI_AWUSER_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_AXI_AWUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_AXI_BUSER_WIDTH : integer;
-  attribute C_AXI_BUSER_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_AXI_BUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_AXI_DATA_WIDTH : integer;
-  attribute C_AXI_DATA_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 64;
+  attribute C_AXI_DATA_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 64;
   attribute C_AXI_ID_WIDTH : integer;
-  attribute C_AXI_ID_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_AXI_ID_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_AXI_LEN_WIDTH : integer;
-  attribute C_AXI_LEN_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 8;
+  attribute C_AXI_LEN_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 8;
   attribute C_AXI_LOCK_WIDTH : integer;
-  attribute C_AXI_LOCK_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_AXI_LOCK_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_AXI_RUSER_WIDTH : integer;
-  attribute C_AXI_RUSER_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_AXI_RUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_AXI_TYPE : integer;
-  attribute C_AXI_TYPE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_AXI_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_AXI_WUSER_WIDTH : integer;
-  attribute C_AXI_WUSER_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_AXI_WUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_COMMON_CLOCK : integer;
-  attribute C_COMMON_CLOCK of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_COMMON_CLOCK of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_COUNT_TYPE : integer;
-  attribute C_COUNT_TYPE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_COUNT_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_DATA_COUNT_WIDTH : integer;
-  attribute C_DATA_COUNT_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 4;
+  attribute C_DATA_COUNT_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 4;
   attribute C_DEFAULT_VALUE : string;
-  attribute C_DEFAULT_VALUE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is "BlankString";
+  attribute C_DEFAULT_VALUE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is "BlankString";
   attribute C_DIN_WIDTH : integer;
-  attribute C_DIN_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 4;
+  attribute C_DIN_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 4;
   attribute C_DIN_WIDTH_AXIS : integer;
-  attribute C_DIN_WIDTH_AXIS of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_DIN_WIDTH_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_DIN_WIDTH_RACH : integer;
-  attribute C_DIN_WIDTH_RACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 32;
+  attribute C_DIN_WIDTH_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 32;
   attribute C_DIN_WIDTH_RDCH : integer;
-  attribute C_DIN_WIDTH_RDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 64;
+  attribute C_DIN_WIDTH_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 64;
   attribute C_DIN_WIDTH_WACH : integer;
-  attribute C_DIN_WIDTH_WACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_DIN_WIDTH_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_DIN_WIDTH_WDCH : integer;
-  attribute C_DIN_WIDTH_WDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 64;
+  attribute C_DIN_WIDTH_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 64;
   attribute C_DIN_WIDTH_WRCH : integer;
-  attribute C_DIN_WIDTH_WRCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 2;
+  attribute C_DIN_WIDTH_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 2;
   attribute C_DOUT_RST_VAL : string;
-  attribute C_DOUT_RST_VAL of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is "0";
+  attribute C_DOUT_RST_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is "0";
   attribute C_DOUT_WIDTH : integer;
-  attribute C_DOUT_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 4;
+  attribute C_DOUT_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 4;
   attribute C_ENABLE_RLOCS : integer;
-  attribute C_ENABLE_RLOCS of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_ENABLE_RLOCS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_ENABLE_RST_SYNC : integer;
-  attribute C_ENABLE_RST_SYNC of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_ENABLE_RST_SYNC of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_EN_SAFETY_CKT : integer;
-  attribute C_EN_SAFETY_CKT of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_EN_SAFETY_CKT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_ERROR_INJECTION_TYPE : integer;
-  attribute C_ERROR_INJECTION_TYPE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_AXIS : integer;
-  attribute C_ERROR_INJECTION_TYPE_AXIS of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_RACH : integer;
-  attribute C_ERROR_INJECTION_TYPE_RACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_RDCH : integer;
-  attribute C_ERROR_INJECTION_TYPE_RDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_WACH : integer;
-  attribute C_ERROR_INJECTION_TYPE_WACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_WDCH : integer;
-  attribute C_ERROR_INJECTION_TYPE_WDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_WRCH : integer;
-  attribute C_ERROR_INJECTION_TYPE_WRCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_FAMILY : string;
-  attribute C_FAMILY of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is "zynq";
+  attribute C_FAMILY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is "zynq";
   attribute C_FULL_FLAGS_RST_VAL : integer;
-  attribute C_FULL_FLAGS_RST_VAL of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_FULL_FLAGS_RST_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_HAS_ALMOST_EMPTY : integer;
-  attribute C_HAS_ALMOST_EMPTY of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_ALMOST_EMPTY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_ALMOST_FULL : integer;
-  attribute C_HAS_ALMOST_FULL of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_ALMOST_FULL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_AXIS_TDATA : integer;
-  attribute C_HAS_AXIS_TDATA of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_HAS_AXIS_TDATA of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_HAS_AXIS_TDEST : integer;
-  attribute C_HAS_AXIS_TDEST of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_AXIS_TDEST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_AXIS_TID : integer;
-  attribute C_HAS_AXIS_TID of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_AXIS_TID of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_AXIS_TKEEP : integer;
-  attribute C_HAS_AXIS_TKEEP of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_AXIS_TKEEP of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_AXIS_TLAST : integer;
-  attribute C_HAS_AXIS_TLAST of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_AXIS_TLAST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_AXIS_TREADY : integer;
-  attribute C_HAS_AXIS_TREADY of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_HAS_AXIS_TREADY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_HAS_AXIS_TSTRB : integer;
-  attribute C_HAS_AXIS_TSTRB of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_AXIS_TSTRB of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_AXIS_TUSER : integer;
-  attribute C_HAS_AXIS_TUSER of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_HAS_AXIS_TUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_HAS_AXI_ARUSER : integer;
-  attribute C_HAS_AXI_ARUSER of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_AXI_ARUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_AXI_AWUSER : integer;
-  attribute C_HAS_AXI_AWUSER of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_AXI_AWUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_AXI_BUSER : integer;
-  attribute C_HAS_AXI_BUSER of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_AXI_BUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_AXI_ID : integer;
-  attribute C_HAS_AXI_ID of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_AXI_ID of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_AXI_RD_CHANNEL : integer;
-  attribute C_HAS_AXI_RD_CHANNEL of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_HAS_AXI_RD_CHANNEL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_HAS_AXI_RUSER : integer;
-  attribute C_HAS_AXI_RUSER of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_AXI_RUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_AXI_WR_CHANNEL : integer;
-  attribute C_HAS_AXI_WR_CHANNEL of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_HAS_AXI_WR_CHANNEL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_HAS_AXI_WUSER : integer;
-  attribute C_HAS_AXI_WUSER of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_AXI_WUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_BACKUP : integer;
-  attribute C_HAS_BACKUP of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_BACKUP of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_DATA_COUNT : integer;
-  attribute C_HAS_DATA_COUNT of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_DATA_COUNT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_DATA_COUNTS_AXIS : integer;
-  attribute C_HAS_DATA_COUNTS_AXIS of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_DATA_COUNTS_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_DATA_COUNTS_RACH : integer;
-  attribute C_HAS_DATA_COUNTS_RACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_DATA_COUNTS_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_DATA_COUNTS_RDCH : integer;
-  attribute C_HAS_DATA_COUNTS_RDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_DATA_COUNTS_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_DATA_COUNTS_WACH : integer;
-  attribute C_HAS_DATA_COUNTS_WACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_DATA_COUNTS_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_DATA_COUNTS_WDCH : integer;
-  attribute C_HAS_DATA_COUNTS_WDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_DATA_COUNTS_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_DATA_COUNTS_WRCH : integer;
-  attribute C_HAS_DATA_COUNTS_WRCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_DATA_COUNTS_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_INT_CLK : integer;
-  attribute C_HAS_INT_CLK of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_INT_CLK of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_MASTER_CE : integer;
-  attribute C_HAS_MASTER_CE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_MASTER_CE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_MEMINIT_FILE : integer;
-  attribute C_HAS_MEMINIT_FILE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_MEMINIT_FILE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_OVERFLOW : integer;
-  attribute C_HAS_OVERFLOW of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_OVERFLOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_PROG_FLAGS_AXIS : integer;
-  attribute C_HAS_PROG_FLAGS_AXIS of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_PROG_FLAGS_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_PROG_FLAGS_RACH : integer;
-  attribute C_HAS_PROG_FLAGS_RACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_PROG_FLAGS_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_PROG_FLAGS_RDCH : integer;
-  attribute C_HAS_PROG_FLAGS_RDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_PROG_FLAGS_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_PROG_FLAGS_WACH : integer;
-  attribute C_HAS_PROG_FLAGS_WACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_PROG_FLAGS_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_PROG_FLAGS_WDCH : integer;
-  attribute C_HAS_PROG_FLAGS_WDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_PROG_FLAGS_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_PROG_FLAGS_WRCH : integer;
-  attribute C_HAS_PROG_FLAGS_WRCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_PROG_FLAGS_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_RD_DATA_COUNT : integer;
-  attribute C_HAS_RD_DATA_COUNT of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_RD_DATA_COUNT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_RD_RST : integer;
-  attribute C_HAS_RD_RST of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_RD_RST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_RST : integer;
-  attribute C_HAS_RST of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_HAS_RST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_HAS_SLAVE_CE : integer;
-  attribute C_HAS_SLAVE_CE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_SLAVE_CE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_SRST : integer;
-  attribute C_HAS_SRST of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_SRST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_UNDERFLOW : integer;
-  attribute C_HAS_UNDERFLOW of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_UNDERFLOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_VALID : integer;
-  attribute C_HAS_VALID of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_VALID of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_WR_ACK : integer;
-  attribute C_HAS_WR_ACK of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_WR_ACK of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_WR_DATA_COUNT : integer;
-  attribute C_HAS_WR_DATA_COUNT of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_WR_DATA_COUNT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_HAS_WR_RST : integer;
-  attribute C_HAS_WR_RST of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_HAS_WR_RST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_IMPLEMENTATION_TYPE : integer;
-  attribute C_IMPLEMENTATION_TYPE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 2;
+  attribute C_IMPLEMENTATION_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 2;
   attribute C_IMPLEMENTATION_TYPE_AXIS : integer;
-  attribute C_IMPLEMENTATION_TYPE_AXIS of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_RACH : integer;
-  attribute C_IMPLEMENTATION_TYPE_RACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_RDCH : integer;
-  attribute C_IMPLEMENTATION_TYPE_RDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_WACH : integer;
-  attribute C_IMPLEMENTATION_TYPE_WACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_WDCH : integer;
-  attribute C_IMPLEMENTATION_TYPE_WDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_WRCH : integer;
-  attribute C_IMPLEMENTATION_TYPE_WRCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_INIT_WR_PNTR_VAL : integer;
-  attribute C_INIT_WR_PNTR_VAL of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_INIT_WR_PNTR_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_INTERFACE_TYPE : integer;
-  attribute C_INTERFACE_TYPE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_INTERFACE_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_MEMORY_TYPE : integer;
-  attribute C_MEMORY_TYPE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_MEMORY_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_MIF_FILE_NAME : string;
-  attribute C_MIF_FILE_NAME of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is "BlankString";
+  attribute C_MIF_FILE_NAME of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is "BlankString";
   attribute C_MSGON_VAL : integer;
-  attribute C_MSGON_VAL of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_MSGON_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_OPTIMIZATION_MODE : integer;
-  attribute C_OPTIMIZATION_MODE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_OPTIMIZATION_MODE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_OVERFLOW_LOW : integer;
-  attribute C_OVERFLOW_LOW of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_OVERFLOW_LOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_POWER_SAVING_MODE : integer;
-  attribute C_POWER_SAVING_MODE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_POWER_SAVING_MODE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_PRELOAD_LATENCY : integer;
-  attribute C_PRELOAD_LATENCY of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_PRELOAD_LATENCY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_PRELOAD_REGS : integer;
-  attribute C_PRELOAD_REGS of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_PRELOAD_REGS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_PRIM_FIFO_TYPE : string;
-  attribute C_PRIM_FIFO_TYPE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is "512x36";
+  attribute C_PRIM_FIFO_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is "512x36";
   attribute C_PRIM_FIFO_TYPE_AXIS : string;
-  attribute C_PRIM_FIFO_TYPE_AXIS of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is "1kx18";
+  attribute C_PRIM_FIFO_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is "1kx18";
   attribute C_PRIM_FIFO_TYPE_RACH : string;
-  attribute C_PRIM_FIFO_TYPE_RACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is "512x36";
+  attribute C_PRIM_FIFO_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is "512x36";
   attribute C_PRIM_FIFO_TYPE_RDCH : string;
-  attribute C_PRIM_FIFO_TYPE_RDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is "1kx36";
+  attribute C_PRIM_FIFO_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is "1kx36";
   attribute C_PRIM_FIFO_TYPE_WACH : string;
-  attribute C_PRIM_FIFO_TYPE_WACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is "512x36";
+  attribute C_PRIM_FIFO_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is "512x36";
   attribute C_PRIM_FIFO_TYPE_WDCH : string;
-  attribute C_PRIM_FIFO_TYPE_WDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is "1kx36";
+  attribute C_PRIM_FIFO_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is "1kx36";
   attribute C_PRIM_FIFO_TYPE_WRCH : string;
-  attribute C_PRIM_FIFO_TYPE_WRCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is "512x36";
+  attribute C_PRIM_FIFO_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is "512x36";
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 2;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 2;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_NEGATE_VAL : integer;
-  attribute C_PROG_EMPTY_THRESH_NEGATE_VAL of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 3;
+  attribute C_PROG_EMPTY_THRESH_NEGATE_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 3;
   attribute C_PROG_EMPTY_TYPE : integer;
-  attribute C_PROG_EMPTY_TYPE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_PROG_EMPTY_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_PROG_EMPTY_TYPE_AXIS : integer;
-  attribute C_PROG_EMPTY_TYPE_AXIS of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_PROG_EMPTY_TYPE_RACH : integer;
-  attribute C_PROG_EMPTY_TYPE_RACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_PROG_EMPTY_TYPE_RDCH : integer;
-  attribute C_PROG_EMPTY_TYPE_RDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_PROG_EMPTY_TYPE_WACH : integer;
-  attribute C_PROG_EMPTY_TYPE_WACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_PROG_EMPTY_TYPE_WDCH : integer;
-  attribute C_PROG_EMPTY_TYPE_WDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_PROG_EMPTY_TYPE_WRCH : integer;
-  attribute C_PROG_EMPTY_TYPE_WRCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 13;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 13;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_AXIS : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_AXIS of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_RACH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_RACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_RDCH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_RDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_WACH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_WDCH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_WRCH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WRCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1023;
   attribute C_PROG_FULL_THRESH_NEGATE_VAL : integer;
-  attribute C_PROG_FULL_THRESH_NEGATE_VAL of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 12;
+  attribute C_PROG_FULL_THRESH_NEGATE_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 12;
   attribute C_PROG_FULL_TYPE : integer;
-  attribute C_PROG_FULL_TYPE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_PROG_FULL_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_PROG_FULL_TYPE_AXIS : integer;
-  attribute C_PROG_FULL_TYPE_AXIS of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_PROG_FULL_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_PROG_FULL_TYPE_RACH : integer;
-  attribute C_PROG_FULL_TYPE_RACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_PROG_FULL_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_PROG_FULL_TYPE_RDCH : integer;
-  attribute C_PROG_FULL_TYPE_RDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_PROG_FULL_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_PROG_FULL_TYPE_WACH : integer;
-  attribute C_PROG_FULL_TYPE_WACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_PROG_FULL_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_PROG_FULL_TYPE_WDCH : integer;
-  attribute C_PROG_FULL_TYPE_WDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_PROG_FULL_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_PROG_FULL_TYPE_WRCH : integer;
-  attribute C_PROG_FULL_TYPE_WRCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_PROG_FULL_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_RACH_TYPE : integer;
-  attribute C_RACH_TYPE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_RACH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_RDCH_TYPE : integer;
-  attribute C_RDCH_TYPE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_RDCH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_RD_DATA_COUNT_WIDTH : integer;
-  attribute C_RD_DATA_COUNT_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 4;
+  attribute C_RD_DATA_COUNT_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 4;
   attribute C_RD_DEPTH : integer;
-  attribute C_RD_DEPTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 16;
+  attribute C_RD_DEPTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 16;
   attribute C_RD_FREQ : integer;
-  attribute C_RD_FREQ of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_RD_FREQ of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_RD_PNTR_WIDTH : integer;
-  attribute C_RD_PNTR_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 4;
+  attribute C_RD_PNTR_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 4;
   attribute C_REG_SLICE_MODE_AXIS : integer;
-  attribute C_REG_SLICE_MODE_AXIS of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_REG_SLICE_MODE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_REG_SLICE_MODE_RACH : integer;
-  attribute C_REG_SLICE_MODE_RACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_REG_SLICE_MODE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_REG_SLICE_MODE_RDCH : integer;
-  attribute C_REG_SLICE_MODE_RDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_REG_SLICE_MODE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_REG_SLICE_MODE_WACH : integer;
-  attribute C_REG_SLICE_MODE_WACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_REG_SLICE_MODE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_REG_SLICE_MODE_WDCH : integer;
-  attribute C_REG_SLICE_MODE_WDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_REG_SLICE_MODE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_REG_SLICE_MODE_WRCH : integer;
-  attribute C_REG_SLICE_MODE_WRCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_REG_SLICE_MODE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_SELECT_XPM : integer;
-  attribute C_SELECT_XPM of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_SELECT_XPM of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_SYNCHRONIZER_STAGE : integer;
-  attribute C_SYNCHRONIZER_STAGE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 2;
+  attribute C_SYNCHRONIZER_STAGE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 2;
   attribute C_UNDERFLOW_LOW : integer;
-  attribute C_UNDERFLOW_LOW of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_UNDERFLOW_LOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_USE_COMMON_OVERFLOW : integer;
-  attribute C_USE_COMMON_OVERFLOW of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_USE_COMMON_OVERFLOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_USE_COMMON_UNDERFLOW : integer;
-  attribute C_USE_COMMON_UNDERFLOW of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_USE_COMMON_UNDERFLOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_USE_DEFAULT_SETTINGS : integer;
-  attribute C_USE_DEFAULT_SETTINGS of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_USE_DEFAULT_SETTINGS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_USE_DOUT_RST : integer;
-  attribute C_USE_DOUT_RST of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_USE_DOUT_RST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_USE_ECC : integer;
-  attribute C_USE_ECC of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_USE_ECC of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_USE_ECC_AXIS : integer;
-  attribute C_USE_ECC_AXIS of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_USE_ECC_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_USE_ECC_RACH : integer;
-  attribute C_USE_ECC_RACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_USE_ECC_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_USE_ECC_RDCH : integer;
-  attribute C_USE_ECC_RDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_USE_ECC_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_USE_ECC_WACH : integer;
-  attribute C_USE_ECC_WACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_USE_ECC_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_USE_ECC_WDCH : integer;
-  attribute C_USE_ECC_WDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_USE_ECC_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_USE_ECC_WRCH : integer;
-  attribute C_USE_ECC_WRCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_USE_ECC_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_USE_EMBEDDED_REG : integer;
-  attribute C_USE_EMBEDDED_REG of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_USE_EMBEDDED_REG of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_USE_FIFO16_FLAGS : integer;
-  attribute C_USE_FIFO16_FLAGS of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_USE_FIFO16_FLAGS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_USE_FWFT_DATA_COUNT : integer;
-  attribute C_USE_FWFT_DATA_COUNT of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_USE_FWFT_DATA_COUNT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_USE_PIPELINE_REG : integer;
-  attribute C_USE_PIPELINE_REG of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_USE_PIPELINE_REG of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_VALID_LOW : integer;
-  attribute C_VALID_LOW of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_VALID_LOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_WACH_TYPE : integer;
-  attribute C_WACH_TYPE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_WACH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_WDCH_TYPE : integer;
-  attribute C_WDCH_TYPE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_WDCH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_WRCH_TYPE : integer;
-  attribute C_WRCH_TYPE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_WRCH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_WR_ACK_LOW : integer;
-  attribute C_WR_ACK_LOW of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 0;
+  attribute C_WR_ACK_LOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 0;
   attribute C_WR_DATA_COUNT_WIDTH : integer;
-  attribute C_WR_DATA_COUNT_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 4;
+  attribute C_WR_DATA_COUNT_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 4;
   attribute C_WR_DEPTH : integer;
-  attribute C_WR_DEPTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 16;
+  attribute C_WR_DEPTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 16;
   attribute C_WR_DEPTH_AXIS : integer;
-  attribute C_WR_DEPTH_AXIS of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1024;
+  attribute C_WR_DEPTH_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1024;
   attribute C_WR_DEPTH_RACH : integer;
-  attribute C_WR_DEPTH_RACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 16;
+  attribute C_WR_DEPTH_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 16;
   attribute C_WR_DEPTH_RDCH : integer;
-  attribute C_WR_DEPTH_RDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1024;
+  attribute C_WR_DEPTH_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1024;
   attribute C_WR_DEPTH_WACH : integer;
-  attribute C_WR_DEPTH_WACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 16;
+  attribute C_WR_DEPTH_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 16;
   attribute C_WR_DEPTH_WDCH : integer;
-  attribute C_WR_DEPTH_WDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1024;
+  attribute C_WR_DEPTH_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1024;
   attribute C_WR_DEPTH_WRCH : integer;
-  attribute C_WR_DEPTH_WRCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 16;
+  attribute C_WR_DEPTH_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 16;
   attribute C_WR_FREQ : integer;
-  attribute C_WR_FREQ of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
+  attribute C_WR_FREQ of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
   attribute C_WR_PNTR_WIDTH : integer;
-  attribute C_WR_PNTR_WIDTH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 4;
+  attribute C_WR_PNTR_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 4;
   attribute C_WR_PNTR_WIDTH_AXIS : integer;
-  attribute C_WR_PNTR_WIDTH_AXIS of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 10;
+  attribute C_WR_PNTR_WIDTH_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 10;
   attribute C_WR_PNTR_WIDTH_RACH : integer;
-  attribute C_WR_PNTR_WIDTH_RACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 4;
+  attribute C_WR_PNTR_WIDTH_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 4;
   attribute C_WR_PNTR_WIDTH_RDCH : integer;
-  attribute C_WR_PNTR_WIDTH_RDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 10;
+  attribute C_WR_PNTR_WIDTH_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 10;
   attribute C_WR_PNTR_WIDTH_WACH : integer;
-  attribute C_WR_PNTR_WIDTH_WACH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 4;
+  attribute C_WR_PNTR_WIDTH_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 4;
   attribute C_WR_PNTR_WIDTH_WDCH : integer;
-  attribute C_WR_PNTR_WIDTH_WDCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 10;
+  attribute C_WR_PNTR_WIDTH_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 10;
   attribute C_WR_PNTR_WIDTH_WRCH : integer;
-  attribute C_WR_PNTR_WIDTH_WRCH of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 4;
+  attribute C_WR_PNTR_WIDTH_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 4;
   attribute C_WR_RESPONSE_LATENCY : integer;
-  attribute C_WR_RESPONSE_LATENCY of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 : entity is "fifo_generator_v13_1_3";
-end design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3;
+  attribute C_WR_RESPONSE_LATENCY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ : entity is 1;
+end \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3 is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\ is
   signal \<const0>\ : STD_LOGIC;
   signal \<const1>\ : STD_LOGIC;
 begin
@@ -20351,6 +19322,7 @@ begin
   wr_data_count(2) <= \<const0>\;
   wr_data_count(1) <= \<const0>\;
   wr_data_count(0) <= \<const0>\;
+  wr_rst_busy <= \<const0>\;
 GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
@@ -20359,7 +19331,7 @@ VCC: unisim.vcomponents.VCC
      port map (
       P => \<const1>\
     );
-inst_fifo_gen: entity work.design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3_synth
+inst_fifo_gen: entity work.\design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1_synth\
      port map (
       din(3 downto 0) => din(3 downto 0),
       dout(3 downto 0) => dout(3 downto 0),
@@ -20369,15 +19341,14 @@ inst_fifo_gen: entity work.design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3_s
       rd_en => rd_en,
       rst => rst,
       wr_clk => wr_clk,
-      wr_en => wr_en,
-      wr_rst_busy => wr_rst_busy
+      wr_en => wr_en
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ is
+entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ is
   port (
     backup : in STD_LOGIC;
     backup_marker : in STD_LOGIC;
@@ -20612,414 +19583,414 @@ entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ is
     axis_prog_empty : out STD_LOGIC
   );
   attribute C_ADD_NGC_CONSTRAINT : integer;
-  attribute C_ADD_NGC_CONSTRAINT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_ADD_NGC_CONSTRAINT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_APPLICATION_TYPE_AXIS : integer;
-  attribute C_APPLICATION_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_APPLICATION_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_APPLICATION_TYPE_RACH : integer;
-  attribute C_APPLICATION_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_APPLICATION_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_APPLICATION_TYPE_RDCH : integer;
-  attribute C_APPLICATION_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_APPLICATION_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_APPLICATION_TYPE_WACH : integer;
-  attribute C_APPLICATION_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_APPLICATION_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_APPLICATION_TYPE_WDCH : integer;
-  attribute C_APPLICATION_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_APPLICATION_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_APPLICATION_TYPE_WRCH : integer;
-  attribute C_APPLICATION_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_APPLICATION_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_AXIS_TDATA_WIDTH : integer;
-  attribute C_AXIS_TDATA_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 8;
+  attribute C_AXIS_TDATA_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 8;
   attribute C_AXIS_TDEST_WIDTH : integer;
-  attribute C_AXIS_TDEST_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_AXIS_TDEST_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_AXIS_TID_WIDTH : integer;
-  attribute C_AXIS_TID_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_AXIS_TID_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_AXIS_TKEEP_WIDTH : integer;
-  attribute C_AXIS_TKEEP_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_AXIS_TKEEP_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_AXIS_TSTRB_WIDTH : integer;
-  attribute C_AXIS_TSTRB_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_AXIS_TSTRB_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_AXIS_TUSER_WIDTH : integer;
-  attribute C_AXIS_TUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 4;
+  attribute C_AXIS_TUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 4;
   attribute C_AXIS_TYPE : integer;
-  attribute C_AXIS_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_AXIS_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_AXI_ADDR_WIDTH : integer;
-  attribute C_AXI_ADDR_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 32;
+  attribute C_AXI_ADDR_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 32;
   attribute C_AXI_ARUSER_WIDTH : integer;
-  attribute C_AXI_ARUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_AXI_ARUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_AXI_AWUSER_WIDTH : integer;
-  attribute C_AXI_AWUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_AXI_AWUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_AXI_BUSER_WIDTH : integer;
-  attribute C_AXI_BUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_AXI_BUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_AXI_DATA_WIDTH : integer;
-  attribute C_AXI_DATA_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 64;
+  attribute C_AXI_DATA_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 64;
   attribute C_AXI_ID_WIDTH : integer;
-  attribute C_AXI_ID_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_AXI_ID_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_AXI_LEN_WIDTH : integer;
-  attribute C_AXI_LEN_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 8;
+  attribute C_AXI_LEN_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 8;
   attribute C_AXI_LOCK_WIDTH : integer;
-  attribute C_AXI_LOCK_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_AXI_LOCK_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_AXI_RUSER_WIDTH : integer;
-  attribute C_AXI_RUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_AXI_RUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_AXI_TYPE : integer;
-  attribute C_AXI_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_AXI_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_AXI_WUSER_WIDTH : integer;
-  attribute C_AXI_WUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_AXI_WUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_COMMON_CLOCK : integer;
-  attribute C_COMMON_CLOCK of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_COMMON_CLOCK of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_COUNT_TYPE : integer;
-  attribute C_COUNT_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_COUNT_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_DATA_COUNT_WIDTH : integer;
-  attribute C_DATA_COUNT_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 12;
+  attribute C_DATA_COUNT_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 12;
   attribute C_DEFAULT_VALUE : string;
-  attribute C_DEFAULT_VALUE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is "BlankString";
+  attribute C_DEFAULT_VALUE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is "BlankString";
   attribute C_DIN_WIDTH : integer;
-  attribute C_DIN_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 24;
+  attribute C_DIN_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 24;
   attribute C_DIN_WIDTH_AXIS : integer;
-  attribute C_DIN_WIDTH_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_DIN_WIDTH_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_DIN_WIDTH_RACH : integer;
-  attribute C_DIN_WIDTH_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 32;
+  attribute C_DIN_WIDTH_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 32;
   attribute C_DIN_WIDTH_RDCH : integer;
-  attribute C_DIN_WIDTH_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 64;
+  attribute C_DIN_WIDTH_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 64;
   attribute C_DIN_WIDTH_WACH : integer;
-  attribute C_DIN_WIDTH_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_DIN_WIDTH_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_DIN_WIDTH_WDCH : integer;
-  attribute C_DIN_WIDTH_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 64;
+  attribute C_DIN_WIDTH_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 64;
   attribute C_DIN_WIDTH_WRCH : integer;
-  attribute C_DIN_WIDTH_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 2;
+  attribute C_DIN_WIDTH_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 2;
   attribute C_DOUT_RST_VAL : string;
-  attribute C_DOUT_RST_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is "0";
+  attribute C_DOUT_RST_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is "0";
   attribute C_DOUT_WIDTH : integer;
-  attribute C_DOUT_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 24;
+  attribute C_DOUT_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 24;
   attribute C_ENABLE_RLOCS : integer;
-  attribute C_ENABLE_RLOCS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_ENABLE_RLOCS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_ENABLE_RST_SYNC : integer;
-  attribute C_ENABLE_RST_SYNC of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_ENABLE_RST_SYNC of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_EN_SAFETY_CKT : integer;
-  attribute C_EN_SAFETY_CKT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_EN_SAFETY_CKT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_ERROR_INJECTION_TYPE : integer;
-  attribute C_ERROR_INJECTION_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_AXIS : integer;
-  attribute C_ERROR_INJECTION_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_RACH : integer;
-  attribute C_ERROR_INJECTION_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_RDCH : integer;
-  attribute C_ERROR_INJECTION_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_WACH : integer;
-  attribute C_ERROR_INJECTION_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_WDCH : integer;
-  attribute C_ERROR_INJECTION_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_WRCH : integer;
-  attribute C_ERROR_INJECTION_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_FAMILY : string;
-  attribute C_FAMILY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is "zynq";
+  attribute C_FAMILY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is "zynq";
   attribute C_FULL_FLAGS_RST_VAL : integer;
-  attribute C_FULL_FLAGS_RST_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_FULL_FLAGS_RST_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_HAS_ALMOST_EMPTY : integer;
-  attribute C_HAS_ALMOST_EMPTY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_ALMOST_EMPTY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_ALMOST_FULL : integer;
-  attribute C_HAS_ALMOST_FULL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_ALMOST_FULL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_AXIS_TDATA : integer;
-  attribute C_HAS_AXIS_TDATA of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_HAS_AXIS_TDATA of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_HAS_AXIS_TDEST : integer;
-  attribute C_HAS_AXIS_TDEST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_AXIS_TDEST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_AXIS_TID : integer;
-  attribute C_HAS_AXIS_TID of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_AXIS_TID of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_AXIS_TKEEP : integer;
-  attribute C_HAS_AXIS_TKEEP of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_AXIS_TKEEP of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_AXIS_TLAST : integer;
-  attribute C_HAS_AXIS_TLAST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_AXIS_TLAST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_AXIS_TREADY : integer;
-  attribute C_HAS_AXIS_TREADY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_HAS_AXIS_TREADY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_HAS_AXIS_TSTRB : integer;
-  attribute C_HAS_AXIS_TSTRB of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_AXIS_TSTRB of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_AXIS_TUSER : integer;
-  attribute C_HAS_AXIS_TUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_HAS_AXIS_TUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_HAS_AXI_ARUSER : integer;
-  attribute C_HAS_AXI_ARUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_AXI_ARUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_AXI_AWUSER : integer;
-  attribute C_HAS_AXI_AWUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_AXI_AWUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_AXI_BUSER : integer;
-  attribute C_HAS_AXI_BUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_AXI_BUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_AXI_ID : integer;
-  attribute C_HAS_AXI_ID of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_AXI_ID of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_AXI_RD_CHANNEL : integer;
-  attribute C_HAS_AXI_RD_CHANNEL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_HAS_AXI_RD_CHANNEL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_HAS_AXI_RUSER : integer;
-  attribute C_HAS_AXI_RUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_AXI_RUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_AXI_WR_CHANNEL : integer;
-  attribute C_HAS_AXI_WR_CHANNEL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_HAS_AXI_WR_CHANNEL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_HAS_AXI_WUSER : integer;
-  attribute C_HAS_AXI_WUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_AXI_WUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_BACKUP : integer;
-  attribute C_HAS_BACKUP of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_BACKUP of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_DATA_COUNT : integer;
-  attribute C_HAS_DATA_COUNT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_DATA_COUNT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_DATA_COUNTS_AXIS : integer;
-  attribute C_HAS_DATA_COUNTS_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_DATA_COUNTS_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_DATA_COUNTS_RACH : integer;
-  attribute C_HAS_DATA_COUNTS_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_DATA_COUNTS_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_DATA_COUNTS_RDCH : integer;
-  attribute C_HAS_DATA_COUNTS_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_DATA_COUNTS_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_DATA_COUNTS_WACH : integer;
-  attribute C_HAS_DATA_COUNTS_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_DATA_COUNTS_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_DATA_COUNTS_WDCH : integer;
-  attribute C_HAS_DATA_COUNTS_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_DATA_COUNTS_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_DATA_COUNTS_WRCH : integer;
-  attribute C_HAS_DATA_COUNTS_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_DATA_COUNTS_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_INT_CLK : integer;
-  attribute C_HAS_INT_CLK of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_INT_CLK of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_MASTER_CE : integer;
-  attribute C_HAS_MASTER_CE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_MASTER_CE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_MEMINIT_FILE : integer;
-  attribute C_HAS_MEMINIT_FILE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_MEMINIT_FILE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_OVERFLOW : integer;
-  attribute C_HAS_OVERFLOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_OVERFLOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_PROG_FLAGS_AXIS : integer;
-  attribute C_HAS_PROG_FLAGS_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_PROG_FLAGS_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_PROG_FLAGS_RACH : integer;
-  attribute C_HAS_PROG_FLAGS_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_PROG_FLAGS_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_PROG_FLAGS_RDCH : integer;
-  attribute C_HAS_PROG_FLAGS_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_PROG_FLAGS_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_PROG_FLAGS_WACH : integer;
-  attribute C_HAS_PROG_FLAGS_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_PROG_FLAGS_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_PROG_FLAGS_WDCH : integer;
-  attribute C_HAS_PROG_FLAGS_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_PROG_FLAGS_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_PROG_FLAGS_WRCH : integer;
-  attribute C_HAS_PROG_FLAGS_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_PROG_FLAGS_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_RD_DATA_COUNT : integer;
-  attribute C_HAS_RD_DATA_COUNT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_RD_DATA_COUNT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_RD_RST : integer;
-  attribute C_HAS_RD_RST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_RD_RST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_RST : integer;
-  attribute C_HAS_RST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_HAS_RST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_HAS_SLAVE_CE : integer;
-  attribute C_HAS_SLAVE_CE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_SLAVE_CE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_SRST : integer;
-  attribute C_HAS_SRST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_SRST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_UNDERFLOW : integer;
-  attribute C_HAS_UNDERFLOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_UNDERFLOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_VALID : integer;
-  attribute C_HAS_VALID of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_VALID of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_WR_ACK : integer;
-  attribute C_HAS_WR_ACK of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_WR_ACK of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_WR_DATA_COUNT : integer;
-  attribute C_HAS_WR_DATA_COUNT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_WR_DATA_COUNT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_HAS_WR_RST : integer;
-  attribute C_HAS_WR_RST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_HAS_WR_RST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_IMPLEMENTATION_TYPE : integer;
-  attribute C_IMPLEMENTATION_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 2;
+  attribute C_IMPLEMENTATION_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 2;
   attribute C_IMPLEMENTATION_TYPE_AXIS : integer;
-  attribute C_IMPLEMENTATION_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_RACH : integer;
-  attribute C_IMPLEMENTATION_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_RDCH : integer;
-  attribute C_IMPLEMENTATION_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_WACH : integer;
-  attribute C_IMPLEMENTATION_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_WDCH : integer;
-  attribute C_IMPLEMENTATION_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_WRCH : integer;
-  attribute C_IMPLEMENTATION_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_INIT_WR_PNTR_VAL : integer;
-  attribute C_INIT_WR_PNTR_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_INIT_WR_PNTR_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_INTERFACE_TYPE : integer;
-  attribute C_INTERFACE_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_INTERFACE_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_MEMORY_TYPE : integer;
-  attribute C_MEMORY_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_MEMORY_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_MIF_FILE_NAME : string;
-  attribute C_MIF_FILE_NAME of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is "BlankString";
+  attribute C_MIF_FILE_NAME of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is "BlankString";
   attribute C_MSGON_VAL : integer;
-  attribute C_MSGON_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_MSGON_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_OPTIMIZATION_MODE : integer;
-  attribute C_OPTIMIZATION_MODE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_OPTIMIZATION_MODE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_OVERFLOW_LOW : integer;
-  attribute C_OVERFLOW_LOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_OVERFLOW_LOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_POWER_SAVING_MODE : integer;
-  attribute C_POWER_SAVING_MODE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_POWER_SAVING_MODE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_PRELOAD_LATENCY : integer;
-  attribute C_PRELOAD_LATENCY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_PRELOAD_LATENCY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_PRELOAD_REGS : integer;
-  attribute C_PRELOAD_REGS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_PRELOAD_REGS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_PRIM_FIFO_TYPE : string;
-  attribute C_PRIM_FIFO_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is "4kx9";
+  attribute C_PRIM_FIFO_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is "4kx9";
   attribute C_PRIM_FIFO_TYPE_AXIS : string;
-  attribute C_PRIM_FIFO_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is "1kx18";
+  attribute C_PRIM_FIFO_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is "1kx18";
   attribute C_PRIM_FIFO_TYPE_RACH : string;
-  attribute C_PRIM_FIFO_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is "512x36";
+  attribute C_PRIM_FIFO_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is "512x36";
   attribute C_PRIM_FIFO_TYPE_RDCH : string;
-  attribute C_PRIM_FIFO_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is "1kx36";
+  attribute C_PRIM_FIFO_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is "1kx36";
   attribute C_PRIM_FIFO_TYPE_WACH : string;
-  attribute C_PRIM_FIFO_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is "512x36";
+  attribute C_PRIM_FIFO_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is "512x36";
   attribute C_PRIM_FIFO_TYPE_WDCH : string;
-  attribute C_PRIM_FIFO_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is "1kx36";
+  attribute C_PRIM_FIFO_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is "1kx36";
   attribute C_PRIM_FIFO_TYPE_WRCH : string;
-  attribute C_PRIM_FIFO_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is "512x36";
+  attribute C_PRIM_FIFO_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is "512x36";
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 2;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 2;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_NEGATE_VAL : integer;
-  attribute C_PROG_EMPTY_THRESH_NEGATE_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 3;
+  attribute C_PROG_EMPTY_THRESH_NEGATE_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 3;
   attribute C_PROG_EMPTY_TYPE : integer;
-  attribute C_PROG_EMPTY_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_PROG_EMPTY_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_PROG_EMPTY_TYPE_AXIS : integer;
-  attribute C_PROG_EMPTY_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_PROG_EMPTY_TYPE_RACH : integer;
-  attribute C_PROG_EMPTY_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_PROG_EMPTY_TYPE_RDCH : integer;
-  attribute C_PROG_EMPTY_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_PROG_EMPTY_TYPE_WACH : integer;
-  attribute C_PROG_EMPTY_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_PROG_EMPTY_TYPE_WDCH : integer;
-  attribute C_PROG_EMPTY_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_PROG_EMPTY_TYPE_WRCH : integer;
-  attribute C_PROG_EMPTY_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 4093;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 4093;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_AXIS : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_RACH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_RDCH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_WACH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_WDCH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_WRCH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1023;
   attribute C_PROG_FULL_THRESH_NEGATE_VAL : integer;
-  attribute C_PROG_FULL_THRESH_NEGATE_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 4092;
+  attribute C_PROG_FULL_THRESH_NEGATE_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 4092;
   attribute C_PROG_FULL_TYPE : integer;
-  attribute C_PROG_FULL_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_PROG_FULL_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_PROG_FULL_TYPE_AXIS : integer;
-  attribute C_PROG_FULL_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_PROG_FULL_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_PROG_FULL_TYPE_RACH : integer;
-  attribute C_PROG_FULL_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_PROG_FULL_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_PROG_FULL_TYPE_RDCH : integer;
-  attribute C_PROG_FULL_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_PROG_FULL_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_PROG_FULL_TYPE_WACH : integer;
-  attribute C_PROG_FULL_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_PROG_FULL_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_PROG_FULL_TYPE_WDCH : integer;
-  attribute C_PROG_FULL_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_PROG_FULL_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_PROG_FULL_TYPE_WRCH : integer;
-  attribute C_PROG_FULL_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_PROG_FULL_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_RACH_TYPE : integer;
-  attribute C_RACH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_RACH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_RDCH_TYPE : integer;
-  attribute C_RDCH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_RDCH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_RD_DATA_COUNT_WIDTH : integer;
-  attribute C_RD_DATA_COUNT_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 12;
+  attribute C_RD_DATA_COUNT_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 12;
   attribute C_RD_DEPTH : integer;
-  attribute C_RD_DEPTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 4096;
+  attribute C_RD_DEPTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 4096;
   attribute C_RD_FREQ : integer;
-  attribute C_RD_FREQ of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_RD_FREQ of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_RD_PNTR_WIDTH : integer;
-  attribute C_RD_PNTR_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 12;
+  attribute C_RD_PNTR_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 12;
   attribute C_REG_SLICE_MODE_AXIS : integer;
-  attribute C_REG_SLICE_MODE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_REG_SLICE_MODE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_REG_SLICE_MODE_RACH : integer;
-  attribute C_REG_SLICE_MODE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_REG_SLICE_MODE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_REG_SLICE_MODE_RDCH : integer;
-  attribute C_REG_SLICE_MODE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_REG_SLICE_MODE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_REG_SLICE_MODE_WACH : integer;
-  attribute C_REG_SLICE_MODE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_REG_SLICE_MODE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_REG_SLICE_MODE_WDCH : integer;
-  attribute C_REG_SLICE_MODE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_REG_SLICE_MODE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_REG_SLICE_MODE_WRCH : integer;
-  attribute C_REG_SLICE_MODE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_REG_SLICE_MODE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_SELECT_XPM : integer;
-  attribute C_SELECT_XPM of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_SELECT_XPM of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_SYNCHRONIZER_STAGE : integer;
-  attribute C_SYNCHRONIZER_STAGE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 2;
+  attribute C_SYNCHRONIZER_STAGE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 2;
   attribute C_UNDERFLOW_LOW : integer;
-  attribute C_UNDERFLOW_LOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_UNDERFLOW_LOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_USE_COMMON_OVERFLOW : integer;
-  attribute C_USE_COMMON_OVERFLOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_USE_COMMON_OVERFLOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_USE_COMMON_UNDERFLOW : integer;
-  attribute C_USE_COMMON_UNDERFLOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_USE_COMMON_UNDERFLOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_USE_DEFAULT_SETTINGS : integer;
-  attribute C_USE_DEFAULT_SETTINGS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_USE_DEFAULT_SETTINGS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_USE_DOUT_RST : integer;
-  attribute C_USE_DOUT_RST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_USE_DOUT_RST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_USE_ECC : integer;
-  attribute C_USE_ECC of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_USE_ECC of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_USE_ECC_AXIS : integer;
-  attribute C_USE_ECC_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_USE_ECC_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_USE_ECC_RACH : integer;
-  attribute C_USE_ECC_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_USE_ECC_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_USE_ECC_RDCH : integer;
-  attribute C_USE_ECC_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_USE_ECC_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_USE_ECC_WACH : integer;
-  attribute C_USE_ECC_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_USE_ECC_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_USE_ECC_WDCH : integer;
-  attribute C_USE_ECC_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_USE_ECC_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_USE_ECC_WRCH : integer;
-  attribute C_USE_ECC_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_USE_ECC_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_USE_EMBEDDED_REG : integer;
-  attribute C_USE_EMBEDDED_REG of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_USE_EMBEDDED_REG of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_USE_FIFO16_FLAGS : integer;
-  attribute C_USE_FIFO16_FLAGS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_USE_FIFO16_FLAGS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_USE_FWFT_DATA_COUNT : integer;
-  attribute C_USE_FWFT_DATA_COUNT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_USE_FWFT_DATA_COUNT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_USE_PIPELINE_REG : integer;
-  attribute C_USE_PIPELINE_REG of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_USE_PIPELINE_REG of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_VALID_LOW : integer;
-  attribute C_VALID_LOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_VALID_LOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_WACH_TYPE : integer;
-  attribute C_WACH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_WACH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_WDCH_TYPE : integer;
-  attribute C_WDCH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_WDCH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_WRCH_TYPE : integer;
-  attribute C_WRCH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_WRCH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_WR_ACK_LOW : integer;
-  attribute C_WR_ACK_LOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 0;
+  attribute C_WR_ACK_LOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 0;
   attribute C_WR_DATA_COUNT_WIDTH : integer;
-  attribute C_WR_DATA_COUNT_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 12;
+  attribute C_WR_DATA_COUNT_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 12;
   attribute C_WR_DEPTH : integer;
-  attribute C_WR_DEPTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 4096;
+  attribute C_WR_DEPTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 4096;
   attribute C_WR_DEPTH_AXIS : integer;
-  attribute C_WR_DEPTH_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1024;
+  attribute C_WR_DEPTH_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1024;
   attribute C_WR_DEPTH_RACH : integer;
-  attribute C_WR_DEPTH_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 16;
+  attribute C_WR_DEPTH_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 16;
   attribute C_WR_DEPTH_RDCH : integer;
-  attribute C_WR_DEPTH_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1024;
+  attribute C_WR_DEPTH_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1024;
   attribute C_WR_DEPTH_WACH : integer;
-  attribute C_WR_DEPTH_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 16;
+  attribute C_WR_DEPTH_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 16;
   attribute C_WR_DEPTH_WDCH : integer;
-  attribute C_WR_DEPTH_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1024;
+  attribute C_WR_DEPTH_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1024;
   attribute C_WR_DEPTH_WRCH : integer;
-  attribute C_WR_DEPTH_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 16;
+  attribute C_WR_DEPTH_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 16;
   attribute C_WR_FREQ : integer;
-  attribute C_WR_FREQ of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_WR_FREQ of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute C_WR_PNTR_WIDTH : integer;
-  attribute C_WR_PNTR_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 12;
+  attribute C_WR_PNTR_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 12;
   attribute C_WR_PNTR_WIDTH_AXIS : integer;
-  attribute C_WR_PNTR_WIDTH_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 10;
+  attribute C_WR_PNTR_WIDTH_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 10;
   attribute C_WR_PNTR_WIDTH_RACH : integer;
-  attribute C_WR_PNTR_WIDTH_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 4;
+  attribute C_WR_PNTR_WIDTH_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 4;
   attribute C_WR_PNTR_WIDTH_RDCH : integer;
-  attribute C_WR_PNTR_WIDTH_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 10;
+  attribute C_WR_PNTR_WIDTH_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 10;
   attribute C_WR_PNTR_WIDTH_WACH : integer;
-  attribute C_WR_PNTR_WIDTH_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 4;
+  attribute C_WR_PNTR_WIDTH_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 4;
   attribute C_WR_PNTR_WIDTH_WDCH : integer;
-  attribute C_WR_PNTR_WIDTH_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 10;
+  attribute C_WR_PNTR_WIDTH_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 10;
   attribute C_WR_PNTR_WIDTH_WRCH : integer;
-  attribute C_WR_PNTR_WIDTH_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 4;
+  attribute C_WR_PNTR_WIDTH_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 4;
   attribute C_WR_RESPONSE_LATENCY : integer;
-  attribute C_WR_RESPONSE_LATENCY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is 1;
+  attribute C_WR_RESPONSE_LATENCY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is 1;
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ : entity is "fifo_generator_v13_1_3";
-end \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ : entity is "fifo_generator_v13_1_1";
+end \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\ is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\ is
   signal \<const0>\ : STD_LOGIC;
   signal \<const1>\ : STD_LOGIC;
 begin
@@ -21553,6 +20524,7 @@ begin
   wr_data_count(2) <= \<const0>\;
   wr_data_count(1) <= \<const0>\;
   wr_data_count(0) <= \<const0>\;
+  wr_rst_busy <= \<const0>\;
 GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
@@ -21561,7 +20533,7 @@ VCC: unisim.vcomponents.VCC
      port map (
       P => \<const1>\
     );
-inst_fifo_gen: entity work.\design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3_synth__parameterized0\
+inst_fifo_gen: entity work.\design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1_synth__parameterized0\
      port map (
       din(23 downto 0) => din(23 downto 0),
       dout(23 downto 0) => dout(23 downto 0),
@@ -21571,15 +20543,14 @@ inst_fifo_gen: entity work.\design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3_
       rd_en => rd_en,
       rst => rst,
       wr_clk => wr_clk,
-      wr_en => wr_en,
-      wr_rst_busy => wr_rst_busy
+      wr_en => wr_en
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ is
+entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ is
   port (
     backup : in STD_LOGIC;
     backup_marker : in STD_LOGIC;
@@ -21814,414 +20785,414 @@ entity \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ 
     axis_prog_empty : out STD_LOGIC
   );
   attribute C_ADD_NGC_CONSTRAINT : integer;
-  attribute C_ADD_NGC_CONSTRAINT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_ADD_NGC_CONSTRAINT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_APPLICATION_TYPE_AXIS : integer;
-  attribute C_APPLICATION_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_APPLICATION_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_APPLICATION_TYPE_RACH : integer;
-  attribute C_APPLICATION_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_APPLICATION_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_APPLICATION_TYPE_RDCH : integer;
-  attribute C_APPLICATION_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_APPLICATION_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_APPLICATION_TYPE_WACH : integer;
-  attribute C_APPLICATION_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_APPLICATION_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_APPLICATION_TYPE_WDCH : integer;
-  attribute C_APPLICATION_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_APPLICATION_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_APPLICATION_TYPE_WRCH : integer;
-  attribute C_APPLICATION_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_APPLICATION_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_AXIS_TDATA_WIDTH : integer;
-  attribute C_AXIS_TDATA_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 8;
+  attribute C_AXIS_TDATA_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 8;
   attribute C_AXIS_TDEST_WIDTH : integer;
-  attribute C_AXIS_TDEST_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_AXIS_TDEST_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_AXIS_TID_WIDTH : integer;
-  attribute C_AXIS_TID_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_AXIS_TID_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_AXIS_TKEEP_WIDTH : integer;
-  attribute C_AXIS_TKEEP_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_AXIS_TKEEP_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_AXIS_TSTRB_WIDTH : integer;
-  attribute C_AXIS_TSTRB_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_AXIS_TSTRB_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_AXIS_TUSER_WIDTH : integer;
-  attribute C_AXIS_TUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 4;
+  attribute C_AXIS_TUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 4;
   attribute C_AXIS_TYPE : integer;
-  attribute C_AXIS_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_AXIS_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_AXI_ADDR_WIDTH : integer;
-  attribute C_AXI_ADDR_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 32;
+  attribute C_AXI_ADDR_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 32;
   attribute C_AXI_ARUSER_WIDTH : integer;
-  attribute C_AXI_ARUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_AXI_ARUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_AXI_AWUSER_WIDTH : integer;
-  attribute C_AXI_AWUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_AXI_AWUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_AXI_BUSER_WIDTH : integer;
-  attribute C_AXI_BUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_AXI_BUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_AXI_DATA_WIDTH : integer;
-  attribute C_AXI_DATA_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 64;
+  attribute C_AXI_DATA_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 64;
   attribute C_AXI_ID_WIDTH : integer;
-  attribute C_AXI_ID_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_AXI_ID_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_AXI_LEN_WIDTH : integer;
-  attribute C_AXI_LEN_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 8;
+  attribute C_AXI_LEN_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 8;
   attribute C_AXI_LOCK_WIDTH : integer;
-  attribute C_AXI_LOCK_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_AXI_LOCK_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_AXI_RUSER_WIDTH : integer;
-  attribute C_AXI_RUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_AXI_RUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_AXI_TYPE : integer;
-  attribute C_AXI_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_AXI_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_AXI_WUSER_WIDTH : integer;
-  attribute C_AXI_WUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_AXI_WUSER_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_COMMON_CLOCK : integer;
-  attribute C_COMMON_CLOCK of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_COMMON_CLOCK of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_COUNT_TYPE : integer;
-  attribute C_COUNT_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_COUNT_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_DATA_COUNT_WIDTH : integer;
-  attribute C_DATA_COUNT_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 12;
+  attribute C_DATA_COUNT_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 12;
   attribute C_DEFAULT_VALUE : string;
-  attribute C_DEFAULT_VALUE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is "BlankString";
+  attribute C_DEFAULT_VALUE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is "BlankString";
   attribute C_DIN_WIDTH : integer;
-  attribute C_DIN_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 24;
+  attribute C_DIN_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 24;
   attribute C_DIN_WIDTH_AXIS : integer;
-  attribute C_DIN_WIDTH_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_DIN_WIDTH_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_DIN_WIDTH_RACH : integer;
-  attribute C_DIN_WIDTH_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 32;
+  attribute C_DIN_WIDTH_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 32;
   attribute C_DIN_WIDTH_RDCH : integer;
-  attribute C_DIN_WIDTH_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 64;
+  attribute C_DIN_WIDTH_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 64;
   attribute C_DIN_WIDTH_WACH : integer;
-  attribute C_DIN_WIDTH_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_DIN_WIDTH_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_DIN_WIDTH_WDCH : integer;
-  attribute C_DIN_WIDTH_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 64;
+  attribute C_DIN_WIDTH_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 64;
   attribute C_DIN_WIDTH_WRCH : integer;
-  attribute C_DIN_WIDTH_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 2;
+  attribute C_DIN_WIDTH_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 2;
   attribute C_DOUT_RST_VAL : string;
-  attribute C_DOUT_RST_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is "0";
+  attribute C_DOUT_RST_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is "0";
   attribute C_DOUT_WIDTH : integer;
-  attribute C_DOUT_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 24;
+  attribute C_DOUT_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 24;
   attribute C_ENABLE_RLOCS : integer;
-  attribute C_ENABLE_RLOCS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_ENABLE_RLOCS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_ENABLE_RST_SYNC : integer;
-  attribute C_ENABLE_RST_SYNC of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_ENABLE_RST_SYNC of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_EN_SAFETY_CKT : integer;
-  attribute C_EN_SAFETY_CKT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_EN_SAFETY_CKT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_ERROR_INJECTION_TYPE : integer;
-  attribute C_ERROR_INJECTION_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_AXIS : integer;
-  attribute C_ERROR_INJECTION_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_RACH : integer;
-  attribute C_ERROR_INJECTION_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_RDCH : integer;
-  attribute C_ERROR_INJECTION_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_WACH : integer;
-  attribute C_ERROR_INJECTION_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_WDCH : integer;
-  attribute C_ERROR_INJECTION_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_WRCH : integer;
-  attribute C_ERROR_INJECTION_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_FAMILY : string;
-  attribute C_FAMILY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is "zynq";
+  attribute C_FAMILY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is "zynq";
   attribute C_FULL_FLAGS_RST_VAL : integer;
-  attribute C_FULL_FLAGS_RST_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_FULL_FLAGS_RST_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_HAS_ALMOST_EMPTY : integer;
-  attribute C_HAS_ALMOST_EMPTY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_ALMOST_EMPTY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_ALMOST_FULL : integer;
-  attribute C_HAS_ALMOST_FULL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_ALMOST_FULL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_AXIS_TDATA : integer;
-  attribute C_HAS_AXIS_TDATA of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_HAS_AXIS_TDATA of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_HAS_AXIS_TDEST : integer;
-  attribute C_HAS_AXIS_TDEST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_AXIS_TDEST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_AXIS_TID : integer;
-  attribute C_HAS_AXIS_TID of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_AXIS_TID of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_AXIS_TKEEP : integer;
-  attribute C_HAS_AXIS_TKEEP of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_AXIS_TKEEP of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_AXIS_TLAST : integer;
-  attribute C_HAS_AXIS_TLAST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_AXIS_TLAST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_AXIS_TREADY : integer;
-  attribute C_HAS_AXIS_TREADY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_HAS_AXIS_TREADY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_HAS_AXIS_TSTRB : integer;
-  attribute C_HAS_AXIS_TSTRB of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_AXIS_TSTRB of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_AXIS_TUSER : integer;
-  attribute C_HAS_AXIS_TUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_HAS_AXIS_TUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_HAS_AXI_ARUSER : integer;
-  attribute C_HAS_AXI_ARUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_AXI_ARUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_AXI_AWUSER : integer;
-  attribute C_HAS_AXI_AWUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_AXI_AWUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_AXI_BUSER : integer;
-  attribute C_HAS_AXI_BUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_AXI_BUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_AXI_ID : integer;
-  attribute C_HAS_AXI_ID of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_AXI_ID of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_AXI_RD_CHANNEL : integer;
-  attribute C_HAS_AXI_RD_CHANNEL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_HAS_AXI_RD_CHANNEL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_HAS_AXI_RUSER : integer;
-  attribute C_HAS_AXI_RUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_AXI_RUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_AXI_WR_CHANNEL : integer;
-  attribute C_HAS_AXI_WR_CHANNEL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_HAS_AXI_WR_CHANNEL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_HAS_AXI_WUSER : integer;
-  attribute C_HAS_AXI_WUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_AXI_WUSER of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_BACKUP : integer;
-  attribute C_HAS_BACKUP of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_BACKUP of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_DATA_COUNT : integer;
-  attribute C_HAS_DATA_COUNT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_DATA_COUNT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_DATA_COUNTS_AXIS : integer;
-  attribute C_HAS_DATA_COUNTS_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_DATA_COUNTS_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_DATA_COUNTS_RACH : integer;
-  attribute C_HAS_DATA_COUNTS_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_DATA_COUNTS_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_DATA_COUNTS_RDCH : integer;
-  attribute C_HAS_DATA_COUNTS_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_DATA_COUNTS_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_DATA_COUNTS_WACH : integer;
-  attribute C_HAS_DATA_COUNTS_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_DATA_COUNTS_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_DATA_COUNTS_WDCH : integer;
-  attribute C_HAS_DATA_COUNTS_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_DATA_COUNTS_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_DATA_COUNTS_WRCH : integer;
-  attribute C_HAS_DATA_COUNTS_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_DATA_COUNTS_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_INT_CLK : integer;
-  attribute C_HAS_INT_CLK of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_INT_CLK of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_MASTER_CE : integer;
-  attribute C_HAS_MASTER_CE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_MASTER_CE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_MEMINIT_FILE : integer;
-  attribute C_HAS_MEMINIT_FILE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_MEMINIT_FILE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_OVERFLOW : integer;
-  attribute C_HAS_OVERFLOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_OVERFLOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_PROG_FLAGS_AXIS : integer;
-  attribute C_HAS_PROG_FLAGS_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_PROG_FLAGS_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_PROG_FLAGS_RACH : integer;
-  attribute C_HAS_PROG_FLAGS_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_PROG_FLAGS_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_PROG_FLAGS_RDCH : integer;
-  attribute C_HAS_PROG_FLAGS_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_PROG_FLAGS_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_PROG_FLAGS_WACH : integer;
-  attribute C_HAS_PROG_FLAGS_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_PROG_FLAGS_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_PROG_FLAGS_WDCH : integer;
-  attribute C_HAS_PROG_FLAGS_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_PROG_FLAGS_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_PROG_FLAGS_WRCH : integer;
-  attribute C_HAS_PROG_FLAGS_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_PROG_FLAGS_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_RD_DATA_COUNT : integer;
-  attribute C_HAS_RD_DATA_COUNT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_RD_DATA_COUNT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_RD_RST : integer;
-  attribute C_HAS_RD_RST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_RD_RST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_RST : integer;
-  attribute C_HAS_RST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_HAS_RST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_HAS_SLAVE_CE : integer;
-  attribute C_HAS_SLAVE_CE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_SLAVE_CE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_SRST : integer;
-  attribute C_HAS_SRST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_SRST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_UNDERFLOW : integer;
-  attribute C_HAS_UNDERFLOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_UNDERFLOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_VALID : integer;
-  attribute C_HAS_VALID of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_VALID of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_WR_ACK : integer;
-  attribute C_HAS_WR_ACK of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_WR_ACK of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_WR_DATA_COUNT : integer;
-  attribute C_HAS_WR_DATA_COUNT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_WR_DATA_COUNT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_HAS_WR_RST : integer;
-  attribute C_HAS_WR_RST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_HAS_WR_RST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_IMPLEMENTATION_TYPE : integer;
-  attribute C_IMPLEMENTATION_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 2;
+  attribute C_IMPLEMENTATION_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 2;
   attribute C_IMPLEMENTATION_TYPE_AXIS : integer;
-  attribute C_IMPLEMENTATION_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_RACH : integer;
-  attribute C_IMPLEMENTATION_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_RDCH : integer;
-  attribute C_IMPLEMENTATION_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_WACH : integer;
-  attribute C_IMPLEMENTATION_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_WDCH : integer;
-  attribute C_IMPLEMENTATION_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_WRCH : integer;
-  attribute C_IMPLEMENTATION_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_INIT_WR_PNTR_VAL : integer;
-  attribute C_INIT_WR_PNTR_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_INIT_WR_PNTR_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_INTERFACE_TYPE : integer;
-  attribute C_INTERFACE_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_INTERFACE_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_MEMORY_TYPE : integer;
-  attribute C_MEMORY_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_MEMORY_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_MIF_FILE_NAME : string;
-  attribute C_MIF_FILE_NAME of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is "BlankString";
+  attribute C_MIF_FILE_NAME of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is "BlankString";
   attribute C_MSGON_VAL : integer;
-  attribute C_MSGON_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_MSGON_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_OPTIMIZATION_MODE : integer;
-  attribute C_OPTIMIZATION_MODE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_OPTIMIZATION_MODE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_OVERFLOW_LOW : integer;
-  attribute C_OVERFLOW_LOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_OVERFLOW_LOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_POWER_SAVING_MODE : integer;
-  attribute C_POWER_SAVING_MODE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_POWER_SAVING_MODE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_PRELOAD_LATENCY : integer;
-  attribute C_PRELOAD_LATENCY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_PRELOAD_LATENCY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_PRELOAD_REGS : integer;
-  attribute C_PRELOAD_REGS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_PRELOAD_REGS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_PRIM_FIFO_TYPE : string;
-  attribute C_PRIM_FIFO_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is "4kx9";
+  attribute C_PRIM_FIFO_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is "4kx9";
   attribute C_PRIM_FIFO_TYPE_AXIS : string;
-  attribute C_PRIM_FIFO_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is "1kx18";
+  attribute C_PRIM_FIFO_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is "1kx18";
   attribute C_PRIM_FIFO_TYPE_RACH : string;
-  attribute C_PRIM_FIFO_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is "512x36";
+  attribute C_PRIM_FIFO_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is "512x36";
   attribute C_PRIM_FIFO_TYPE_RDCH : string;
-  attribute C_PRIM_FIFO_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is "1kx36";
+  attribute C_PRIM_FIFO_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is "1kx36";
   attribute C_PRIM_FIFO_TYPE_WACH : string;
-  attribute C_PRIM_FIFO_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is "512x36";
+  attribute C_PRIM_FIFO_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is "512x36";
   attribute C_PRIM_FIFO_TYPE_WDCH : string;
-  attribute C_PRIM_FIFO_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is "1kx36";
+  attribute C_PRIM_FIFO_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is "1kx36";
   attribute C_PRIM_FIFO_TYPE_WRCH : string;
-  attribute C_PRIM_FIFO_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is "512x36";
+  attribute C_PRIM_FIFO_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is "512x36";
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 2;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 2;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_NEGATE_VAL : integer;
-  attribute C_PROG_EMPTY_THRESH_NEGATE_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 3;
+  attribute C_PROG_EMPTY_THRESH_NEGATE_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 3;
   attribute C_PROG_EMPTY_TYPE : integer;
-  attribute C_PROG_EMPTY_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_PROG_EMPTY_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_PROG_EMPTY_TYPE_AXIS : integer;
-  attribute C_PROG_EMPTY_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_PROG_EMPTY_TYPE_RACH : integer;
-  attribute C_PROG_EMPTY_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_PROG_EMPTY_TYPE_RDCH : integer;
-  attribute C_PROG_EMPTY_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_PROG_EMPTY_TYPE_WACH : integer;
-  attribute C_PROG_EMPTY_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_PROG_EMPTY_TYPE_WDCH : integer;
-  attribute C_PROG_EMPTY_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_PROG_EMPTY_TYPE_WRCH : integer;
-  attribute C_PROG_EMPTY_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 4093;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 4093;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_AXIS : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_RACH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_RDCH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_WACH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_WDCH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_WRCH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1023;
   attribute C_PROG_FULL_THRESH_NEGATE_VAL : integer;
-  attribute C_PROG_FULL_THRESH_NEGATE_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 4092;
+  attribute C_PROG_FULL_THRESH_NEGATE_VAL of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 4092;
   attribute C_PROG_FULL_TYPE : integer;
-  attribute C_PROG_FULL_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_PROG_FULL_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_PROG_FULL_TYPE_AXIS : integer;
-  attribute C_PROG_FULL_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_PROG_FULL_TYPE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_PROG_FULL_TYPE_RACH : integer;
-  attribute C_PROG_FULL_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_PROG_FULL_TYPE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_PROG_FULL_TYPE_RDCH : integer;
-  attribute C_PROG_FULL_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_PROG_FULL_TYPE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_PROG_FULL_TYPE_WACH : integer;
-  attribute C_PROG_FULL_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_PROG_FULL_TYPE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_PROG_FULL_TYPE_WDCH : integer;
-  attribute C_PROG_FULL_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_PROG_FULL_TYPE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_PROG_FULL_TYPE_WRCH : integer;
-  attribute C_PROG_FULL_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_PROG_FULL_TYPE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_RACH_TYPE : integer;
-  attribute C_RACH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_RACH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_RDCH_TYPE : integer;
-  attribute C_RDCH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_RDCH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_RD_DATA_COUNT_WIDTH : integer;
-  attribute C_RD_DATA_COUNT_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 12;
+  attribute C_RD_DATA_COUNT_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 12;
   attribute C_RD_DEPTH : integer;
-  attribute C_RD_DEPTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 4096;
+  attribute C_RD_DEPTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 4096;
   attribute C_RD_FREQ : integer;
-  attribute C_RD_FREQ of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_RD_FREQ of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_RD_PNTR_WIDTH : integer;
-  attribute C_RD_PNTR_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 12;
+  attribute C_RD_PNTR_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 12;
   attribute C_REG_SLICE_MODE_AXIS : integer;
-  attribute C_REG_SLICE_MODE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_REG_SLICE_MODE_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_REG_SLICE_MODE_RACH : integer;
-  attribute C_REG_SLICE_MODE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_REG_SLICE_MODE_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_REG_SLICE_MODE_RDCH : integer;
-  attribute C_REG_SLICE_MODE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_REG_SLICE_MODE_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_REG_SLICE_MODE_WACH : integer;
-  attribute C_REG_SLICE_MODE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_REG_SLICE_MODE_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_REG_SLICE_MODE_WDCH : integer;
-  attribute C_REG_SLICE_MODE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_REG_SLICE_MODE_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_REG_SLICE_MODE_WRCH : integer;
-  attribute C_REG_SLICE_MODE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_REG_SLICE_MODE_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_SELECT_XPM : integer;
-  attribute C_SELECT_XPM of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_SELECT_XPM of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_SYNCHRONIZER_STAGE : integer;
-  attribute C_SYNCHRONIZER_STAGE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 2;
+  attribute C_SYNCHRONIZER_STAGE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 2;
   attribute C_UNDERFLOW_LOW : integer;
-  attribute C_UNDERFLOW_LOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_UNDERFLOW_LOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_USE_COMMON_OVERFLOW : integer;
-  attribute C_USE_COMMON_OVERFLOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_USE_COMMON_OVERFLOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_USE_COMMON_UNDERFLOW : integer;
-  attribute C_USE_COMMON_UNDERFLOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_USE_COMMON_UNDERFLOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_USE_DEFAULT_SETTINGS : integer;
-  attribute C_USE_DEFAULT_SETTINGS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_USE_DEFAULT_SETTINGS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_USE_DOUT_RST : integer;
-  attribute C_USE_DOUT_RST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_USE_DOUT_RST of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_USE_ECC : integer;
-  attribute C_USE_ECC of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_USE_ECC of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_USE_ECC_AXIS : integer;
-  attribute C_USE_ECC_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_USE_ECC_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_USE_ECC_RACH : integer;
-  attribute C_USE_ECC_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_USE_ECC_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_USE_ECC_RDCH : integer;
-  attribute C_USE_ECC_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_USE_ECC_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_USE_ECC_WACH : integer;
-  attribute C_USE_ECC_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_USE_ECC_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_USE_ECC_WDCH : integer;
-  attribute C_USE_ECC_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_USE_ECC_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_USE_ECC_WRCH : integer;
-  attribute C_USE_ECC_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_USE_ECC_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_USE_EMBEDDED_REG : integer;
-  attribute C_USE_EMBEDDED_REG of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_USE_EMBEDDED_REG of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_USE_FIFO16_FLAGS : integer;
-  attribute C_USE_FIFO16_FLAGS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_USE_FIFO16_FLAGS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_USE_FWFT_DATA_COUNT : integer;
-  attribute C_USE_FWFT_DATA_COUNT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_USE_FWFT_DATA_COUNT of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_USE_PIPELINE_REG : integer;
-  attribute C_USE_PIPELINE_REG of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_USE_PIPELINE_REG of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_VALID_LOW : integer;
-  attribute C_VALID_LOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_VALID_LOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_WACH_TYPE : integer;
-  attribute C_WACH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_WACH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_WDCH_TYPE : integer;
-  attribute C_WDCH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_WDCH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_WRCH_TYPE : integer;
-  attribute C_WRCH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_WRCH_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_WR_ACK_LOW : integer;
-  attribute C_WR_ACK_LOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 0;
+  attribute C_WR_ACK_LOW of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 0;
   attribute C_WR_DATA_COUNT_WIDTH : integer;
-  attribute C_WR_DATA_COUNT_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 12;
+  attribute C_WR_DATA_COUNT_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 12;
   attribute C_WR_DEPTH : integer;
-  attribute C_WR_DEPTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 4096;
+  attribute C_WR_DEPTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 4096;
   attribute C_WR_DEPTH_AXIS : integer;
-  attribute C_WR_DEPTH_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1024;
+  attribute C_WR_DEPTH_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1024;
   attribute C_WR_DEPTH_RACH : integer;
-  attribute C_WR_DEPTH_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 16;
+  attribute C_WR_DEPTH_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 16;
   attribute C_WR_DEPTH_RDCH : integer;
-  attribute C_WR_DEPTH_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1024;
+  attribute C_WR_DEPTH_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1024;
   attribute C_WR_DEPTH_WACH : integer;
-  attribute C_WR_DEPTH_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 16;
+  attribute C_WR_DEPTH_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 16;
   attribute C_WR_DEPTH_WDCH : integer;
-  attribute C_WR_DEPTH_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1024;
+  attribute C_WR_DEPTH_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1024;
   attribute C_WR_DEPTH_WRCH : integer;
-  attribute C_WR_DEPTH_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 16;
+  attribute C_WR_DEPTH_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 16;
   attribute C_WR_FREQ : integer;
-  attribute C_WR_FREQ of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_WR_FREQ of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute C_WR_PNTR_WIDTH : integer;
-  attribute C_WR_PNTR_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 12;
+  attribute C_WR_PNTR_WIDTH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 12;
   attribute C_WR_PNTR_WIDTH_AXIS : integer;
-  attribute C_WR_PNTR_WIDTH_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 10;
+  attribute C_WR_PNTR_WIDTH_AXIS of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 10;
   attribute C_WR_PNTR_WIDTH_RACH : integer;
-  attribute C_WR_PNTR_WIDTH_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 4;
+  attribute C_WR_PNTR_WIDTH_RACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 4;
   attribute C_WR_PNTR_WIDTH_RDCH : integer;
-  attribute C_WR_PNTR_WIDTH_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 10;
+  attribute C_WR_PNTR_WIDTH_RDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 10;
   attribute C_WR_PNTR_WIDTH_WACH : integer;
-  attribute C_WR_PNTR_WIDTH_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 4;
+  attribute C_WR_PNTR_WIDTH_WACH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 4;
   attribute C_WR_PNTR_WIDTH_WDCH : integer;
-  attribute C_WR_PNTR_WIDTH_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 10;
+  attribute C_WR_PNTR_WIDTH_WDCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 10;
   attribute C_WR_PNTR_WIDTH_WRCH : integer;
-  attribute C_WR_PNTR_WIDTH_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 4;
+  attribute C_WR_PNTR_WIDTH_WRCH of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 4;
   attribute C_WR_RESPONSE_LATENCY : integer;
-  attribute C_WR_RESPONSE_LATENCY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is 1;
+  attribute C_WR_RESPONSE_LATENCY of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is 1;
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ : entity is "fifo_generator_v13_1_3";
-end \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\;
+  attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ : entity is "fifo_generator_v13_1_1";
+end \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\;
 
-architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\ is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\ is
   signal \<const0>\ : STD_LOGIC;
   signal \<const1>\ : STD_LOGIC;
 begin
@@ -22755,6 +21726,7 @@ begin
   wr_data_count(2) <= \<const0>\;
   wr_data_count(1) <= \<const0>\;
   wr_data_count(0) <= \<const0>\;
+  wr_rst_busy <= \<const0>\;
 GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
@@ -22763,7 +21735,7 @@ VCC: unisim.vcomponents.VCC
      port map (
       P => \<const1>\
     );
-inst_fifo_gen: entity work.\design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3_synth__parameterized0_7\
+inst_fifo_gen: entity work.\design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1_synth__parameterized0_4\
      port map (
       din(23 downto 0) => din(23 downto 0),
       dout(23 downto 0) => dout(23 downto 0),
@@ -22773,15 +21745,14 @@ inst_fifo_gen: entity work.\design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3_
       rd_en => rd_en,
       rst => rst,
       wr_clk => wr_clk,
-      wr_en => wr_en,
-      wr_rst_busy => wr_rst_busy
+      wr_en => wr_en
     );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_fifo_32 is
+entity \design_1_d_axi_i2s_audio_0_0_fifo_32\ is
   port (
     rst : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
@@ -22794,16 +21765,14 @@ entity design_1_d_axi_i2s_audio_0_0_fifo_32 is
     empty : out STD_LOGIC
   );
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of design_1_d_axi_i2s_audio_0_0_fifo_32 : entity is "fifo_32,fifo_generator_v13_1_3,{}";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_fifo_32 : entity is "fifo_32";
+  attribute CHECK_LICENSE_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_32\ : entity is "fifo_32,fifo_generator_v13_1_1,{}";
   attribute downgradeipidentifiedwarnings : string;
-  attribute downgradeipidentifiedwarnings of design_1_d_axi_i2s_audio_0_0_fifo_32 : entity is "yes";
+  attribute downgradeipidentifiedwarnings of \design_1_d_axi_i2s_audio_0_0_fifo_32\ : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of design_1_d_axi_i2s_audio_0_0_fifo_32 : entity is "fifo_generator_v13_1_3,Vivado 2016.4";
-end design_1_d_axi_i2s_audio_0_0_fifo_32;
+  attribute x_core_info of \design_1_d_axi_i2s_audio_0_0_fifo_32\ : entity is "fifo_generator_v13_1_1,Vivado 2016.2";
+end \design_1_d_axi_i2s_audio_0_0_fifo_32\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_fifo_32 is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_32\ is
   signal NLW_U0_almost_empty_UNCONNECTED : STD_LOGIC;
   signal NLW_U0_almost_full_UNCONNECTED : STD_LOGIC;
   signal NLW_U0_axi_ar_dbiterr_UNCONNECTED : STD_LOGIC;
@@ -23331,8 +22300,10 @@ architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_fifo_32 is
   attribute C_WR_PNTR_WIDTH_WRCH of U0 : label is 4;
   attribute C_WR_RESPONSE_LATENCY : integer;
   attribute C_WR_RESPONSE_LATENCY of U0 : label is 1;
+  attribute KEEP_HIERARCHY : string;
+  attribute KEEP_HIERARCHY of U0 : label is "true";
 begin
-U0: entity work.\design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1__2\
+U0: entity work.\design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1__2\
      port map (
       almost_empty => NLW_U0_almost_empty_UNCONNECTED,
       almost_full => NLW_U0_almost_full_UNCONNECTED,
@@ -23584,13 +22555,13 @@ entity \design_1_d_axi_i2s_audio_0_0_fifo_32__xdcDup__1\ is
     empty : out STD_LOGIC
   );
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_32__xdcDup__1\ : entity is "fifo_32,fifo_generator_v13_1_3,{}";
+  attribute CHECK_LICENSE_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_32__xdcDup__1\ : entity is "fifo_32,fifo_generator_v13_1_1,{}";
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of \design_1_d_axi_i2s_audio_0_0_fifo_32__xdcDup__1\ : entity is "fifo_32";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of \design_1_d_axi_i2s_audio_0_0_fifo_32__xdcDup__1\ : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of \design_1_d_axi_i2s_audio_0_0_fifo_32__xdcDup__1\ : entity is "fifo_generator_v13_1_3,Vivado 2016.4";
+  attribute x_core_info of \design_1_d_axi_i2s_audio_0_0_fifo_32__xdcDup__1\ : entity is "fifo_generator_v13_1_1,Vivado 2016.2";
 end \design_1_d_axi_i2s_audio_0_0_fifo_32__xdcDup__1\;
 
 architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_32__xdcDup__1\ is
@@ -24121,8 +23092,10 @@ architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_32__xdcDup__1\ is
   attribute C_WR_PNTR_WIDTH_WRCH of U0 : label is 4;
   attribute C_WR_RESPONSE_LATENCY : integer;
   attribute C_WR_RESPONSE_LATENCY of U0 : label is 1;
+  attribute KEEP_HIERARCHY : string;
+  attribute KEEP_HIERARCHY of U0 : label is "true";
 begin
-U0: entity work.\design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3__parameterized1\
+U0: entity work.\design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1__parameterized1\
      port map (
       almost_empty => NLW_U0_almost_empty_UNCONNECTED,
       almost_full => NLW_U0_almost_full_UNCONNECTED,
@@ -24361,7 +23334,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_fifo_4 is
+entity \design_1_d_axi_i2s_audio_0_0_fifo_4\ is
   port (
     rst : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
@@ -24374,16 +23347,14 @@ entity design_1_d_axi_i2s_audio_0_0_fifo_4 is
     empty : out STD_LOGIC
   );
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of design_1_d_axi_i2s_audio_0_0_fifo_4 : entity is "fifo_4,fifo_generator_v13_1_3,{}";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_fifo_4 : entity is "fifo_4";
+  attribute CHECK_LICENSE_TYPE of \design_1_d_axi_i2s_audio_0_0_fifo_4\ : entity is "fifo_4,fifo_generator_v13_1_1,{}";
   attribute downgradeipidentifiedwarnings : string;
-  attribute downgradeipidentifiedwarnings of design_1_d_axi_i2s_audio_0_0_fifo_4 : entity is "yes";
+  attribute downgradeipidentifiedwarnings of \design_1_d_axi_i2s_audio_0_0_fifo_4\ : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of design_1_d_axi_i2s_audio_0_0_fifo_4 : entity is "fifo_generator_v13_1_3,Vivado 2016.4";
-end design_1_d_axi_i2s_audio_0_0_fifo_4;
+  attribute x_core_info of \design_1_d_axi_i2s_audio_0_0_fifo_4\ : entity is "fifo_generator_v13_1_1,Vivado 2016.2";
+end \design_1_d_axi_i2s_audio_0_0_fifo_4\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_fifo_4 is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_fifo_4\ is
   signal NLW_U0_almost_empty_UNCONNECTED : STD_LOGIC;
   signal NLW_U0_almost_full_UNCONNECTED : STD_LOGIC;
   signal NLW_U0_axi_ar_dbiterr_UNCONNECTED : STD_LOGIC;
@@ -24911,8 +23882,10 @@ architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_fifo_4 is
   attribute C_WR_PNTR_WIDTH_WRCH of U0 : label is 4;
   attribute C_WR_RESPONSE_LATENCY : integer;
   attribute C_WR_RESPONSE_LATENCY of U0 : label is 1;
+  attribute KEEP_HIERARCHY : string;
+  attribute KEEP_HIERARCHY of U0 : label is "true";
 begin
-U0: entity work.design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_3
+U0: entity work.\design_1_d_axi_i2s_audio_0_0_fifo_generator_v13_1_1\
      port map (
       almost_empty => NLW_U0_almost_empty_UNCONNECTED,
       almost_full => NLW_U0_almost_full_UNCONNECTED,
@@ -25151,7 +24124,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_i2s_rx_tx is
+entity \design_1_d_axi_i2s_audio_0_0_i2s_rx_tx\ is
   port (
     dout : out STD_LOGIC_VECTOR ( 23 downto 0 );
     full : out STD_LOGIC;
@@ -25194,11 +24167,9 @@ entity design_1_d_axi_i2s_audio_0_0_i2s_rx_tx is
     CLK_100MHZ_I : in STD_LOGIC;
     \I2S_TRANSFER_CONTROL_REG_reg[1]\ : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_i2s_rx_tx : entity is "i2s_rx_tx";
-end design_1_d_axi_i2s_audio_0_0_i2s_rx_tx;
+end \design_1_d_axi_i2s_audio_0_0_i2s_rx_tx\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_i2s_rx_tx is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_i2s_rx_tx\ is
   signal \BCLK_Fall1__0\ : STD_LOGIC;
   signal Cnt_Bclk0 : STD_LOGIC;
   signal \^d\ : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -25228,24 +24199,24 @@ architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_i2s_rx_tx is
   signal NLW_ODDR_inst_R_UNCONNECTED : STD_LOGIC;
   signal NLW_ODDR_inst_S_UNCONNECTED : STD_LOGIC;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of Inst_I2sRxFifo : label is "fifo_32,fifo_generator_v13_1_3,{}";
+  attribute CHECK_LICENSE_TYPE of Inst_I2sRxFifo : label is "fifo_32,fifo_generator_v13_1_1,{}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of Inst_I2sRxFifo : label is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of Inst_I2sRxFifo : label is "fifo_generator_v13_1_3,Vivado 2016.4";
-  attribute CHECK_LICENSE_TYPE of Inst_I2sTxFifo : label is "fifo_32,fifo_generator_v13_1_3,{}";
+  attribute x_core_info of Inst_I2sRxFifo : label is "fifo_generator_v13_1_1,Vivado 2016.2";
+  attribute CHECK_LICENSE_TYPE of Inst_I2sTxFifo : label is "fifo_32,fifo_generator_v13_1_1,{}";
   attribute downgradeipidentifiedwarnings of Inst_I2sTxFifo : label is "yes";
-  attribute x_core_info of Inst_I2sTxFifo : label is "fifo_generator_v13_1_3,Vivado 2016.4";
+  attribute x_core_info of Inst_I2sTxFifo : label is "fifo_generator_v13_1_1,Vivado 2016.2";
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of Inst_I2sTxFifo_i_25 : label is "soft_lutpair37";
-  attribute CHECK_LICENSE_TYPE of Inst_Sampling : label is "fifo_4,fifo_generator_v13_1_3,{}";
+  attribute SOFT_HLUTNM of Inst_I2sTxFifo_i_25 : label is "soft_lutpair40";
+  attribute CHECK_LICENSE_TYPE of Inst_Sampling : label is "fifo_4,fifo_generator_v13_1_1,{}";
   attribute downgradeipidentifiedwarnings of Inst_Sampling : label is "yes";
-  attribute x_core_info of Inst_Sampling : label is "fifo_generator_v13_1_3,Vivado 2016.4";
+  attribute x_core_info of Inst_Sampling : label is "fifo_generator_v13_1_1,Vivado 2016.2";
   attribute \__SRVAL\ : string;
   attribute \__SRVAL\ of ODDR_inst : label is "TRUE";
   attribute box_type : string;
   attribute box_type of ODDR_inst : label is "PRIMITIVE";
-  attribute SOFT_HLUTNM of S_AXIS_MM2S_TREADY_INST_0 : label is "soft_lutpair37";
+  attribute SOFT_HLUTNM of S_AXIS_MM2S_TREADY_INST_0 : label is "soft_lutpair40";
 begin
   D(0) <= \^d\(0);
   DBG_RX_FIFO_D_I(23 downto 0) <= \^dbg_rx_fifo_d_i\(23 downto 0);
@@ -25260,7 +24231,7 @@ begin
   in0 <= \^in0\;
   rd_en <= \^rd_en\;
   wr_en <= \^wr_en\;
-Inst_Dcm: entity work.design_1_d_axi_i2s_audio_0_0_xil_defaultlib_DCM
+Inst_Dcm: entity work.\design_1_d_axi_i2s_audio_0_0_xil_defaultlib_DCM\
      port map (
       CLK_100MHZ_I => CLK_100MHZ_I,
       CLK_12_288 => clk_12_288,
@@ -25288,7 +24259,7 @@ Inst_I2sRxFifo_i_1: unisim.vcomponents.LUT2
       I1 => M_AXIS_S2MM_ARESETN,
       O => \^in0\
     );
-Inst_I2sRxTx: entity work.design_1_d_axi_i2s_audio_0_0_i2s_ctl
+Inst_I2sRxTx: entity work.\design_1_d_axi_i2s_audio_0_0_i2s_ctl\
      port map (
       \BCLK_Fall1__0\ => \BCLK_Fall1__0\,
       BCLK_I => BCLK_I,
@@ -25310,10 +24281,10 @@ Inst_I2sRxTx: entity work.design_1_d_axi_i2s_audio_0_0_i2s_ctl
       SDATA_O => SDATA_O,
       SR(0) => Inst_Rst_Sync_RST_n_0,
       dout(3 downto 0) => SamplingFrequncy(3 downto 0),
-      ram_full_fb_i_reg => \^dbg_rx_fifo_wr_en_i\,
+      \gic0.gc0.count_reg[11]\ => \^dbg_rx_fifo_wr_en_i\,
       rd_en => \^rd_en\
     );
-Inst_I2sTxFifo: entity work.design_1_d_axi_i2s_audio_0_0_fifo_32
+Inst_I2sTxFifo: entity work.\design_1_d_axi_i2s_audio_0_0_fifo_32\
      port map (
       din(23 downto 0) => din(23 downto 0),
       dout(23 downto 0) => \^dout\(23 downto 0),
@@ -25345,14 +24316,14 @@ Inst_Rst_Sync_RST: entity work.\design_1_d_axi_i2s_audio_0_0_rst_sync__xdcDup__1
       RST_I => Inst_Dcm_n_0,
       SR(0) => Inst_Rst_Sync_RST_n_0
     );
-Inst_Rst_Sync_TX_RST: entity work.design_1_d_axi_i2s_audio_0_0_rst_sync
+Inst_Rst_Sync_TX_RST: entity work.\design_1_d_axi_i2s_audio_0_0_rst_sync\
      port map (
       CLK_12_288 => clk_12_288,
       \I2S_FIFO_CONTROL_REG_reg[30]\(0) => \I2S_FIFO_CONTROL_REG_reg[31]\(1),
       Q_O => \^q_o\,
       S_AXIS_MM2S_ARESETN => S_AXIS_MM2S_ARESETN
     );
-Inst_Sampling: entity work.design_1_d_axi_i2s_audio_0_0_fifo_4
+Inst_Sampling: entity work.\design_1_d_axi_i2s_audio_0_0_fifo_4\
      port map (
       din(3 downto 0) => \I2S_CLOCK_CONTROL_REG_reg[16]\(3 downto 0),
       dout(3 downto 0) => SamplingFrequncy(3 downto 0),
@@ -25364,7 +24335,7 @@ Inst_Sampling: entity work.design_1_d_axi_i2s_audio_0_0_fifo_4
       wr_clk => AXI_L_aclk,
       wr_en => '1'
     );
-Inst_SyncBit_CTL_MM: entity work.design_1_d_axi_i2s_audio_0_0_Sync_ff
+Inst_SyncBit_CTL_MM: entity work.\design_1_d_axi_i2s_audio_0_0_Sync_ff\
      port map (
       CLK_12_288 => clk_12_288,
       \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram\ => Inst_SyncBit_CTL_MM_n_1,
@@ -25376,7 +24347,7 @@ Inst_SyncBit_CTL_MM: entity work.design_1_d_axi_i2s_audio_0_0_Sync_ff
       Q_O_reg_0 => \^dbg_rx_rs_i\,
       Q_O_reg_1 => \^dbg_tx_rs_i\
     );
-Inst_SyncBit_RX_RS: entity work.design_1_d_axi_i2s_audio_0_0_Sync_ff_0
+Inst_SyncBit_RX_RS: entity work.\design_1_d_axi_i2s_audio_0_0_Sync_ff_0\
      port map (
       \BCLK_Fall1__0\ => \BCLK_Fall1__0\,
       CLK_12_288 => clk_12_288,
@@ -25384,19 +24355,19 @@ Inst_SyncBit_RX_RS: entity work.design_1_d_axi_i2s_audio_0_0_Sync_ff_0
       \I2S_TRANSFER_CONTROL_REG_reg[1]\(0) => \I2S_TRANSFER_CONTROL_REG_reg[1]\(1),
       Q_O_reg_0 => \^dbg_tx_rs_i\
     );
-Inst_SyncBit_Rx_Full: entity work.design_1_d_axi_i2s_audio_0_0_Sync_ff_1
+Inst_SyncBit_Rx_Full: entity work.\design_1_d_axi_i2s_audio_0_0_Sync_ff_1\
      port map (
       AXI_L_aclk => AXI_L_aclk,
       D(0) => RxFifoFull,
       \I2S_STATUS_REG_reg[17]\(0) => \I2S_STATUS_REG_reg[17]\(1)
     );
-Inst_SyncBit_TX_RS: entity work.design_1_d_axi_i2s_audio_0_0_Sync_ff_2
+Inst_SyncBit_TX_RS: entity work.\design_1_d_axi_i2s_audio_0_0_Sync_ff_2\
      port map (
       CLK_12_288 => clk_12_288,
       \Data_In_int_reg[8]\ => \^dbg_tx_rs_i\,
       \I2S_TRANSFER_CONTROL_REG_reg[0]\(0) => \I2S_TRANSFER_CONTROL_REG_reg[1]\(0)
     );
-Inst_SyncBit_Tx_Empty: entity work.design_1_d_axi_i2s_audio_0_0_Sync_ff_3
+Inst_SyncBit_Tx_Empty: entity work.\design_1_d_axi_i2s_audio_0_0_Sync_ff_3\
      port map (
       AXI_L_aclk => AXI_L_aclk,
       D(0) => \^d\(0),
@@ -25456,7 +24427,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0_AXI_L is
+entity \design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0_AXI_L\ is
   port (
     AXI_L_rvalid : out STD_LOGIC;
     S_AXI_ARREADY : out STD_LOGIC;
@@ -25496,11 +24467,9 @@ entity design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0_AXI_L is
     AXI_L_bready : in STD_LOGIC;
     AXI_L_rready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0_AXI_L : entity is "d_axi_i2s_audio_v2_0_AXI_L";
-end design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0_AXI_L;
+end \design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0_AXI_L\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0_AXI_L is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0_AXI_L\ is
   signal \^axi_l_bvalid\ : STD_LOGIC;
   signal \^axi_l_rvalid\ : STD_LOGIC;
   signal CTL_MASTER_MODE_I : STD_LOGIC;
@@ -28224,7 +27193,7 @@ begin
       Q => I2S_TRANSFER_CONTROL_REG(9),
       R => axi_awready_i_1_n_0
     );
-Inst_I2sCtl: entity work.design_1_d_axi_i2s_audio_0_0_i2s_rx_tx
+Inst_I2sCtl: entity work.\design_1_d_axi_i2s_audio_0_0_i2s_rx_tx\
      port map (
       AXI_L_aclk => AXI_L_aclk,
       BCLK_I => BCLK_I,
@@ -28276,7 +27245,7 @@ Inst_I2sCtl: entity work.design_1_d_axi_i2s_audio_0_0_i2s_rx_tx
       rd_en => DBG_TX_FIFO_RD_EN_I,
       wr_en => DBG_TX_FIFO_WR_EN_I
     );
-Inst_I2sStream: entity work.design_1_d_axi_i2s_audio_0_0_i2s_stream
+Inst_I2sStream: entity work.\design_1_d_axi_i2s_audio_0_0_i2s_stream\
      port map (
       CO(0) => gtOp1_in,
       D(1) => DBG_RX_FIFO_EMPTY_O,
@@ -30698,7 +29667,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0 is
+entity \design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0\ is
   port (
     BCLK_O : out STD_LOGIC;
     BCLK_I : in STD_LOGIC;
@@ -30747,18 +29716,16 @@ entity design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0 is
     AXI_L_rready : in STD_LOGIC
   );
   attribute C_AXI_L_ADDR_WIDTH : integer;
-  attribute C_AXI_L_ADDR_WIDTH of design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0 : entity is 6;
+  attribute C_AXI_L_ADDR_WIDTH of \design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0\ : entity is 6;
   attribute C_AXI_L_DATA_WIDTH : integer;
-  attribute C_AXI_L_DATA_WIDTH of design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0 : entity is 32;
+  attribute C_AXI_L_DATA_WIDTH of \design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0\ : entity is 32;
   attribute C_AXI_STREAM_DATA_WIDTH : integer;
-  attribute C_AXI_STREAM_DATA_WIDTH of design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0 : entity is 32;
+  attribute C_AXI_STREAM_DATA_WIDTH of \design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0\ : entity is 32;
   attribute C_DATA_WIDTH : integer;
-  attribute C_DATA_WIDTH of design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0 : entity is 24;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0 : entity is "d_axi_i2s_audio_v2_0";
-end design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0;
+  attribute C_DATA_WIDTH of \design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0\ : entity is 24;
+end \design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0 is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0\ is
   signal \<const0>\ : STD_LOGIC;
   signal \<const1>\ : STD_LOGIC;
   signal \^lrclk_t\ : STD_LOGIC;
@@ -30791,7 +29758,7 @@ VCC: unisim.vcomponents.VCC
      port map (
       P => \<const1>\
     );
-d_axi_i2s_audio_v2_0_AXI_L_inst: entity work.design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0_AXI_L
+d_axi_i2s_audio_v2_0_AXI_L_inst: entity work.\design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0_AXI_L\
      port map (
       AXI_L_aclk => AXI_L_aclk,
       AXI_L_araddr(3 downto 0) => AXI_L_araddr(5 downto 2),
@@ -30836,7 +29803,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_d_axi_i2s_audio_0_0 is
+entity \design_1_d_axi_i2s_audio_0_0\ is
   port (
     BCLK_O : out STD_LOGIC;
     LRCLK_O : out STD_LOGIC;
@@ -30881,16 +29848,16 @@ entity design_1_d_axi_i2s_audio_0_0 is
     AXI_L_rready : in STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
-  attribute NotValidForBitStream of design_1_d_axi_i2s_audio_0_0 : entity is true;
+  attribute NotValidForBitStream of \design_1_d_axi_i2s_audio_0_0\ : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of design_1_d_axi_i2s_audio_0_0 : entity is "design_1_d_axi_i2s_audio_0_0,d_axi_i2s_audio_v2_0,{}";
+  attribute CHECK_LICENSE_TYPE of \design_1_d_axi_i2s_audio_0_0\ : entity is "design_1_d_axi_i2s_audio_0_0,d_axi_i2s_audio_v2_0,{}";
   attribute downgradeipidentifiedwarnings : string;
-  attribute downgradeipidentifiedwarnings of design_1_d_axi_i2s_audio_0_0 : entity is "yes";
+  attribute downgradeipidentifiedwarnings of \design_1_d_axi_i2s_audio_0_0\ : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of design_1_d_axi_i2s_audio_0_0 : entity is "d_axi_i2s_audio_v2_0,Vivado 2016.4";
-end design_1_d_axi_i2s_audio_0_0;
+  attribute x_core_info of \design_1_d_axi_i2s_audio_0_0\ : entity is "d_axi_i2s_audio_v2_0,Vivado 2016.2";
+end \design_1_d_axi_i2s_audio_0_0\;
 
-architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0 is
+architecture STRUCTURE of \design_1_d_axi_i2s_audio_0_0\ is
   signal NLW_U0_BCLK_T_UNCONNECTED : STD_LOGIC;
   signal NLW_U0_LRCLK_T_UNCONNECTED : STD_LOGIC;
   attribute C_AXI_L_ADDR_WIDTH : integer;
@@ -30902,7 +29869,7 @@ architecture STRUCTURE of design_1_d_axi_i2s_audio_0_0 is
   attribute C_DATA_WIDTH : integer;
   attribute C_DATA_WIDTH of U0 : label is 24;
 begin
-U0: entity work.design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0
+U0: entity work.\design_1_d_axi_i2s_audio_0_0_d_axi_i2s_audio_v2_0\
      port map (
       AXI_L_aclk => AXI_L_aclk,
       AXI_L_araddr(5 downto 0) => AXI_L_araddr(5 downto 0),

@@ -63,7 +63,7 @@
 
 /************************** Variable Definitions *****************************/
 
-extern volatile sDemo_t Demo;
+extern volatile sHwState_t Demo;
 
 /******************************************************************************
  * Function to write one byte (8-bits) to one of the registers from the audio
@@ -371,7 +371,7 @@ XStatus fnInitAudio()
  *
  * @return	none.
  *****************************************************************************/
-void fnAudioRecord(XAxiDma AxiDma, u32 u32NrSamples)
+void fnAudioRecord(XAxiDma AxiDma, void* buffer, u32 u32NrSamples)
 {
 	union ubitField uTransferVariable;
 
@@ -380,7 +380,7 @@ void fnAudioRecord(XAxiDma AxiDma, u32 u32NrSamples)
 		xil_printf("\r\nEnter Record function");
 	}
 
-	uTransferVariable.l = XAxiDma_SimpleTransfer(&AxiDma,(u32) MEM_BASE_ADDR, 5*u32NrSamples, XAXIDMA_DEVICE_TO_DMA);
+	uTransferVariable.l = XAxiDma_SimpleTransfer(&AxiDma,(u32) buffer, 5*u32NrSamples, XAXIDMA_DEVICE_TO_DMA);
 	if (uTransferVariable.l != XST_SUCCESS)
 	{
 		if (Demo.u8Verbose)
@@ -413,7 +413,7 @@ void fnAudioRecord(XAxiDma AxiDma, u32 u32NrSamples)
  *
  * @return	none.
  *****************************************************************************/
-void fnAudioPlay(XAxiDma AxiDma, u32 u32NrSamples)
+void fnAudioPlay(XAxiDma AxiDma, void* buffer, u32 u32NrSamples)
 {
 	union ubitField uTransferVariable;
 
@@ -431,7 +431,7 @@ void fnAudioPlay(XAxiDma AxiDma, u32 u32NrSamples)
 	Xil_Out32(I2S_TRANSFER_CONTROL_REG, uTransferVariable.l);
 
 
-	uTransferVariable.l = XAxiDma_SimpleTransfer(&AxiDma,(u32) MEM_BASE_ADDR, 5*u32NrSamples, XAXIDMA_DMA_TO_DEVICE);
+	uTransferVariable.l = XAxiDma_SimpleTransfer(&AxiDma,(u32) buffer, 5*u32NrSamples, XAXIDMA_DMA_TO_DEVICE);
 	if (uTransferVariable.l != XST_SUCCESS)
 	{
 		if (Demo.u8Verbose)

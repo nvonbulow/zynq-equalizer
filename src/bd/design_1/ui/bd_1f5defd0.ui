@@ -1,5 +1,5 @@
 {
-   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+   guistr: "# # String gsaved with Nlview 6.5.12  2016-01-29 bk=1.3547 VDI=39 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
 preplace port ac_reclrc -pg 1 -y 920 -defaultsOSRD
 preplace port btns_4bits -pg 1 -y 640 -defaultsOSRD
@@ -13,45 +13,68 @@ preplace port ac_pblrc -pg 1 -y 900 -defaultsOSRD
 preplace port FIXED_IO_0 -pg 1 -y 200 -defaultsOSRD
 preplace portBus ac_muten -pg 1 -y 750 -defaultsOSRD
 preplace inst axi_iic_0 -pg 1 -lvl 5 -y 490 -defaultsOSRD
-preplace inst axi_dma_0 -pg 1 -lvl 3 -y 420 -defaultsOSRD
-preplace inst rst_processing_system7_0_100M -pg 1 -lvl 1 -y 460 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 3 -y 480 -defaultsOSRD
+preplace inst axi_dma_1 -pg 1 -lvl 3 -y -150 -defaultsOSRD
+preplace inst rst_processing_system7_0_100M -pg 1 -lvl 1 -y 480 -defaultsOSRD
 preplace inst xlconstant_0 -pg 1 -lvl 5 -y 750 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -y -410 -defaultsOSRD
 preplace inst axi_gpio_0 -pg 1 -lvl 5 -y 650 -defaultsOSRD
 preplace inst xlconcat_0 -pg 1 -lvl 4 -y 470 -defaultsOSRD
-preplace inst d_axi_i2s_audio_0 -pg 1 -lvl 5 -y 920 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 2 -y -340 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 1 -y -230 -defaultsOSRD
+preplace inst xfft_0 -pg 1 -lvl 3 -y -410 -defaultsOSRD
+preplace inst axis_dwidth_converter_0 -pg 1 -lvl 2 -y -570 -defaultsOSRD
+preplace inst d_axi_i2s_audio_0 -pg 1 -lvl 5 -y 940 -defaultsOSRD
+preplace inst axis_dwidth_converter_1 -pg 1 -lvl 2 -y -710 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 4 -y -310 -defaultsOSRD
 preplace inst axi_mem_intercon -pg 1 -lvl 4 -y 140 -defaultsOSRD
-preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 560 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 5 -y 270 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 580 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -y 260 -defaultsOSRD
 preplace netloc processing_system7_0_DDR 1 5 1 NJ
-preplace netloc processing_system7_0_axi_periph_M03_AXI 1 2 3 N 590 NJ 590 1390J
-preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 1 650
-preplace netloc d_axi_i2s_audio_0_LRCLK_O 1 5 1 1910
-preplace netloc axi_iic_0_iic2intc_irpt 1 3 3 1090 380 1400J 410 1880
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 360 290 NJ 290 NJ 290 1400J 130 1880
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 20 300 NJ 300 NJ 300 NJ 300 1390J 100 1900
-preplace netloc axi_mem_intercon_M00_AXI 1 4 1 1430
-preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 3 N 570 NJ 570 1400J
-preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 4 350 930 670 930 1070 930 1440
-preplace netloc d_axi_i2s_audio_0_BCLK_O 1 5 1 1900J
-preplace netloc axi_dma_0_s2mm_introut 1 3 1 1080
-preplace netloc axi_dma_0_M_AXI_MM2S 1 3 1 1030
+preplace netloc xlconstant_1_dout 1 1 2 N -410 960
+preplace netloc axi_dma_1_M_AXI_S2MM 1 3 1 1460
+preplace netloc axis_dwidth_converter_0_M_AXIS 1 2 1 990
+preplace netloc processing_system7_0_axi_periph_M03_AXI 1 2 3 930 370 NJ 370 1920
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 1 940
+preplace netloc d_axi_i2s_audio_0_LRCLK_O 1 5 1 2430
+preplace netloc axi_iic_0_iic2intc_irpt 1 3 3 1500 350 1960 560 2410
+preplace netloc axi_dma_1_M_AXIS_MM2S 1 1 3 620 -280 NJ -280 1430
+preplace netloc axi_dma_1_M_AXI_MM2S 1 3 1 1450
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 620 330 NJ 330 NJ 330 1900 400 2420
+preplace netloc processing_system7_0_axi_periph_M05_AXI 1 0 3 -120 150 N 150 920
+preplace netloc xlconcat_1_dout 1 2 1 920
+preplace netloc axi_dma_1_s2mm_introut 1 3 1 1450
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 NJ 320 NJ 320 NJ 320 NJ 320 1980 410 2410
+preplace netloc axi_mem_intercon_M00_AXI 1 4 1 1970
+preplace netloc xfft_0_M_AXIS_DATA 1 1 3 620 -780 N -780 1480
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 3 940 600 NJ 600 1910
+preplace netloc axi_gpio_1_gpio_io_o 1 1 1 580
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 0 5 -110 -150 590 -400 950 -300 1500 300 1930
+preplace netloc d_axi_i2s_audio_0_BCLK_O 1 5 1 2420
+preplace netloc axi_dma_0_s2mm_introut 1 3 1 1490
+preplace netloc axi_dma_0_M_AXI_MM2S 1 3 1 1430
 preplace netloc xlconstant_0_dout 1 5 1 NJ
-preplace netloc xlconcat_0_dout 1 4 1 1390
+preplace netloc xlconcat_0_dout 1 4 1 1950
 preplace netloc processing_system7_0_FIXED_IO 1 5 1 NJ
 preplace netloc d_axi_i2s_audio_0_SDATA_O 1 5 1 NJ
-preplace netloc axi_dma_0_mm2s_introut 1 3 1 1060
+preplace netloc axi_dma_0_mm2s_introut 1 3 1 1440
 preplace netloc axi_gpio_0_GPIO 1 5 1 NJ
 preplace netloc axi_iic_0_IIC 1 5 1 NJ
-preplace netloc d_axi_i2s_audio_0_AXI_S2MM 1 2 4 680 880 NJ 880 1420J 420 1890
-preplace netloc axi_dma_0_M_AXI_S2MM 1 3 1 1040
-preplace netloc axi_gpio_0_ip2intc_irpt 1 3 3 1090 560 NJ 560 1880
-preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 3 350 110 NJ 110 N
+preplace netloc axi_interconnect_0_M00_AXI 1 4 1 1980
+preplace netloc d_axi_i2s_audio_0_AXI_S2MM 1 2 4 990 360 NJ 360 NJ 580 2410
+preplace netloc axi_dma_0_M_AXI_S2MM 1 3 1 1470
+preplace netloc axi_gpio_0_ip2intc_irpt 1 3 3 1500 570 NJ 570 2420
+preplace netloc axi_gpio_1_gpio2_io_o 1 1 1 610
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 3 580 110 NJ 110 1480
 preplace netloc d_axi_i2s_audio_0_MCLK_O 1 5 1 NJ
 preplace netloc SDATA_I_1 1 0 5 NJ 870 NJ 870 NJ 870 NJ 870 NJ
-preplace netloc axi_dma_0_M_AXIS_MM2S 1 3 2 1030 850 NJ
-preplace netloc processing_system7_0_FCLK_CLK1 1 0 6 30 890 360 890 660 890 1050 890 1410 120 1890
-preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 3 N 550 NJ 550 1430J
-levelinfo -pg 1 0 190 520 870 1260 1670 1930 -top 0 -bot 1060
+preplace netloc axis_dwidth_converter_1_M_AXIS 1 2 1 970
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 3 2 NJ 580 1900
+preplace netloc processing_system7_0_FCLK_CLK1 1 0 6 -130 -310 600 -500 980 -520 1490 290 1970 420 2430
+preplace netloc processing_system7_0_axi_periph_M04_AXI 1 2 1 960
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 3 950 590 NJ 590 1980
+preplace netloc axi_dma_1_mm2s_introut 1 3 1 1460
+levelinfo -pg 1 -150 420 770 1230 1740 2200 2470 -top -790 -bot 1080
 ",
 }
 0

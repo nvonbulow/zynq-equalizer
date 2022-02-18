@@ -10,7 +10,7 @@
 
 /************************** Variable Definitions *****************************/
 
-extern volatile sDemo_t Demo;
+extern volatile sHwState_t Demo;
 extern XAxiDma_Config *pCfgPtr;
 
 /******************************************************************************

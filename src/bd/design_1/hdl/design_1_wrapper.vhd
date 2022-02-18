@@ -1,8 +1,8 @@
 --Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
---Date        : Mon Feb 27 13:14:00 2017
---Host        : WK117 running 64-bit major release  (build 9200)
+--Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+--Date        : Wed Feb 16 22:50:26 2022
+--Host        : nick-desktop running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
 --Purpose     : IP block netlist
@@ -80,8 +80,8 @@ architecture STRUCTURE of design_1_wrapper is
     btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     ac_recdat : in STD_LOGIC;
     ac_bclk : out STD_LOGIC;
-    ac_reclrc : out STD_LOGIC;
     ac_pblrc : out STD_LOGIC;
+    ac_reclrc : out STD_LOGIC;
     ac_mclk : out STD_LOGIC;
     ac_pbdat : out STD_LOGIC;
     ac_muten : out STD_LOGIC_VECTOR ( 0 to 0 )

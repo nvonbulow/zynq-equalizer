@@ -64,7 +64,7 @@
 
 // Audio constants
 // Number of seconds to record/playback
-#define NR_SEC_TO_REC_PLAY		5
+#define NR_SEC_TO_REC_PLAY		1
 
 // ADC/DAC sampling rate in Hz
 //#define AUDIO_SAMPLING_RATE		1000
@@ -135,44 +135,9 @@ const ivt_t ivt[] = {
 #endif
 
 
-/*****************************************************************************/
-/**
-*
-* Main function
-*
-* This function is the main entry of the interrupt test. It does the following:
-*	Initialize the interrupt controller
-*	Initialize the IIC controller
-*	Initialize the User I/O driver
-*	Initialize the DMA engine
-*	Initialize the Audio I2S controller
-*	Enable the interrupts
-*	Wait for a button event then start selected task
-*	Wait for task to complete
-*
-* @param	None
-*
-* @return
-*		- XST_SUCCESS if example finishes successfully
-*		- XST_FAILURE if example fails.
-*
-* @note		None.
-*
-******************************************************************************/
-int main(void)
-{
+int initHw() {
 	int Status;
-
-	Demo.u8Verbose = 0;
-
-	//Xil_DCacheDisable();
-
-	xil_printf("\r\n--- Entering main() --- \r\n");
-
-
-	//
 	//Initialize the interrupt controller
-
 	Status = fnInitInterruptController(&sIntc);
 	if(Status != XST_SUCCESS) {
 		xil_printf("Error initializing interrupts");
@@ -212,7 +177,6 @@ int main(void)
 
 	{
 		XTime  tStart, tEnd;
-
 		XTime_GetTime(&tStart);
 		do {
 			XTime_GetTime(&tEnd);
@@ -230,12 +194,56 @@ int main(void)
 	// Enable all interrupts in our interrupt vector table
 	// Make sure all driver instances using interrupts are initialized first
 	fnEnableInterrupts(&sIntc, &ivt[0], sizeof(ivt)/sizeof(ivt[0]));
+	return XST_SUCCESS;
+}
 
+/*****************************************************************************/
+/**
+*
+* Main function
+*
+* This function is the main entry of the interrupt test. It does the following:
+*	Initialize the interrupt controller
+*	Initialize the IIC controller
+*	Initialize the User I/O driver
+*	Initialize the DMA engine
+*	Initialize the Audio I2S controller
+*	Enable the interrupts
+*	Wait for a button event then start selected task
+*	Wait for task to complete
+*
+* @param	None
+*
+* @return
+*		- XST_SUCCESS if example finishes successfully
+*		- XST_FAILURE if example fails.
+*
+* @note		None.
+*
+******************************************************************************/
+int main(void)
+{
+	u32* audio_buffer;
+	int i;
 
+	Demo.u8Verbose = 0;
+
+	//Xil_DCacheDisable();
+
+	xil_printf("\r\n--- Entering main() --- \r\n");
+
+	initHw();
 
 	xil_printf("----------------------------------------------------------\r\n");
 	xil_printf("Zybo DMA Audio Demo\r\n");
 	xil_printf("----------------------------------------------------------\r\n");
+	audio_buffer = malloc((sizeof(u32)+1)*NR_AUDIO_SAMPLES);
+
+	if(!audio_buffer) {
+		xil_printf("Failed to allocate memory for the audio buffer\r\n");
+		return XST_FAILURE;
+	}
+	xil_printf("Base Address: %d\r\n", audio_buffer);
 
     //main loop
 
@@ -250,11 +258,15 @@ int main(void)
 			Xil_Out32(I2S_STREAM_CONTROL_REG, 0x00000000);
 			Xil_Out32(I2S_TRANSFER_CONTROL_REG, 0x00000000);
 
-			Xil_DCacheInvalidateRange((u32) MEM_BASE_ADDR, 5*NR_AUDIO_SAMPLES);
+			Xil_DCacheInvalidateRange((u32) audio_buffer, 5*NR_AUDIO_SAMPLES);
 			//microblaze_invalidate_dcache();
 			// Reset S2MM event and record flag
 			Demo.fDmaS2MMEvent = 0;
 			Demo.fAudioRecord = 0;
+
+			for(i = 0; i < NR_AUDIO_SAMPLES; i++) {
+				xil_printf("%d,", audio_buffer[i]);
+			}
 		}
 
 		// Checking the DMA MM2S event flag
@@ -267,7 +279,7 @@ int main(void)
 			Xil_Out32(I2S_TRANSFER_CONTROL_REG, 0x00000000);
 			//Flush cache
 //					//microblaze_flush_dcache();
-			Xil_DCacheFlushRange((u32) MEM_BASE_ADDR, 5*NR_AUDIO_SAMPLES);
+			Xil_DCacheFlushRange((u32) audio_buffer, 5*NR_AUDIO_SAMPLES);
 			//Reset MM2S event and playback flag
 			Demo.fDmaMM2SEvent = 0;
 			Demo.fAudioPlayback = 0;
@@ -295,7 +307,7 @@ int main(void)
 						xil_printf("\r\nStart Recording...\r\n");
 						fnSetMicInput();
 
-						fnAudioRecord(sAxiDma,NR_AUDIO_SAMPLES);
+						fnAudioRecord(sAxiDma, audio_buffer, NR_AUDIO_SAMPLES);
 						Demo.fAudioRecord = 1;
 					}
 					else
@@ -315,7 +327,7 @@ int main(void)
 					{
 						xil_printf("\r\nStart Playback...\r\n");
 						fnSetHpOutput();
-						fnAudioPlay(sAxiDma,NR_AUDIO_SAMPLES);
+						fnAudioPlay(sAxiDma, audio_buffer, NR_AUDIO_SAMPLES);
 						Demo.fAudioPlayback = 1;
 					}
 					else
@@ -335,7 +347,7 @@ int main(void)
 					{
 						xil_printf("\r\nStart Recording...\r\n");
 						fnSetLineInput();
-						fnAudioRecord(sAxiDma,NR_AUDIO_SAMPLES);
+						fnAudioRecord(sAxiDma, audio_buffer, NR_AUDIO_SAMPLES);
 						Demo.fAudioRecord = 1;
 					}
 					else
@@ -355,7 +367,7 @@ int main(void)
 					{
 						xil_printf("\r\nStart Playback...");
 						fnSetLineOutput();
-						fnAudioPlay(sAxiDma,NR_AUDIO_SAMPLES);
+						fnAudioPlay(sAxiDma, audio_buffer, NR_AUDIO_SAMPLES);
 						Demo.fAudioPlayback = 1;
 					}
 					else
