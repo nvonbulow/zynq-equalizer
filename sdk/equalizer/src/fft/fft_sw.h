@@ -1,10 +1,10 @@
 /******************************************************************************
- * @file intc.h
- * Interrupt system initialization.
+ * @file audio.h
+ * Audio driver include file.
  *
- * @author Elod Gyorgy
+ * @authors RoHegbeC
  *
- * @date 2015-Jan-3
+ * @date 2014-Oct-30
  *
  * @copyright
  * (c) 2015 Copyright Digilent Incorporated
@@ -37,52 +37,97 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
  * @desciption
- * Contains interrupt controller initialization function.
+ *
+ * This program was initially developed to be run from within the BRAM. It is
+ * constructed to run in a polling mode, in which the program poles the Empty and
+ * Full signals of the two FIFO's which are implemented in the audio I2S VHDL core.
+ * In order to have a continuous and stable Sound both when recording and playing
+ * the user must ensure that DDR cache is enabled. This is only mandatory when the
+ * program is loaded in to the DDR, if the program is stored in the BRAM then
+ * the cache is not mandatory.
  *
  * <pre>
  * MODIFICATION HISTORY:
  *
  * Ver   Who          Date     Changes
  * ----- ------------ ----------- -----------------------------------------------
- * 1.00  Elod Gyorgy  2015-Jan-3 First release
+ * 1.00  RoHegbeC 2014-Oct-30 First release
  *
  * </pre>
  *
  *****************************************************************************/
 
-#ifndef INTC_H_
-#define INTC_H_
+#ifndef FFT_SW_H_
+#define FFT_SW_H_
 
+#include <math.h>
+#include <complex.h>
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xaxidma.h"
+#include "xil_io.h"
+#include "xiic.h"
+#include "xil_printf.h"
+#include "xil_cache.h"
 #include "xstatus.h"
-#ifdef XPAR_INTC_0_DEVICE_ID
- #include "xintc.h"
-#else
- #include "xscugic.h"
-#endif
+#include "sleep.h"
+#include "../dma/dma.h"
+#include "../hw.h"
 
-#define RETURN_ON_FAILURE(x) if ((x) != XST_SUCCESS) return XST_FAILURE;
 
-/*
- * Structure for interrupt id, handler and callback reference
- */
+/************************** Constant Definitions *****************************/
+
+enum eFFT_nfft {
+	NFFT_1     = 0,
+	NFFT_2     = 1,
+	NFFT_4     = 2,
+	NFFT_8     = 3,
+	NFFT_16    = 4,
+	NFFT_32    = 5,
+	NFFT_64    = 6,
+	NFFT_128   = 7,
+	NFFT_256   = 8,
+	NFFT_512   = 9,
+	NFFT_1024  = 10,
+	NFFT_2048  = 11,
+	NFFT_4096  = 12,
+	NFFT_8192  = 13,
+	NFFT_16384 = 14,
+	NFFT_32768 = 15,
+};
+
+enum eFFT_fwdinv {
+	FFT_INV = 0,
+	FFT_FWD = 1,
+};
+
+
+/************************** Variable Definitions *****************************/
+
 typedef struct {
-	u8 id;
-	XInterruptHandler handler;
-	void *pvCallbackRef;
-} ivt_t;
+	// scale
+	u32 scale_sch_0;
+	enum eFFT_fwdinv fwd_inv_0;
+	enum eFFT_nfft nfft;
+} sFFTConfig_t;
 
-#ifdef XPAR_INTC_0_DEVICE_ID
- XStatus fnInitInterruptController(XIntc *psIntc);
- void fnEnableInterrupts(XIntc *psIntc, const ivt_t *prgsIvt, unsigned int csIVectors);
-#define intc XIntc
-#define INTC_DEVICE_ID XPAR_INTC_0_DEVICE_ID
-#else
- XStatus fnInitInterruptController(XScuGic *psIntc);
- void fnEnableInterrupts(XScuGic *psIntc, const ivt_t *prgsIvt, unsigned int csIVectors);
-#define intc XScuGic
-#define INTC_DEVICE_ID XPAR_PS7_SCUGIC_0_DEVICE_ID
-#define INTC_HANDLER	XScuGic_InterruptHandler
-#endif
+typedef struct {
+	XGpio* gpio;
+	XAxiDma* dma;
+	sFFTConfig_t config;
+} FFT;
 
 
-#endif /* INTC_H_ */
+/************************** Function Definitions *****************************/
+
+XStatus fnInitFFT();
+XStatus fnConfigureFFT(FFT* inst, sFFTConfig_t config);
+
+
+/************************** Software Implementation *********************************/
+
+void fft(float complex input[], float complex output[], int n);
+
+void ifft(float complex input[], float complex output[], int n);
+
+#endif /* AUDIO_H_ */

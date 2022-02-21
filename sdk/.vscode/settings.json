@@ -1,8 +1,0 @@
-{
-    "C_Cpp.intelliSenseEngineFallback": "Enabled",
-    "files.associations": {
-        "*.h": "cpp",
-        "cmath": "c",
-        "complex": "c"
-    }
-}

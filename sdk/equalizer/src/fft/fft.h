@@ -1,133 +1,222 @@
-/******************************************************************************
- * @file audio.h
- * Audio driver include file.
- *
- * @authors RoHegbeC
- *
- * @date 2014-Oct-30
- *
- * @copyright
- * (c) 2015 Copyright Digilent Incorporated
- * All Rights Reserved
- *
- * This program is free software; distributed under the terms of BSD 3-clause
- * license ("Revised BSD License", "New BSD License", or "Modified BSD License")
- *
- * Redistribution and use in source and binary forms, with or without modification,
- * are permitted provided that the following conditions are met:
- *
- * 1. Redistributions of source code must retain the above copyright notice, this
- *    list of conditions and the following disclaimer.
- * 2. Redistributions in binary form must reproduce the above copyright notice,
- *    this list of conditions and the following disclaimer in the documentation
- *    and/or other materials provided with the distribution.
- * 3. Neither the name(s) of the above-listed copyright holder(s) nor the names
- *    of its contributors may be used to endorse or promote products derived
- *    from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
- * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
- * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
- * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
- * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
- * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
- * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
- * @desciption
- *
- * This program was initially developed to be run from within the BRAM. It is
- * constructed to run in a polling mode, in which the program poles the Empty and
- * Full signals of the two FIFO's which are implemented in the audio I2S VHDL core.
- * In order to have a continuous and stable Sound both when recording and playing
- * the user must ensure that DDR cache is enabled. This is only mandatory when the
- * program is loaded in to the DDR, if the program is stored in the BRAM then
- * the cache is not mandatory.
- *
- * <pre>
- * MODIFICATION HISTORY:
- *
- * Ver   Who          Date     Changes
- * ----- ------------ ----------- -----------------------------------------------
- * 1.00  RoHegbeC 2014-Oct-30 First release
- *
- * </pre>
- *
- *****************************************************************************/
+//////////////////////////////////////////////////////////////////////////////////
+//
+// Company:        Xilinx
+// Engineer:       bwiec
+// Create Date:    29 June 2015, 03:22:41 PM
+// Library Name:   Fast Fourier Transform
+// File Name:      fft.h
+// Target Devices: Zynq
+// Tool Versions:  2015.1
+// Description:    Implementation of FFT using a hardware accelerator with DMA.
+// Dependencies:
+//   - cplx_data.h - Driver version v1.0
+//   - dma_accel.h - Driver version v1.0
+//   - gpio.h      - Driver version v4.0
+// Revision History:
+//   - v1.0
+//     * Initial release
+//     * Tested on ZC702 and Zedboard
+// Additional Comments:
+//   - GPIO is used with some additional glue logic to control the FFT core's
+//     config interface for setting various parameters.
+//
+//////////////////////////////////////////////////////////////////////////////////
 
-#ifndef FFT_H_
-#define FFT_H_
+#ifndef FFT_HW_H_
+#define FFT_HW_H_
 
-#include <math.h>
-#include <complex.h>
-#include "xparameters.h"
-#include "xgpio.h"
-#include "xaxidma.h"
-#include "xil_io.h"
-#include "xiic.h"
-#include "xil_printf.h"
-#include "xil_cache.h"
-#include "xstatus.h"
-#include "sleep.h"
-#include "../dma/dma.h"
-#include "../hw.h"
+// Includes
+#include "cplx_data.h"
+#include "dma_accel.h"
 
+// Parameter macros
+#define FFT_ARCH_PIPELINED   0
+#define FFT_ARCH_RADIX4      1
+#define FFT_ARCH_RADIX2      2
+#define FFT_ARCH_RADIX2_LITE 3
 
-/************************** Constant Definitions *****************************/
+// Hardware-specific parameters
+#define FFT_MAX_NUM_PTS      8192
+#define FFT_NUM_PTS_MASK     0x0000001F // Bits [4:0]
+#define FFT_NUM_PTS_SHIFT    0
+#define FFT_FWD_INV_MASK     0x00000001 // Bit 8 -> ch1 bit 0
+#define FFT_FWD_INV_SHIFT    0
+#define FFT_SCALE_SCH_MASK   0x07FFFFFE // Bits [34:9] -> ch2 bits [26:1]
+#define FFT_SCALE_SCH_SHIFT  1
 
-enum eFFT_nfft {
-	NFFT_1     = 0,
-	NFFT_2     = 1,
-	NFFT_4     = 2,
-	NFFT_8     = 3,
-	NFFT_16    = 4,
-	NFFT_32    = 5,
-	NFFT_64    = 6,
-	NFFT_128   = 7,
-	NFFT_256   = 8,
-	NFFT_512   = 9,
-	NFFT_1024  = 10,
-	NFFT_2048  = 11,
-	NFFT_4096  = 12,
-	NFFT_8192  = 13,
-	NFFT_16384 = 14,
-	NFFT_32768 = 15,
-};
+// Return types
+#define FFT_SUCCESS          0
+#define FFT_GPIO_INIT_FAIL  -1
+#define FFT_ILLEGAL_NUM_PTS -2
+#define FFT_DMA_FAIL        -3
 
-enum eFFT_fwdinv {
-	FFT_INV = 0,
-	FFT_FWD = 1,
-};
+// Enumerated data types
+typedef enum
+{
+	FFT_INVERSE = 0,
+	FFT_FORWARD = 1
+} fft_fwd_inv_t;
 
+// Object forward declaration
+typedef struct fft fft_t;
 
-/************************** Variable Definitions *****************************/
+// Public functions
 
-typedef struct {
-	// scale
-	u32 scale_sch_0;
-	enum eFFT_fwdinv fwd_inv_0;
-	enum eFFT_nfft nfft;
-} sFFTConfig_t;
+//
+// dma_accel_create - Create a FFT object.
+//
+//  Arguments
+//    - gpio_device_id: Device ID of the GPIO instance to use.
+//    - dma_device_id:  Device ID of the DMA instance to use.
+//    - intc_device_id: Device ID of the Interrupt Controller instance to use.
+//    - s2mm_intr_id:   Interrupt ID for the AXI DMA S2MM channel.
+//    - mm2s_intr_id:   Interrupt ID for the AXI DMA MM2S channel.
+//
+//  Return
+//    - fft*:           Non-NULL pointer to fft_t object on success.
+//    - NULL:           NULL if something failed.
+//
+fft_t* fft_create(int gpio_device_id, int dma_device_id, int intc_device_id, int s2mm_intr_id, int mm2s_intr_id);
 
-typedef struct {
-	XGpio* gpio;
-	XAxiDma* dma;
-	sFFTConfig_t config;
-} FFT;
+//
+// fft_destroy - Destroy FFT object.
+//
+//  Arguments
+//    - p_fft_inst: Pointer to fft_t object to be deallocated.
+//
+void fft_destroy(fft_t* p_fft_inst);
 
+//
+// fft_set_fwd_inv - Set the whether to do forward or inverse FFT.
+//
+//  Arguments
+//    - p_fft_inst: Pointer to the fft_t object.
+//    - fwd_inv:    Whether to do forward or inverse FFT.
+//
+void fft_set_fwd_inv(fft_t* p_fft_inst, fft_fwd_inv_t fwd_inv);
 
-/************************** Function Definitions *****************************/
+//
+// fft_get_fwd_inv - Get the current setting for whether to do forward or
+//                   inverse FFT.
+//
+//  Arguments
+//    - p_fft_inst:    Pointer to the fft_t object.
+//
+//  Return
+//    - fft_fwd_inv_t: Whether to do forward or inverse FFT.
+//
+fft_fwd_inv_t fft_get_fwd_inv(fft_t* p_fft_inst);
 
-XStatus fnInitFFT();
-XStatus fnConfigureFFT(FFT* inst, sFFTConfig_t config);
+//
+// fft_set_num_pts - Set the number of points to use for the FFT.
+//
+//  Arguments
+//    - p_fft_inst:          Pointer to the fft_t object.
+//    - num_pts:             Number of points to be used for the FFT.
+//
+//  Return
+//    - FFT_SUCCESS:         num_pts is legal and the object is set.
+//    - FFT_ILLEGAL_NUM_PTS: num_pts is either not a power of two or it
+//                           exceeds FFT_MAX_NUM_PTS per hardware configuration.
+//
+int fft_set_num_pts(fft_t* p_fft_inst, int num_pts);
 
+//
+// fft_get_num_pts - Get the current setting for the number of points to use
+//                   for the FFT.
+//
+//  Arguments
+//    - p_fft_inst: Pointer to the fft_t object.
+//
+//  Return
+//    - int:        Number of points to be used for the FFT.
+//
+int fft_get_num_pts(fft_t* p_fft_inst);
 
-/************************** Software Implementation *********************************/
+//
+// fft_set_scale_sch - Set the scaling schedule to use for the FFT.
+//
+//  Arguments
+//    - p_fft_inst: Pointer to the fft_t object.
+//    - scale_sch:  Scaling schedule to be used for the FFT.
+//
+void fft_set_scale_sch(fft_t* p_fft_inst, int scale_sch);
 
-void fft(float complex input[], float complex output[], int n);
+//
+// fft_get_scale_sch - Get the current setting for the scaling schedule to use
+//                     for the FFT.
+//
+//  Arguments
+//    - p_fft_inst: Pointer to the fft_t object.
+//
+//  Return
+//    - int:        Scaling schedule to be used for the FFT.
+//
+int fft_get_scale_sch(fft_t* p_fft_inst);
 
-void ifft(float complex input[], float complex output[], int n);
+//
+// fft - Fast Fourier Transform.
+//
+//  Arguments
+//    - p_fft_inst:   Pointer to the fft_t object.
+//    - din:          Pointer to the input data buffer.
+//    - dout:         Pointer to the output data buffer.
+//
+//  Return
+//    - FFT_SUCCESS:  FFT operation completed successfully.
+//    - FFT_DMA_FAIL: The DMA accelerator threw an error during FFT computation.
+//
+int fft_hw(fft_t* p_fft_inst, cplx_data_t* din, cplx_data_t* dout);
 
-#endif /* AUDIO_H_ */
+// ******************************************************************************
+// Public functions for debugging
+
+//
+// fft_get_stim_buf - Get the stimulus buffer to be used for the FFT.
+//
+//  Arguments
+//    - p_fft_inst:   Pointer to the fft_t object.
+//
+//  Return
+//    - cplx_data_t*: Stimulus buffer to be used for the FFT.
+//
+cplx_data_t* fft_get_stim_buf(fft_t* p_fft_inst);
+
+//
+// fft_get_result_buf - Get the result buffer used by the FFT.
+//
+//  Arguments
+//    - p_fft_inst: Pointer to the fft_t object.
+//
+//  Return
+//    - cplx_data_t*: Result buffer used by the FFT.
+//
+cplx_data_t* fft_get_result_buf(fft_t* p_fft_inst);
+
+//
+// fft_print_params - Print current state of FFT object to the console.
+//
+//  Arguments
+//    - p_fft_inst: Pointer to the fft_t object.
+//
+void fft_print_params(fft_t* p_fft_inst);
+
+//
+// fft_print_stim_buf - Print the contents of the FFT's stimulus buffer.
+//
+//  Arguments
+//    - p_fft_inst: Pointer to the fft_t object.
+//
+void fft_print_stim_buf(fft_t* p_fft_inst);
+
+//
+// fft_print_result_buf - Print the contents of the FFT's result buffer.
+//
+//  Arguments
+//    - p_fft_inst: Pointer to the fft_t object.
+//
+void fft_print_result_buf(fft_t* p_fft_inst);
+
+#endif /* FFT_H_ */
+

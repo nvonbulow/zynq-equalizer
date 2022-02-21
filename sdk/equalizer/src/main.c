@@ -22,8 +22,10 @@
 #include "xaxidma.h"
 #include "xtime_l.h"
 
-#include "fft/fft.h"
 #include <complex.h>
+#include "fft/cplx_data.h"
+#include "fft/fft_sw.h"
+#include "fft/fft.h"
 
 
 #ifdef XPAR_INTC_0_DEVICE_ID
@@ -80,6 +82,8 @@ static XIic sIic;
 static XAxiDma sAudioDma;		/* XAxiDma connected to the audio codec */
 
 static XGpio sUserIO;
+
+static fft_t* fftInst;
 
 #ifdef XPAR_INTC_0_DEVICE_ID
  static XIntc sIntc;
@@ -171,6 +175,22 @@ int initHw() {
         return XST_FAILURE;
     }
 
+    // Initialize FFT Core
+    fftInst = fft_create(
+    	XPAR_GPIO_1_DEVICE_ID,
+		XPAR_AXIDMA_1_DEVICE_ID,
+		XPAR_PS7_SCUGIC_0_DEVICE_ID,
+		XPAR_FABRIC_AXI_DMA_1_S2MM_INTROUT_INTR,
+		XPAR_FABRIC_AXI_DMA_1_MM2S_INTROUT_INTR
+    );
+    if (fftInst == NULL) {
+    	xil_printf("Error! Failed to create FFT instance\r\n");
+    	return XST_FAILURE;
+    }
+
+    fft_set_fwd_inv(fftInst, FFT_FORWARD);
+    fft_set_num_pts(fftInst, 8192);
+
 
     // Enable all interrupts in our interrupt vector table
     // Make sure all driver instances using interrupts are initialized first
@@ -178,23 +198,28 @@ int initHw() {
     return XST_SUCCESS;
 }
 
-typedef float complex cplx;
 int equalize(u32* audioBuf, int size) {
     int i;
-    cplx* tSeries = malloc(sizeof(cplx)*size);
-    cplx* fSeries = malloc(sizeof(cplx)*size);
+    cplx_data_t* tSeries = malloc(sizeof(cplx_data_t)*size);
+    cplx_data_t* fSeries = malloc(sizeof(cplx_data_t)*size);
+    float re;
+    float im;
 
     for(i = 0; i < size; i++) {
-        tSeries[i] = audioBuf[i];
+        tSeries[i].data_re = audioBuf[i];
+        tSeries[i].data_im = 0;
     }
 
-    fft(tSeries, fSeries, size);
+    //fft(tSeries, fSeries, size);
+    fft_hw(fftInst, tSeries, fSeries);
     // do equalization here
 
-    ifft(fSeries, tSeries, size);
+    //ifft(fSeries, tSeries, size);
 
     for(i = 0; i < size; i++) {
-        audioBuf[i] = cabsf(tSeries[i]);
+    	re = tSeries[i].data_re;
+    	im = tSeries[i].data_im;
+        //audioBuf[i] = sqrt(re*re + im*im);
     }
 
     free(tSeries);
@@ -257,11 +282,17 @@ int main(void)
 
     //Demo.fStartRecord = 1;
 
+    xil_printf("\r\nStart Recording...\r\n");
+    fnSetLineInput();
+    fnAudioRecord(sAudioDma, audio_buffers[0], NR_AUDIO_SAMPLES);
+    Demo.fAudioRecord = 1;
+
     //main loop
     while(1) {
 
         // Checking the DMA S2MM event flag
-        if (Demo.fAudioRecord && !XAxiDma_Busy(&sAudioDma, XAXIDMA_DEVICE_TO_DMA))
+        //if (Demo.fAudioRecord && !XAxiDma_Busy(&sAudioDma, XAXIDMA_DEVICE_TO_DMA))
+    	if(Demo.fAudioDmaS2MMEvent)
         {
             xil_printf("\r\nRecordong Done...");
 
@@ -298,7 +329,7 @@ int main(void)
 
             // Equalize the audio
             XTime_GetTime(&start);
-            //equalize(audio_buffers[1], NR_AUDIO_SAMPLES);
+            equalize(audio_buffers[1], NR_AUDIO_SAMPLES);
             XTime_GetTime(&stop);
             printf("\r\nTook %.2f us\r\n",
             		1.0*(stop-start) / (COUNTS_PER_SECOND/1000000));
@@ -311,7 +342,8 @@ int main(void)
 
         }
         // Checking the DMA MM2S event flag
-        if (Demo.fAudioPlayback && !XAxiDma_Busy(&sAudioDma, XAXIDMA_DMA_TO_DEVICE))
+        //if (Demo.fAudioPlayback && !XAxiDma_Busy(&sAudioDma, XAXIDMA_DMA_TO_DEVICE))
+    	if(Demo.fAudioDmaMM2SEvent)
         {
             xil_printf("\r\nPlayback Done...");
 

@@ -1,9 +1,10 @@
+#include "fft_sw.h"
+
 #include <stdio.h>
 #include <math.h>
 #include <complex.h>
 #include <string.h>
 #include <stdlib.h>
-#include "fft.h"
 
 #define FFT_DIRECTION_FORWARD -1
 #define FFT_DIRECTION_BACKWARD 1
